@@ -1,0 +1,422 @@
+# Almanca A1 kelime listesi: kelime<TAB>Türkçe<TAB>tür
+ich	ben	zamir
+du	sen	zamir
+er	o (eril)	zamir
+sie	o (dişil); onlar	zamir
+es	o (nötr)	zamir
+wir	biz	zamir
+ihr	siz (samimi çoğul); onun (dişil), onların	zamir
+mein	benim	zamir
+dein	senin	zamir
+sein	onun (eril/nötr); olmak	zamir
+unser	bizim	zamir
+was	ne	soru
+wer	kim	soru
+wo	nerede	soru
+woher	nereden	soru
+wohin	nereye	soru
+wann	ne zaman	soru
+warum	neden	soru
+wie	nasıl	soru
+wie viel	ne kadar	soru
+welcher	hangi	soru
+ja	evet	ünlem
+nein	hayır	ünlem
+hallo	merhaba	ünlem
+tschüss	hoşça kal	ünlem
+auf Wiedersehen	görüşmek üzere	ifade
+guten Morgen	günaydın	ifade
+guten Tag	iyi günler	ifade
+guten Abend	iyi akşamlar	ifade
+gute Nacht	iyi geceler	ifade
+bitte	lütfen; rica ederim	ünlem
+danke	teşekkürler	ünlem
+Entschuldigung	affedersiniz	ünlem
+eins	bir	sayı
+zwei	iki	sayı
+drei	üç	sayı
+vier	dört	sayı
+fünf	beş	sayı
+sechs	altı	sayı
+sieben	yedi	sayı
+acht	sekiz	sayı
+neun	dokuz	sayı
+zehn	on	sayı
+elf	on bir	sayı
+zwölf	on iki	sayı
+zwanzig	yirmi	sayı
+dreißig	otuz	sayı
+hundert	yüz	sayı
+tausend	bin	sayı
+der Montag	pazartesi	isim
+der Dienstag	salı	isim
+der Mittwoch	çarşamba	isim
+der Donnerstag	perşembe	isim
+der Freitag	cuma	isim
+der Samstag	cumartesi	isim
+der Sonntag	pazar	isim
+der Januar	ocak	isim
+der Februar	şubat	isim
+der März	mart	isim
+der April	nisan	isim
+der Mai	mayıs	isim
+der Juni	haziran	isim
+der Juli	temmuz	isim
+der August	ağustos	isim
+der September	eylül	isim
+der Oktober	ekim	isim
+der November	kasım	isim
+der Dezember	aralık	isim
+der Tag	gün	isim
+die Woche	hafta	isim
+der Monat	ay	isim
+das Jahr	yıl	isim
+heute	bugün	zarf
+morgen	yarın; sabah	zarf
+gestern	dün	zarf
+der Morgen	sabah	isim
+der Mittag	öğle	isim
+der Nachmittag	öğleden sonra	isim
+der Abend	akşam	isim
+die Nacht	gece	isim
+die Zeit	zaman	isim
+die Stunde	saat (süre)	isim
+die Minute	dakika	isim
+die Uhr	saat	isim
+jetzt	şimdi	zarf
+das Wochenende	hafta sonu	isim
+der Frühling	ilkbahar	isim
+der Sommer	yaz	isim
+der Herbst	sonbahar	isim
+der Winter	kış	isim
+rot	kırmızı	sıfat
+blau	mavi	sıfat
+grün	yeşil	sıfat
+gelb	sarı	sıfat
+schwarz	siyah	sıfat
+weiß	beyaz	sıfat
+braun	kahverengi	sıfat
+grau	gri	sıfat
+die Farbe	renk	isim
+die Familie	aile	isim
+die Mutter	anne	isim
+der Vater	baba	isim
+die Eltern	ebeveynler	isim
+der Bruder	erkek kardeş	isim
+die Schwester	kız kardeş	isim
+der Sohn	oğul	isim
+die Tochter	kız evlat	isim
+das Kind	çocuk	isim
+das Baby	bebek	isim
+der Mann	adam; koca	isim
+die Frau	kadın; eş	isim
+der Junge	erkek çocuk	isim
+das Mädchen	kız çocuk	isim
+die Großmutter	büyükanne	isim
+der Großvater	büyükbaba	isim
+der Onkel	amca, dayı	isim
+die Tante	teyze, hala	isim
+der Freund	erkek arkadaş	isim
+die Freundin	kız arkadaş	isim
+die Leute	insanlar	isim
+der Name	isim	isim
+das Alter	yaş	isim
+der Geburtstag	doğum günü	isim
+der Kopf	baş	isim
+das Gesicht	yüz	isim
+das Auge	göz	isim
+das Ohr	kulak	isim
+die Nase	burun	isim
+der Mund	ağız	isim
+das Haar	saç	isim
+die Hand	el	isim
+der Arm	kol	isim
+das Bein	bacak	isim
+der Fuß	ayak	isim
+der Bauch	karın	isim
+der Rücken	sırt	isim
+der Zahn	diş	isim
+das Haus	ev	isim
+die Wohnung	daire	isim
+das Zimmer	oda	isim
+die Küche	mutfak	isim
+das Schlafzimmer	yatak odası	isim
+das Badezimmer	banyo	isim
+das Wohnzimmer	oturma odası	isim
+der Garten	bahçe	isim
+die Tür	kapı	isim
+das Fenster	pencere	isim
+die Wand	duvar	isim
+der Tisch	masa	isim
+der Stuhl	sandalye	isim
+das Bett	yatak	isim
+das Sofa	kanepe	isim
+die Lampe	lamba	isim
+der Schlüssel	anahtar	isim
+die Straße	sokak, cadde	isim
+die Stadt	şehir	isim
+das Dorf	köy	isim
+das Land	ülke	isim
+die Schule	okul	isim
+der Lehrer	öğretmen (erkek)	isim
+die Lehrerin	öğretmen (kadın)	isim
+der Schüler	öğrenci (okul)	isim
+der Student	üniversite öğrencisi	isim
+das Buch	kitap	isim
+der Kuli	tükenmez kalem	isim
+der Bleistift	kurşun kalem	isim
+die Tasche	çanta	isim
+das Heft	defter	isim
+die Hausaufgabe	ev ödevi	isim
+die Frage	soru	isim
+die Antwort	cevap	isim
+das Wort	kelime	isim
+die Seite	sayfa; taraf	isim
+das Papier	kâğıt	isim
+der Computer	bilgisayar	isim
+das Handy	cep telefonu	isim
+das Essen	yemek	isim
+das Wasser	su	isim
+das Brot	ekmek	isim
+die Milch	süt	isim
+der Tee	çay	isim
+der Kaffee	kahve	isim
+der Saft	meyve suyu	isim
+das Ei	yumurta	isim
+der Käse	peynir	isim
+das Fleisch	et	isim
+das Hähnchen	tavuk (yemek)	isim
+der Fisch	balık	isim
+der Reis	pirinç	isim
+der Apfel	elma	isim
+die Banane	muz	isim
+das Obst	meyve	isim
+das Gemüse	sebze	isim
+die Kartoffel	patates	isim
+die Tomate	domates	isim
+der Salat	salata	isim
+die Suppe	çorba	isim
+der Zucker	şeker	isim
+das Salz	tuz	isim
+der Kuchen	kek, pasta	isim
+das Frühstück	kahvaltı	isim
+das Mittagessen	öğle yemeği	isim
+das Abendessen	akşam yemeği	isim
+die Tasse	fincan	isim
+das Glas	bardak	isim
+der Teller	tabak	isim
+das Restaurant	restoran	isim
+das Geschäft	dükkân; iş	isim
+der Supermarkt	süpermarket	isim
+das Geld	para	isim
+der Preis	fiyat	isim
+das Auto	araba	isim
+der Bus	otobüs	isim
+der Zug	tren	isim
+das Flugzeug	uçak	isim
+das Fahrrad	bisiklet	isim
+das Taxi	taksi	isim
+der Bahnhof	tren istasyonu	isim
+der Flughafen	havalimanı	isim
+das Hotel	otel	isim
+das Krankenhaus	hastane	isim
+der Arzt	doktor	isim
+die Bank	banka; bank	isim
+das Kino	sinema	isim
+der Park	park	isim
+der Hund	köpek	isim
+die Katze	kedi	isim
+der Vogel	kuş	isim
+das Pferd	at	isim
+das Tier	hayvan	isim
+die Sonne	güneş	isim
+der Regen	yağmur	isim
+der Schnee	kar	isim
+das Wetter	hava durumu	isim
+das Meer	deniz	isim
+der Baum	ağaç	isim
+die Blume	çiçek	isim
+die Kleidung	giysi	isim
+das Hemd	gömlek	isim
+das Kleid	elbise	isim
+der Schuh	ayakkabı	isim
+die Hose	pantolon	isim
+die Jacke	ceket	isim
+der Mantel	palto	isim
+die Arbeit	iş	isim
+der Beruf	meslek	isim
+das Büro	ofis	isim
+die Musik	müzik	isim
+das Lied	şarkı	isim
+der Film	film	isim
+das Spiel	oyun; maç	isim
+der Sport	spor	isim
+der Fußball	futbol	isim
+haben	sahip olmak	fiil
+machen	yapmak	fiil
+gehen	gitmek (yürüyerek)	fiil
+kommen	gelmek	fiil
+fahren	gitmek (araçla), sürmek	fiil
+essen	yemek	fiil
+trinken	içmek	fiil
+schlafen	uyumak	fiil
+aufstehen	kalkmak	fiil
+wohnen	oturmak, ikamet etmek	fiil
+leben	yaşamak	fiil
+mögen	sevmek, hoşlanmak	fiil
+lieben	sevmek	fiil
+möchten	istemek (kibar)	fiil
+wollen	istemek	fiil
+brauchen	ihtiyaç duymak	fiil
+wissen	bilmek (bilgi)	fiil
+kennen	tanımak, bilmek	fiil
+denken	düşünmek	fiil
+sehen	görmek	fiil
+hören	duymak, dinlemek	fiil
+sprechen	konuşmak	fiil
+sagen	söylemek	fiil
+lesen	okumak	fiil
+schreiben	yazmak	fiil
+lernen	öğrenmek	fiil
+studieren	üniversitede okumak	fiil
+spielen	oynamak; çalmak	fiil
+laufen	koşmak, yürümek	fiil
+schwimmen	yüzmek	fiil
+tanzen	dans etmek	fiil
+singen	şarkı söylemek	fiil
+kochen	yemek pişirmek	fiil
+öffnen	açmak	fiil
+schließen	kapatmak	fiil
+kaufen	satın almak	fiil
+verkaufen	satmak	fiil
+bezahlen	ödemek	fiil
+geben	vermek	fiil
+nehmen	almak	fiil
+helfen	yardım etmek	fiil
+beginnen	başlamak	fiil
+warten	beklemek	fiil
+sitzen	oturmak	fiil
+stehen	ayakta durmak	fiil
+fragen	sormak	fiil
+antworten	cevap vermek	fiil
+anrufen	telefon etmek	fiil
+heißen	adı … olmak	fiil
+können	-ebilmek	fiil
+müssen	zorunda olmak	fiil
+arbeiten	çalışmak	fiil
+gut	iyi	sıfat
+schlecht	kötü	sıfat
+groß	büyük; uzun boylu	sıfat
+klein	küçük	sıfat
+lang	uzun	sıfat
+kurz	kısa	sıfat
+alt	yaşlı, eski	sıfat
+jung	genç	sıfat
+neu	yeni	sıfat
+heiß	sıcak	sıfat
+kalt	soğuk	sıfat
+warm	ılık	sıfat
+glücklich	mutlu	sıfat
+traurig	üzgün	sıfat
+müde	yorgun	sıfat
+schön	güzel	sıfat
+leicht	kolay; hafif	sıfat
+schwer	zor; ağır	sıfat
+schnell	hızlı	sıfat
+langsam	yavaş	sıfat
+billig	ucuz	sıfat
+teuer	pahalı	sıfat
+richtig	doğru	sıfat
+falsch	yanlış	sıfat
+rechts	sağda	zarf
+links	solda	zarf
+frei	boş, serbest	sıfat
+sauber	temiz	sıfat
+in	içinde	edat
+auf	üstünde	edat
+unter	altında	edat
+neben	yanında	edat
+hinter	arkasında	edat
+zwischen	arasında	edat
+mit	ile	edat
+aus	-den (köken)	edat
+nach	-e (şehir, ülke); sonra	edat
+zu	-e (kişi, yer)	edat
+von	-den	edat
+und	ve	bağlaç
+aber	ama	bağlaç
+oder	veya	bağlaç
+denn	çünkü	bağlaç
+sehr	çok	zarf
+hier	burada	zarf
+dort	orada	zarf
+immer	her zaman	zarf
+oft	sık sık	zarf
+manchmal	bazen	zarf
+nie	asla	zarf
+auch	de, da	zarf
+nicht	değil	zarf
+kein	hiç, -sız	zamir
+viel	çok	sıfat
+alle	hepsi	zamir
+Sie	siz (resmî hitap)	zamir
+euer	sizin (samimi)	zamir
+vierzig	kırk	sayı
+fünfzig	elli	sayı
+sechzig	altmış	sayı
+siebzig	yetmiş	sayı
+achtzig	seksen	sayı
+neunzig	doksan	sayı
+erste	birinci	sayı
+zweite	ikinci	sayı
+dritte	üçüncü	sayı
+die Sekunde	saniye	isim
+halb	yarım	sıfat
+das Viertel	çeyrek	isim
+orange	turuncu	sıfat
+rosa	pembe	sıfat
+lila	mor	sıfat
+die Oma	nine	isim
+der Opa	dede	isim
+der Cousin	kuzen (erkek)	isim
+die Cousine	kuzen (kız)	isim
+der Mensch	insan	isim
+der Herr	bay	isim
+der Hals	boyun	isim
+der Finger	parmak	isim
+der Körper	vücut	isim
+der Balkon	balkon	isim
+der Keller	bodrum	isim
+die Klasse	sınıf	isim
+der Unterricht	ders (eğitim)	isim
+die Tafel	tahta (yazı)	isim
+das Bier	bira	isim
+der Wein	şarap	isim
+die Wurst	sosis	isim
+die Orange	portakal	isim
+die Zwiebel	soğan	isim
+die Nudeln	makarna	isim
+der Euro	avro	isim
+die Kasse	kasa	isim
+die Haltestelle	durak	isim
+der Weg	yol	isim
+die Kuh	inek	isim
+die Maus	fare	isim
+die Mütze	bere	isim
+der Hut	şapka	isim
+der Rock	etek	isim
+das T-Shirt	tişört	isim
+der Fernseher	televizyon	isim
+gern	seve seve	zarf
+kaputt machen	bozmak	fiil
+fernsehen	televizyon izlemek	fiil
+einkaufen	alışveriş yapmak	fiil
+besuchen	ziyaret etmek	fiil
+reisen	seyahat etmek	fiil
+treffen	buluşmak	fiil
+dürfen	izinli olmak	fiil
+sollen	-meli (başkasının isteği)	fiil
+hungrig	aç	sıfat
+durstig	susamış	sıfat
+nett	hoş, sevimli	sıfat
+toll	harika	sıfat

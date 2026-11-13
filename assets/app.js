@@ -430,14 +430,15 @@ function oturumBaslat(d, liste, kutuAnahtar, yon, bitti) {
       return;
     }
     const c = liste[i];
-    const on = yon === 'arka' ? c.arka : c.on, arka = yon === 'arka' ? c.on : c.arka;
     const dilliMi = c.tur !== 'kart' && d.dil;
+    const ters = yon === 'arka' && dilliMi;
+    const on = ters ? c.arka : c.on, arka = ters ? c.on : c.arka;
     kok.innerHTML = `
       <div class="oturum-ust"><span>${i + 1} / ${liste.length}</span><span class="soluk">${kacis(c.grup)}</span><button class="baglanti" id="cik">Bitir</button></div>
       <div class="ilerleme genis"><i style="width:${(i / liste.length) * 100}%"></i></div>
       <div class="flash ${cevrik ? 'cevrik' : ''}" id="flash" tabindex="0">
-        <div class="yuz on"><div class="flash-metin">${mdCiz(on, '', true)}</div>${dilliMi && yon === 'on' ? '<button class="ses" data-ses="1" title="Dinle">🔊</button>' : ''}<small class="soluk">Cevabı görmek için dokun · Boşluk</small></div>
-        <div class="yuz arka"><div class="flash-metin">${mdCiz(arka, '', true)}</div>${c.tur && c.tur !== 'kart' ? `<small class="etiket">${kacis(c.tur)}</small>` : ''}${dilliMi && yon === 'arka' ? '<button class="ses" data-ses="1" title="Dinle">🔊</button>' : ''}</div>
+        <div class="yuz on"><div class="flash-metin">${mdCiz(on, '', true)}</div>${dilliMi && !ters ? '<button class="ses" data-ses="1" title="Dinle">🔊</button>' : ''}<small class="soluk">Cevabı görmek için dokun · Boşluk</small></div>
+        <div class="yuz arka"><div class="flash-metin">${mdCiz(arka, '', true)}</div>${c.tur && c.tur !== 'kart' ? `<small class="etiket">${kacis(c.tur)}</small>` : ''}${dilliMi && ters ? '<button class="ses" data-ses="1" title="Dinle">🔊</button>' : ''}</div>
       </div>
       <div class="flash-dugmeler" ${cevrik ? '' : 'hidden'}>
         <button class="dugme kirmizi" id="bilmedim">✗ Bilemedim <kbd>1</kbd></button>
@@ -448,7 +449,7 @@ function oturumBaslat(d, liste, kutuAnahtar, yon, bitti) {
     kok.querySelector('#cik').onclick = () => { i = liste.length; ciz(); };
     const bm = kok.querySelector('#bilmedim'), bl = kok.querySelector('#bildim');
     bm.onclick = () => cevapla(false); bl.onclick = () => cevapla(true);
-    if (dilliMi && yon === 'on') seslendir(c.on, d.dil);
+    if (dilliMi && !ters) seslendir(c.on, d.dil);
   }
   function cevir() {
     if (cevrik) return;
@@ -514,12 +515,13 @@ async function testSayfasi(id) {
     const yon = app.querySelector('#yon') ? app.querySelector('#yon').value : 'on';
     const adet = Number(app.querySelector('#adet').value);
     const sorular = karistir(secili).slice(0, adet).map(c => {
-      const soru = yon === 'arka' ? c.arka : c.on, dogru = yon === 'arka' ? c.on : c.arka;
-      const ayni = secili.filter(x => x !== c && x.grup === c.grup);
-      const kaynak = (ayni.length >= 3 ? ayni : secili.filter(x => x !== c));
+      const ters = yon === 'arka' && c.tur !== 'kart';
+      const soru = ters ? c.arka : c.on, dogru = ters ? c.on : c.arka;
+      const ayni = secili.filter(x => x !== c && x.grup === c.grup && (x.tur === 'kart') === (c.tur === 'kart'));
+      const kaynak = ayni.length >= 3 ? ayni : secili.filter(x => x !== c && (x.tur === 'kart') === (c.tur === 'kart'));
       const yanlislar = [];
-      for (const x of karistir(kaynak)) {
-        const v = yon === 'arka' ? x.on : x.arka;
+      for (const x of karistir(kaynak.length >= 3 ? kaynak : secili.filter(x => x !== c))) {
+        const v = ters ? x.on : x.arka;
         if (v !== dogru && !yanlislar.includes(v)) yanlislar.push(v);
         if (yanlislar.length === 3) break;
       }

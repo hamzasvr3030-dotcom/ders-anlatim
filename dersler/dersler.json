@@ -62,6 +62,26 @@
       "donem": "Dr. Atilla Devecioğlu ders notu",
       "aciklama": "Isıl konfor, ısıtma sistemleri, kazan ve kazan dairesi, ısıtıcılar, TS 825 yalıtım hesabı ve ısı kaybı cetveli.",
       "renk": "#be185d"
+    },
+    {
+      "id": "ingilizce",
+      "grup": "Dil dersleri",
+      "ad": "İngilizce",
+      "kod": "A1 → B2",
+      "donem": "Dilbilgisi, kelime havuzu, sesli telaffuz",
+      "aciklama": "Başlangıçtan orta üstü seviyeye dilbilgisi anlatımları, seviyelere ayrılmış kelime havuzu, tekrar kartları ve testler.",
+      "renk": "#1d4ed8",
+      "kelimeSayisi": 1593
+    },
+    {
+      "id": "almanca",
+      "grup": "Dil dersleri",
+      "ad": "Almanca",
+      "kod": "A1 → B2",
+      "donem": "Dilbilgisi, artikelli kelime havuzu, sesli telaffuz",
+      "aciklama": "Başlangıçtan orta üstü seviyeye dilbilgisi anlatımları, artikelleriyle kelime havuzu, tekrar kartları ve testler.",
+      "renk": "#b45309",
+      "kelimeSayisi": 1561
     }
   ]
 }

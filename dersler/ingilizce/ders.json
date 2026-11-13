@@ -1,0 +1,26 @@
+{
+  "dil": "en-US",
+  "dilAdi": "İngilizce",
+  "kelimeler": [
+    { "seviye": "A1", "ad": "A1 – Başlangıç kelimeleri", "dosya": "kelimeler/a1.tsv" },
+    { "seviye": "A2", "ad": "A2 – Temel kelimeler", "dosya": "kelimeler/a2.tsv" },
+    { "seviye": "B1", "ad": "B1 – Orta seviye kelimeler", "dosya": "kelimeler/b1.tsv" },
+    { "seviye": "B2", "ad": "B2 – Orta üstü kelimeler", "dosya": "kelimeler/b2.tsv" }
+  ],
+  "konular": [
+    { "id": "00-nasil-calisilir", "bolum": "Başlarken", "baslik": "Bu ders nasıl çalışılır?", "ozet": "Seviyeler, çalışma düzeni, telaffuz", "dosya": "konular/00-nasil-calisilir.md" },
+    { "id": "a1-01-to-be-zamirler", "bolum": "A1 – Başlangıç", "baslik": "\"to be\" fiili, zamirler ve iyelik", "ozet": "am/is/are, soru kelimeleri, my/your, this/that", "dosya": "konular/a1-01-to-be-zamirler.md" },
+    { "id": "a1-02-present-simple", "bolum": "A1 – Başlangıç", "baslik": "Geniş zaman (Present Simple)", "ozet": "do/does, -s eki, sıklık zarfları, have got, can", "dosya": "konular/a1-02-present-simple.md" },
+    { "id": "a1-03-isimler-there-is-continuous", "bolum": "A1 – Başlangıç", "baslik": "İsimler, there is ve şimdiki zaman", "ozet": "a/an/the, çoğul, some/any, edatlar, Present Continuous", "dosya": "konular/a1-03-isimler-there-is-continuous.md" },
+    { "id": "a2-01-past-simple", "bolum": "A2 – Temel", "baslik": "Geçmiş zaman (Past Simple)", "ozet": "was/were, -ed, düzensiz fiiller, did, Past Continuous, used to", "dosya": "konular/a2-01-past-simple.md" },
+    { "id": "a2-02-gelecek-karsilastirma", "bolum": "A2 – Temel", "baslik": "Gelecek zaman ve karşılaştırma", "ozet": "will / going to, -er/-est, much/many, zarflar", "dosya": "konular/a2-02-gelecek-karsilastirma.md" },
+    { "id": "a2-03-present-perfect-modallar", "bolum": "A2 – Temel", "baslik": "Present Perfect ve modal fiiller", "ozet": "ever/never, just/already/yet, for/since, must/have to/should", "dosya": "konular/a2-03-present-perfect-modallar.md" },
+    { "id": "b1-01-zamanlar", "bolum": "B1 – Orta", "baslik": "Zamanların karşılaştırması ve Past Perfect", "ozet": "Perfect Continuous, Past Perfect, anlatı zamanları", "dosya": "konular/b1-01-zamanlar.md" },
+    { "id": "b1-02-sart-edilgen", "bolum": "B1 – Orta", "baslik": "Şart cümleleri (0, 1, 2) ve edilgen yapı", "ozet": "If cümleleri, unless, passive voice", "dosya": "konular/b1-02-sart-edilgen.md" },
+    { "id": "b1-03-relative-gerund", "bolum": "B1 – Orta", "baslik": "Sıfat cümlecikleri, -ing ve to + fiil", "ozet": "who/which/whose, gerund/infinitive, -ed/-ing sıfatları", "dosya": "konular/b1-03-relative-gerund.md" },
+    { "id": "b2-01-sart-wish", "bolum": "B2 – Orta üstü", "baslik": "Üçüncü ve karma şart cümleleri, wish", "ozet": "Third/mixed conditionals, wish, if only, would rather", "dosya": "konular/b2-01-sart-wish.md" },
+    { "id": "b2-02-dolayli-anlatim", "bolum": "B2 – Orta üstü", "baslik": "Dolaylı anlatım ve ileri edilgen yapılar", "ozet": "Reported speech, say/tell, have something done", "dosya": "konular/b2-02-dolayli-anlatim.md" },
+    { "id": "b2-03-modallar-baglaclar", "bolum": "B2 – Orta üstü", "baslik": "Çıkarım modalları, bağlaçlar, phrasal verbs", "ozet": "must have / can't have, Future Perfect, linking words", "dosya": "konular/b2-03-modallar-baglaclar.md" }
+  ],
+  "pdfler": []
+}
