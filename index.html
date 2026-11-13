@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ders Anlatımları</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+    startup: { typeset: false }
+  };
+  (function () { try { var t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {} })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<header class="ust">
+  <a href="#/" class="logo"><span class="logo-isaret">∑</span> Ders Anlatımları</a>
+  <div class="ust-sag">
+    <input id="ara" type="search" placeholder="Konularda ara…" autocomplete="off">
+    <button id="tema" type="button" title="Açık / koyu tema">◐</button>
+  </div>
+</header>
+<main id="app"><p class="yukleniyor">Yükleniyor…</p></main>
+<footer class="alt">Ders notları ve PDF'ler · kişisel çalışma sitesi</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

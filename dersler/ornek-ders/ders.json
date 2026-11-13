@@ -1,0 +1,17 @@
+{
+  "konular": [
+    {
+      "id": "01-site-kullanimi",
+      "baslik": "Site nasıl kullanılır?",
+      "ozet": "Dersler, konular, PDF'ler, arama ve ilerleme takibi",
+      "dosya": "konular/01-site-kullanimi.md"
+    },
+    {
+      "id": "02-bicim-ornekleri",
+      "baslik": "Anlatım biçimi örneği: Newton'un 2. yasası",
+      "ozet": "Formül, tablo, not kutusu ve çözümlü örnek",
+      "dosya": "konular/02-bicim-ornekleri.md"
+    }
+  ],
+  "pdfler": []
+}

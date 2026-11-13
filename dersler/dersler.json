@@ -1,0 +1,12 @@
+{
+  "dersler": [
+    {
+      "id": "ornek-ders",
+      "ad": "Örnek Ders",
+      "kod": "Şablon",
+      "donem": "",
+      "aciklama": "Sitenin nasıl göründüğünü ve bir konu anlatımında neler kullanılabileceğini gösteren örnek. Gerçek dersler eklenince kaldırılacak.",
+      "renk": "#2457c5"
+    }
+  ]
+}
