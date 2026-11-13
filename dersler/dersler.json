@@ -2,11 +2,39 @@
   "dersler": [
     {
       "id": "mekanizma-teknigi",
+      "grup": "Mühendislik dersleri",
       "ad": "Mekanizma Tekniği",
       "kod": "BMMZ 307 / MMZ 311",
       "donem": "Dicle Üniversitesi · Makine Mühendisliği",
-      "aciklama": "Mekanizma sistematiği, serbestlik derecesi, konum-hız-ivme analizi ve dişli çarklar. Formüller, çözümlü örnekler ve ders slaytları.",
+      "aciklama": "Mekanizma sistematiği, serbestlik derecesi, konum-hız-ivme analizi ve dişli çarklar.",
       "renk": "#c2410c"
+    },
+    {
+      "id": "mukavemet-1",
+      "grup": "Mühendislik dersleri",
+      "ad": "Mukavemet 1",
+      "kod": "Mukavemet I",
+      "donem": "Dicle Üniversitesi · Prof. Dr. K. Turan ders notları",
+      "aciklama": "İç kuvvetler ve N-T-M diyagramları, eksenel yükleme, termal gerilmeler, hiperstatik problemler, gerilme analizi ve Mohr dairesi.",
+      "renk": "#2457c5"
+    },
+    {
+      "id": "termodinamik",
+      "grup": "Mühendislik dersleri",
+      "ad": "Termodinamik",
+      "kod": "Termodinamik I",
+      "donem": "Çengel & Boles · Prof. Dr. Ali Pınarbaşı ders notu",
+      "aciklama": "Temel kavramlar, enerji ve birinci yasa, saf madde ve tablolar, ideal gaz, kapalı sistemler ve kontrol hacimleri.",
+      "renk": "#b91c1c"
+    },
+    {
+      "id": "akiskanlar-mekanigi",
+      "grup": "Mühendislik dersleri",
+      "ad": "Akışkanlar Mekaniği",
+      "kod": "Akışkanlar",
+      "donem": "Çengel & Cimbala · Temelleri ve Uygulamaları",
+      "aciklama": "Akışkan statiği, Bernoulli, momentum, boru akışı, dış akışlar, sıkıştırılabilir akış, açık kanal, turbomakineler ve HAD.",
+      "renk": "#0e7490"
     }
   ]
 }

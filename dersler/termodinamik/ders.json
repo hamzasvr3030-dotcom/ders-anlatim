@@ -1,0 +1,16 @@
+{
+  "konular": [
+    { "id": "01-temel-kavramlar", "baslik": "Temel kavramlar, sıcaklık ve basınç", "ozet": "Sistem türleri, özellikler, hal, sıfırıncı yasa, basınç ve manometre", "dosya": "konular/01-temel-kavramlar.md", "pdf": "pdf/bolum-1-5-formuller-ve-ornekler.pdf", "pdfBaslik": "Bölüm 1–5 formüller ve örnekler" },
+    { "id": "02-enerji-birinci-yasa", "baslik": "Enerji, ısı, iş ve birinci yasa", "ozet": "Enerji biçimleri, iş türleri, enerji dengesi, verimler", "dosya": "konular/02-enerji-birinci-yasa.md", "pdf": "pdf/bolum-1-5-formuller-ve-ornekler.pdf", "pdfBaslik": "Bölüm 1–5 formüller ve örnekler" },
+    { "id": "03-saf-madde", "baslik": "Saf maddenin özellikleri ve tablolar", "ozet": "Fazlar, T-v diyagramı, doyma, kuruluk derecesi, tablo kullanımı", "dosya": "konular/03-saf-madde.md", "pdf": "pdf/bolum-1-5-formuller-ve-ornekler.pdf", "pdfBaslik": "Bölüm 1–5 formüller ve örnekler" },
+    { "id": "04-ideal-gaz", "baslik": "İdeal gaz ve gerçek gaz davranışı", "ozet": "Pv = RT, sıkıştırılabilme çarpanı Z, Van der Waals", "dosya": "konular/04-ideal-gaz.md" },
+    { "id": "05-sinir-isi", "baslik": "Kapalı sistemler: hareketli sınır işi", "ozet": "P dV işi, izobarik, izotermal, politropik süreçler, yaylı piston", "dosya": "konular/05-sinir-isi.md" },
+    { "id": "06-kapali-sistem-enerji", "baslik": "Kapalı sistem enerji dengesi ve özgül ısılar", "ozet": "Q − W = ΔU, cp ve cv, ideal gaz, katı ve sıvılar", "dosya": "konular/06-kapali-sistem-enerji.md" },
+    { "id": "07-kontrol-hacmi", "baslik": "Kontrol hacimleri: kütle ve enerji korunumu", "ozet": "Akış işi, sürekli akış, lüle, türbin, kompresör, kısılma, karışma, eşanjör", "dosya": "konular/07-kontrol-hacmi.md" },
+    { "id": "08-formul-ozeti", "baslik": "Formül özeti (sınav kâğıdı)", "ozet": "Bölüm 1–5 bütün formüller", "dosya": "konular/08-formul-ozeti.md" }
+  ],
+  "pdfler": [
+    { "baslik": "Termodinamik I – Bölüm 1–5 formüller ve çözümlü örnekler", "dosya": "pdf/bolum-1-5-formuller-ve-ornekler.pdf", "boyut": "22 MB" },
+    { "baslik": "Termodinamik ders notu (Prof. Dr. Ali Pınarbaşı)", "dosya": "pdf/termodinamik-ders-notu.pdf", "boyut": "44 MB" }
+  ]
+}

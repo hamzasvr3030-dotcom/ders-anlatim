@@ -1,0 +1,37 @@
+{
+  "konular": [
+    { "id": "01-giris", "baslik": "Giriş ve temel kavramlar", "ozet": "Akışkan tanımı, kaymama şartı, akışların sınıflandırılması", "dosya": "konular/01-giris.md", "pdf": "pdf/bolum-01.pdf", "pdfBaslik": "Bölüm 1 slaytları" },
+    { "id": "02-ozellikler", "baslik": "Akışkanların özellikleri", "ozet": "Yoğunluk, buhar basıncı, sıkıştırılabilirlik, viskozite, yüzey gerilmesi", "dosya": "konular/02-ozellikler.md", "pdf": "pdf/bolum-02.pdf", "pdfBaslik": "Bölüm 2 slaytları" },
+    { "id": "03-akiskan-statigi", "baslik": "Basınç ve akışkan statiği", "ozet": "Hidrostatik, manometre, yüzey kuvvetleri, kaldırma, kararlılık, rijit cisim hareketi", "dosya": "konular/03-akiskan-statigi.md", "pdf": "pdf/bolum-03.pdf", "pdfBaslik": "Bölüm 3 slaytları" },
+    { "id": "04-kinematik", "baslik": "Akışkan kinematiği", "ozet": "Euler-Lagrange, maddesel türev, akım çizgileri, girdaplılık, Reynolds taşınım teoremi", "dosya": "konular/04-kinematik.md", "pdf": "pdf/bolum-04.pdf", "pdfBaslik": "Bölüm 4 slaytları" },
+    { "id": "05-kutle-bernoulli-enerji", "baslik": "Kütle, Bernoulli ve enerji denklemleri", "ozet": "Süreklilik, Bernoulli ve sınırları, pitot, venturi, genel enerji denklemi", "dosya": "konular/05-kutle-bernoulli-enerji.md", "pdf": "pdf/bolum-05.pdf", "pdfBaslik": "Bölüm 5 slaytları" },
+    { "id": "06-momentum", "baslik": "Akış sistemlerinin momentum analizi", "ozet": "Momentum denklemi, jet kuvvetleri, dirsek, açısal momentum", "dosya": "konular/06-momentum.md", "pdf": "pdf/bolum-06.pdf", "pdfBaslik": "Bölüm 6 slaytları" },
+    { "id": "07-boyut-analizi", "baslik": "Boyut analizi ve modelleme", "ozet": "Buckingham Pi, boyutsuz sayılar, benzerlik", "dosya": "konular/07-boyut-analizi.md", "pdf": "pdf/bolum-07.pdf", "pdfBaslik": "Bölüm 7 slaytları" },
+    { "id": "08-ic-akislar", "baslik": "İç akışlar (boru akışı)", "ozet": "Laminer/türbülanslı akış, Darcy, Moody, yerel kayıplar, boru şebekeleri", "dosya": "konular/08-ic-akislar.md", "pdf": "pdf/bolum-08.pdf", "pdfBaslik": "Bölüm 8 slaytları" },
+    { "id": "09-diferansiyel-analiz", "baslik": "Diferansiyel akış analizi", "ozet": "Süreklilik, akım fonksiyonu, Navier–Stokes, tam çözümler", "dosya": "konular/09-diferansiyel-analiz.md", "pdf": "pdf/bolum-09.pdf", "pdfBaslik": "Bölüm 9 slaytları" },
+    { "id": "10-yaklasik-cozumler", "baslik": "Navier–Stokes'un yaklaşık çözümleri", "ozet": "Sürünme akışı, potansiyel akış, sınır tabaka", "dosya": "konular/10-yaklasik-cozumler.md", "pdf": "pdf/bolum-10.pdf", "pdfBaslik": "Bölüm 10 slaytları" },
+    { "id": "11-dis-akislar", "baslik": "Dış akışlar: direnç ve kaldırma", "ozet": "Sürtünme ve basınç direnci, düz levha, silindir, kanat profilleri", "dosya": "konular/11-dis-akislar.md", "pdf": "pdf/bolum-11.pdf", "pdfBaslik": "Bölüm 11 slaytları" },
+    { "id": "12-sikistirilabilir-akis", "baslik": "Sıkıştırılabilir akış", "ozet": "Durma halleri, izentropik akış, lüleler, normal şok", "dosya": "konular/12-sikistirilabilir-akis.md", "pdf": "pdf/bolum-12.pdf", "pdfBaslik": "Bölüm 12 slaytları" },
+    { "id": "13-acik-kanal", "baslik": "Açık kanal akışı", "ozet": "Froude sayısı, özgül enerji, Manning, hidrolik sıçrama", "dosya": "konular/13-acik-kanal.md", "pdf": "pdf/bolum-13.pdf", "pdfBaslik": "Bölüm 13 slaytları" },
+    { "id": "14-turbomakineler", "baslik": "Turbomakineler", "ozet": "Pompa eğrileri, NPSH, benzerlik yasaları, türbin türleri", "dosya": "konular/14-turbomakineler.md", "pdf": "pdf/bolum-14.pdf", "pdfBaslik": "Bölüm 14 slaytları" },
+    { "id": "15-had", "baslik": "Hesaplamalı akışkanlar dinamiği (HAD)", "ozet": "Ağ, sınır koşulları, türbülans modelleri, doğrulama", "dosya": "konular/15-had.md", "pdf": "pdf/bolum-15.pdf", "pdfBaslik": "Bölüm 15 slaytları" },
+    { "id": "16-formul-ozeti", "baslik": "Formül özeti (sınav kâğıdı)", "ozet": "Bütün bölümlerin formülleri", "dosya": "konular/16-formul-ozeti.md" }
+  ],
+  "pdfler": [
+    { "baslik": "Bölüm 1 – Giriş ve temel kavramlar", "dosya": "pdf/bolum-01.pdf" },
+    { "baslik": "Bölüm 2 – Akışkanların özellikleri", "dosya": "pdf/bolum-02.pdf" },
+    { "baslik": "Bölüm 3 – Basınç ve akışkan statiği", "dosya": "pdf/bolum-03.pdf" },
+    { "baslik": "Bölüm 4 – Akışkan kinematiği", "dosya": "pdf/bolum-04.pdf" },
+    { "baslik": "Bölüm 5 – Kütle, Bernoulli ve enerji denklemleri", "dosya": "pdf/bolum-05.pdf" },
+    { "baslik": "Bölüm 6 – Momentum analizi", "dosya": "pdf/bolum-06.pdf" },
+    { "baslik": "Bölüm 7 – Boyut analizi ve modelleme", "dosya": "pdf/bolum-07.pdf" },
+    { "baslik": "Bölüm 8 – İç akışlar", "dosya": "pdf/bolum-08.pdf", "boyut": "22 MB" },
+    { "baslik": "Bölüm 9 – Diferansiyel akış analizi", "dosya": "pdf/bolum-09.pdf" },
+    { "baslik": "Bölüm 10 – Navier–Stokes'un yaklaşık çözümleri", "dosya": "pdf/bolum-10.pdf" },
+    { "baslik": "Bölüm 11 – Viskoz dış akışlar", "dosya": "pdf/bolum-11.pdf" },
+    { "baslik": "Bölüm 12 – Sıkıştırılabilir akış", "dosya": "pdf/bolum-12.pdf" },
+    { "baslik": "Bölüm 13 – Açık kanal akışı", "dosya": "pdf/bolum-13.pdf" },
+    { "baslik": "Bölüm 14 – Turbomakineler", "dosya": "pdf/bolum-14.pdf" },
+    { "baslik": "Bölüm 15 – HAD'a giriş", "dosya": "pdf/bolum-15.pdf" }
+  ]
+}
