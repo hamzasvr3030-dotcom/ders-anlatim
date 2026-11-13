@@ -35,6 +35,33 @@
       "donem": "Çengel & Cimbala · Temelleri ve Uygulamaları",
       "aciklama": "Akışkan statiği, Bernoulli, momentum, boru akışı, dış akışlar, sıkıştırılabilir akış, açık kanal, turbomakineler ve HAD.",
       "renk": "#0e7490"
+    },
+    {
+      "id": "makine-elemanlari",
+      "grup": "Mühendislik dersleri",
+      "ad": "Makine Elemanları",
+      "kod": "MAKEL I",
+      "donem": "Doç. Dr. Erol Kılıçkap ders notları",
+      "aciklama": "Mukavemet ve yorulma, tolerans, aks-mil, kamalar, pim-perno, sıkı geçme, cıvata, perçin, kaynak ve yapıştırma.",
+      "renk": "#4d7c0f"
+    },
+    {
+      "id": "malzeme",
+      "grup": "Mühendislik dersleri",
+      "ad": "Malzeme",
+      "kod": "Malzeme II",
+      "donem": "Malzeme muayene yöntemleri",
+      "aciklama": "Çekme, basma, sertlik, sürünme, yorulma, burulma ve çentik darbe deneyleri; penetrant, manyetik, girdap akımı, ultrasonik ve radyografik muayene.",
+      "renk": "#7c3aed"
+    },
+    {
+      "id": "isitma-havalandirma",
+      "grup": "Mühendislik dersleri",
+      "ad": "Isıtma Havalandırma",
+      "kod": "Isıtma",
+      "donem": "Dr. Atilla Devecioğlu ders notu",
+      "aciklama": "Isıl konfor, ısıtma sistemleri, kazan ve kazan dairesi, ısıtıcılar, TS 825 yalıtım hesabı ve ısı kaybı cetveli.",
+      "renk": "#be185d"
     }
   ]
 }
