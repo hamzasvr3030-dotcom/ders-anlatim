@@ -1,0 +1,73 @@
+{
+  "konular": [
+    {
+      "id": "01-giris-temel-kavramlar",
+      "baslik": "Giriş ve temel kavramlar",
+      "ozet": "Mekanizma, makine, uzuv, kinematik çift ve sınıflandırmalar",
+      "dosya": "konular/01-giris-temel-kavramlar.md",
+      "pdf": "pdf/01-giris-serbestlik-derecesi.pdf",
+      "pdfBaslik": "Mekanizma 1 slaytları (s. 1–30)"
+    },
+    {
+      "id": "02-kinematik-zincir",
+      "baslik": "Kinematik diyagram, zincir ve yer değişimi",
+      "ozet": "Kinematik diyagram, 4 ve 6 uzuvlu zincirler, Watt ve Stephenson, inversiyon",
+      "dosya": "konular/02-kinematik-zincir.md",
+      "pdf": "pdf/01-giris-serbestlik-derecesi.pdf",
+      "pdfBaslik": "Mekanizma 1 slaytları (s. 43–63)"
+    },
+    {
+      "id": "03-serbestlik-derecesi",
+      "baslik": "Serbestlik derecesi",
+      "ozet": "Eleman çiftlerinin s.d., Grübler–Kutzbach denklemi, çözümlü örnekler ve özel durumlar",
+      "dosya": "konular/03-serbestlik-derecesi.md",
+      "pdf": "pdf/01-giris-serbestlik-derecesi.pdf",
+      "pdfBaslik": "Mekanizma 1 slaytları (s. 30–89)"
+    },
+    {
+      "id": "04-konum-analizi",
+      "baslik": "Konum analizi",
+      "ozet": "Vektörel çevrim denklemleri, krank-biyel, Freudenstein, Raven yöntemi, kol-kızak",
+      "dosya": "konular/04-konum-analizi.md",
+      "pdf": "pdf/02-konum-analizi.pdf",
+      "pdfBaslik": "Mekanizma 2 slaytları"
+    },
+    {
+      "id": "05-hiz-ivme-temelleri",
+      "baslik": "Rijit cismin hız ve ivmesi",
+      "ozet": "Öteleme, sabit eksen etrafında dönme, genel düzlemsel hareket ve Coriolis ivmesi",
+      "dosya": "konular/05-hiz-ivme-temelleri.md",
+      "pdf": "pdf/03-hiz-ivme-temelleri.pdf",
+      "pdfBaslik": "Mekanizma 3 slaytları"
+    },
+    {
+      "id": "06-hiz-ivme-analizi",
+      "baslik": "Mekanizmalarda hız ve ivme analizi",
+      "ozet": "Krank-biyel, dört çubuk ve kol-kızak için analitik formüller, hız ve ivme poligonları",
+      "dosya": "konular/06-hiz-ivme-analizi.md",
+      "pdf": "pdf/04-hiz-ivme-analizi.pdf",
+      "pdfBaslik": "Mekanizma 4 slaytları"
+    },
+    {
+      "id": "07-disliler",
+      "baslik": "Dişli çarklar ve dişli zincirleri",
+      "ozet": "Hız oranı, modül, basit ve birleşik dişli zincirleri, vites kutuları, planet dişliler",
+      "dosya": "konular/07-disliler.md",
+      "pdf": "pdf/05-disliler.pdf",
+      "pdfBaslik": "Mekanizma 5 – Dişliler slaytları"
+    },
+    {
+      "id": "08-formul-ozeti",
+      "baslik": "Formül özeti (sınav kâğıdı)",
+      "ozet": "Bütün dersin formülleri tek sayfada",
+      "dosya": "konular/08-formul-ozeti.md"
+    }
+  ],
+  "pdfler": [
+    { "baslik": "1 – Giriş, mekanizma sistematiği, serbestlik derecesi", "dosya": "pdf/01-giris-serbestlik-derecesi.pdf" },
+    { "baslik": "2 – Mekanizmaların kinematiği: konum analizi", "dosya": "pdf/02-konum-analizi.pdf" },
+    { "baslik": "3 – Hız ve ivme analizi: temel kavramlar", "dosya": "pdf/03-hiz-ivme-temelleri.pdf" },
+    { "baslik": "4 – Mekanizmalarda hız ve ivme analizi", "dosya": "pdf/04-hiz-ivme-analizi.pdf" },
+    { "baslik": "5 – Dişliler", "dosya": "pdf/05-disliler.pdf" }
+  ]
+}
