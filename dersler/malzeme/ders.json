@@ -7,7 +7,8 @@
       "dosya": "konular/01-giris.md",
       "pdf": "pdf/hafta-01.pdf",
       "pdfBaslik": "1. hafta sunumu",
-      "bolum": "Giriş"
+      "bolum": "Giriş",
+      "ozetPdf": "ozet/01-giris.pdf"
     },
     {
       "id": "02-cekme-testi",
@@ -16,7 +17,8 @@
       "dosya": "konular/02-cekme-testi.md",
       "pdf": "pdf/hafta-02.pdf",
       "pdfBaslik": "2. hafta sunumu",
-      "bolum": "Tahribatlı muayene"
+      "bolum": "Tahribatlı muayene",
+      "ozetPdf": "ozet/02-cekme-testi.pdf"
     },
     {
       "id": "03-basma-sertlik",
@@ -25,7 +27,8 @@
       "dosya": "konular/03-basma-sertlik.md",
       "pdf": "pdf/hafta-03.pdf",
       "pdfBaslik": "3. hafta sunumu",
-      "bolum": "Tahribatlı muayene"
+      "bolum": "Tahribatlı muayene",
+      "ozetPdf": "ozet/03-basma-sertlik.pdf"
     },
     {
       "id": "04-surunme-yorulma",
@@ -34,7 +37,8 @@
       "dosya": "konular/04-surunme-yorulma.md",
       "pdf": "pdf/hafta-05.pdf",
       "pdfBaslik": "5. hafta sunumu",
-      "bolum": "Tahribatlı muayene"
+      "bolum": "Tahribatlı muayene",
+      "ozetPdf": "ozet/04-surunme-yorulma.pdf"
     },
     {
       "id": "05-burulma-egme-kesme",
@@ -43,7 +47,8 @@
       "dosya": "konular/05-burulma-egme-kesme.md",
       "pdf": "pdf/hafta-07.pdf",
       "pdfBaslik": "7. hafta sunumu",
-      "bolum": "Tahribatlı muayene"
+      "bolum": "Tahribatlı muayene",
+      "ozetPdf": "ozet/05-burulma-egme-kesme.pdf"
     },
     {
       "id": "06-centik-darbe",
@@ -52,7 +57,8 @@
       "dosya": "konular/06-centik-darbe.md",
       "pdf": "pdf/hafta-10.pdf",
       "pdfBaslik": "10. hafta sunumu",
-      "bolum": "Tahribatlı muayene"
+      "bolum": "Tahribatlı muayene",
+      "ozetPdf": "ozet/06-centik-darbe.pdf"
     },
     {
       "id": "07-penetrant-manyetik",
@@ -61,7 +67,8 @@
       "dosya": "konular/07-penetrant-manyetik.md",
       "pdf": "pdf/hafta-13-14.pdf",
       "pdfBaslik": "13-14. hafta sunumu",
-      "bolum": "Tahribatsız muayene"
+      "bolum": "Tahribatsız muayene",
+      "ozetPdf": "ozet/07-penetrant-manyetik.pdf"
     },
     {
       "id": "08-girdap-ultrasonik-radyografi",
@@ -70,10 +77,16 @@
       "dosya": "konular/08-girdap-ultrasonik-radyografi.md",
       "pdf": "pdf/hafta-15.pdf",
       "pdfBaslik": "15. hafta sunumu",
-      "bolum": "Tahribatsız muayene"
+      "bolum": "Tahribatsız muayene",
+      "ozetPdf": "ozet/08-girdap-ultrasonik-radyografi.pdf"
     }
   ],
   "pdfler": [
+    {
+      "baslik": "Malzeme – Ders özeti (bütün konular)",
+      "dosya": "ozet/malzeme-ders-ozeti.pdf",
+      "boyut": "335 KB"
+    },
     {
       "baslik": "1. hafta – Giriş ve muayene yöntemleri",
       "dosya": "pdf/hafta-01.pdf"
@@ -107,5 +120,6 @@
       "dosya": "pdf/hafta-15.pdf"
     }
   ],
-  "sorular": "sorular.json"
+  "sorular": "sorular.json",
+  "ozetPdf": "ozet/malzeme-ders-ozeti.pdf"
 }

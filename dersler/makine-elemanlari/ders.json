@@ -7,7 +7,8 @@
       "dosya": "konular/01-giris.md",
       "pdf": "pdf/01-giris.pdf",
       "pdfBaslik": "MAKEL-I-1 Giriş",
-      "bolum": "Temeller"
+      "bolum": "Temeller",
+      "ozetPdf": "ozet/01-giris.pdf"
     },
     {
       "id": "02-mukavemet",
@@ -16,7 +17,8 @@
       "dosya": "konular/02-mukavemet.md",
       "pdf": "pdf/02-mukavemet.pdf",
       "pdfBaslik": "MAKEL-I-2 Mukavemet",
-      "bolum": "Temeller"
+      "bolum": "Temeller",
+      "ozetPdf": "ozet/02-mukavemet.pdf"
     },
     {
       "id": "03-yorulma",
@@ -25,7 +27,8 @@
       "dosya": "konular/03-yorulma.md",
       "pdf": "pdf/03-yorulma.pdf",
       "pdfBaslik": "MAKEL-I-3 Yorulma",
-      "bolum": "Temeller"
+      "bolum": "Temeller",
+      "ozetPdf": "ozet/03-yorulma.pdf"
     },
     {
       "id": "04-malzeme",
@@ -34,7 +37,8 @@
       "dosya": "konular/04-malzeme.md",
       "pdf": "pdf/04-malzeme.pdf",
       "pdfBaslik": "MAKEL-I-4 Malzeme",
-      "bolum": "Temeller"
+      "bolum": "Temeller",
+      "ozetPdf": "ozet/04-malzeme.pdf"
     },
     {
       "id": "05-standart-tolerans",
@@ -43,7 +47,8 @@
       "dosya": "konular/05-standart-tolerans.md",
       "pdf": "pdf/05-standart-tolerans.pdf",
       "pdfBaslik": "MAKEL-I-5 Standart ve toleranslar",
-      "bolum": "Temeller"
+      "bolum": "Temeller",
+      "ozetPdf": "ozet/05-standart-tolerans.pdf"
     },
     {
       "id": "06-akslar-miller",
@@ -52,7 +57,8 @@
       "dosya": "konular/06-akslar-miller.md",
       "pdf": "pdf/06-akslar-miller.pdf",
       "pdfBaslik": "MAKEL-I-6 Akslar-Miller",
-      "bolum": "Taşıma ve çözülebilen bağlantılar"
+      "bolum": "Taşıma ve çözülebilen bağlantılar",
+      "ozetPdf": "ozet/06-akslar-miller.pdf"
     },
     {
       "id": "07-kamalar",
@@ -61,7 +67,8 @@
       "dosya": "konular/07-kamalar.md",
       "pdf": "pdf/07-kamalar.pdf",
       "pdfBaslik": "MAKEL-I-7 Kamalar",
-      "bolum": "Taşıma ve çözülebilen bağlantılar"
+      "bolum": "Taşıma ve çözülebilen bağlantılar",
+      "ozetPdf": "ozet/07-kamalar.pdf"
     },
     {
       "id": "08-pim-perno-siki-gecme",
@@ -70,7 +77,8 @@
       "dosya": "konular/08-pim-perno-siki-gecme.md",
       "pdf": "pdf/08b-siki-gecmeler.pdf",
       "pdfBaslik": "MAKEL-I-8 Sıkı geçmeler",
-      "bolum": "Taşıma ve çözülebilen bağlantılar"
+      "bolum": "Taşıma ve çözülebilen bağlantılar",
+      "ozetPdf": "ozet/08-pim-perno-siki-gecme.pdf"
     },
     {
       "id": "09-civata-somun",
@@ -79,7 +87,8 @@
       "dosya": "konular/09-civata-somun.md",
       "pdf": "pdf/09-civata-somun.pdf",
       "pdfBaslik": "MAKEL-I-9 Cıvata-somun",
-      "bolum": "Taşıma ve çözülebilen bağlantılar"
+      "bolum": "Taşıma ve çözülebilen bağlantılar",
+      "ozetPdf": "ozet/09-civata-somun.pdf"
     },
     {
       "id": "10-percin",
@@ -88,7 +97,8 @@
       "dosya": "konular/10-percin.md",
       "pdf": "pdf/10-percin.pdf",
       "pdfBaslik": "MAKEL-I-10 Perçin",
-      "bolum": "Çözülemeyen bağlantılar"
+      "bolum": "Çözülemeyen bağlantılar",
+      "ozetPdf": "ozet/10-percin.pdf"
     },
     {
       "id": "11-kaynak-lehim",
@@ -97,7 +107,8 @@
       "dosya": "konular/11-kaynak-lehim.md",
       "pdf": "pdf/11-kaynak-lehim.pdf",
       "pdfBaslik": "MAKEL-I-11 Kaynak-Lehim",
-      "bolum": "Çözülemeyen bağlantılar"
+      "bolum": "Çözülemeyen bağlantılar",
+      "ozetPdf": "ozet/11-kaynak-lehim.pdf"
     },
     {
       "id": "12-yapistirma",
@@ -106,17 +117,24 @@
       "dosya": "konular/12-yapistirma.md",
       "pdf": "pdf/12-yapistirma.pdf",
       "pdfBaslik": "MAKEL-I-12 Yapıştırma",
-      "bolum": "Çözülemeyen bağlantılar"
+      "bolum": "Çözülemeyen bağlantılar",
+      "ozetPdf": "ozet/12-yapistirma.pdf"
     },
     {
       "id": "13-formul-ozeti",
       "baslik": "Formül özeti (sınav kâğıdı)",
       "ozet": "Bütün bölümlerin formülleri",
       "dosya": "konular/13-formul-ozeti.md",
-      "bolum": "Özet"
+      "bolum": "Özet",
+      "ozetPdf": "ozet/13-formul-ozeti.pdf"
     }
   ],
   "pdfler": [
+    {
+      "baslik": "Makine Elemanları – Ders özeti (bütün konular)",
+      "dosya": "ozet/makine-elemanlari-ders-ozeti.pdf",
+      "boyut": "477 KB"
+    },
     {
       "baslik": "Bölüm 1–10 konu anlatımı ve çözümlü örnekler (özet deste)",
       "dosya": "pdf/00-bolum-1-10-konu-anlatimi.pdf",
@@ -183,5 +201,6 @@
       "dosya": "pdf/sorular-ve-cozumleri.pdf"
     }
   ],
-  "sorular": "sorular.json"
+  "sorular": "sorular.json",
+  "ozetPdf": "ozet/makine-elemanlari-ders-ozeti.pdf"
 }

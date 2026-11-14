@@ -29,101 +29,121 @@
       "bolum": "Başlarken",
       "baslik": "Bu ders nasıl çalışılır?",
       "ozet": "Seviyeler, çalışma düzeni, telaffuz",
-      "dosya": "konular/00-nasil-calisilir.md"
+      "dosya": "konular/00-nasil-calisilir.md",
+      "ozetPdf": "ozet/00-nasil-calisilir.pdf"
     },
     {
       "id": "a1-01-to-be-zamirler",
       "bolum": "A1 – Başlangıç",
       "baslik": "\"to be\" fiili, zamirler ve iyelik",
       "ozet": "am/is/are, soru kelimeleri, my/your, this/that",
-      "dosya": "konular/a1-01-to-be-zamirler.md"
+      "dosya": "konular/a1-01-to-be-zamirler.md",
+      "ozetPdf": "ozet/a1-01-to-be-zamirler.pdf"
     },
     {
       "id": "a1-02-present-simple",
       "bolum": "A1 – Başlangıç",
       "baslik": "Geniş zaman (Present Simple)",
       "ozet": "do/does, -s eki, sıklık zarfları, have got, can",
-      "dosya": "konular/a1-02-present-simple.md"
+      "dosya": "konular/a1-02-present-simple.md",
+      "ozetPdf": "ozet/a1-02-present-simple.pdf"
     },
     {
       "id": "a1-03-isimler-there-is-continuous",
       "bolum": "A1 – Başlangıç",
       "baslik": "İsimler, there is ve şimdiki zaman",
       "ozet": "a/an/the, çoğul, some/any, edatlar, Present Continuous",
-      "dosya": "konular/a1-03-isimler-there-is-continuous.md"
+      "dosya": "konular/a1-03-isimler-there-is-continuous.md",
+      "ozetPdf": "ozet/a1-03-isimler-there-is-continuous.pdf"
     },
     {
       "id": "a1-04-emir-like-was-were",
       "bolum": "A1 – Başlangıç",
       "baslik": "Emir kipi, I'd like, like + -ing, was/were",
       "ozet": "Imperatives, object pronouns, can/could, A1 kontrol listesi",
-      "dosya": "konular/a1-04-emir-like-was-were.md"
+      "dosya": "konular/a1-04-emir-like-was-were.md",
+      "ozetPdf": "ozet/a1-04-emir-like-was-were.pdf"
     },
     {
       "id": "a2-01-past-simple",
       "bolum": "A2 – Temel",
       "baslik": "Geçmiş zaman (Past Simple)",
       "ozet": "was/were, -ed, düzensiz fiiller, did, Past Continuous, used to",
-      "dosya": "konular/a2-01-past-simple.md"
+      "dosya": "konular/a2-01-past-simple.md",
+      "ozetPdf": "ozet/a2-01-past-simple.pdf"
     },
     {
       "id": "a2-02-gelecek-karsilastirma",
       "bolum": "A2 – Temel",
       "baslik": "Gelecek zaman ve karşılaştırma",
       "ozet": "will / going to, -er/-est, much/many, zarflar",
-      "dosya": "konular/a2-02-gelecek-karsilastirma.md"
+      "dosya": "konular/a2-02-gelecek-karsilastirma.md",
+      "ozetPdf": "ozet/a2-02-gelecek-karsilastirma.pdf"
     },
     {
       "id": "a2-03-present-perfect-modallar",
       "bolum": "A2 – Temel",
       "baslik": "Present Perfect ve modal fiiller",
       "ozet": "ever/never, just/already/yet, for/since, must/have to/should",
-      "dosya": "konular/a2-03-present-perfect-modallar.md"
+      "dosya": "konular/a2-03-present-perfect-modallar.md",
+      "ozetPdf": "ozet/a2-03-present-perfect-modallar.pdf"
     },
     {
       "id": "b1-01-zamanlar",
       "bolum": "B1 – Orta",
       "baslik": "Zamanların karşılaştırması ve Past Perfect",
       "ozet": "Perfect Continuous, Past Perfect, anlatı zamanları",
-      "dosya": "konular/b1-01-zamanlar.md"
+      "dosya": "konular/b1-01-zamanlar.md",
+      "ozetPdf": "ozet/b1-01-zamanlar.pdf"
     },
     {
       "id": "b1-02-sart-edilgen",
       "bolum": "B1 – Orta",
       "baslik": "Şart cümleleri (0, 1, 2) ve edilgen yapı",
       "ozet": "If cümleleri, unless, passive voice",
-      "dosya": "konular/b1-02-sart-edilgen.md"
+      "dosya": "konular/b1-02-sart-edilgen.md",
+      "ozetPdf": "ozet/b1-02-sart-edilgen.pdf"
     },
     {
       "id": "b1-03-relative-gerund",
       "bolum": "B1 – Orta",
       "baslik": "Sıfat cümlecikleri, -ing ve to + fiil",
       "ozet": "who/which/whose, gerund/infinitive, -ed/-ing sıfatları",
-      "dosya": "konular/b1-03-relative-gerund.md"
+      "dosya": "konular/b1-03-relative-gerund.md",
+      "ozetPdf": "ozet/b1-03-relative-gerund.pdf"
     },
     {
       "id": "b2-01-sart-wish",
       "bolum": "B2 – Orta üstü",
       "baslik": "Üçüncü ve karma şart cümleleri, wish",
       "ozet": "Third/mixed conditionals, wish, if only, would rather",
-      "dosya": "konular/b2-01-sart-wish.md"
+      "dosya": "konular/b2-01-sart-wish.md",
+      "ozetPdf": "ozet/b2-01-sart-wish.pdf"
     },
     {
       "id": "b2-02-dolayli-anlatim",
       "bolum": "B2 – Orta üstü",
       "baslik": "Dolaylı anlatım ve ileri edilgen yapılar",
       "ozet": "Reported speech, say/tell, have something done",
-      "dosya": "konular/b2-02-dolayli-anlatim.md"
+      "dosya": "konular/b2-02-dolayli-anlatim.md",
+      "ozetPdf": "ozet/b2-02-dolayli-anlatim.pdf"
     },
     {
       "id": "b2-03-modallar-baglaclar",
       "bolum": "B2 – Orta üstü",
       "baslik": "Çıkarım modalları, bağlaçlar, phrasal verbs",
       "ozet": "must have / can't have, Future Perfect, linking words",
-      "dosya": "konular/b2-03-modallar-baglaclar.md"
+      "dosya": "konular/b2-03-modallar-baglaclar.md",
+      "ozetPdf": "ozet/b2-03-modallar-baglaclar.pdf"
     }
   ],
-  "pdfler": [],
+  "pdfler": [
+    {
+      "baslik": "İngilizce – Ders özeti (bütün konular)",
+      "dosya": "ozet/ingilizce-ders-ozeti.pdf",
+      "boyut": "872 KB"
+    }
+  ],
   "seviyeler": [
     {
       "kod": "A1",
@@ -153,5 +173,6 @@
       "aciklama": "Akıcı konuşur, karmaşık metinleri anlar, görüşünü gerekçeleriyle savunursun.",
       "kaynak": "Core Inventory – B2"
     }
-  ]
+  ],
+  "ozetPdf": "ozet/ingilizce-ders-ozeti.pdf"
 }

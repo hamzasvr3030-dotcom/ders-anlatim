@@ -6,7 +6,8 @@
       "ozet": "Mekanizma, makine, uzuv, kinematik çift ve sınıflandırmalar",
       "dosya": "konular/01-giris-temel-kavramlar.md",
       "pdf": "pdf/01-giris-serbestlik-derecesi.pdf",
-      "pdfBaslik": "Mekanizma 1 slaytları (s. 1–30)"
+      "pdfBaslik": "Mekanizma 1 slaytları (s. 1–30)",
+      "ozetPdf": "ozet/01-giris-temel-kavramlar.pdf"
     },
     {
       "id": "02-kinematik-zincir",
@@ -14,7 +15,8 @@
       "ozet": "Kinematik diyagram, 4 ve 6 uzuvlu zincirler, Watt ve Stephenson, inversiyon",
       "dosya": "konular/02-kinematik-zincir.md",
       "pdf": "pdf/01-giris-serbestlik-derecesi.pdf",
-      "pdfBaslik": "Mekanizma 1 slaytları (s. 43–63)"
+      "pdfBaslik": "Mekanizma 1 slaytları (s. 43–63)",
+      "ozetPdf": "ozet/02-kinematik-zincir.pdf"
     },
     {
       "id": "03-serbestlik-derecesi",
@@ -22,7 +24,8 @@
       "ozet": "Eleman çiftlerinin s.d., Grübler–Kutzbach denklemi, çözümlü örnekler ve özel durumlar",
       "dosya": "konular/03-serbestlik-derecesi.md",
       "pdf": "pdf/01-giris-serbestlik-derecesi.pdf",
-      "pdfBaslik": "Mekanizma 1 slaytları (s. 30–89)"
+      "pdfBaslik": "Mekanizma 1 slaytları (s. 30–89)",
+      "ozetPdf": "ozet/03-serbestlik-derecesi.pdf"
     },
     {
       "id": "04-konum-analizi",
@@ -30,7 +33,8 @@
       "ozet": "Vektörel çevrim denklemleri, krank-biyel, Freudenstein, Raven yöntemi, kol-kızak",
       "dosya": "konular/04-konum-analizi.md",
       "pdf": "pdf/02-konum-analizi.pdf",
-      "pdfBaslik": "Mekanizma 2 slaytları"
+      "pdfBaslik": "Mekanizma 2 slaytları",
+      "ozetPdf": "ozet/04-konum-analizi.pdf"
     },
     {
       "id": "05-hiz-ivme-temelleri",
@@ -38,7 +42,8 @@
       "ozet": "Öteleme, sabit eksen etrafında dönme, genel düzlemsel hareket ve Coriolis ivmesi",
       "dosya": "konular/05-hiz-ivme-temelleri.md",
       "pdf": "pdf/03-hiz-ivme-temelleri.pdf",
-      "pdfBaslik": "Mekanizma 3 slaytları"
+      "pdfBaslik": "Mekanizma 3 slaytları",
+      "ozetPdf": "ozet/05-hiz-ivme-temelleri.pdf"
     },
     {
       "id": "06-hiz-ivme-analizi",
@@ -46,7 +51,8 @@
       "ozet": "Krank-biyel, dört çubuk ve kol-kızak için analitik formüller, hız ve ivme poligonları",
       "dosya": "konular/06-hiz-ivme-analizi.md",
       "pdf": "pdf/04-hiz-ivme-analizi.pdf",
-      "pdfBaslik": "Mekanizma 4 slaytları"
+      "pdfBaslik": "Mekanizma 4 slaytları",
+      "ozetPdf": "ozet/06-hiz-ivme-analizi.pdf"
     },
     {
       "id": "07-disliler",
@@ -54,16 +60,23 @@
       "ozet": "Hız oranı, modül, basit ve birleşik dişli zincirleri, vites kutuları, planet dişliler",
       "dosya": "konular/07-disliler.md",
       "pdf": "pdf/05-disliler.pdf",
-      "pdfBaslik": "Mekanizma 5 – Dişliler slaytları"
+      "pdfBaslik": "Mekanizma 5 – Dişliler slaytları",
+      "ozetPdf": "ozet/07-disliler.pdf"
     },
     {
       "id": "08-formul-ozeti",
       "baslik": "Formül özeti (sınav kâğıdı)",
       "ozet": "Bütün dersin formülleri tek sayfada",
-      "dosya": "konular/08-formul-ozeti.md"
+      "dosya": "konular/08-formul-ozeti.md",
+      "ozetPdf": "ozet/08-formul-ozeti.pdf"
     }
   ],
   "pdfler": [
+    {
+      "baslik": "Mekanizma Tekniği – Ders özeti (bütün konular)",
+      "dosya": "ozet/mekanizma-teknigi-ders-ozeti.pdf",
+      "boyut": "448 KB"
+    },
     {
       "baslik": "1 – Giriş, mekanizma sistematiği, serbestlik derecesi",
       "dosya": "pdf/01-giris-serbestlik-derecesi.pdf"
@@ -85,5 +98,6 @@
       "dosya": "pdf/05-disliler.pdf"
     }
   ],
-  "sorular": "sorular.json"
+  "sorular": "sorular.json",
+  "ozetPdf": "ozet/mekanizma-teknigi-ders-ozeti.pdf"
 }

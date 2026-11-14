@@ -6,7 +6,8 @@
       "ozet": "Konfor faktörleri, vücuttan ısı transferi, konfor şartları",
       "dosya": "konular/01-isil-konfor.md",
       "pdf": "pdf/isitma-havalandirma-ders-notu.pdf",
-      "pdfBaslik": "Isıtma Havalandırma ders notu"
+      "pdfBaslik": "Isıtma Havalandırma ders notu",
+      "ozetPdf": "ozet/01-isil-konfor.pdf"
     },
     {
       "id": "02-isitma-sistemleri",
@@ -14,7 +15,8 @@
       "ozet": "Dağıtım biçimleri, tek-çift borulu, açık-kapalı genleşme, sıcaklık rejimleri",
       "dosya": "konular/02-isitma-sistemleri.md",
       "pdf": "pdf/isitma-havalandirma-ders-notu.pdf",
-      "pdfBaslik": "Isıtma Havalandırma ders notu"
+      "pdfBaslik": "Isıtma Havalandırma ders notu",
+      "ozetPdf": "ozet/02-isitma-sistemleri.pdf"
     },
     {
       "id": "03-kazan-kazan-dairesi",
@@ -22,7 +24,8 @@
       "ozet": "Kazan verimi, BEP şartları, kazan kapasitesi, yırtılma yüzeyi, yerleşim kuralları",
       "dosya": "konular/03-kazan-kazan-dairesi.md",
       "pdf": "pdf/isitma-havalandirma-ders-notu.pdf",
-      "pdfBaslik": "Isıtma Havalandırma ders notu"
+      "pdfBaslik": "Isıtma Havalandırma ders notu",
+      "ozetPdf": "ozet/03-kazan-kazan-dairesi.pdf"
     },
     {
       "id": "04-genlesme-yakit-baca",
@@ -30,7 +33,8 @@
       "ozet": "Tesisat su hacmi, genleşme, yakıt deposu, baca çekişi",
       "dosya": "konular/04-genlesme-yakit-baca.md",
       "pdf": "pdf/isitma-havalandirma-ders-notu.pdf",
-      "pdfBaslik": "Isıtma Havalandırma ders notu"
+      "pdfBaslik": "Isıtma Havalandırma ders notu",
+      "ozetPdf": "ozet/04-genlesme-yakit-baca.pdf"
     },
     {
       "id": "05-isiticilar-boyler",
@@ -38,7 +42,8 @@
       "ozet": "Radyatör, konvektör, fan-coil, yerden ısıtma, sıcak kullanım suyu",
       "dosya": "konular/05-isiticilar-boyler.md",
       "pdf": "pdf/isitma-havalandirma-ders-notu.pdf",
-      "pdfBaslik": "Isıtma Havalandırma ders notu"
+      "pdfBaslik": "Isıtma Havalandırma ders notu",
+      "ozetPdf": "ozet/05-isiticilar-boyler.pdf"
     },
     {
       "id": "06-ts825-isi-yalitimi",
@@ -46,7 +51,8 @@
       "ozet": "U değeri, H = HT + HV, kazançlar, enerji kimlik belgesi",
       "dosya": "konular/06-ts825-isi-yalitimi.md",
       "pdf": "pdf/isitma-havalandirma-ders-notu.pdf",
-      "pdfBaslik": "Isıtma Havalandırma ders notu"
+      "pdfBaslik": "Isıtma Havalandırma ders notu",
+      "ozetPdf": "ozet/06-ts825-isi-yalitimi.pdf"
     },
     {
       "id": "07-isi-kaybi-hesabi",
@@ -54,16 +60,23 @@
       "ozet": "Isı kaybı cetveli, artırımlar, sızıntı kaybı, proje akışı",
       "dosya": "konular/07-isi-kaybi-hesabi.md",
       "pdf": "pdf/kemaliye-kolon-semasi.pdf",
-      "pdfBaslik": "Kemaliye kolon şeması (proje örneği)"
+      "pdfBaslik": "Kemaliye kolon şeması (proje örneği)",
+      "ozetPdf": "ozet/07-isi-kaybi-hesabi.pdf"
     },
     {
       "id": "08-formul-ozeti",
       "baslik": "Formül özeti (sınav kâğıdı)",
       "ozet": "Bütün formüller ve sınır değerler",
-      "dosya": "konular/08-formul-ozeti.md"
+      "dosya": "konular/08-formul-ozeti.md",
+      "ozetPdf": "ozet/08-formul-ozeti.pdf"
     }
   ],
   "pdfler": [
+    {
+      "baslik": "Isıtma Havalandırma – Ders özeti (bütün konular)",
+      "dosya": "ozet/isitma-havalandirma-ders-ozeti.pdf",
+      "boyut": "363 KB"
+    },
     {
       "baslik": "Isıtma Havalandırma ders notu (Dr. Atilla Devecioğlu)",
       "dosya": "pdf/isitma-havalandirma-ders-notu.pdf",
@@ -74,5 +87,6 @@
       "dosya": "pdf/kemaliye-kolon-semasi.pdf"
     }
   ],
-  "sorular": "sorular.json"
+  "sorular": "sorular.json",
+  "ozetPdf": "ozet/isitma-havalandirma-ders-ozeti.pdf"
 }

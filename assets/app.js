@@ -500,6 +500,7 @@ async function dersSayfasi(id) {
     ${dersBasligi(d, 'konular')}
     ${istatistikSeridi(d, kartlar.length)}
     <p class="ders-aciklama">${kacis(d.aciklama)} <span class="soluk">· ${kacis(d.donem || '')}</span></p>
+    ${d.ozetPdf ? `<p class="ozet-indir"><a class="dugme ikincil" href="${dersYolu(d.id) + kacis(d.ozetPdf)}" target="_blank" rel="noopener" download>📝 Ders özeti (PDF, ${d.konular.length} konu)</a> <span class="soluk">Her konunun ayrı özeti, konu sayfasının üstünde.</span></p>` : ''}
     ${d.konular.length ? ciz(d, okundu) : '<p class="bos">Bu derse henüz konu eklenmedi.</p>'}`;
 }
 
@@ -514,6 +515,7 @@ async function dilDersSayfasi(d) {
     ${dersBasligi(d, 'konular')}
     ${istatistikSeridi(d, kelimeler.length + kartlar.length)}
     ${baslangic ? `<a class="baslarken" href="${konuLink(d.id, baslangic.id)}">${ikon('kitap', 'mini-ikon')}<span><strong>${kacis(baslangic.baslik)}</strong><small>${kacis(baslangic.ozet || '')}</small></span><b>→</b></a>` : ''}
+    ${d.ozetPdf ? `<p class="ozet-indir"><a class="dugme ikincil" href="${dersYolu(d.id) + kacis(d.ozetPdf)}" target="_blank" rel="noopener" download>📝 Dilbilgisi özeti (PDF)</a></p>` : ''}
     <h2 class="grup-baslik">Seviyeler</h2>
     <ol class="merdiven">
       ${(d.seviyeler || []).map((s, i) => {
@@ -790,6 +792,7 @@ async function konuSayfasi(id, konuId) {
       <article class="icerik">
         <div class="konu-serit"><span>${ikon(d.ikon, 'mini-ikon')} ${kacis(d.ad)}</span><span>Konu ${sira + 1} / ${d.konular.length}</span></div>
         <div class="konu-araclar">
+          ${k.ozetPdf ? `<a href="${dersYolu(id) + kacis(k.ozetPdf)}" target="_blank" rel="noopener" download>📝 Konu özeti (PDF)</a>` : ''}
           ${k.pdf ? `<a href="${dersYolu(id) + kacis(k.pdf)}" target="_blank" rel="noopener">📄 ${kacis(k.pdfBaslik || 'Kaynak PDF')}</a>` : ''}
           ${kartN ? `<a href="#/kart/${kod(id)}?konu=${kod(k.id)}">🗂️ Bu konunun ${kartN} kartı</a>` : ''}
           ${konuSorulari.length ? `<button type="button" class="baglanti" id="sorulara-git">✎ ${konuSorulari.length} çözümlü soru</button>` : ''}

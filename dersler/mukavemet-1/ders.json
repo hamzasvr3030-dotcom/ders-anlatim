@@ -6,7 +6,8 @@
       "ozet": "Cisim türleri, temel ilkeler, birimler",
       "dosya": "konular/01-giris.md",
       "pdf": "pdf/01-giris.pdf",
-      "pdfBaslik": "Bölüm 1 slaytları"
+      "pdfBaslik": "Bölüm 1 slaytları",
+      "ozetPdf": "ozet/01-giris.pdf"
     },
     {
       "id": "02-ic-kuvvetler",
@@ -14,13 +15,15 @@
       "ozet": "Mesnetler, işaret kuralı, çözümlü kiriş örnekleri",
       "dosya": "konular/02-ic-kuvvetler.md",
       "pdf": "pdf/02-ic-kuvvetler-kesim-yontemi.pdf",
-      "pdfBaslik": "Bölüm 2.1 slaytları"
+      "pdfBaslik": "Bölüm 2.1 slaytları",
+      "ozetPdf": "ozet/02-ic-kuvvetler.pdf"
     },
     {
       "id": "03-yuk-kesme-moment",
       "baslik": "Yük–kesme–moment bağıntıları (integrasyon)",
       "ozet": "dT/dz = −q, dM/dz = T, alan yöntemi",
-      "dosya": "konular/03-yuk-kesme-moment.md"
+      "dosya": "konular/03-yuk-kesme-moment.md",
+      "ozetPdf": "ozet/03-yuk-kesme-moment.pdf"
     },
     {
       "id": "04-eksenel-kuvvet",
@@ -28,7 +31,8 @@
       "ozet": "σ = N/A, Hooke kanunu, kademeli çubuklar, rijit kollar",
       "dosya": "konular/04-eksenel-kuvvet.md",
       "pdf": "pdf/03-eksenel-normal-kuvvet-1.pdf",
-      "pdfBaslik": "Eksenel normal kuvvet – 1"
+      "pdfBaslik": "Eksenel normal kuvvet – 1",
+      "ozetPdf": "ozet/04-eksenel-kuvvet.pdf"
     },
     {
       "id": "05-cekme-deneyi-emniyet",
@@ -36,7 +40,8 @@
       "ozet": "σ–ε diyagramı, E, ν, G, emniyet gerilmesi, boyutlandırma",
       "dosya": "konular/05-cekme-deneyi-emniyet.md",
       "pdf": "pdf/03-eksenel-normal-kuvvet-1.pdf",
-      "pdfBaslik": "Eksenel normal kuvvet – 1"
+      "pdfBaslik": "Eksenel normal kuvvet – 1",
+      "ozetPdf": "ozet/05-cekme-deneyi-emniyet.pdf"
     },
     {
       "id": "06-termal-hiperstatik",
@@ -44,7 +49,8 @@
       "ozet": "Isıl uzama, uygunluk şartı, süperpozisyon yolu",
       "dosya": "konular/06-termal-hiperstatik.md",
       "pdf": "pdf/04-eksenel-normal-kuvvet-2.pdf",
-      "pdfBaslik": "Eksenel normal kuvvet – 2"
+      "pdfBaslik": "Eksenel normal kuvvet – 2",
+      "ozetPdf": "ozet/06-termal-hiperstatik.pdf"
     },
     {
       "id": "07-gerilme-analizi",
@@ -52,16 +58,23 @@
       "ozet": "Eğik düzlemde gerilme, asal gerilmeler, iki eksenli hal",
       "dosya": "konular/07-gerilme-analizi.md",
       "pdf": "pdf/05-gerilme-analizi.pdf",
-      "pdfBaslik": "Bölüm 4 slaytları"
+      "pdfBaslik": "Bölüm 4 slaytları",
+      "ozetPdf": "ozet/07-gerilme-analizi.pdf"
     },
     {
       "id": "08-formul-ozeti",
       "baslik": "Formül özeti (sınav kâğıdı)",
       "ozet": "Bütün formüller tek sayfada",
-      "dosya": "konular/08-formul-ozeti.md"
+      "dosya": "konular/08-formul-ozeti.md",
+      "ozetPdf": "ozet/08-formul-ozeti.pdf"
     }
   ],
   "pdfler": [
+    {
+      "baslik": "Mukavemet 1 – Ders özeti (bütün konular)",
+      "dosya": "ozet/mukavemet-1-ders-ozeti.pdf",
+      "boyut": "313 KB"
+    },
     {
       "baslik": "Ders anlatımı ve çözümlü örnekler (özet kitapçık)",
       "dosya": "pdf/00-ders-anlatimi-ozet.pdf"
@@ -87,5 +100,6 @@
       "dosya": "pdf/05-gerilme-analizi.pdf"
     }
   ],
-  "sorular": "sorular.json"
+  "sorular": "sorular.json",
+  "ozetPdf": "ozet/mukavemet-1-ders-ozeti.pdf"
 }

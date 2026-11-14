@@ -29,101 +29,121 @@
       "bolum": "Başlarken",
       "baslik": "Bu ders nasıl çalışılır?",
       "ozet": "Altın kurallar, okunuş, çalışma düzeni",
-      "dosya": "konular/00-nasil-calisilir.md"
+      "dosya": "konular/00-nasil-calisilir.md",
+      "ozetPdf": "ozet/00-nasil-calisilir.pdf"
     },
     {
       "id": "a1-01-sein-haben-fiiller",
       "bolum": "A1 – Başlangıç",
       "baslik": "Zamirler, sein / haben ve fiil çekimi",
       "ozet": "ich/du/Sie, Präsens çekimi, W-soruları",
-      "dosya": "konular/a1-01-sein-haben-fiiller.md"
+      "dosya": "konular/a1-01-sein-haben-fiiller.md",
+      "ozetPdf": "ozet/a1-01-sein-haben-fiiller.pdf"
     },
     {
       "id": "a1-02-artikel-akkusativ",
       "bolum": "A1 – Başlangıç",
       "baslik": "Artikeller, çoğul, Akkusativ, olumsuzluk",
       "ozet": "der/die/das, den/einen, nicht/kein, mein/dein",
-      "dosya": "konular/a1-02-artikel-akkusativ.md"
+      "dosya": "konular/a1-02-artikel-akkusativ.md",
+      "ozetPdf": "ozet/a1-02-artikel-akkusativ.pdf"
     },
     {
       "id": "a1-03-modal-ayrilabilen-saat",
       "bolum": "A1 – Başlangıç",
       "baslik": "Modal fiiller, ayrılabilen fiiller, saat",
       "ozet": "können/müssen, aufstehen, cümle düzeni, halb neun",
-      "dosya": "konular/a1-03-modal-ayrilabilen-saat.md"
+      "dosya": "konular/a1-03-modal-ayrilabilen-saat.md",
+      "ozetPdf": "ozet/a1-03-modal-ayrilabilen-saat.pdf"
     },
     {
       "id": "a1-04-dativ-imperativ-gecmis",
       "bolum": "A1 – Başlangıç",
       "baslik": "Dativ'e giriş, emir kipi, geçmişe ilk adım",
       "ozet": "mir/dir, mit/bei/zu, Imperativ, war/hatte, temel Perfekt",
-      "dosya": "konular/a1-04-dativ-imperativ-gecmis.md"
+      "dosya": "konular/a1-04-dativ-imperativ-gecmis.md",
+      "ozetPdf": "ozet/a1-04-dativ-imperativ-gecmis.pdf"
     },
     {
       "id": "a2-01-perfekt",
       "bolum": "A2 – Temel",
       "baslik": "Perfekt (konuşmada geçmiş zaman)",
       "ozet": "haben/sein + Partizip II, war/hatte",
-      "dosya": "konular/a2-01-perfekt.md"
+      "dosya": "konular/a2-01-perfekt.md",
+      "ozetPdf": "ozet/a2-01-perfekt.pdf"
     },
     {
       "id": "a2-02-dativ-edatlar",
       "bolum": "A2 – Temel",
       "baslik": "Dativ, edatlar ve yön",
       "ozet": "dem/der, Wechselpräpositionen, nach/zu/in",
-      "dosya": "konular/a2-02-dativ-edatlar.md"
+      "dosya": "konular/a2-02-dativ-edatlar.md",
+      "ozetPdf": "ozet/a2-02-dativ-edatlar.pdf"
     },
     {
       "id": "a2-03-yan-cumle-karsilastirma",
       "bolum": "A2 – Temel",
       "baslik": "Yan cümleler, dönüşlü fiiller, karşılaştırma",
       "ozet": "weil/dass/wenn, sich, -er/am -sten, Imperativ",
-      "dosya": "konular/a2-03-yan-cumle-karsilastirma.md"
+      "dosya": "konular/a2-03-yan-cumle-karsilastirma.md",
+      "ozetPdf": "ozet/a2-03-yan-cumle-karsilastirma.pdf"
     },
     {
       "id": "b1-01-prateritum-plusquamperfekt",
       "bolum": "B1 – Orta",
       "baslik": "Präteritum, Plusquamperfekt ve Futur",
       "ozet": "ging/kam, hatte/war + P. II, werden",
-      "dosya": "konular/b1-01-prateritum-plusquamperfekt.md"
+      "dosya": "konular/b1-01-prateritum-plusquamperfekt.md",
+      "ozetPdf": "ozet/b1-01-prateritum-plusquamperfekt.pdf"
     },
     {
       "id": "b1-02-konjunktiv-passiv",
       "bolum": "B1 – Orta",
       "baslik": "Konjunktiv II ve Passiv",
       "ozet": "würde/wäre/hätte, şart cümleleri, werden + P. II",
-      "dosya": "konular/b1-02-konjunktiv-passiv.md"
+      "dosya": "konular/b1-02-konjunktiv-passiv.md",
+      "ozetPdf": "ozet/b1-02-konjunktiv-passiv.pdf"
     },
     {
       "id": "b1-03-relativ-adjektiv-zu",
       "bolum": "B1 – Orta",
       "baslik": "İlgi cümleleri, sıfat çekimi, zu + mastar",
       "ozet": "der/den/dem/denen, -e/-en ekleri, um … zu",
-      "dosya": "konular/b1-03-relativ-adjektiv-zu.md"
+      "dosya": "konular/b1-03-relativ-adjektiv-zu.md",
+      "ozetPdf": "ozet/b1-03-relativ-adjektiv-zu.pdf"
     },
     {
       "id": "b2-01-genitiv-n-deklination",
       "bolum": "B2 – Orta üstü",
       "baslik": "Genitiv, n-çekimi, edatlı fiiller",
       "ozet": "des/eines, wegen/trotz, den Studenten, warten auf",
-      "dosya": "konular/b2-01-genitiv-n-deklination.md"
+      "dosya": "konular/b2-01-genitiv-n-deklination.md",
+      "ozetPdf": "ozet/b2-01-genitiv-n-deklination.pdf"
     },
     {
       "id": "b2-02-konjunktiv-i-passiv",
       "bolum": "B2 – Orta üstü",
       "baslik": "Konjunktiv I ve ileri edilgen",
       "ozet": "Dolaylı anlatım (sei/habe), sein + zu, lassen",
-      "dosya": "konular/b2-02-konjunktiv-i-passiv.md"
+      "dosya": "konular/b2-02-konjunktiv-i-passiv.md",
+      "ozetPdf": "ozet/b2-02-konjunktiv-i-passiv.pdf"
     },
     {
       "id": "b2-03-baglaclar-nominal",
       "bolum": "B2 – Orta üstü",
       "baslik": "Bağlaçlar, isimleştirme, akademik dil",
       "ozet": "obwohl/trotzdem, je … desto, Nominalisierung",
-      "dosya": "konular/b2-03-baglaclar-nominal.md"
+      "dosya": "konular/b2-03-baglaclar-nominal.md",
+      "ozetPdf": "ozet/b2-03-baglaclar-nominal.pdf"
     }
   ],
-  "pdfler": [],
+  "pdfler": [
+    {
+      "baslik": "Almanca – Ders özeti (bütün konular)",
+      "dosya": "ozet/almanca-ders-ozeti.pdf",
+      "boyut": "1036 KB"
+    }
+  ],
   "seviyeler": [
     {
       "kod": "A1",
@@ -153,5 +173,6 @@
       "aciklama": "Akıcı konuşur, soyut konuları tartışır, görüşünü savunursun.",
       "kaynak": "Goethe-Zertifikat B2"
     }
-  ]
+  ],
+  "ozetPdf": "ozet/almanca-ders-ozeti.pdf"
 }

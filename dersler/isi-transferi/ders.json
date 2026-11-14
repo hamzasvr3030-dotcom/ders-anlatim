@@ -17,7 +17,8 @@
       "sayfa": "1–2",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=1",
-      "pdfBaslik": "Defter 1, s. 1–2"
+      "pdfBaslik": "Defter 1, s. 1–2",
+      "ozetPdf": "ozet/01-temel-yasalar-fourier.pdf"
     },
     {
       "id": "02-isi-iletim-denklemi",
@@ -28,7 +29,8 @@
       "sayfa": "2–3, 26",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=2",
-      "pdfBaslik": "Defter 1, s. 2–3, 26"
+      "pdfBaslik": "Defter 1, s. 2–3, 26",
+      "ozetPdf": "ozet/02-isi-iletim-denklemi.pdf"
     },
     {
       "id": "03-sinir-sartlari",
@@ -39,7 +41,8 @@
       "sayfa": "24–26",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=24",
-      "pdfBaslik": "Defter 1, s. 24–26"
+      "pdfBaslik": "Defter 1, s. 24–26",
+      "ozetPdf": "ozet/03-sinir-sartlari.pdf"
     },
     {
       "id": "04-isil-direnc-duzlem-duvar",
@@ -50,7 +53,8 @@
       "sayfa": "22–23, 4–6",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=22",
-      "pdfBaslik": "Defter 1, s. 22–23, 4–6"
+      "pdfBaslik": "Defter 1, s. 22–23, 4–6",
+      "ozetPdf": "ozet/04-isil-direnc-duzlem-duvar.pdf"
     },
     {
       "id": "05-silindirlerde-iletim",
@@ -61,7 +65,8 @@
       "sayfa": "6–11",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=6",
-      "pdfBaslik": "Defter 1, s. 6–11"
+      "pdfBaslik": "Defter 1, s. 6–11",
+      "ozetPdf": "ozet/05-silindirlerde-iletim.pdf"
     },
     {
       "id": "06-kritik-yalitim-yaricapi",
@@ -72,7 +77,8 @@
       "sayfa": "11–12",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=11",
-      "pdfBaslik": "Defter 1, s. 11–12"
+      "pdfBaslik": "Defter 1, s. 11–12",
+      "ozetPdf": "ozet/06-kritik-yalitim-yaricapi.pdf"
     },
     {
       "id": "07-kanatciklar",
@@ -83,7 +89,8 @@
       "sayfa": "12–21, 27",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=12",
-      "pdfBaslik": "Defter 1, s. 12–21, 27"
+      "pdfBaslik": "Defter 1, s. 12–21, 27",
+      "ozetPdf": "ozet/07-kanatciklar.pdf"
     },
     {
       "id": "08-zamana-bagli-toplu-sistem",
@@ -94,7 +101,8 @@
       "sayfa": "28–30",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=28",
-      "pdfBaslik": "Defter 1, s. 28–30"
+      "pdfBaslik": "Defter 1, s. 28–30",
+      "ozetPdf": "ozet/08-zamana-bagli-toplu-sistem.pdf"
     },
     {
       "id": "09-zamana-bagli-heisler",
@@ -105,7 +113,8 @@
       "sayfa": "31–38, 44",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=31",
-      "pdfBaslik": "Defter 1, s. 31–38, 44"
+      "pdfBaslik": "Defter 1, s. 31–38, 44",
+      "ozetPdf": "ozet/09-zamana-bagli-heisler.pdf"
     },
     {
       "id": "10-cok-boyutlu-zamana-bagli",
@@ -116,7 +125,8 @@
       "sayfa": "40–43",
       "eklenme": "2026-11-14",
       "pdf": "pdf/ders-notlari-1.pdf#page=40",
-      "pdfBaslik": "Defter 1, s. 40–43"
+      "pdfBaslik": "Defter 1, s. 40–43",
+      "ozetPdf": "ozet/10-cok-boyutlu-zamana-bagli.pdf"
     },
     {
       "id": "11-formul-ozeti",
@@ -125,14 +135,21 @@
       "dosya": "konular/11-formul-ozeti.md",
       "bolum": "Özet",
       "sayfa": "—",
-      "eklenme": "2026-11-14"
+      "eklenme": "2026-11-14",
+      "ozetPdf": "ozet/11-formul-ozeti.pdf"
     }
   ],
   "pdfler": [
+    {
+      "baslik": "Isı Transferi – Ders özeti (bütün konular)",
+      "dosya": "ozet/isi-transferi-ders-ozeti.pdf",
+      "boyut": "346 KB"
+    },
     {
       "baslik": "Isı Transferi el yazısı ders notları – Defter 1 (45 sayfa)",
       "dosya": "pdf/ders-notlari-1.pdf",
       "boyut": "19 MB"
     }
-  ]
+  ],
+  "ozetPdf": "ozet/isi-transferi-ders-ozeti.pdf"
 }
