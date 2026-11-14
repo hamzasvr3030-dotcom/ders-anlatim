@@ -2,25 +2,156 @@
   "dil": "de-DE",
   "dilAdi": "Almanca",
   "kelimeler": [
-    { "seviye": "A1", "ad": "A1 – Başlangıç kelimeleri", "dosya": "kelimeler/a1.tsv" },
-    { "seviye": "A2", "ad": "A2 – Temel kelimeler", "dosya": "kelimeler/a2.tsv" },
-    { "seviye": "B1", "ad": "B1 – Orta seviye kelimeler", "dosya": "kelimeler/b1.tsv" },
-    { "seviye": "B2", "ad": "B2 – Orta üstü kelimeler", "dosya": "kelimeler/b2.tsv" }
+    {
+      "seviye": "A1",
+      "ad": "A1 – Başlangıç kelimeleri",
+      "dosya": "kelimeler/a1.tsv"
+    },
+    {
+      "seviye": "A2",
+      "ad": "A2 – Temel kelimeler",
+      "dosya": "kelimeler/a2.tsv"
+    },
+    {
+      "seviye": "B1",
+      "ad": "B1 – Orta seviye kelimeler",
+      "dosya": "kelimeler/b1.tsv"
+    },
+    {
+      "seviye": "B2",
+      "ad": "B2 – Orta üstü kelimeler",
+      "dosya": "kelimeler/b2.tsv"
+    }
   ],
   "konular": [
-    { "id": "00-nasil-calisilir", "bolum": "Başlarken", "baslik": "Bu ders nasıl çalışılır?", "ozet": "Altın kurallar, okunuş, çalışma düzeni", "dosya": "konular/00-nasil-calisilir.md" },
-    { "id": "a1-01-sein-haben-fiiller", "bolum": "A1 – Başlangıç", "baslik": "Zamirler, sein / haben ve fiil çekimi", "ozet": "ich/du/Sie, Präsens çekimi, W-soruları", "dosya": "konular/a1-01-sein-haben-fiiller.md" },
-    { "id": "a1-02-artikel-akkusativ", "bolum": "A1 – Başlangıç", "baslik": "Artikeller, çoğul, Akkusativ, olumsuzluk", "ozet": "der/die/das, den/einen, nicht/kein, mein/dein", "dosya": "konular/a1-02-artikel-akkusativ.md" },
-    { "id": "a1-03-modal-ayrilabilen-saat", "bolum": "A1 – Başlangıç", "baslik": "Modal fiiller, ayrılabilen fiiller, saat", "ozet": "können/müssen, aufstehen, cümle düzeni, halb neun", "dosya": "konular/a1-03-modal-ayrilabilen-saat.md" },
-    { "id": "a2-01-perfekt", "bolum": "A2 – Temel", "baslik": "Perfekt (konuşmada geçmiş zaman)", "ozet": "haben/sein + Partizip II, war/hatte", "dosya": "konular/a2-01-perfekt.md" },
-    { "id": "a2-02-dativ-edatlar", "bolum": "A2 – Temel", "baslik": "Dativ, edatlar ve yön", "ozet": "dem/der, Wechselpräpositionen, nach/zu/in", "dosya": "konular/a2-02-dativ-edatlar.md" },
-    { "id": "a2-03-yan-cumle-karsilastirma", "bolum": "A2 – Temel", "baslik": "Yan cümleler, dönüşlü fiiller, karşılaştırma", "ozet": "weil/dass/wenn, sich, -er/am -sten, Imperativ", "dosya": "konular/a2-03-yan-cumle-karsilastirma.md" },
-    { "id": "b1-01-prateritum-plusquamperfekt", "bolum": "B1 – Orta", "baslik": "Präteritum, Plusquamperfekt ve Futur", "ozet": "ging/kam, hatte/war + P. II, werden", "dosya": "konular/b1-01-prateritum-plusquamperfekt.md" },
-    { "id": "b1-02-konjunktiv-passiv", "bolum": "B1 – Orta", "baslik": "Konjunktiv II ve Passiv", "ozet": "würde/wäre/hätte, şart cümleleri, werden + P. II", "dosya": "konular/b1-02-konjunktiv-passiv.md" },
-    { "id": "b1-03-relativ-adjektiv-zu", "bolum": "B1 – Orta", "baslik": "İlgi cümleleri, sıfat çekimi, zu + mastar", "ozet": "der/den/dem/denen, -e/-en ekleri, um … zu", "dosya": "konular/b1-03-relativ-adjektiv-zu.md" },
-    { "id": "b2-01-genitiv-n-deklination", "bolum": "B2 – Orta üstü", "baslik": "Genitiv, n-çekimi, edatlı fiiller", "ozet": "des/eines, wegen/trotz, den Studenten, warten auf", "dosya": "konular/b2-01-genitiv-n-deklination.md" },
-    { "id": "b2-02-konjunktiv-i-passiv", "bolum": "B2 – Orta üstü", "baslik": "Konjunktiv I ve ileri edilgen", "ozet": "Dolaylı anlatım (sei/habe), sein + zu, lassen", "dosya": "konular/b2-02-konjunktiv-i-passiv.md" },
-    { "id": "b2-03-baglaclar-nominal", "bolum": "B2 – Orta üstü", "baslik": "Bağlaçlar, isimleştirme, akademik dil", "ozet": "obwohl/trotzdem, je … desto, Nominalisierung", "dosya": "konular/b2-03-baglaclar-nominal.md" }
+    {
+      "id": "00-nasil-calisilir",
+      "bolum": "Başlarken",
+      "baslik": "Bu ders nasıl çalışılır?",
+      "ozet": "Altın kurallar, okunuş, çalışma düzeni",
+      "dosya": "konular/00-nasil-calisilir.md"
+    },
+    {
+      "id": "a1-01-sein-haben-fiiller",
+      "bolum": "A1 – Başlangıç",
+      "baslik": "Zamirler, sein / haben ve fiil çekimi",
+      "ozet": "ich/du/Sie, Präsens çekimi, W-soruları",
+      "dosya": "konular/a1-01-sein-haben-fiiller.md"
+    },
+    {
+      "id": "a1-02-artikel-akkusativ",
+      "bolum": "A1 – Başlangıç",
+      "baslik": "Artikeller, çoğul, Akkusativ, olumsuzluk",
+      "ozet": "der/die/das, den/einen, nicht/kein, mein/dein",
+      "dosya": "konular/a1-02-artikel-akkusativ.md"
+    },
+    {
+      "id": "a1-03-modal-ayrilabilen-saat",
+      "bolum": "A1 – Başlangıç",
+      "baslik": "Modal fiiller, ayrılabilen fiiller, saat",
+      "ozet": "können/müssen, aufstehen, cümle düzeni, halb neun",
+      "dosya": "konular/a1-03-modal-ayrilabilen-saat.md"
+    },
+    {
+      "id": "a1-04-dativ-imperativ-gecmis",
+      "bolum": "A1 – Başlangıç",
+      "baslik": "Dativ'e giriş, emir kipi, geçmişe ilk adım",
+      "ozet": "mir/dir, mit/bei/zu, Imperativ, war/hatte, temel Perfekt",
+      "dosya": "konular/a1-04-dativ-imperativ-gecmis.md"
+    },
+    {
+      "id": "a2-01-perfekt",
+      "bolum": "A2 – Temel",
+      "baslik": "Perfekt (konuşmada geçmiş zaman)",
+      "ozet": "haben/sein + Partizip II, war/hatte",
+      "dosya": "konular/a2-01-perfekt.md"
+    },
+    {
+      "id": "a2-02-dativ-edatlar",
+      "bolum": "A2 – Temel",
+      "baslik": "Dativ, edatlar ve yön",
+      "ozet": "dem/der, Wechselpräpositionen, nach/zu/in",
+      "dosya": "konular/a2-02-dativ-edatlar.md"
+    },
+    {
+      "id": "a2-03-yan-cumle-karsilastirma",
+      "bolum": "A2 – Temel",
+      "baslik": "Yan cümleler, dönüşlü fiiller, karşılaştırma",
+      "ozet": "weil/dass/wenn, sich, -er/am -sten, Imperativ",
+      "dosya": "konular/a2-03-yan-cumle-karsilastirma.md"
+    },
+    {
+      "id": "b1-01-prateritum-plusquamperfekt",
+      "bolum": "B1 – Orta",
+      "baslik": "Präteritum, Plusquamperfekt ve Futur",
+      "ozet": "ging/kam, hatte/war + P. II, werden",
+      "dosya": "konular/b1-01-prateritum-plusquamperfekt.md"
+    },
+    {
+      "id": "b1-02-konjunktiv-passiv",
+      "bolum": "B1 – Orta",
+      "baslik": "Konjunktiv II ve Passiv",
+      "ozet": "würde/wäre/hätte, şart cümleleri, werden + P. II",
+      "dosya": "konular/b1-02-konjunktiv-passiv.md"
+    },
+    {
+      "id": "b1-03-relativ-adjektiv-zu",
+      "bolum": "B1 – Orta",
+      "baslik": "İlgi cümleleri, sıfat çekimi, zu + mastar",
+      "ozet": "der/den/dem/denen, -e/-en ekleri, um … zu",
+      "dosya": "konular/b1-03-relativ-adjektiv-zu.md"
+    },
+    {
+      "id": "b2-01-genitiv-n-deklination",
+      "bolum": "B2 – Orta üstü",
+      "baslik": "Genitiv, n-çekimi, edatlı fiiller",
+      "ozet": "des/eines, wegen/trotz, den Studenten, warten auf",
+      "dosya": "konular/b2-01-genitiv-n-deklination.md"
+    },
+    {
+      "id": "b2-02-konjunktiv-i-passiv",
+      "bolum": "B2 – Orta üstü",
+      "baslik": "Konjunktiv I ve ileri edilgen",
+      "ozet": "Dolaylı anlatım (sei/habe), sein + zu, lassen",
+      "dosya": "konular/b2-02-konjunktiv-i-passiv.md"
+    },
+    {
+      "id": "b2-03-baglaclar-nominal",
+      "bolum": "B2 – Orta üstü",
+      "baslik": "Bağlaçlar, isimleştirme, akademik dil",
+      "ozet": "obwohl/trotzdem, je … desto, Nominalisierung",
+      "dosya": "konular/b2-03-baglaclar-nominal.md"
+    }
   ],
-  "pdfler": []
+  "pdfler": [],
+  "seviyeler": [
+    {
+      "kod": "A1",
+      "ad": "Başlangıç",
+      "renk": "#16a34a",
+      "aciklama": "Kendini tanıtır, basit sorular sorup cevaplar, günlük ihtiyaçlarını ifade edersin.",
+      "kaynak": "Goethe-Institut · Start Deutsch 1 / Fit in Deutsch 1"
+    },
+    {
+      "kod": "A2",
+      "ad": "Temel",
+      "renk": "#0891b2",
+      "aciklama": "Aile, alışveriş, iş, çevre gibi konularda kısa sohbet eder; geçmişi anlatırsın.",
+      "kaynak": "Goethe-Zertifikat A2"
+    },
+    {
+      "kod": "B1",
+      "ad": "Orta",
+      "renk": "#7c3aed",
+      "aciklama": "Seyahat ve işte çoğu durumu idare eder; deneyim, plan ve görüşlerini anlatırsın.",
+      "kaynak": "Goethe-Zertifikat B1"
+    },
+    {
+      "kod": "B2",
+      "ad": "Orta üstü",
+      "renk": "#db2777",
+      "aciklama": "Akıcı konuşur, soyut konuları tartışır, görüşünü savunursun.",
+      "kaynak": "Goethe-Zertifikat B2"
+    }
+  ]
 }

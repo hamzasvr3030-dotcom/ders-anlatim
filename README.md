@@ -15,8 +15,8 @@ Mühendislik dersleri ve dil dersleri için kişisel çalışma sitesi: konu anl
 | Makine Elemanları | 13 | 90 | 16 PDF |
 | Malzeme | 8 | 67 | 8 PDF |
 | Isıtma Havalandırma | 8 | 52 | 2 PDF |
-| İngilizce (A1–B2) | 13 | 105 | 1593 kelime |
-| Almanca (A1–B2) | 13 | 111 | 1561 kelime |
+| İngilizce (A1–B2) | 14 | 117 | 1593 kelime (IPA + okunuş) |
+| Almanca (A1–B2) | 14 | 125 | 1561 kelime (IPA + okunuş) |
 
 ## Bilgisayarda açmak
 
@@ -32,10 +32,15 @@ dersler/
     kartlar.json               ← tekrar kartları {konu, on, arka}
     konular/*.md               ← konu anlatımları
     pdf/*.pdf                  ← ders PDF'leri
-    kelimeler/a1.tsv …         ← (dil dersleri) kelime<TAB>Türkçe<TAB>tür
+    kelimeler/a1.tsv …         ← (dil) kelime, Türkçe, tür, kategori, IPA, okunuş
 ```
 
 ## Özellikler
+
+- **Derse özel arayüzler:** Mekanizma (dişli yol haritası), Mukavemet (teknik resim paftaları), Termodinamik (termometre), Akışkanlar (akış bölümleri), Makine Elemanları (parça kataloğu), Malzeme (deney föyleri), Isıtma (bina kesiti), diller (seviye merdiveni).
+- **Ana menü:** Günlük özet, kaldığın yerden devam, bugünün tekrarları, ilerleme halkaları.
+- **Dil seviyeleri:** A1–B2 için ayrı sayfalar; dilbilgisi konuları, kategorilere ayrılmış kelimeler, kategoriye göre kart çalışma.
+- **Telaffuz:** Her kelimede IPA ve Türkçe okunuş (kaynak: ipa-dict, MIT lisansı) ve tarayıcıyla sesli okuma.
 
 - **Sekmeler:** Konular · Tekrar kartları · Test · Kelime havuzu (dil) · PDF'ler
 - **Tekrar kartları:** Leitner sistemi (yeni → 1 → 2 → 4 → 8 → 16 gün). İlerleme tarayıcıda saklanır.

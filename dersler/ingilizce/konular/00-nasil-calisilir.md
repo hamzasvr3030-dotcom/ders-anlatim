@@ -28,3 +28,27 @@ Bu ders İngilizceyi **A1'den B2'ye** kadar adım adım götürür. İçinde ü�
 ## Telaffuz için
 
 Kelime havuzundaki ve kartlardaki 🔊 düğmesi tarayıcının sesli okuma özelliğini kullanır. Ses çıkmazsa tarayıcının ve işletim sisteminin dil paketlerinde İngilizce sesin yüklü olduğunu kontrol et (Chrome ve Edge'de genellikle hazırdır).
+
+## Okunuş ve IPA
+
+Kelime havuzundaki her kelimenin yanında iki telaffuz bilgisi var:
+
+- **IPA** (Uluslararası Fonetik Alfabe): kesin telaffuz. Amerikan İngilizcesi temel alınmıştır; ˈ işareti vurgulu heceyi gösterir.
+- **Okunuş:** IPA'dan Türkçe harflerle yaklaşık yazım. Örnek: *beautiful* → **byutıfıl**.
+
+| IPA | Okunuş | Nasıl söylenir? |
+|---|---|---|
+| θ (think) | t | Dilin ucu dişlerin arasında, sessiz "t/s" |
+| ð (they) | d | Dilin ucu dişlerin arasında, sesli "d/z" |
+| w (water) | w | Dudaklar yuvarlak, "u" ile başlayan "v" |
+| ə (about) | ı | Vurgusuz, kısa ve belirsiz ses |
+| æ (cat) | e | Ağzı geniş açarak "e" |
+| ŋ (sing) | ng | Genizden "n", g'si çok hafif |
+
+> Okunuş yalnızca yaklaşıktır; kesin ses için 🔊 düğmesiyle dinle ve IPA'ya bak.
+
+## Müfredat kaynakları
+
+Seviyelerdeki dilbilgisi konuları **British Council / EAQUALS Core Inventory for General English** listesiyle karşılaştırılarak düzenlendi. A1 için bu listede yer alan emir kipi, I'd like, was/were, like + -ing, nesne zamirleri ve can/could konuları **A1 · Emir kipi, I'd like, like + -ing, was/were** sayfasında anlatılıyor.
+
+Telaffuz verisi: açık kaynaklı *ipa-dict* projesi (MIT lisansı).

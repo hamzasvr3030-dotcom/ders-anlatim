@@ -1,109 +1,589 @@
 {
-  "kartlar": [
-    { "konu": "a1-01-to-be-zamirler", "on": "She …… a doctor. (be)", "arka": "is" },
-    { "konu": "a1-01-to-be-zamirler", "on": "They …… at home. (be)", "arka": "are" },
-    { "konu": "a1-01-to-be-zamirler", "on": "I …… not hungry. (be)", "arka": "am" },
-    { "konu": "a1-01-to-be-zamirler", "on": "…… you ready? (be)", "arka": "Are" },
-    { "konu": "a1-01-to-be-zamirler", "on": "\"Are you a student?\" kısa olumlu cevap", "arka": "Yes, I am." },
-    { "konu": "a1-01-to-be-zamirler", "on": "she → iyelik sıfatı", "arka": "her" },
-    { "konu": "a1-01-to-be-zamirler", "on": "they → iyelik sıfatı", "arka": "their" },
-    { "konu": "a1-01-to-be-zamirler", "on": "\"this book\" çoğulu", "arka": "these books" },
-    { "konu": "a1-01-to-be-zamirler", "on": "Ali'nin telefonu (İngilizce)", "arka": "Ali's phone" },
-    { "konu": "a1-02-present-simple", "on": "He …… (work) in a bank.", "arka": "works" },
-    { "konu": "a1-02-present-simple", "on": "She …… (watch) TV every evening.", "arka": "watches" },
-    { "konu": "a1-02-present-simple", "on": "My brother …… (study) at university.", "arka": "studies" },
-    { "konu": "a1-02-present-simple", "on": "…… she like coffee?", "arka": "Does" },
-    { "konu": "a1-02-present-simple", "on": "I …… (not / smoke).", "arka": "don't smoke" },
-    { "konu": "a1-02-present-simple", "on": "He doesn't …… (play) football.", "arka": "play (does/doesn't'tan sonra fiil yalın)" },
-    { "konu": "a1-02-present-simple", "on": "Sıklık zarfı nereye gelir? (I / always / get up / at 7)", "arka": "I always get up at 7. (fiilden önce)" },
-    { "konu": "a1-02-present-simple", "on": "Sıklık zarfı to be ile (She / often / late / is)", "arka": "She is often late. (to be'den sonra)" },
-    { "konu": "a1-02-present-simple", "on": "have fiilinin 3. tekil şahıs hâli", "arka": "has" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "…… apple / …… university (a mı an mı?)", "arka": "an apple / a university" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "child çoğulu", "arka": "children" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "person çoğulu", "arka": "people" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "knife çoğulu", "arka": "knives" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "There …… two banks near here.", "arka": "are" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "Are there …… eggs? (some/any)", "arka": "any" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "…… Monday / …… June / …… 7 o'clock", "arka": "on Monday / in June / at 7 o'clock" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "I …… (read) a book now.", "arka": "am reading" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "swim → -ing", "arka": "swimming" },
-    { "konu": "a1-03-isimler-there-is-continuous", "on": "\"I am knowing\" neden yanlış?", "arka": "know bir durum fiilidir, -ing almaz: I know." },
-    { "konu": "a2-01-past-simple", "on": "go → geçmiş (V2)", "arka": "went" },
-    { "konu": "a2-01-past-simple", "on": "buy → geçmiş (V2)", "arka": "bought" },
-    { "konu": "a2-01-past-simple", "on": "think → geçmiş (V2)", "arka": "thought" },
-    { "konu": "a2-01-past-simple", "on": "see → geçmiş (V2)", "arka": "saw" },
-    { "konu": "a2-01-past-simple", "on": "study → geçmiş (V2)", "arka": "studied" },
-    { "konu": "a2-01-past-simple", "on": "I didn't …… (go) to school yesterday.", "arka": "go" },
-    { "konu": "a2-01-past-simple", "on": "…… you see the film?", "arka": "Did" },
-    { "konu": "a2-01-past-simple", "on": "They …… late. (be, geçmiş)", "arka": "were" },
-    { "konu": "a2-01-past-simple", "on": "I …… (walk) home when it started to rain.", "arka": "was walking" },
-    { "konu": "a2-01-past-simple", "on": "Eskiden futbol oynardım.", "arka": "I used to play football." },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "Plan: I …… visit my grandmother this weekend.", "arka": "am going to" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "Anlık karar: The phone is ringing. — I …… answer it!", "arka": "'ll (will)" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "big → karşılaştırma", "arka": "bigger" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "good → karşılaştırma / en üstünlük", "arka": "better / the best" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "bad → karşılaştırma / en üstünlük", "arka": "worse / the worst" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "expensive → en üstünlük", "arka": "the most expensive" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "How …… money do you have?", "arka": "much" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "How …… books do you have?", "arka": "many" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "careful → zarf", "arka": "carefully" },
-    { "konu": "a2-02-gelecek-karsilastirma", "on": "good → zarf", "arka": "well" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "Have you …… (be) to London?", "arka": "ever been" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "I've lived here …… 2020. (for/since)", "arka": "since" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "I've lived here …… five years. (for/since)", "arka": "for" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "Have you finished ……? (already/yet)", "arka": "yet" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "write → V3", "arka": "written" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "\"He has gone to Paris\" ile \"He has been to Paris\" farkı", "arka": "gone: gitti, hâlâ orada; been: gidip döndü" },
-    { "konu": "a2-03-present-perfect-modallar", "on": "Sigara içmek yasak. (mustn't / don't have to)", "arka": "You mustn't smoke." },
-    { "konu": "a2-03-present-perfect-modallar", "on": "Gelmek zorunda değilsin.", "arka": "You don't have to come." },
-    { "konu": "a2-03-present-perfect-modallar", "on": "Doktora gitmelisin. (tavsiye)", "arka": "You should see a doctor." },
-    { "konu": "b1-01-zamanlar", "on": "When I arrived, the train …… (already / leave).", "arka": "had already left" },
-    { "konu": "b1-01-zamanlar", "on": "I've …… (wait) for an hour!", "arka": "been waiting" },
-    { "konu": "b1-01-zamanlar", "on": "I'll call you when I …… (arrive).", "arka": "arrive (zaman cümleciğinde will kullanılmaz)" },
-    { "konu": "b1-01-zamanlar", "on": "Past Perfect yapısı", "arka": "had + V3" },
-    { "konu": "b1-01-zamanlar", "on": "Future Continuous yapısı", "arka": "will be + -ing" },
-    { "konu": "b1-02-sart-edilgen", "on": "If it …… (rain), we will stay at home.", "arka": "rains" },
-    { "konu": "b1-02-sart-edilgen", "on": "If I …… (have) money, I would travel.", "arka": "had" },
-    { "konu": "b1-02-sart-edilgen", "on": "If I …… you, I would accept. (be)", "arka": "were" },
-    { "konu": "b1-02-sart-edilgen", "on": "If you heat ice, it …… (melt). — hangi şart türü?", "arka": "melts — zero conditional" },
-    { "konu": "b1-02-sart-edilgen", "on": "unless = ?", "arka": "if not" },
-    { "konu": "b1-02-sart-edilgen", "on": "Someone stole my bike. → edilgen", "arka": "My bike was stolen." },
-    { "konu": "b1-02-sart-edilgen", "on": "They are building a bridge. → edilgen", "arka": "A bridge is being built." },
-    { "konu": "b1-02-sart-edilgen", "on": "They have cancelled the flight. → edilgen", "arka": "The flight has been cancelled." },
-    { "konu": "b1-02-sart-edilgen", "on": "1990'da doğdum.", "arka": "I was born in 1990." },
-    { "konu": "b1-03-relative-gerund", "on": "The man …… lives next door is a doctor.", "arka": "who" },
-    { "konu": "b1-03-relative-gerund", "on": "That's the girl …… father is a pilot.", "arka": "whose" },
-    { "konu": "b1-03-relative-gerund", "on": "This is the café …… we met.", "arka": "where" },
-    { "konu": "b1-03-relative-gerund", "on": "I enjoy …… (read).", "arka": "reading" },
-    { "konu": "b1-03-relative-gerund", "on": "We decided …… (stay) at home.", "arka": "to stay" },
-    { "konu": "b1-03-relative-gerund", "on": "I stopped smoking / I stopped to smoke farkı", "arka": "Sigarayı bıraktım / Sigara içmek için durdum" },
-    { "konu": "b1-03-relative-gerund", "on": "The film was …… . I was …… . (bore)", "arka": "boring / bored" },
-    { "konu": "b1-03-relative-gerund", "on": "I'm looking forward to …… (see) you.", "arka": "seeing" },
-    { "konu": "b1-03-relative-gerund", "on": "This coffee is …… hot to drink. (too/enough)", "arka": "too" },
-    { "konu": "b2-01-sart-wish", "on": "If I had studied, I …… (pass) the exam.", "arka": "would have passed" },
-    { "konu": "b2-01-sart-wish", "on": "Third conditional yapısı", "arka": "If + had + V3, would have + V3" },
-    { "konu": "b2-01-sart-wish", "on": "Keşke daha çok boş vaktim olsa.", "arka": "I wish I had more free time." },
-    { "konu": "b2-01-sart-wish", "on": "Keşke onu söylemeseydim.", "arka": "I wish I hadn't said that." },
-    { "konu": "b2-01-sart-wish", "on": "If I had taken that job, I …… (be) rich now.", "arka": "would be (mixed conditional)" },
-    { "konu": "b2-01-sart-wish", "on": "Take an umbrella …… it rains. (in case / unless)", "arka": "in case" },
-    { "konu": "b2-01-sart-wish", "on": "Had I known… = ?", "arka": "If I had known…" },
-    { "konu": "b2-02-dolayli-anlatim", "on": "\"I am tired.\" → She said…", "arka": "She said (that) she was tired." },
-    { "konu": "b2-02-dolayli-anlatim", "on": "\"I will help you.\" → He said…", "arka": "He said he would help me." },
-    { "konu": "b2-02-dolayli-anlatim", "on": "\"Where do you live?\" → He asked me…", "arka": "He asked me where I lived." },
-    { "konu": "b2-02-dolayli-anlatim", "on": "\"Are you hungry?\" → She asked…", "arka": "She asked if/whether I was hungry." },
-    { "konu": "b2-02-dolayli-anlatim", "on": "\"Close the door.\" → He told me…", "arka": "He told me to close the door." },
-    { "konu": "b2-02-dolayli-anlatim", "on": "tomorrow → dolaylı anlatımda", "arka": "the next day / the following day" },
-    { "konu": "b2-02-dolayli-anlatim", "on": "She …… me she was busy. (say/tell)", "arka": "told" },
-    { "konu": "b2-02-dolayli-anlatim", "on": "Saçımı kestirdim.", "arka": "I had my hair cut." },
-    { "konu": "b2-02-dolayli-anlatim", "on": "People say he is rich. → He is said ……", "arka": "to be rich" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "Işıklar yanıyor, kesin evde. → He …… at home.", "arka": "must be" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "O Ahmet olamaz, Londra'da. → That …… Ahmet.", "arka": "can't be" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "Gelmedi, kesin unutmuştur. → She …… forgotten.", "arka": "must have" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "Bana söylemeliydin!", "arka": "You should have told me!" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "By 2030, I …… (graduate).", "arka": "will have graduated" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "…… it was raining, we went out. (Although / Despite)", "arka": "Although" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "…… the rain, we went out. (Although / Despite)", "arka": "Despite" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "give up", "arka": "vazgeçmek, bırakmak" },
-    { "konu": "b2-03-modallar-baglaclar", "on": "Turn off it / Turn it off — hangisi doğru?", "arka": "Turn it off" }
-  ]
+ "kartlar": [
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "She …… a doctor. (be)",
+   "arka": "is"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "They …… at home. (be)",
+   "arka": "are"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "I …… not hungry. (be)",
+   "arka": "am"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "…… you ready? (be)",
+   "arka": "Are"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "\"Are you a student?\" kısa olumlu cevap",
+   "arka": "Yes, I am."
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "she → iyelik sıfatı",
+   "arka": "her"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "they → iyelik sıfatı",
+   "arka": "their"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "\"this book\" çoğulu",
+   "arka": "these books"
+  },
+  {
+   "konu": "a1-01-to-be-zamirler",
+   "on": "Ali'nin telefonu (İngilizce)",
+   "arka": "Ali's phone"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "He …… (work) in a bank.",
+   "arka": "works"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "She …… (watch) TV every evening.",
+   "arka": "watches"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "My brother …… (study) at university.",
+   "arka": "studies"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "…… she like coffee?",
+   "arka": "Does"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "I …… (not / smoke).",
+   "arka": "don't smoke"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "He doesn't …… (play) football.",
+   "arka": "play (does/doesn't'tan sonra fiil yalın)"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "Sıklık zarfı nereye gelir? (I / always / get up / at 7)",
+   "arka": "I always get up at 7. (fiilden önce)"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "Sıklık zarfı to be ile (She / often / late / is)",
+   "arka": "She is often late. (to be'den sonra)"
+  },
+  {
+   "konu": "a1-02-present-simple",
+   "on": "have fiilinin 3. tekil şahıs hâli",
+   "arka": "has"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "…… apple / …… university (a mı an mı?)",
+   "arka": "an apple / a university"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "child çoğulu",
+   "arka": "children"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "person çoğulu",
+   "arka": "people"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "knife çoğulu",
+   "arka": "knives"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "There …… two banks near here.",
+   "arka": "are"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "Are there …… eggs? (some/any)",
+   "arka": "any"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "…… Monday / …… June / …… 7 o'clock",
+   "arka": "on Monday / in June / at 7 o'clock"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "I …… (read) a book now.",
+   "arka": "am reading"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "swim → -ing",
+   "arka": "swimming"
+  },
+  {
+   "konu": "a1-03-isimler-there-is-continuous",
+   "on": "\"I am knowing\" neden yanlış?",
+   "arka": "know bir durum fiilidir, -ing almaz: I know."
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "go → geçmiş (V2)",
+   "arka": "went"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "buy → geçmiş (V2)",
+   "arka": "bought"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "think → geçmiş (V2)",
+   "arka": "thought"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "see → geçmiş (V2)",
+   "arka": "saw"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "study → geçmiş (V2)",
+   "arka": "studied"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "I didn't …… (go) to school yesterday.",
+   "arka": "go"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "…… you see the film?",
+   "arka": "Did"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "They …… late. (be, geçmiş)",
+   "arka": "were"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "I …… (walk) home when it started to rain.",
+   "arka": "was walking"
+  },
+  {
+   "konu": "a2-01-past-simple",
+   "on": "Eskiden futbol oynardım.",
+   "arka": "I used to play football."
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "Plan: I …… visit my grandmother this weekend.",
+   "arka": "am going to"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "Anlık karar: The phone is ringing. — I …… answer it!",
+   "arka": "'ll (will)"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "big → karşılaştırma",
+   "arka": "bigger"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "good → karşılaştırma / en üstünlük",
+   "arka": "better / the best"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "bad → karşılaştırma / en üstünlük",
+   "arka": "worse / the worst"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "expensive → en üstünlük",
+   "arka": "the most expensive"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "How …… money do you have?",
+   "arka": "much"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "How …… books do you have?",
+   "arka": "many"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "careful → zarf",
+   "arka": "carefully"
+  },
+  {
+   "konu": "a2-02-gelecek-karsilastirma",
+   "on": "good → zarf",
+   "arka": "well"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "Have you …… (be) to London?",
+   "arka": "ever been"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "I've lived here …… 2020. (for/since)",
+   "arka": "since"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "I've lived here …… five years. (for/since)",
+   "arka": "for"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "Have you finished ……? (already/yet)",
+   "arka": "yet"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "write → V3",
+   "arka": "written"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "\"He has gone to Paris\" ile \"He has been to Paris\" farkı",
+   "arka": "gone: gitti, hâlâ orada; been: gidip döndü"
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "Sigara içmek yasak. (mustn't / don't have to)",
+   "arka": "You mustn't smoke."
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "Gelmek zorunda değilsin.",
+   "arka": "You don't have to come."
+  },
+  {
+   "konu": "a2-03-present-perfect-modallar",
+   "on": "Doktora gitmelisin. (tavsiye)",
+   "arka": "You should see a doctor."
+  },
+  {
+   "konu": "b1-01-zamanlar",
+   "on": "When I arrived, the train …… (already / leave).",
+   "arka": "had already left"
+  },
+  {
+   "konu": "b1-01-zamanlar",
+   "on": "I've …… (wait) for an hour!",
+   "arka": "been waiting"
+  },
+  {
+   "konu": "b1-01-zamanlar",
+   "on": "I'll call you when I …… (arrive).",
+   "arka": "arrive (zaman cümleciğinde will kullanılmaz)"
+  },
+  {
+   "konu": "b1-01-zamanlar",
+   "on": "Past Perfect yapısı",
+   "arka": "had + V3"
+  },
+  {
+   "konu": "b1-01-zamanlar",
+   "on": "Future Continuous yapısı",
+   "arka": "will be + -ing"
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "If it …… (rain), we will stay at home.",
+   "arka": "rains"
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "If I …… (have) money, I would travel.",
+   "arka": "had"
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "If I …… you, I would accept. (be)",
+   "arka": "were"
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "If you heat ice, it …… (melt). — hangi şart türü?",
+   "arka": "melts — zero conditional"
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "unless = ?",
+   "arka": "if not"
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "Someone stole my bike. → edilgen",
+   "arka": "My bike was stolen."
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "They are building a bridge. → edilgen",
+   "arka": "A bridge is being built."
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "They have cancelled the flight. → edilgen",
+   "arka": "The flight has been cancelled."
+  },
+  {
+   "konu": "b1-02-sart-edilgen",
+   "on": "1990'da doğdum.",
+   "arka": "I was born in 1990."
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "The man …… lives next door is a doctor.",
+   "arka": "who"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "That's the girl …… father is a pilot.",
+   "arka": "whose"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "This is the café …… we met.",
+   "arka": "where"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "I enjoy …… (read).",
+   "arka": "reading"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "We decided …… (stay) at home.",
+   "arka": "to stay"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "I stopped smoking / I stopped to smoke farkı",
+   "arka": "Sigarayı bıraktım / Sigara içmek için durdum"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "The film was …… . I was …… . (bore)",
+   "arka": "boring / bored"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "I'm looking forward to …… (see) you.",
+   "arka": "seeing"
+  },
+  {
+   "konu": "b1-03-relative-gerund",
+   "on": "This coffee is …… hot to drink. (too/enough)",
+   "arka": "too"
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "If I had studied, I …… (pass) the exam.",
+   "arka": "would have passed"
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "Third conditional yapısı",
+   "arka": "If + had + V3, would have + V3"
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "Keşke daha çok boş vaktim olsa.",
+   "arka": "I wish I had more free time."
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "Keşke onu söylemeseydim.",
+   "arka": "I wish I hadn't said that."
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "If I had taken that job, I …… (be) rich now.",
+   "arka": "would be (mixed conditional)"
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "Take an umbrella …… it rains. (in case / unless)",
+   "arka": "in case"
+  },
+  {
+   "konu": "b2-01-sart-wish",
+   "on": "Had I known… = ?",
+   "arka": "If I had known…"
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "\"I am tired.\" → She said…",
+   "arka": "She said (that) she was tired."
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "\"I will help you.\" → He said…",
+   "arka": "He said he would help me."
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "\"Where do you live?\" → He asked me…",
+   "arka": "He asked me where I lived."
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "\"Are you hungry?\" → She asked…",
+   "arka": "She asked if/whether I was hungry."
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "\"Close the door.\" → He told me…",
+   "arka": "He told me to close the door."
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "tomorrow → dolaylı anlatımda",
+   "arka": "the next day / the following day"
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "She …… me she was busy. (say/tell)",
+   "arka": "told"
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "Saçımı kestirdim.",
+   "arka": "I had my hair cut."
+  },
+  {
+   "konu": "b2-02-dolayli-anlatim",
+   "on": "People say he is rich. → He is said ……",
+   "arka": "to be rich"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "Işıklar yanıyor, kesin evde. → He …… at home.",
+   "arka": "must be"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "O Ahmet olamaz, Londra'da. → That …… Ahmet.",
+   "arka": "can't be"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "Gelmedi, kesin unutmuştur. → She …… forgotten.",
+   "arka": "must have"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "Bana söylemeliydin!",
+   "arka": "You should have told me!"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "By 2030, I …… (graduate).",
+   "arka": "will have graduated"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "…… it was raining, we went out. (Although / Despite)",
+   "arka": "Although"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "…… the rain, we went out. (Although / Despite)",
+   "arka": "Despite"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "give up",
+   "arka": "vazgeçmek, bırakmak"
+  },
+  {
+   "konu": "b2-03-modallar-baglaclar",
+   "on": "Turn off it / Turn it off — hangisi doğru?",
+   "arka": "Turn it off"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "…… touch that! (olumsuz emir)",
+   "arka": "Don't"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "Hadi gidelim!",
+   "arka": "Let's go!"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "Bir kahve istiyorum, lütfen. (kibar)",
+   "arka": "I'd like a coffee, please."
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "I like coffee / I'd like a coffee farkı",
+   "arka": "Genel olarak severim / Şimdi bir kahve istiyorum"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "I love …… (swim).",
+   "arka": "swimming"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "she → nesne zamiri",
+   "arka": "her"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "they → nesne zamiri",
+   "arka": "them"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "Can you help …… ? (I)",
+   "arka": "me"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "Where …… you yesterday? (be)",
+   "arka": "were"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "It …… cold. (be, geçmiş, olumsuz)",
+   "arka": "wasn't"
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "Dün gece uyuyamadım.",
+   "arka": "I couldn't sleep last night."
+  },
+  {
+   "konu": "a1-04-emir-like-was-were",
+   "on": "2005'te doğdum.",
+   "arka": "I was born in 2005."
+  }
+ ]
 }

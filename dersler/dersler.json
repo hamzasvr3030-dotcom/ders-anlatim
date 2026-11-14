@@ -7,7 +7,10 @@
       "kod": "BMMZ 307 / MMZ 311",
       "donem": "Dicle Üniversitesi · Makine Mühendisliği",
       "aciklama": "Mekanizma sistematiği, serbestlik derecesi, konum-hız-ivme analizi ve dişli çarklar.",
-      "renk": "#c2410c"
+      "renk": "#c2410c",
+      "ikon": "disli",
+      "duzen": "yol",
+      "slogan": "Hareketi geometriyle çöz."
     },
     {
       "id": "mukavemet-1",
@@ -16,7 +19,10 @@
       "kod": "Mukavemet I",
       "donem": "Dicle Üniversitesi · Prof. Dr. K. Turan ders notları",
       "aciklama": "İç kuvvetler ve N-T-M diyagramları, eksenel yükleme, termal gerilmeler, hiperstatik problemler, gerilme analizi ve Mohr dairesi.",
-      "renk": "#2457c5"
+      "renk": "#2457c5",
+      "ikon": "kiris",
+      "duzen": "plan",
+      "slogan": "Yükü taşı, gerilmeyi hesapla."
     },
     {
       "id": "termodinamik",
@@ -25,7 +31,10 @@
       "kod": "Termodinamik I",
       "donem": "Çengel & Boles · Prof. Dr. Ali Pınarbaşı ders notu",
       "aciklama": "Temel kavramlar, enerji ve birinci yasa, saf madde ve tablolar, ideal gaz, kapalı sistemler ve kontrol hacimleri.",
-      "renk": "#b91c1c"
+      "renk": "#b91c1c",
+      "ikon": "termometre",
+      "duzen": "termometre",
+      "slogan": "Enerji biçim değiştirir, toplamı korunur."
     },
     {
       "id": "akiskanlar-mekanigi",
@@ -34,7 +43,10 @@
       "kod": "Akışkanlar",
       "donem": "Çengel & Cimbala · Temelleri ve Uygulamaları",
       "aciklama": "Akışkan statiği, Bernoulli, momentum, boru akışı, dış akışlar, sıkıştırılabilir akış, açık kanal, turbomakineler ve HAD.",
-      "renk": "#0e7490"
+      "renk": "#0e7490",
+      "ikon": "dalga",
+      "duzen": "akis",
+      "slogan": "Durgundan türbülansa, akışın dili."
     },
     {
       "id": "makine-elemanlari",
@@ -43,7 +55,10 @@
       "kod": "MAKEL I",
       "donem": "Doç. Dr. Erol Kılıçkap ders notları",
       "aciklama": "Mukavemet ve yorulma, tolerans, aks-mil, kamalar, pim-perno, sıkı geçme, cıvata, perçin, kaynak ve yapıştırma.",
-      "renk": "#4d7c0f"
+      "renk": "#4d7c0f",
+      "ikon": "civata",
+      "duzen": "katalog",
+      "slogan": "Her parça bir hesap, her hesap bir parça."
     },
     {
       "id": "malzeme",
@@ -52,7 +67,10 @@
       "kod": "Malzeme II",
       "donem": "Malzeme muayene yöntemleri",
       "aciklama": "Çekme, basma, sertlik, sürünme, yorulma, burulma ve çentik darbe deneyleri; penetrant, manyetik, girdap akımı, ultrasonik ve radyografik muayene.",
-      "renk": "#7c3aed"
+      "renk": "#7c3aed",
+      "ikon": "mikroskop",
+      "duzen": "lab",
+      "slogan": "Malzemeyi tanımanın yolu onu test etmekten geçer."
     },
     {
       "id": "isitma-havalandirma",
@@ -61,7 +79,10 @@
       "kod": "Isıtma",
       "donem": "Dr. Atilla Devecioğlu ders notu",
       "aciklama": "Isıl konfor, ısıtma sistemleri, kazan ve kazan dairesi, ısıtıcılar, TS 825 yalıtım hesabı ve ısı kaybı cetveli.",
-      "renk": "#be185d"
+      "renk": "#be185d",
+      "ikon": "radyator",
+      "duzen": "kat",
+      "slogan": "Konforlu bina, doğru hesapla başlar."
     },
     {
       "id": "ingilizce",
@@ -71,7 +92,10 @@
       "donem": "Dilbilgisi, kelime havuzu, sesli telaffuz",
       "aciklama": "Başlangıçtan orta üstü seviyeye dilbilgisi anlatımları, seviyelere ayrılmış kelime havuzu, tekrar kartları ve testler.",
       "renk": "#1d4ed8",
-      "kelimeSayisi": 1593
+      "kelimeSayisi": 1593,
+      "ikon": "en",
+      "duzen": "seviye",
+      "slogan": "One word at a time."
     },
     {
       "id": "almanca",
@@ -81,7 +105,10 @@
       "donem": "Dilbilgisi, artikelli kelime havuzu, sesli telaffuz",
       "aciklama": "Başlangıçtan orta üstü seviyeye dilbilgisi anlatımları, artikelleriyle kelime havuzu, tekrar kartları ve testler.",
       "renk": "#b45309",
-      "kelimeSayisi": 1561
+      "kelimeSayisi": 1561,
+      "ikon": "de",
+      "duzen": "seviye",
+      "slogan": "Schritt für Schritt."
     }
   ]
 }

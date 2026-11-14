@@ -1,35 +1,186 @@
 {
   "konular": [
-    { "id": "01-giris", "baslik": "Giriş: makine ve makine elemanı", "ozet": "Sınıflandırma, tasarım süreci, standartlar, birimler", "dosya": "konular/01-giris.md", "pdf": "pdf/01-giris.pdf", "pdfBaslik": "MAKEL-I-1 Giriş" },
-    { "id": "02-mukavemet", "baslik": "Mukavemet bilgisi", "ozet": "Basit ve bileşik gerilmeler, kesit değerleri, hipotezler, emniyet katsayısı", "dosya": "konular/02-mukavemet.md", "pdf": "pdf/02-mukavemet.pdf", "pdfBaslik": "MAKEL-I-2 Mukavemet" },
-    { "id": "03-yorulma", "baslik": "Yorulma", "ozet": "Wöhler eğrisi, azaltıcı faktörler, Soderberg-Goodman", "dosya": "konular/03-yorulma.md", "pdf": "pdf/03-yorulma.pdf", "pdfBaslik": "MAKEL-I-3 Yorulma" },
-    { "id": "04-malzeme", "baslik": "Malzeme seçimi", "ozet": "Çelikler, dökme demir, demir dışı metaller, gösterimler", "dosya": "konular/04-malzeme.md", "pdf": "pdf/04-malzeme.pdf", "pdfBaslik": "MAKEL-I-4 Malzeme" },
-    { "id": "05-standart-tolerans", "baslik": "Standart ve toleranslar", "ozet": "ISO tolerans sistemi, geçmeler, tablo okuma", "dosya": "konular/05-standart-tolerans.md", "pdf": "pdf/05-standart-tolerans.pdf", "pdfBaslik": "MAKEL-I-5 Standart ve toleranslar" },
-    { "id": "06-akslar-miller", "baslik": "Akslar ve miller", "ozet": "Aks ve mil hesabı, içi boş miller, sehim, kritik devir", "dosya": "konular/06-akslar-miller.md", "pdf": "pdf/06-akslar-miller.pdf", "pdfBaslik": "MAKEL-I-6 Akslar-Miller" },
-    { "id": "07-kamalar", "baslik": "Bağlama elemanları ve kamalar", "ozet": "Uygu kaması, oyuk kama, çakma-sökme, otoblokaj", "dosya": "konular/07-kamalar.md", "pdf": "pdf/07-kamalar.pdf", "pdfBaslik": "MAKEL-I-7 Kamalar" },
-    { "id": "08-pim-perno-siki-gecme", "baslik": "Pim, perno ve sıkı geçmeler", "ozet": "Pim ve perno hesabı, sıkı geçmede basınç ve sıkılık", "dosya": "konular/08-pim-perno-siki-gecme.md", "pdf": "pdf/08b-siki-gecmeler.pdf", "pdfBaslik": "MAKEL-I-8 Sıkı geçmeler" },
-    { "id": "09-civata-somun", "baslik": "Cıvata-somun bağlantıları", "ozet": "Vida geometrisi, sıkma momenti, ön gerilme, eksantrik yük", "dosya": "konular/09-civata-somun.md", "pdf": "pdf/09-civata-somun.pdf", "pdfBaslik": "MAKEL-I-9 Cıvata-somun" },
-    { "id": "10-percin", "baslik": "Perçin bağlantıları", "ozet": "Perçin türleri, perçinleme, kesme ve ezilme hesabı", "dosya": "konular/10-percin.md", "pdf": "pdf/10-percin.pdf", "pdfBaslik": "MAKEL-I-10 Perçin" },
-    { "id": "11-kaynak-lehim", "baslik": "Kaynak ve lehim bağlantıları", "ozet": "Kaynak yöntemleri, dikiş hesabı, yumuşak ve sert lehim", "dosya": "konular/11-kaynak-lehim.md", "pdf": "pdf/11-kaynak-lehim.pdf", "pdfBaslik": "MAKEL-I-11 Kaynak-Lehim" },
-    { "id": "12-yapistirma", "baslik": "Yapıştırma bağlantıları", "ozet": "Avantaj ve dezavantajlar, yapıştırıcı türleri, bindirme hesabı", "dosya": "konular/12-yapistirma.md", "pdf": "pdf/12-yapistirma.pdf", "pdfBaslik": "MAKEL-I-12 Yapıştırma" },
-    { "id": "13-formul-ozeti", "baslik": "Formül özeti (sınav kâğıdı)", "ozet": "Bütün bölümlerin formülleri", "dosya": "konular/13-formul-ozeti.md" }
+    {
+      "id": "01-giris",
+      "baslik": "Giriş: makine ve makine elemanı",
+      "ozet": "Sınıflandırma, tasarım süreci, standartlar, birimler",
+      "dosya": "konular/01-giris.md",
+      "pdf": "pdf/01-giris.pdf",
+      "pdfBaslik": "MAKEL-I-1 Giriş",
+      "bolum": "Temeller"
+    },
+    {
+      "id": "02-mukavemet",
+      "baslik": "Mukavemet bilgisi",
+      "ozet": "Basit ve bileşik gerilmeler, kesit değerleri, hipotezler, emniyet katsayısı",
+      "dosya": "konular/02-mukavemet.md",
+      "pdf": "pdf/02-mukavemet.pdf",
+      "pdfBaslik": "MAKEL-I-2 Mukavemet",
+      "bolum": "Temeller"
+    },
+    {
+      "id": "03-yorulma",
+      "baslik": "Yorulma",
+      "ozet": "Wöhler eğrisi, azaltıcı faktörler, Soderberg-Goodman",
+      "dosya": "konular/03-yorulma.md",
+      "pdf": "pdf/03-yorulma.pdf",
+      "pdfBaslik": "MAKEL-I-3 Yorulma",
+      "bolum": "Temeller"
+    },
+    {
+      "id": "04-malzeme",
+      "baslik": "Malzeme seçimi",
+      "ozet": "Çelikler, dökme demir, demir dışı metaller, gösterimler",
+      "dosya": "konular/04-malzeme.md",
+      "pdf": "pdf/04-malzeme.pdf",
+      "pdfBaslik": "MAKEL-I-4 Malzeme",
+      "bolum": "Temeller"
+    },
+    {
+      "id": "05-standart-tolerans",
+      "baslik": "Standart ve toleranslar",
+      "ozet": "ISO tolerans sistemi, geçmeler, tablo okuma",
+      "dosya": "konular/05-standart-tolerans.md",
+      "pdf": "pdf/05-standart-tolerans.pdf",
+      "pdfBaslik": "MAKEL-I-5 Standart ve toleranslar",
+      "bolum": "Temeller"
+    },
+    {
+      "id": "06-akslar-miller",
+      "baslik": "Akslar ve miller",
+      "ozet": "Aks ve mil hesabı, içi boş miller, sehim, kritik devir",
+      "dosya": "konular/06-akslar-miller.md",
+      "pdf": "pdf/06-akslar-miller.pdf",
+      "pdfBaslik": "MAKEL-I-6 Akslar-Miller",
+      "bolum": "Taşıma ve çözülebilen bağlantılar"
+    },
+    {
+      "id": "07-kamalar",
+      "baslik": "Bağlama elemanları ve kamalar",
+      "ozet": "Uygu kaması, oyuk kama, çakma-sökme, otoblokaj",
+      "dosya": "konular/07-kamalar.md",
+      "pdf": "pdf/07-kamalar.pdf",
+      "pdfBaslik": "MAKEL-I-7 Kamalar",
+      "bolum": "Taşıma ve çözülebilen bağlantılar"
+    },
+    {
+      "id": "08-pim-perno-siki-gecme",
+      "baslik": "Pim, perno ve sıkı geçmeler",
+      "ozet": "Pim ve perno hesabı, sıkı geçmede basınç ve sıkılık",
+      "dosya": "konular/08-pim-perno-siki-gecme.md",
+      "pdf": "pdf/08b-siki-gecmeler.pdf",
+      "pdfBaslik": "MAKEL-I-8 Sıkı geçmeler",
+      "bolum": "Taşıma ve çözülebilen bağlantılar"
+    },
+    {
+      "id": "09-civata-somun",
+      "baslik": "Cıvata-somun bağlantıları",
+      "ozet": "Vida geometrisi, sıkma momenti, ön gerilme, eksantrik yük",
+      "dosya": "konular/09-civata-somun.md",
+      "pdf": "pdf/09-civata-somun.pdf",
+      "pdfBaslik": "MAKEL-I-9 Cıvata-somun",
+      "bolum": "Taşıma ve çözülebilen bağlantılar"
+    },
+    {
+      "id": "10-percin",
+      "baslik": "Perçin bağlantıları",
+      "ozet": "Perçin türleri, perçinleme, kesme ve ezilme hesabı",
+      "dosya": "konular/10-percin.md",
+      "pdf": "pdf/10-percin.pdf",
+      "pdfBaslik": "MAKEL-I-10 Perçin",
+      "bolum": "Çözülemeyen bağlantılar"
+    },
+    {
+      "id": "11-kaynak-lehim",
+      "baslik": "Kaynak ve lehim bağlantıları",
+      "ozet": "Kaynak yöntemleri, dikiş hesabı, yumuşak ve sert lehim",
+      "dosya": "konular/11-kaynak-lehim.md",
+      "pdf": "pdf/11-kaynak-lehim.pdf",
+      "pdfBaslik": "MAKEL-I-11 Kaynak-Lehim",
+      "bolum": "Çözülemeyen bağlantılar"
+    },
+    {
+      "id": "12-yapistirma",
+      "baslik": "Yapıştırma bağlantıları",
+      "ozet": "Avantaj ve dezavantajlar, yapıştırıcı türleri, bindirme hesabı",
+      "dosya": "konular/12-yapistirma.md",
+      "pdf": "pdf/12-yapistirma.pdf",
+      "pdfBaslik": "MAKEL-I-12 Yapıştırma",
+      "bolum": "Çözülemeyen bağlantılar"
+    },
+    {
+      "id": "13-formul-ozeti",
+      "baslik": "Formül özeti (sınav kâğıdı)",
+      "ozet": "Bütün bölümlerin formülleri",
+      "dosya": "konular/13-formul-ozeti.md",
+      "bolum": "Özet"
+    }
   ],
   "pdfler": [
-    { "baslik": "Bölüm 1–10 konu anlatımı ve çözümlü örnekler (özet deste)", "dosya": "pdf/00-bolum-1-10-konu-anlatimi.pdf", "boyut": "42 MB" },
-    { "baslik": "MAKEL-I-1 Giriş", "dosya": "pdf/01-giris.pdf" },
-    { "baslik": "MAKEL-I-2 Mukavemet", "dosya": "pdf/02-mukavemet.pdf" },
-    { "baslik": "MAKEL-I-3 Yorulma", "dosya": "pdf/03-yorulma.pdf" },
-    { "baslik": "MAKEL-I-4 Malzeme", "dosya": "pdf/04-malzeme.pdf" },
-    { "baslik": "MAKEL-I-5 Standart ve toleranslar", "dosya": "pdf/05-standart-tolerans.pdf" },
-    { "baslik": "MAKEL-I-6 Akslar-Miller", "dosya": "pdf/06-akslar-miller.pdf" },
-    { "baslik": "MAKEL-I-7 Bağlama elemanları – Kamalar", "dosya": "pdf/07-kamalar.pdf" },
-    { "baslik": "MAKEL-I-8 Pim-perno", "dosya": "pdf/08a-pim-perno.pdf" },
-    { "baslik": "MAKEL-I-8 Sıkı geçmeler", "dosya": "pdf/08b-siki-gecmeler.pdf" },
-    { "baslik": "MAKEL-I-9 Cıvata-somun bağlantıları", "dosya": "pdf/09-civata-somun.pdf" },
-    { "baslik": "MAKEL-I-10 Perçin bağlantıları", "dosya": "pdf/10-percin.pdf" },
-    { "baslik": "MAKEL-I-11 Kaynak-Lehim", "dosya": "pdf/11-kaynak-lehim.pdf" },
-    { "baslik": "MAKEL-I-12 Yapıştırma bağlantıları", "dosya": "pdf/12-yapistirma.pdf" },
-    { "baslik": "Mil sorusu", "dosya": "pdf/mil-soru.pdf" },
-    { "baslik": "Sorular ve çözümleri", "dosya": "pdf/sorular-ve-cozumleri.pdf" }
+    {
+      "baslik": "Bölüm 1–10 konu anlatımı ve çözümlü örnekler (özet deste)",
+      "dosya": "pdf/00-bolum-1-10-konu-anlatimi.pdf",
+      "boyut": "42 MB"
+    },
+    {
+      "baslik": "MAKEL-I-1 Giriş",
+      "dosya": "pdf/01-giris.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-2 Mukavemet",
+      "dosya": "pdf/02-mukavemet.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-3 Yorulma",
+      "dosya": "pdf/03-yorulma.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-4 Malzeme",
+      "dosya": "pdf/04-malzeme.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-5 Standart ve toleranslar",
+      "dosya": "pdf/05-standart-tolerans.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-6 Akslar-Miller",
+      "dosya": "pdf/06-akslar-miller.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-7 Bağlama elemanları – Kamalar",
+      "dosya": "pdf/07-kamalar.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-8 Pim-perno",
+      "dosya": "pdf/08a-pim-perno.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-8 Sıkı geçmeler",
+      "dosya": "pdf/08b-siki-gecmeler.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-9 Cıvata-somun bağlantıları",
+      "dosya": "pdf/09-civata-somun.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-10 Perçin bağlantıları",
+      "dosya": "pdf/10-percin.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-11 Kaynak-Lehim",
+      "dosya": "pdf/11-kaynak-lehim.pdf"
+    },
+    {
+      "baslik": "MAKEL-I-12 Yapıştırma bağlantıları",
+      "dosya": "pdf/12-yapistirma.pdf"
+    },
+    {
+      "baslik": "Mil sorusu",
+      "dosya": "pdf/mil-soru.pdf"
+    },
+    {
+      "baslik": "Sorular ve çözümleri",
+      "dosya": "pdf/sorular-ve-cozumleri.pdf"
+    }
   ]
 }

@@ -40,3 +40,26 @@ Bu ders Almancayı **A1'den B2'ye** kadar adım adım götürür.
 5. **Her gün:** Almanca bir şey dinle (podcast, şarkı, Deutsche Welle'nin ücretsiz kursları).
 
 > Ses çıkmazsa tarayıcının ve işletim sisteminin dil paketlerinde **Almanca (de-DE)** sesin yüklü olduğunu kontrol et.
+
+## Okunuş ve IPA
+
+Kelime havuzundaki her kelimenin yanında:
+
+- **IPA:** kesin telaffuz (ˈ vurgulu hece, ː uzun ünlü).
+- **Okunuş:** Türkçe harflerle yaklaşık yazım. Örnek: *die Straße* → **di ştrase**, *schreiben* → **şrayben**.
+
+| IPA | Okunuş | Açıklama |
+|---|---|---|
+| ç (ich) | ş | Dil damakta, yumuşak "ş" ile "h" arası |
+| x (Buch) | h | Boğazdan, sert "h" |
+| ʁ (rot) | r | Gırtlaktan "r" |
+| ə (bitte) | e | Vurgusuz, kısa "e" |
+| ɐ (Lehrer) | a | Kelime sonundaki "-er", hafif "a" |
+| t͡s (Zeit) | ts | Almanca **z** |
+| øː / ʏ | ö / ü | Uzun ö, kısa ü |
+
+## Müfredat kaynakları
+
+A1 konuları **Goethe-Institut**'un resmî A1 dilbilgisi envanterleriyle (Start Deutsch 1 ve Fit in Deutsch 1) karşılaştırıldı. Bu envanterlerde A1'de yer alan Dativ zamirleri ve edatları, emir kipi (du/ihr/Sie), war/hatte, sık fiillerle Perfekt, möchte / würde gern, deshalb/dann ve dieser konuları **A1 · Dativ'e giriş, emir kipi, geçmişe ilk adım** sayfasına eklendi. A1 kelime kategorileri de Goethe'nin kelime grupları (aile, renkler, sayılar, zaman, yiyecek…) örnek alınarak düzenlendi.
+
+Telaffuz verisi: açık kaynaklı *ipa-dict* projesi (MIT lisansı), Wiktionary kaynaklı.

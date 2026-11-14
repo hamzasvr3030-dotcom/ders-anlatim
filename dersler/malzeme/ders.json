@@ -1,22 +1,110 @@
 {
   "konular": [
-    { "id": "01-giris", "baslik": "Malzeme muayenesine giriş", "ozet": "Amaçlar, tahribatlı ve tahribatsız yöntemlerin sınıflandırılması", "dosya": "konular/01-giris.md", "pdf": "pdf/hafta-01.pdf", "pdfBaslik": "1. hafta sunumu" },
-    { "id": "02-cekme-testi", "baslik": "Çekme testi", "ozet": "Gerilme–gerinim diyagramı, akma, çekme dayanımı, süneklik, gerçek gerilme", "dosya": "konular/02-cekme-testi.md", "pdf": "pdf/hafta-02.pdf", "pdfBaslik": "2. hafta sunumu" },
-    { "id": "03-basma-sertlik", "baslik": "Basma testi ve sertlik testleri", "ozet": "Fıçılaşma, Brinell, Vickers, Rockwell", "dosya": "konular/03-basma-sertlik.md", "pdf": "pdf/hafta-03.pdf", "pdfBaslik": "3. hafta sunumu" },
-    { "id": "04-surunme-yorulma", "baslik": "Sürünme ve yorulma deneyleri", "ozet": "Sürünme eğrisi, Wöhler eğrisi, yorulma ömrünü etkileyen faktörler", "dosya": "konular/04-surunme-yorulma.md", "pdf": "pdf/hafta-05.pdf", "pdfBaslik": "5. hafta sunumu" },
-    { "id": "05-burulma-egme-kesme", "baslik": "Burulma, eğme ve kesme testleri", "ozet": "Kayma modülü, 3 noktalı eğme, katlama, tek-çift kesme", "dosya": "konular/05-burulma-egme-kesme.md", "pdf": "pdf/hafta-07.pdf", "pdfBaslik": "7. hafta sunumu" },
-    { "id": "06-centik-darbe", "baslik": "Çentik darbe deneyi", "ozet": "Charpy ve Izod, tokluk, sünek–gevrek geçiş sıcaklığı", "dosya": "konular/06-centik-darbe.md", "pdf": "pdf/hafta-10.pdf", "pdfBaslik": "10. hafta sunumu" },
-    { "id": "07-penetrant-manyetik", "baslik": "Tahribatsız muayene: penetrant ve manyetik parçacık", "ozet": "Avantajlar, uygulama adımları, mıknatıslama yöntemleri", "dosya": "konular/07-penetrant-manyetik.md", "pdf": "pdf/hafta-13-14.pdf", "pdfBaslik": "13-14. hafta sunumu" },
-    { "id": "08-girdap-ultrasonik-radyografi", "baslik": "Girdap akımı, ultrasonik, kızılötesi ve radyografi", "ozet": "Deri etkisi, dalga türleri, darbe-yankı, termografi, X ve gama ışınları", "dosya": "konular/08-girdap-ultrasonik-radyografi.md", "pdf": "pdf/hafta-15.pdf", "pdfBaslik": "15. hafta sunumu" }
+    {
+      "id": "01-giris",
+      "baslik": "Malzeme muayenesine giriş",
+      "ozet": "Amaçlar, tahribatlı ve tahribatsız yöntemlerin sınıflandırılması",
+      "dosya": "konular/01-giris.md",
+      "pdf": "pdf/hafta-01.pdf",
+      "pdfBaslik": "1. hafta sunumu",
+      "bolum": "Giriş"
+    },
+    {
+      "id": "02-cekme-testi",
+      "baslik": "Çekme testi",
+      "ozet": "Gerilme–gerinim diyagramı, akma, çekme dayanımı, süneklik, gerçek gerilme",
+      "dosya": "konular/02-cekme-testi.md",
+      "pdf": "pdf/hafta-02.pdf",
+      "pdfBaslik": "2. hafta sunumu",
+      "bolum": "Tahribatlı muayene"
+    },
+    {
+      "id": "03-basma-sertlik",
+      "baslik": "Basma testi ve sertlik testleri",
+      "ozet": "Fıçılaşma, Brinell, Vickers, Rockwell",
+      "dosya": "konular/03-basma-sertlik.md",
+      "pdf": "pdf/hafta-03.pdf",
+      "pdfBaslik": "3. hafta sunumu",
+      "bolum": "Tahribatlı muayene"
+    },
+    {
+      "id": "04-surunme-yorulma",
+      "baslik": "Sürünme ve yorulma deneyleri",
+      "ozet": "Sürünme eğrisi, Wöhler eğrisi, yorulma ömrünü etkileyen faktörler",
+      "dosya": "konular/04-surunme-yorulma.md",
+      "pdf": "pdf/hafta-05.pdf",
+      "pdfBaslik": "5. hafta sunumu",
+      "bolum": "Tahribatlı muayene"
+    },
+    {
+      "id": "05-burulma-egme-kesme",
+      "baslik": "Burulma, eğme ve kesme testleri",
+      "ozet": "Kayma modülü, 3 noktalı eğme, katlama, tek-çift kesme",
+      "dosya": "konular/05-burulma-egme-kesme.md",
+      "pdf": "pdf/hafta-07.pdf",
+      "pdfBaslik": "7. hafta sunumu",
+      "bolum": "Tahribatlı muayene"
+    },
+    {
+      "id": "06-centik-darbe",
+      "baslik": "Çentik darbe deneyi",
+      "ozet": "Charpy ve Izod, tokluk, sünek–gevrek geçiş sıcaklığı",
+      "dosya": "konular/06-centik-darbe.md",
+      "pdf": "pdf/hafta-10.pdf",
+      "pdfBaslik": "10. hafta sunumu",
+      "bolum": "Tahribatlı muayene"
+    },
+    {
+      "id": "07-penetrant-manyetik",
+      "baslik": "Tahribatsız muayene: penetrant ve manyetik parçacık",
+      "ozet": "Avantajlar, uygulama adımları, mıknatıslama yöntemleri",
+      "dosya": "konular/07-penetrant-manyetik.md",
+      "pdf": "pdf/hafta-13-14.pdf",
+      "pdfBaslik": "13-14. hafta sunumu",
+      "bolum": "Tahribatsız muayene"
+    },
+    {
+      "id": "08-girdap-ultrasonik-radyografi",
+      "baslik": "Girdap akımı, ultrasonik, kızılötesi ve radyografi",
+      "ozet": "Deri etkisi, dalga türleri, darbe-yankı, termografi, X ve gama ışınları",
+      "dosya": "konular/08-girdap-ultrasonik-radyografi.md",
+      "pdf": "pdf/hafta-15.pdf",
+      "pdfBaslik": "15. hafta sunumu",
+      "bolum": "Tahribatsız muayene"
+    }
   ],
   "pdfler": [
-    { "baslik": "1. hafta – Giriş ve muayene yöntemleri", "dosya": "pdf/hafta-01.pdf" },
-    { "baslik": "2. hafta – Çekme testi", "dosya": "pdf/hafta-02.pdf" },
-    { "baslik": "3. hafta – Basma ve sertlik testleri", "dosya": "pdf/hafta-03.pdf" },
-    { "baslik": "5. hafta – Sürünme ve yorulma", "dosya": "pdf/hafta-05.pdf" },
-    { "baslik": "7. hafta – Burulma, eğme, kesme", "dosya": "pdf/hafta-07.pdf" },
-    { "baslik": "10. hafta – Çentik darbe deneyi", "dosya": "pdf/hafta-10.pdf" },
-    { "baslik": "13-14. hafta – Tahribatsız muayene (penetrant, manyetik, ultrasonik…)", "dosya": "pdf/hafta-13-14.pdf" },
-    { "baslik": "15. hafta – Girdap akımları ve diğer yöntemler", "dosya": "pdf/hafta-15.pdf" }
+    {
+      "baslik": "1. hafta – Giriş ve muayene yöntemleri",
+      "dosya": "pdf/hafta-01.pdf"
+    },
+    {
+      "baslik": "2. hafta – Çekme testi",
+      "dosya": "pdf/hafta-02.pdf"
+    },
+    {
+      "baslik": "3. hafta – Basma ve sertlik testleri",
+      "dosya": "pdf/hafta-03.pdf"
+    },
+    {
+      "baslik": "5. hafta – Sürünme ve yorulma",
+      "dosya": "pdf/hafta-05.pdf"
+    },
+    {
+      "baslik": "7. hafta – Burulma, eğme, kesme",
+      "dosya": "pdf/hafta-07.pdf"
+    },
+    {
+      "baslik": "10. hafta – Çentik darbe deneyi",
+      "dosya": "pdf/hafta-10.pdf"
+    },
+    {
+      "baslik": "13-14. hafta – Tahribatsız muayene (penetrant, manyetik, ultrasonik…)",
+      "dosya": "pdf/hafta-13-14.pdf"
+    },
+    {
+      "baslik": "15. hafta – Girdap akımları ve diğer yöntemler",
+      "dosya": "pdf/hafta-15.pdf"
+    }
   ]
 }
