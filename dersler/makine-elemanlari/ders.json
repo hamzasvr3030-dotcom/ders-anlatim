@@ -182,5 +182,6 @@
       "baslik": "Sorular ve çözümleri",
       "dosya": "pdf/sorular-ve-cozumleri.pdf"
     }
-  ]
+  ],
+  "sorular": "sorular.json"
 }
