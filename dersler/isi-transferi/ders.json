@@ -1,0 +1,138 @@
+{
+  "sorular": "sorular.json",
+  "notDefteri": "Haftalık el yazısı notlar. Yeni hafta eklendiğinde bu dosyadaki \"guncellemeler\" listesine bir satır eklenir.",
+  "guncellemeler": [
+    {
+      "tarih": "2026-11-14",
+      "not": "Defter 1 eklendi (30 Eylül'den itibaren, 45 sayfa): 11 konu, 15 çözümlü örnek, 1 ek soru, 48 tekrar kartı. Defterdeki hesap hataları soru çözümlerinde ayrıca işaretlendi."
+    }
+  ],
+  "konular": [
+    {
+      "id": "01-temel-yasalar-fourier",
+      "baslik": "Temel yasalar ve Fourier kanunu",
+      "ozet": "Enerji dengesi, Fourier ısı iletim kanunu, ısı akısı ve işaret kuralı",
+      "dosya": "konular/01-temel-yasalar-fourier.md",
+      "bolum": "Isı iletimine giriş",
+      "sayfa": "1–2",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=1",
+      "pdfBaslik": "Defter 1, s. 1–2"
+    },
+    {
+      "id": "02-isi-iletim-denklemi",
+      "baslik": "Isı iletim denklemi",
+      "ozet": "Tek boyutlu denklemin çıkarılışı, 3B form, α, silindirik ve küresel koordinatlar",
+      "dosya": "konular/02-isi-iletim-denklemi.md",
+      "bolum": "Isı iletimine giriş",
+      "sayfa": "2–3, 26",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=2",
+      "pdfBaslik": "Defter 1, s. 2–3, 26"
+    },
+    {
+      "id": "03-sinir-sartlari",
+      "baslik": "Sınır ve başlangıç şartları",
+      "ozet": "Yüzey sıcaklığı, ısı akısı, yalıtım, taşınım, ışınım ve ara yüzey şartları",
+      "dosya": "konular/03-sinir-sartlari.md",
+      "bolum": "Isı iletimine giriş",
+      "sayfa": "24–26",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=24",
+      "pdfBaslik": "Defter 1, s. 24–26"
+    },
+    {
+      "id": "04-isil-direnc-duzlem-duvar",
+      "baslik": "Isıl direnç ve düzlem duvarlar",
+      "ozet": "Elektrik benzetimi, seri-paralel dirençler, çift camlı pencere, ısı üretimli duvar",
+      "dosya": "konular/04-isil-direnc-duzlem-duvar.md",
+      "bolum": "Sürekli rejimde iletim",
+      "sayfa": "22–23, 4–6",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=22",
+      "pdfBaslik": "Defter 1, s. 22–23, 4–6"
+    },
+    {
+      "id": "05-silindirlerde-iletim",
+      "baslik": "Silindirlerde iletim ve ısı üretimi",
+      "ozet": "Isı üreten tel, boş silindir, logaritmik dağılım, yalıtımlı boru",
+      "dosya": "konular/05-silindirlerde-iletim.md",
+      "bolum": "Sürekli rejimde iletim",
+      "sayfa": "6–11",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=6",
+      "pdfBaslik": "Defter 1, s. 6–11"
+    },
+    {
+      "id": "06-kritik-yalitim-yaricapi",
+      "baslik": "Kritik yalıtım yarıçapı",
+      "ozet": "Yalıtım ısı kaybını ne zaman artırır? r_kr = k/h",
+      "dosya": "konular/06-kritik-yalitim-yaricapi.md",
+      "bolum": "Sürekli rejimde iletim",
+      "sayfa": "11–12",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=11",
+      "pdfBaslik": "Defter 1, s. 11–12"
+    },
+    {
+      "id": "07-kanatciklar",
+      "baslik": "Kanatçıklar (genişletilmiş yüzeyler)",
+      "ozet": "Kanat denklemi, uzun / ucu yalıtılmış / uçta taşınımlı kanat, verim ve etkinlik",
+      "dosya": "konular/07-kanatciklar.md",
+      "bolum": "Sürekli rejimde iletim",
+      "sayfa": "12–21, 27",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=12",
+      "pdfBaslik": "Defter 1, s. 12–21, 27"
+    },
+    {
+      "id": "08-zamana-bagli-toplu-sistem",
+      "baslik": "Zamana bağlı iletim: Biot ve toplu sistem",
+      "ozet": "Bi ve Fo sayıları, toplu ısı kapasitesi yöntemi, karakteristik uzunluk",
+      "dosya": "konular/08-zamana-bagli-toplu-sistem.md",
+      "bolum": "Zamana bağlı iletim",
+      "sayfa": "28–30",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=28",
+      "pdfBaslik": "Defter 1, s. 28–30"
+    },
+    {
+      "id": "09-zamana-bagli-heisler",
+      "baslik": "Heisler diyagramları ve tek terimli çözüm",
+      "ozet": "Değişkenlere ayırma, Bi ≈ 1 durumu, Heisler diyagramları, tek terim tablosu",
+      "dosya": "konular/09-zamana-bagli-heisler.md",
+      "bolum": "Zamana bağlı iletim",
+      "sayfa": "31–38, 44",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=31",
+      "pdfBaslik": "Defter 1, s. 31–38, 44"
+    },
+    {
+      "id": "10-cok-boyutlu-zamana-bagli",
+      "baslik": "Çok boyutlu zamana bağlı iletim",
+      "ozet": "Çarpım çözümü: dikdörtgen çubuk ve kısa silindir",
+      "dosya": "konular/10-cok-boyutlu-zamana-bagli.md",
+      "bolum": "Zamana bağlı iletim",
+      "sayfa": "40–43",
+      "eklenme": "2026-11-14",
+      "pdf": "pdf/ders-notlari-1.pdf#page=40",
+      "pdfBaslik": "Defter 1, s. 40–43"
+    },
+    {
+      "id": "11-formul-ozeti",
+      "baslik": "Formül özeti (sınav kâğıdı)",
+      "ozet": "Bütün formüller tek sayfada",
+      "dosya": "konular/11-formul-ozeti.md",
+      "bolum": "Özet",
+      "sayfa": "—",
+      "eklenme": "2026-11-14"
+    }
+  ],
+  "pdfler": [
+    {
+      "baslik": "Isı Transferi el yazısı ders notları – Defter 1 (45 sayfa)",
+      "dosya": "pdf/ders-notlari-1.pdf",
+      "boyut": "19 MB"
+    }
+  ]
+}

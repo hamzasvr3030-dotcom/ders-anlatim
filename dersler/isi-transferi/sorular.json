@@ -1,0 +1,188 @@
+{
+  "sorular": [
+    {
+      "id": "pencere",
+      "konu": "04-isil-direnc-duzlem-duvar",
+      "baslik": "Çift camlı pencereden ısı kaybı",
+      "kaynak": "Ders notları s. 4–6 (Örnek 1)",
+      "zorluk": 2,
+      "soru": "Yüksekliği 1,2 m, genişliği 2 m olan bir pencere, 3 mm kalınlığında iki camdan ($k = 0{,}78$ W/m·K) ve aralarındaki 12 mm kalınlığında **durgun hava** tabakasından ($k = 0{,}026$ W/m·K) oluşmaktadır. Sürekli rejimde iç ortam 22 °C, dış ortam −10 °C'dir. İç ve dış yüzey taşınım katsayıları $h_1 = 10$ ve $h_2 = 25$ W/m²·K'dir.\n\n**a)** Pencereden geçen ısıyı, **b)** camın iç ve dış yüzey sıcaklıklarını bulunuz.",
+      "cozum": "Hava **durgun** olduğu için arada taşınım yok, iletimle hesaplanır. Alan $A = 1{,}2\\times2 = 2{,}4$ m². Devre: taşınım (iç) → cam → hava → cam → taşınım (dış), hepsi **seri**.\n\n$$\nR_1 = \\frac{1}{h_1A} = \\frac{1}{10\\cdot2{,}4} = 0{,}0417\\ \\text{K/W}, \\qquad\nR_{cam} = \\frac{L}{kA} = \\frac{0{,}003}{0{,}78\\cdot2{,}4} = 0{,}0016\\ \\text{K/W}\n$$\n\n$$\nR_{hava} = \\frac{0{,}012}{0{,}026\\cdot2{,}4} = 0{,}1923\\ \\text{K/W}, \\qquad\nR_4 = \\frac{1}{25\\cdot2{,}4} = 0{,}0167\\ \\text{K/W}\n$$\n\n$$\nR_{top} = R_1 + 2R_{cam} + R_{hava} + R_4 = 0{,}2539\\ \\text{K/W}\n$$\n\n**a)**\n\n$$\n\\dot Q = \\frac{T_{\\infty,i} - T_{\\infty,d}}{R_{top}} = \\frac{22 - (-10)}{0{,}2539} = 126\\ \\text{W}\n$$\n\n**b)** Aynı ısı her dirençten geçer:\n\n$$\nT_1 = T_{\\infty,i} - \\dot QR_1 = 22 - 126\\cdot0{,}0417 = 16{,}7\\ °\\text{C}\n$$\n\n$$\nT_2 = T_{\\infty,d} + \\dot QR_4 = -10 + 126\\cdot0{,}0167 = -7{,}9\\ °\\text{C}\n$$",
+      "cevap": "$\\dot Q \\approx 126$ W; $T_1 \\approx 16{,}7$ °C, $T_2 \\approx -7{,}9$ °C",
+      "not": "**Not defterinde:** $T_2 = -7{,}83$ °C yazılmış; hesap $-7{,}9$ °C verir (küçük yuvarlama farkı). En büyük direnç **hava tabakasıdır** ($0{,}19$ / $0{,}25$): çift camın yalıtımı aradaki havadan gelir."
+    },
+    {
+      "id": "levha-isi-uretimi",
+      "konu": "03-sinir-sartlari",
+      "baslik": "Isı üretimli levhadan akışkana aktarılan ısı",
+      "kaynak": "Ders notları s. 23–24",
+      "zorluk": 2,
+      "soru": "10 cm kalınlığındaki bir levhanın içinde $\\dot g = 6\\times10^4$ W/m³ ısı üretilmektedir. Levhanın sağ yüzeyi yalıtılmış, sol yüzeyi 20 °C sıcaklıktaki akışkanla temas hâlindedir. Taşınım katsayısı $h = 500$ W/m²·K, levhanın ısı iletim katsayısı $k = 20$ W/m·K'dir. Duvardan akışkana aktarılan ısıyı (birim alan için) ve sıcaklık dağılımını bulunuz.",
+      "cozum": "Sürekli rejim, tek boyut: $\\dfrac{d^2T}{dx^2} = -\\dfrac{\\dot g}{k}$\n\n$$\n\\frac{dT}{dx} = -\\frac{\\dot g}{k}x + C_1, \\qquad T(x) = -\\frac{\\dot g}{2k}x^2 + C_1x + C_2\n$$\n\n$x = 0$ akışkan tarafı, $x = L = 0{,}1$ m yalıtılmış yüzey.\n\n**1. sınır şartı** (yalıtım, $x = L$): $\\dfrac{dT}{dx}(L) = 0 \\Rightarrow -\\dfrac{\\dot gL}{k} + C_1 = 0 \\Rightarrow C_1 = \\dfrac{\\dot gL}{k}$\n\n**2. sınır şartı** (taşınım, $x = 0$; ısı akışkana $-x$ yönünde gider):\n\n$$\nk\\frac{dT}{dx}(0) = h\\left[T(0) - T_\\infty\\right] \\;\\Rightarrow\\; kC_1 = h(C_2 - T_\\infty) \\;\\Rightarrow\\; C_2 = \\frac{\\dot gL}{h} + T_\\infty\n$$\n\n$$\nT(x) = -\\frac{\\dot g}{2k}x^2 + \\frac{\\dot gL}{k}x + \\frac{\\dot gL}{h} + T_\\infty\n$$\n\nSayılarla: $C_2 = \\dfrac{6\\times10^4\\cdot0{,}1}{500} + 20 = 32$ °C (yüzey sıcaklığı), $T(L) = 32 + \\dfrac{\\dot gL^2}{2k} = 32 + 15 = 47$ °C (en sıcak nokta, yalıtılmış yüz).\n\n**Aktarılan ısı** ($A = 1$ m²):\n\n$$\n\\dot Q = -kA\\frac{dT}{dx}\\Big|_{x=0} = -kA\\frac{\\dot gL}{k} = -\\dot g\\,L\\,A = -6\\times10^4\\cdot0{,}1\\cdot1 = -6000\\ \\text{W}\n$$\n\nEksi işaret, ısının $-x$ yönünde (akışkana doğru) aktığını gösterir. Üretilen bütün ısı ($\\dot gLA$) akışkana geçer.",
+      "cevap": "$|\\dot Q| = 6000$ W/m²; $T(0) = 32$ °C, $T(L) = 47$ °C",
+      "not": "**Not defterinde:** Sonuç \"$6\\cdot10^4\\cdot0{,}1\\cdot1 = 6\\cdot10^4$ W\" diye yazılmış; çarpım **6000 W**'tır. Ayrıca şekilde $h = 50$, metinde $h = 500$ yazıyor; burada metindeki 500 kullanıldı ($h$ ısı miktarını değiştirmez, yalnız sıcaklıkları değiştirir)."
+    },
+    {
+      "id": "tel",
+      "konu": "05-silindirlerde-iletim",
+      "baslik": "Isı üreten elektrik telinin merkez sıcaklığı",
+      "kaynak": "Ders notları s. 7–8 (Örnek 2)",
+      "zorluk": 2,
+      "soru": "Uzunluğu 6 m, çapı 0,2 cm olan 2 kW gücündeki paslanmaz çelik elektrik direnci ($k = 15{,}1$ W/m·°C), 30 °C sıcaklıktaki akışkanla yüzeydeki taşınım katsayısı 140 W/m²·°C olacak şekilde temas hâlindedir.\n\n**a)** Tel için sıcaklık dağılımını, **b)** telin merkez sıcaklığını bulunuz.",
+      "cozum": "**a)** Sürekli rejim, ısı üretimli dolu silindir:\n\n$$\nT(r) = -\\frac{\\dot gr^2}{4k} + C_1\\ln r + C_2\n$$\n\n1. şart, $r = 0$'da $dT/dr = 0$ → $C_1 = 0$.\n2. şart, $r = a$'da $-k\\dfrac{dT}{dr} = h[T(a) - T_\\infty]$:\n\n$$\n-k\\left(-\\frac{\\dot ga}{2k}\\right) = h\\left[-\\frac{\\dot ga^2}{4k} + C_2 - T_\\infty\\right] \\;\\Rightarrow\\; C_2 = \\frac{\\dot ga^2}{4k} + \\frac{\\dot ga}{2h} + T_\\infty\n$$\n\n$$\n\\boxed{T(r) = \\frac{\\dot g\\,(a^2 - r^2)}{4k} + \\frac{\\dot g\\,a}{2h} + T_\\infty}\n$$\n\n**b)** $a = 1$ mm $= 10^{-3}$ m:\n\n$$\nV = \\pi a^2L = \\pi\\,(10^{-3})^2\\cdot6 = 1{,}885\\times10^{-5}\\ \\text{m}^3, \\qquad \\dot g = \\frac{P}{V} = \\frac{2000}{1{,}885\\times10^{-5}} = 1{,}061\\times10^{8}\\ \\text{W/m}^3\n$$\n\n$$\nT(0) = \\underbrace{\\frac{1{,}061\\times10^8\\cdot10^{-6}}{4\\cdot15{,}1}}_{1{,}76} + \\underbrace{\\frac{1{,}061\\times10^8\\cdot10^{-3}}{2\\cdot140}}_{379{,}0} + 30 = 410{,}7\\ °\\text{C}\n$$",
+      "cevap": "$T(0) \\approx 410{,}7$ °C (yüzey ≈ 409 °C)",
+      "not": "**Not defterinde:** Hacim $0{,}01884$ ve $\\dot g = 106\\,157$ W/m³ yazılmış. Doğrusu $V = 1{,}885\\times10^{-5}$ m³, $\\dot g = 1{,}06\\times10^8$ W/m³'tür (mm → m dönüşümünde 1000 kat kayma). Sonuç (410,9 °C) yine de doğru çıkmış. Merkez ile yüzey arasındaki fark yalnızca ~1,8 °C: ince ve iyi iletken telde sıcaklığı **taşınım** belirler."
+    },
+    {
+      "id": "buhar-borusu",
+      "konu": "05-silindirlerde-iletim",
+      "baslik": "Cam yünü ile yalıtılmış buhar borusu",
+      "kaynak": "Ders notları s. 10 (Örnek 3)",
+      "zorluk": 2,
+      "soru": "İç ve dış yarıçapları sırasıyla 5 ve 5,5 cm olan bir çelik borudan ($k = 15$ W/m·°C) 320 °C sıcaklığında buhar geçmektedir. Boru 3 cm kalınlığında cam yünü ($k = 0{,}038$ W/m·°C) ile yalıtılıyor. Ortam sıcaklığı $T_\\infty = 5$ °C, dış taşınım katsayısı 15 W/m²·°C, borunun iç yüzeyindeki taşınım katsayısı 80 W/m²·°C'dir.\n\n**a)** Borunun birim uzunluğu için ısı kaybını, **b)** yalıtım malzemesinin dış yüzey sıcaklığını bulunuz.",
+      "cozum": "$r_1 = 0{,}05$ m, $r_2 = 0{,}055$ m, $r_3 = 0{,}055 + 0{,}03 = 0{,}085$ m, $L = 1$ m. Dört direnç seri:\n\n$$\nR_{iç} = \\frac{1}{h_1\\,2\\pi r_1L} = \\frac{1}{80\\cdot2\\pi\\cdot0{,}05} = 0{,}0398\n$$\n\n$$\nR_{boru} = \\frac{\\ln(5{,}5/5)}{2\\pi\\cdot15} = 0{,}0010, \\qquad\nR_{yalıtım} = \\frac{\\ln(8{,}5/5{,}5)}{2\\pi\\cdot0{,}038} = 1{,}8232\n$$\n\n$$\nR_{dış} = \\frac{1}{15\\cdot2\\pi\\cdot0{,}085} = 0{,}1248, \\qquad R_{top} = 1{,}989\\ °\\text{C/W}\n$$\n\n**a)**\n\n$$\n\\dot Q = \\frac{320 - 5}{1{,}989} = 158{,}4\\ \\text{W/m}\n$$\n\n**b)** Dış yüzeyden ortama giden ısı aynıdır:\n\n$$\n\\dot Q = \\frac{T_y - T_\\infty}{R_{dış}} \\;\\Rightarrow\\; T_y = 5 + 158{,}4\\cdot0{,}1248 = 24{,}8\\ °\\text{C}\n$$",
+      "cevap": "$\\dot Q \\approx 158$ W/m; $T_y \\approx 24{,}8$ °C",
+      "not": "Toplam direncin %92'si **yalıtımdan** gelir; çelik borunun direnci ihmal edilebilecek kadar küçüktür. Taşınım dirençlerinde ilgili yüzeyin yarıçapını kullanmaya dikkat ($r_1$ ve $r_3$)."
+    },
+    {
+      "id": "boru-12m",
+      "konu": "05-silindirlerde-iletim",
+      "baslik": "Yalıtımlı borunun 12 m'deki ısı kaybı",
+      "kaynak": "Ders notları s. 11 (Örnek 4)",
+      "zorluk": 1,
+      "soru": "5 cm çapında, dış yüzey sıcaklığı 150 °C olan bir buhar borusu, ısı iletim katsayısı 0,07 W/m·K olan 2 cm kalınlığında yalıtkanla kaplanmıştır. Sürekli rejimde yalıtkanın dış yüzey sıcaklığı 30 °C olduğuna göre borunun 12 m uzunluğundan ısı kaybını bulunuz.",
+      "cozum": "İki yüzey sıcaklığı da bilindiği için yalnız yalıtımın iletim direnci yeterlidir. $r_1 = 2{,}5$ cm, $r_2 = 2{,}5 + 2 = 4{,}5$ cm:\n\n$$\nR = \\frac{\\ln(r_2/r_1)}{2\\pi kL} = \\frac{\\ln(4{,}5/2{,}5)}{2\\pi\\cdot0{,}07\\cdot12} = \\frac{0{,}5878}{5{,}278} = 0{,}1114\\ \\text{K/W}\n$$\n\n$$\n\\dot Q = \\frac{150 - 30}{0{,}1114} = 1077\\ \\text{W}\n$$",
+      "cevap": "$\\dot Q \\approx 1077{,}5$ W"
+    },
+    {
+      "id": "kritik-yaricap",
+      "konu": "06-kritik-yalitim-yaricapi",
+      "baslik": "Elektrik kablosunda kritik yalıtım yarıçapı",
+      "kaynak": "Ek alıştırma (notlarda bu konunun sayısal örneği yok)",
+      "zorluk": 1,
+      "soru": "3 mm çaplı bir elektrik teli, ısı iletim katsayısı $k = 0{,}15$ W/m·K olan plastikle kaplanacaktır. Ortamla taşınım katsayısı $h = 12$ W/m²·K'dir. Kritik yalıtım yarıçapını bulunuz. Plastik kaplama telin soğumasını kolaylaştırır mı, zorlaştırır mı?",
+      "cozum": "Silindir için:\n\n$$\nr_{kr} = \\frac{k}{h} = \\frac{0{,}15}{12} = 0{,}0125\\ \\text{m} = 12{,}5\\ \\text{mm}\n$$\n\nTelin yarıçapı $r_1 = 1{,}5$ mm $< r_{kr}$. Bu yüzden kaplama kalınlaştıkça toplam ısıl direnç önce **azalır** ve ısı kaybı **artar**; en büyük ısı kaybı kaplamanın dış yarıçapı 12,5 mm (kalınlık 11 mm) olduğunda olur.\n\nPratikte kaplama birkaç mm kalınlığındadır ($r < r_{kr}$), yani plastik kaplama hem elektrik yalıtımı sağlar hem de telin **daha iyi soğumasına** yardım eder.",
+      "cevap": "$r_{kr} = 12{,}5$ mm; ince kaplama ısı kaybını artırır (soğumayı kolaylaştırır)",
+      "etiket": "Ek soru"
+    },
+    {
+      "id": "uzun-kanat",
+      "konu": "07-kanatciklar",
+      "baslik": "Uzun kanat kabulüyle uç sıcaklığı",
+      "kaynak": "Ders notları s. 15 (Örnek 5)",
+      "zorluk": 2,
+      "soru": "Çapı 4 cm, boyu 30 cm olan bir kanadın bir ucu 100 °C iken diğer ucu yalıtılmıştır. Kanadın bulunduğu ortamdaki akışkan sıcaklığı 20 °C, kanat yüzeyi ile akışkan arasındaki taşınım katsayısı 60 W/m²·K'dir. Kanattan kaybedilen ısı 50 W ise kanadın yalıtılmış uç sıcaklığını bulunuz. (Uzun kanat için çözüm uygulanabilir.)",
+      "cozum": "$D = 0{,}04$ m, $L = 0{,}3$ m, $\\theta_d = 100 - 20 = 80$ °C.\n\n$$\nP = \\pi D = 0{,}1257\\ \\text{m}, \\qquad A = \\frac{\\pi D^2}{4} = 1{,}257\\times10^{-3}\\ \\text{m}^2\n$$\n\n**Bilinmeyen $k$'yi ısıdan bul** (uzun kanat): $\\dot Q = \\theta_d\\sqrt{hPkA}$\n\n$$\n50 = 80\\sqrt{60\\cdot0{,}1257\\cdot1{,}257\\times10^{-3}\\cdot k} \\;\\Rightarrow\\; k = 41{,}2\\ \\text{W/m·K}\n$$\n\n$$\nm = \\sqrt{\\frac{hP}{kA}} = \\sqrt{\\frac{60\\cdot0{,}1257}{41{,}2\\cdot1{,}257\\times10^{-3}}} = 12{,}1\\ \\text{m}^{-1}\n$$\n\n**Uç sıcaklığı** ($x = L$):\n\n$$\n\\theta(L) = \\theta_de^{-mL} = 80\\,e^{-12{,}1\\cdot0{,}3} = 2{,}1\\ °\\text{C} \\;\\Rightarrow\\; T(L) = 20 + 2{,}1 = 22{,}1\\ °\\text{C}\n$$",
+      "cevap": "$k \\approx 41{,}2$ W/m·K, $m \\approx 12$ 1/m, $T(L) \\approx 22{,}2$ °C",
+      "not": "$mL = 3{,}6 > 2{,}65$ olduğundan $\\tanh(mL) \\approx 0{,}999$; uzun kanat kabulü yerindedir. Soru metninde \"boyu 3 cm\" yazıyor ama çözümde 30 cm kullanılmış; 3 cm alınsaydı uzun kanat kabulü geçersiz olurdu."
+    },
+    {
+      "id": "disk-kanat",
+      "konu": "07-kanatciklar",
+      "baslik": "Buhar borusuna dairesel disk kanatlar",
+      "kaynak": "Ders notları s. 20–21, 27 (Örnek 6)",
+      "zorluk": 3,
+      "soru": "İçinden buhar geçen, dış çapı 3 cm ve yüzey sıcaklığı 120 °C olan bir boruya, 1 m'ye 200 adet gelecek şekilde dış çapı 6 cm, kalınlığı $t = 2$ mm olan dairesel disk alüminyum kanatlar ($k = 180$ W/m·°C) eklenmiştir. Ortam havası 25 °C, taşınım katsayısı 60 W/m²·°C'dir.\n\n**a)** Borunun 1 m uzunluğu için kanat eklemekle ısı transferindeki artışı, **b)** kanatçık etkinliğini bulunuz.",
+      "cozum": "**Kanatsız boru:**\n\n$$\nA = \\pi DL = \\pi\\cdot0{,}03\\cdot1 = 0{,}0942\\ \\text{m}^2, \\qquad \\dot Q_{kanatsız} = 60\\cdot0{,}0942\\cdot(120 - 25) = 537\\ \\text{W}\n$$\n\n**Kanat verimi** (dairesel disk grafiği): $r_1 = 0{,}015$ m, $r_2 = 0{,}03$ m, $L = r_2 - r_1 = 0{,}015$ m\n\n$$\n\\frac{r_2 + t/2}{r_1} = \\frac{0{,}031}{0{,}015} = 2{,}07, \\qquad\n\\xi = \\left(L + \\frac t2\\right)\\sqrt{\\frac{h}{kt}} = 0{,}016\\sqrt{\\frac{60}{180\\cdot0{,}002}} = 0{,}207\n$$\n\nGrafikten $\\eta_{kanat} \\approx 0{,}95$.\n\n**Bir kanat:**\n\n$$\nA_{kanat} = 2\\pi(r_2^2 - r_1^2) + 2\\pi r_2t = 2\\pi(0{,}03^2 - 0{,}015^2) + 2\\pi\\cdot0{,}03\\cdot0{,}002 = 0{,}00462\\ \\text{m}^2\n$$\n\n$$\n\\dot Q_{kanat} = \\eta\\,hA_{kanat}(T_d - T_\\infty) = 0{,}95\\cdot60\\cdot0{,}00462\\cdot95 = 25{,}0\\ \\text{W}\n$$\n\n**İki kanat arasındaki çıplak boru** (1 m'de 200 kanat → adım 5 mm; kanat 2 mm → boşluk $s = 3$ mm):\n\n$$\nA_{boşluk} = \\pi D s = \\pi\\cdot0{,}03\\cdot0{,}003 = 0{,}000283\\ \\text{m}^2, \\qquad \\dot Q_{boşluk} = 60\\cdot0{,}000283\\cdot95 = 1{,}6\\ \\text{W}\n$$\n\n**Toplam ve artış:**\n\n$$\n\\dot Q_{kanatlı} = 200\\,(25{,}0 + 1{,}6) = 5320\\ \\text{W}, \\qquad \\Delta\\dot Q = 5320 - 537 = 4783\\ \\text{W}\n$$\n\n**b)** Etkinlik:\n\n$$\n\\varepsilon = \\frac{\\dot Q_{kanatlı}}{\\dot Q_{kanatsız}} = \\frac{5320}{537} = 9{,}9\n$$",
+      "cevap": "Artış $\\approx 4783$ W; etkinlik $\\varepsilon \\approx 9{,}9$",
+      "not": "**Not defterinde iki hata var:** (1) Kanatsız ısı **573 W** yazılmış, doğrusu $60\\cdot0{,}0942\\cdot95 = 537$ W. Bu yüzden defterdeki artış (4747 W) ve etkinlik (9,28) da kaymış; doğruları **4783 W** ve **9,9**. (2) $\\xi$ için 0,707 yazılmış, doğrusu 0,207 (grafikten okunan $\\eta \\approx 0{,}95$ ise doğru). Boşluk genişliği: 1 m'de 200 kanat → adım 5 mm; kanat 2 mm → boşluk 3 mm."
+    },
+    {
+      "id": "pirinc-kanatcik",
+      "konu": "07-kanatciklar",
+      "baslik": "İki levha arasındaki pirinç kanatçık",
+      "kaynak": "Ders notları s. 27 (Örnek 7 — defterde yalnız soru var, çözüm burada)",
+      "zorluk": 3,
+      "soru": "İnce pirinç bir kanatçık ($k = 67$ kcal/h·m·°C), aralarında 2,5 cm mesafe bulunan iki levha arasına tespit edilmiştir. Ortamdaki hava sıcaklığı 0 °C, taşınım katsayısı $h = 15$ kcal/h·m²·°C'dir. Kanatçık kesiti $0{,}1\\times30$ cm² ve uçlarındaki sıcaklıklar 90 °C ve 70 °C'dir.\n\n**a)** Kanatçık boyunca sıcaklık dağılımını, **b)** kanatçık yüzeyinden havaya transfer edilen ısıyı bulunuz.",
+      "cozum": "Bu bir **iki ucu belirli sıcaklıkta** kanat problemidir: $\\theta(0) = \\theta_1 = 90$ °C, $\\theta(L) = \\theta_2 = 70$ °C ($T_\\infty = 0$ olduğundan $\\theta = T$).\n\n**Geometri:** kalınlık $t = 1$ mm, genişlik $w = 30$ cm, $L = 2{,}5$ cm.\n\n$$\nA = 0{,}001\\cdot0{,}30 = 3\\times10^{-4}\\ \\text{m}^2, \\qquad P = 2(0{,}001 + 0{,}30) = 0{,}602\\ \\text{m}\n$$\n\n$$\nm = \\sqrt{\\frac{hP}{kA}} = \\sqrt{\\frac{15\\cdot0{,}602}{67\\cdot3\\times10^{-4}}} = 21{,}2\\ \\text{m}^{-1}, \\qquad mL = 0{,}530\n$$\n\n(Birimler oran içinde sadeleştiği için $m$, kcal veya W ile aynı çıkar.)\n\n**a)** $\\theta'' - m^2\\theta = 0$ denkleminin iki şartı sağlayan çözümü:\n\n$$\n\\boxed{\\theta(x) = \\frac{\\theta_2\\sinh(mx) + \\theta_1\\sinh[m(L - x)]}{\\sinh(mL)}}\n$$\n\n| $x$ (mm) | 0 | 6,25 | 12,5 | 18,75 | 25 |\n|---|---|---|---|---|---|\n| $T$ (°C) | 90 | 82,9 | 77,3 | 73,0 | 70 |\n\n**b)** Havaya giden ısı, iki uçtan kanada giren ısıların toplamıdır. $M = \\sqrt{hPkA}$:\n\n$$\nM = \\sqrt{15\\cdot0{,}602\\cdot67\\cdot3\\times10^{-4}} = 0{,}426\\ \\text{kcal/h·°C}\n$$\n\n$$\n\\dot Q = M\\,(\\theta_1 + \\theta_2)\\,\\frac{\\cosh(mL) - 1}{\\sinh(mL)} = 0{,}426\\cdot160\\cdot\\frac{1{,}1437 - 1}{0{,}5550} = 17{,}6\\ \\text{kcal/h} \\approx 20{,}5\\ \\text{W}\n$$\n\n**Kontrol:** 90 °C'lik levhadan kanada $29{,}4$ W girer; 70 °C'lik levhaya $8{,}9$ W geçer; fark $20{,}5$ W havaya gider.",
+      "cevap": "Ortada $T \\approx 77$ °C; havaya $\\dot Q \\approx 17{,}6$ kcal/h $\\approx 20{,}5$ W",
+      "not": "Defterde bu örneğin yalnız soru metni var; çözüm Python ile sayısal olarak doğrulandı (yan yüzeyden integral alınan taşınım da 20,5 W veriyor). Dönüşüm: 1 kcal/h = 1,163 W."
+    },
+    {
+      "id": "pirinc-levha-firin",
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "baslik": "Fırından geçen pirinç levhaların sıcaklığı",
+      "kaynak": "Ders notları s. 30 (Örnek 8)",
+      "zorluk": 1,
+      "soru": "Bir üretim tesisinde 3 cm kalınlığındaki pirinç levhalar ($k = 110$ W/m·°C, $\\rho = 8530$ kg/m³, $c_p = 380$ J/kg·°C, $\\alpha = 3{,}39\\times10^{-5}$ m²/s) başlangıçta 25 °C iken 700 °C sıcaklıktaki fırından geçirilmektedir. Levhanın fırından geçmesi 10 dakika sürdüğüne göre ve $h = 80$ W/m²·°C alınarak levhaların fırından çıktıktan hemen sonraki yüzey sıcaklığını bulunuz.",
+      "cozum": "Levha iki yüzünden ısınır: $L_c = \\dfrac{V}{A} = \\dfrac{xy\\cdot0{,}03}{2xy} = 0{,}015$ m.\n\n$$\nBi = \\frac{hL_c}{k} = \\frac{80\\cdot0{,}015}{110} = 0{,}0109 < 0{,}1 \\;\\Rightarrow\\; \\text{toplu sistem}\n$$\n\n$$\nFo = \\frac{\\alpha t}{L_c^2} = \\frac{3{,}39\\times10^{-5}\\cdot600}{0{,}015^2} = 90{,}4\n$$\n\n$$\n\\frac{T(t) - 700}{25 - 700} = e^{-Bi\\cdot Fo} = e^{-0{,}0109\\cdot90{,}4} = 0{,}373\n$$\n\n$$\nT(t) = 700 - 675\\cdot0{,}373 = 448\\ °\\text{C}\n$$\n\n$Bi$ çok küçük olduğundan levhanın içi ve yüzeyi pratikte aynı sıcaklıktadır.",
+      "cevap": "$T \\approx 448$ °C"
+    },
+    {
+      "id": "celik-cubuk-yag",
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "baslik": "Yağ banyosunda soğuyan çelik çubuk",
+      "kaynak": "Ders notları s. 34 (Örnek 9)",
+      "zorluk": 2,
+      "soru": "3 cm çapında ve 50 cm uzunluğunda bir çelik çubuk ($\\rho = 7830$ kg/m³, $c = 465$ J/kg·K, $k = 45$ W/m·K) başlangıçta 700 °C iken aniden 15 °C sıcaklıktaki yağ banyosuna daldırılıyor. Çubuk yüzeyi ile yağ arasındaki taşınım katsayısı 50 W/m²·K olduğuna göre çubuğun 20 °C'ye kadar soğuması için geçecek zamanı bulunuz.",
+      "cozum": "**Karakteristik uzunluk** (uzun silindir, uçlar ihmal): $L_c = \\dfrac{V}{A_s} = \\dfrac{\\pi r^2L}{2\\pi rL} = \\dfrac r2 = 0{,}0075$ m\n\n$$\nBi = \\frac{hL_c}{k} = \\frac{50\\cdot0{,}0075}{45} = 0{,}0083 < 0{,}1 \\;\\Rightarrow\\; \\text{toplu sistem}\n$$\n\n$$\n\\frac{20 - 15}{700 - 15} = e^{-bt}, \\qquad b = \\frac{h}{\\rho cL_c} = \\frac{50}{7830\\cdot465\\cdot0{,}0075} = 1{,}831\\times10^{-3}\\ \\text{s}^{-1}\n$$\n\n$$\nt = \\frac{\\ln(685/5)}{b} = \\frac{4{,}920}{1{,}831\\times10^{-3}} = 2687\\ \\text{s} \\approx 45\\ \\text{dk}\n$$\n\nUçlar da hesaba katılırsa $L_c = \\dfrac{\\pi r^2L}{2\\pi rL + 2\\pi r^2} = 0{,}00728$ m ve $t \\approx 2610$ s (≈ 43,5 dk).",
+      "cevap": "$t \\approx 2690$ s $\\approx 45$ dakika",
+      "not": "**Not defterinde:** $L_c$ yerine çubuğun **yarıçapı** ($1{,}5$ cm) kullanılmış ve $t = 5625$ s bulunmuş. Silindirde $L_c = V/A_s = r/2$ olduğundan (defterin s. 30'daki kendi tablosu da böyle) süre yaklaşık **yarıya** iner. Ayrıca $\\ln(5/685) = -4{,}92$'dir (defterde $-4{,}96$)."
+    },
+    {
+      "id": "biberon",
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "baslik": "Biberondaki sütün ısıtılması",
+      "kaynak": "Ders notları s. 39 (Örnek 12)",
+      "zorluk": 2,
+      "soru": "Başlangıçta 3 °C sıcaklıktaki süt, 6 cm çapında ve 7 cm yüksekliğinde ince cidarlı camdan yapılmış bir biberonun içindedir. Sütü ısıtmak için biberon 60 °C sıcaklıktaki suya konuyor ve ısınma boyunca sürekli karıştırılıyor. Su ile süt arasındaki taşınım katsayısı 120 W/m²·°C olduğuna göre sütün sıcaklığının 38 °C'ye ulaşması için ne kadar süre geçmesi gerekir? (Süt için $k = 0{,}607$ W/m·°C, $\\rho = 998$ kg/m³, $c_p = 4{,}182$ kJ/kg·°C)",
+      "cozum": "Süt **sürekli karıştırıldığı** için her noktada sıcaklık aynıdır; $Bi$ büyük çıksa da toplu sistem geçerlidir.\n\n**Karakteristik uzunluk** (biberonun bütün yüzeyi suda kabul):\n\n$$\nV = \\pi r^2H = \\pi\\cdot0{,}03^2\\cdot0{,}07 = 1{,}979\\times10^{-4}\\ \\text{m}^3\n$$\n\n$$\nA_s = 2\\pi rH + 2\\pi r^2 = 0{,}01319 + 0{,}00565 = 0{,}01885\\ \\text{m}^2, \\qquad L_c = \\frac{V}{A_s} = 0{,}0105\\ \\text{m}\n$$\n\n$$\nb = \\frac{h}{\\rho c_pL_c} = \\frac{120}{998\\cdot4182\\cdot0{,}0105} = 2{,}74\\times10^{-3}\\ \\text{s}^{-1}\n$$\n\n$$\n\\frac{38 - 60}{3 - 60} = 0{,}386 = e^{-bt} \\;\\Rightarrow\\; t = \\frac{-\\ln0{,}386}{b} = \\frac{0{,}952}{2{,}74\\times10^{-3}} = 348\\ \\text{s} \\approx 5{,}8\\ \\text{dk}\n$$",
+      "cevap": "$t \\approx 348$ s $\\approx 5{,}8$ dakika",
+      "not": "**Not defterinde:** $L_c$ olarak yarıçap ($3$ cm) alınmış ve $t = 993$ s $= 16{,}5$ dk bulunmuş. Toplu sistemde $L_c = V/A_s$ olmalıdır; bu örneğin ders kitabındaki (Çengel) cevabı da **5,8 dakikadır**. Defterdeki $Bi = 5{,}93$ hesabı da $L_c = r$ ile yapılmış; soru zaten karıştırma gerekçesiyle toplu sistem kabul ettiğinden sonucu etkilemez."
+    },
+    {
+      "id": "demir-plaka",
+      "konu": "09-zamana-bagli-heisler",
+      "baslik": "Demir plakanın merkez ve iç nokta sıcaklığı",
+      "kaynak": "Ders notları s. 36–37 (Örnek 10)",
+      "zorluk": 3,
+      "soru": "Başlangıçta $T_i = 225$ °C sıcaklıktaki 5 cm kalınlığında demir plaka ($k = 60$ W/m·°C, $c_p = 460$ J/kg·°C, $\\rho = 7850$ kg/m³, $\\alpha = 1{,}6\\times10^{-5}$ m²/s) aniden iki yüzeyinden $T_\\infty = 25$ °C sıcaklıktaki akışkana $h = 500$ W/m²·°C olacak şekilde maruz bırakılıyor.\n\n**a)** 2 dakika sonra merkez sıcaklığını, **b)** 2 dakika sonra yüzeyden 1 cm derinlikteki noktanın sıcaklığını, **c)** bu süre içinde plakanın birim yüzeyinden çekilen ısıyı bulunuz.",
+      "cozum": "$2L = 5$ cm → $L = 0{,}025$ m.\n\n$$\nBi = \\frac{hL}{k} = \\frac{500\\cdot0{,}025}{60} = 0{,}208 > 0{,}1 \\;\\Rightarrow\\; \\text{toplu sistem kullanılamaz}\n$$\n\n$$\n\\frac1{Bi} = 4{,}8, \\qquad Fo = \\frac{\\alpha t}{L^2} = \\frac{1{,}6\\times10^{-5}\\cdot120}{0{,}025^2} = 3{,}07\n$$\n\n**a)** Heisler (Şekil 1): $\\dfrac{T_0 - T_\\infty}{T_i - T_\\infty} \\approx 0{,}58$\n\n$$\nT_0 = 25 + 0{,}58\\cdot200 = 141\\ °\\text{C}\n$$\n\n*Tek terimli çözümle kontrol* ($Bi = 0{,}208$: $\\lambda_1 = 0{,}4412$, $A_1 = 1{,}0323$): $\\theta_0 = 1{,}0323\\,e^{-0{,}4412^2\\cdot3{,}07} = 0{,}568$ → $T_0 = 138{,}5$ °C. Diyagram okuması ile uyumlu.\n\n**b)** Yüzeyden 1 cm içeride: $x = 2{,}5 - 1 = 1{,}5$ cm, $x/L = 0{,}6$. Şekil 2'den $\\dfrac{T - T_\\infty}{T_0 - T_\\infty} \\approx 0{,}95$:\n\n$$\nT = 25 + 0{,}95\\,(141 - 25) = 135\\ °\\text{C}\n$$\n\n**c)** Şekil 3: $Bi^2Fo = 0{,}208^2\\cdot3{,}07 = 0{,}133$ ve $Bi = 0{,}21$ → $Q/Q_0 \\approx 0{,}45$\n\n$$\nQ_0 = \\rho\\,(2L\\cdot A)\\,c_p\\,(T_i - T_\\infty) = 7850\\cdot0{,}05\\cdot1\\cdot460\\cdot200 = 36{,}1\\times10^6\\ \\text{J/m}^2\n$$\n\n$$\nQ = 0{,}45\\cdot36{,}1\\times10^6 = 16{,}3\\times10^6\\ \\text{J/m}^2\n$$",
+      "cevap": "$T_0 \\approx 140$ °C; $T(1\\,\\text{cm}) \\approx 135$ °C; $Q \\approx 16\\times10^6$ J/m²",
+      "not": "**Not defterinde:** (b)'de $T = 132{,}5$ °C yazılmış, hesap $25 + 0{,}95\\cdot116 = 135$ °C verir. (c)'de $Q_0 = 35{,}33\\times10^6$ J yazılmış (doğrusu $36{,}1\\times10^6$) ve son satır ($5{,}9\\times10^6$ J) okunamıyor; doğru sonuç yaklaşık $16\\times10^6$ J/m²'dir."
+    },
+    {
+      "id": "celik-mil",
+      "konu": "09-zamana-bagli-heisler",
+      "baslik": "Fırından çıkan kalın çelik milin soğuması",
+      "kaynak": "Ders notları s. 37–38 (Örnek 11)",
+      "zorluk": 3,
+      "soru": "35 cm çapında çelikten yapılmış uzun bir mil, 400 °C sıcaklıktaki bir fırında uzun süre bekletildikten sonra yavaş soğuması için 150 °C sıcaklıktaki bir ortamda $h = 60$ W/m²·°C olacak şekilde bekletiliyor ($k = 14{,}9$ W/m·°C, $\\rho = 7900$ kg/m³, $c_p = 477$ J/kg·°C).\n\n**a)** Soğuma başladıktan 20 dakika sonra milin yüzey sıcaklığını, **b)** bu süre içinde milin birim uzunluğundan aktarılan ısıyı bulunuz.",
+      "cozum": "$r_0 = 0{,}175$ m, $t = 1200$ s.\n\n$$\nBi = \\frac{hr_0}{k} = \\frac{60\\cdot0{,}175}{14{,}9} = 0{,}70, \\qquad \\alpha = \\frac{k}{\\rho c_p} = \\frac{14{,}9}{7900\\cdot477} = 3{,}95\\times10^{-6}\\ \\text{m}^2/\\text{s}\n$$\n\n$$\nFo = \\frac{\\alpha t}{r_0^2} = \\frac{3{,}95\\times10^{-6}\\cdot1200}{0{,}175^2} = 0{,}155, \\qquad \\frac1{Bi} = 1{,}42\n$$\n\n**a)** Silindir merkez diyagramı: $\\dfrac{T_0 - T_\\infty}{T_i - T_\\infty} \\approx 0{,}9$ → $T_0 = 150 + 0{,}9\\cdot250 = 375$ °C\n\nYüzey ($r/r_0 = 1$), konum diyagramı: $\\dfrac{T - T_\\infty}{T_0 - T_\\infty} \\approx 0{,}7$ ($J_0(\\lambda_1) = 0{,}71$)\n\n$$\nT_s = 150 + 0{,}7\\,(375 - 150) = 307{,}5\\ °\\text{C}\n$$\n\n**b)** $Bi^2Fo = 0{,}70^2\\cdot0{,}155 = 0{,}076$, $Bi = 0{,}7$ → $Q/Q_0 \\approx 0{,}13$\n\n$$\nQ_0 = \\rho c_p\\,\\frac{\\pi D^2}{4}\\,L\\,(T_i - T_\\infty) = 7900\\cdot477\\cdot\\frac{\\pi\\cdot0{,}35^2}{4}\\cdot1\\cdot250 = 90{,}6\\times10^6\\ \\text{J/m}\n$$\n\n$$\nQ \\approx 0{,}13\\cdot90{,}6\\times10^6 = 11{,}8\\times10^6\\ \\text{J/m}\n$$",
+      "cevap": "$T_s \\approx 308$ °C; $Q \\approx 12\\times10^6$ J/m",
+      "not": "**Not defterinde:** $Q_0$ hesabında $\\rho = 900$ ve $c_p = 0{,}477$ (kJ) yazılmış, sonuç \"10 329 kJ/m\" çıkmış. Doğrusu $\\rho = 7900$ kg/m³, $c_p = 477$ J/kg·°C ile $Q_0 \\approx 90{,}6$ MJ/m'dir. $Fo = 0{,}155 < 0{,}2$ olduğundan bu soruda tek terimli çözüm hassas değildir; diyagram değerleri kullanılmalıdır (okumalar yaklaşık olduğu için cevaplar ±%5 oynayabilir)."
+    },
+    {
+      "id": "roket-nozulu",
+      "konu": "09-zamana-bagli-heisler",
+      "baslik": "Roket nozulunun ısıl test süresi",
+      "kaynak": "Ders notları s. 44–45 (Örnek 15)",
+      "zorluk": 3,
+      "soru": "Et kalınlığı $L = 25$ mm olan özel alaşımlı çelikten yapılmış bir roket nozulu ısıl teste tabi tutuluyor. Başlangıçta 25 °C olan nozulun dış yüzeyi yalıtılmış, iç yüzeyi ise $T_\\infty = 1750$ °C sıcaklıktaki gazlarla $h = 500$ W/m²·°C olacak şekilde temas hâlindedir. Nozulun (iç yüzey) sıcaklığının 1500 °C'yi geçmesi istenmediğine göre ısıl testin en uzun süresi ne olmalıdır? Nozulun çapı et kalınlığından çok büyüktür. ($k = 25$ W/m·K, $\\rho = 8000$ kg/m³, $c_p = 500$ J/kg·K)",
+      "cozum": "Çap çok büyük → düzlem levha. Dış yüzey yalıtılmış olduğundan levhanın **yalıtılmış yüzü merkez düzlem**, ısıtılan yüzü $x/L = 1$ gibi davranır; yarı kalınlık $L = 25$ mm.\n\n$$\nBi = \\frac{hL}{k} = \\frac{500\\cdot0{,}025}{25} = 0{,}5, \\qquad \\frac1{Bi} = 2\n$$\n\n**1) Yüzeyden merkeze:** $x/L = 1$, $1/Bi = 2$ → $\\dfrac{T_s - T_\\infty}{T_0 - T_\\infty} \\approx 0{,}8$ (tek terimde $\\cos\\lambda_1 = 0{,}794$)\n\n$$\n\\frac{1500 - 1750}{T_0 - 1750} = 0{,}8 \\;\\Rightarrow\\; T_0 = 1437{,}5\\ °\\text{C}\n$$\n\n**2) Merkezden Fourier sayısına:**\n\n$$\n\\frac{T_0 - T_\\infty}{T_i - T_\\infty} = \\frac{1437{,}5 - 1750}{25 - 1750} = 0{,}181 \\;\\Rightarrow\\; Fo \\approx 4\\ (\\text{diyagram})\n$$\n\n**3) Süre:**\n\n$$\n\\alpha = \\frac{k}{\\rho c_p} = \\frac{25}{8000\\cdot500} = 6{,}25\\times10^{-6}\\ \\text{m}^2/\\text{s}, \\qquad\nt = \\frac{Fo\\,L^2}{\\alpha} = \\frac{4\\cdot0{,}025^2}{6{,}25\\times10^{-6}} = 400\\ \\text{s} \\approx 6{,}7\\ \\text{dk}\n$$\n\n*Tek terimli kontrol:* $\\lambda_1 = 0{,}6533$, $A_1 = 1{,}0701$ → $Fo = -\\ln(0{,}1825/1{,}0701)/0{,}6533^2 = 4{,}14$, $t = 414$ s $\\approx 6{,}9$ dk.",
+      "cevap": "$t \\approx 400$–$415$ s $\\approx 7$ dakika"
+    },
+    {
+      "id": "dikdortgen-cubuk",
+      "konu": "10-cok-boyutlu-zamana-bagli",
+      "baslik": "Dikdörtgen kesitli demir çubuğun merkezi",
+      "kaynak": "Ders notları s. 41–42 (Örnek 13)",
+      "zorluk": 2,
+      "soru": "$5\\times4$ cm² kesit alanlı dikdörtgen demir çubuk başlangıçta $T_i = 225$ °C sıcaklıktadır. Çubuğun yüzeyleri aniden $T_\\infty = 25$ °C çevre sıcaklığına maruz bırakılıyor, $h = 500$ W/m²·°C. 2 dakika sonra çubuğun merkez sıcaklığını bulunuz. ($k = 60$ W/m·°C, $\\alpha = 1{,}6\\times10^{-5}$ m²/s)",
+      "cozum": "Sonsuz dikdörtgen çubuk = $5$ cm levha × $4$ cm levha (**çarpım**).\n\n**1. levha** ($2L_1 = 5$ cm, $L_1 = 0{,}025$ m):\n\n$$\nBi = \\frac{500\\cdot0{,}025}{60} = 0{,}208,\\quad \\frac1{Bi} = 4{,}8, \\qquad Fo = \\frac{1{,}6\\times10^{-5}\\cdot120}{0{,}025^2} = 3{,}07 \\;\\Rightarrow\\; \\theta_{0,1} \\approx 0{,}58\n$$\n\n**2. levha** ($2L_2 = 4$ cm, $L_2 = 0{,}02$ m):\n\n$$\nBi = \\frac{500\\cdot0{,}02}{60} = 0{,}167,\\quad \\frac1{Bi} = 6, \\qquad Fo = \\frac{1{,}6\\times10^{-5}\\cdot120}{0{,}02^2} = 4{,}8 \\;\\Rightarrow\\; \\theta_{0,2} \\approx 0{,}45\n$$\n\n**Çarpım:**\n\n$$\n\\left(\\frac{T_0 - T_\\infty}{T_i - T_\\infty}\\right)_{çubuk} = 0{,}58\\cdot0{,}45 = 0{,}261 \\;\\Rightarrow\\; T_0 = 25 + 0{,}261\\cdot200 = 77\\ °\\text{C}\n$$\n\n*Tek terimli kontrol:* $0{,}568\\cdot0{,}481 = 0{,}273$ → $T_0 \\approx 80$ °C.",
+      "cevap": "$T_0 \\approx 77$–$80$ °C",
+      "not": "Defterde birleştirme formülü \"+\" ile yazılmış, ama hesap doğru biçimde **çarpımla** yapılmış. Tek boyutlu plakayla (Örnek 10, 141 °C) karşılaştır: ikinci yönden de soğuduğu için merkez çok daha hızlı soğur."
+    },
+    {
+      "id": "kisa-silindir",
+      "konu": "10-cok-boyutlu-zamana-bagli",
+      "baslik": "Kısa pirinç silindirin soğuması",
+      "kaynak": "Ders notları s. 42–43 (Örnek 14)",
+      "zorluk": 3,
+      "soru": "Çapı 8 cm, yüksekliği 15 cm olan pirinç silindir ($\\rho = 8530$ kg/m³, $k = 110$ W/m·°C, $c_p = 0{,}389$ kJ/kg·°C, $\\alpha = 3{,}39\\times10^{-5}$ m²/s) başlangıçta 150 °C üniform sıcaklıkta iken aniden 20 °C sıcaklıktaki hava ile $h = 40$ W/m²·°C olacak şekilde temas ediyor. Soğuma başladıktan 15 dakika sonra:\n\n**a)** silindirin merkez sıcaklığını, **b)** silindirden aktarılan ısı miktarını bulunuz.",
+      "cozum": "Kısa silindir = sonsuz silindir ($D = 8$ cm) × levha ($2L = 15$ cm). $t = 900$ s.\n\n**a)** **Levha** ($L = 0{,}075$ m):\n\n$$\nBi = \\frac{40\\cdot0{,}075}{110} = 0{,}027\\ (1/Bi \\approx 37), \\qquad Fo = \\frac{3{,}39\\times10^{-5}\\cdot900}{0{,}075^2} = 5{,}42 \\;\\Rightarrow\\; \\theta_{0,levha} \\approx 0{,}87\n$$\n\n**Sonsuz silindir** ($r_0 = 0{,}04$ m):\n\n$$\nBi = \\frac{40\\cdot0{,}04}{110} = 0{,}0145\\ (1/Bi \\approx 69), \\qquad Fo = \\frac{3{,}39\\times10^{-5}\\cdot900}{0{,}04^2} = 19{,}1 \\;\\Rightarrow\\; \\theta_{0,sil} \\approx 0{,}58\n$$\n\n$$\n\\left(\\frac{T_0 - T_\\infty}{T_i - T_\\infty}\\right)_{kısa\\ silindir} = 0{,}87\\cdot0{,}58 = 0{,}50 \\;\\Rightarrow\\; T_0 = 20 + 0{,}50\\cdot130 = 85\\ °\\text{C}\n$$\n\n**b)** Maksimum ısı:\n\n$$\nQ_{max} = \\rho\\,\\pi r_0^2(2L)\\,c_p\\,(T_i - T_\\infty) = 8530\\cdot\\pi\\cdot0{,}04^2\\cdot0{,}15\\cdot389\\cdot130 = 325\\ \\text{kJ}\n$$\n\nTek boyutlu oranlar (tek terimli çözüm): levha $(Q/Q_{max})_1 = 0{,}136$, silindir $(Q/Q_{max})_2 = 0{,}425$.\n\n$$\n\\frac{Q}{Q_{max}} = 0{,}136 + 0{,}425\\,(1 - 0{,}136) = 0{,}503 \\;\\Rightarrow\\; Q = 0{,}503\\cdot325 = 164\\ \\text{kJ}\n$$",
+      "cevap": "$T_0 \\approx 85$ °C; $Q \\approx 164$ kJ",
+      "not": "**Not defterinde:** Merkez sıcaklığı doğru (84 °C). Isı kısmında oranlar 0,1 ve 0,41 okunmuş ve çarpılmaya çalışılmış, sonunda $Q = 133$ kJ bulunmuş. Isı oranları **çarpılmaz**; Konu 10'daki birleştirme bağıntısı kullanılır. $Bi$ çok küçük olduğundan ($< 0{,}1$) bu cisim toplu sistemle de çözülebilirdi: $L_c = V/A_s = 0{,}0158$ m, $T = 20 + 130\\,e^{-0{,}687} \\approx 85$ °C — aynı sonuç."
+    }
+  ]
+}

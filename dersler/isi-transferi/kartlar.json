@@ -1,0 +1,244 @@
+{
+  "kartlar": [
+    {
+      "konu": "01-temel-yasalar-fourier",
+      "on": "Fourier ısı iletim kanunu",
+      "arka": "$\\dot Q = -kA\\,\\dfrac{dT}{dx}$"
+    },
+    {
+      "konu": "01-temel-yasalar-fourier",
+      "on": "Isı akısı tanımı ve birimi",
+      "arka": "$q = \\dot Q/A = -k\\,dT/dx$, W/m²"
+    },
+    {
+      "konu": "01-temel-yasalar-fourier",
+      "on": "Fourier kanunundaki eksi işaretin anlamı",
+      "arka": "Isı, sıcaklığın azaldığı yönde akar; dT/dx < 0 iken q pozitif olur"
+    },
+    {
+      "konu": "01-temel-yasalar-fourier",
+      "on": "Isı iletim katsayısının birimi",
+      "arka": "W/(m·K) = W/(m·°C)"
+    },
+    {
+      "konu": "01-temel-yasalar-fourier",
+      "on": "Isı transferinin dayandığı dört temel yasa",
+      "arka": "Termodinamiğin I. ve II. yasası, kütlenin korunumu, Newton'un II. yasası"
+    },
+    {
+      "konu": "02-isi-iletim-denklemi",
+      "on": "k sabitken genel ısı iletim denklemi",
+      "arka": "$\\nabla^2T + \\dot g/k = \\dfrac{1}{\\alpha}\\dfrac{\\partial T}{\\partial t}$"
+    },
+    {
+      "konu": "02-isi-iletim-denklemi",
+      "on": "Isıl yayınım katsayısı",
+      "arka": "$\\alpha = k/(\\rho c)$, m²/s"
+    },
+    {
+      "konu": "02-isi-iletim-denklemi",
+      "on": "Sürekli rejimde, ısı üretimi olmayan iletim denklemi",
+      "arka": "$\\nabla^2T = 0$ (Laplace)"
+    },
+    {
+      "konu": "02-isi-iletim-denklemi",
+      "on": "Silindirik koordinatta tek boyutlu iletim denklemi",
+      "arka": "$\\dfrac1r\\dfrac{\\partial}{\\partial r}\\left(rk\\dfrac{\\partial T}{\\partial r}\\right) + \\dot g = \\rho c\\dfrac{\\partial T}{\\partial t}$"
+    },
+    {
+      "konu": "02-isi-iletim-denklemi",
+      "on": "Genel radyal formda n kaç alınır?",
+      "arka": "Kartezyen n = 0, silindirik n = 1, küresel n = 2"
+    },
+    {
+      "konu": "03-sinir-sartlari",
+      "on": "Yalıtılmış yüzey sınır şartı",
+      "arka": "$dT/dx = 0$ (ısı geçmez)"
+    },
+    {
+      "konu": "03-sinir-sartlari",
+      "on": "Taşınım sınır şartı (x = L)",
+      "arka": "$-k\\,\\dfrac{dT}{dx}(L) = h\\,[T(L) - T_\\infty]$"
+    },
+    {
+      "konu": "03-sinir-sartlari",
+      "on": "Işınım sınır şartı",
+      "arka": "$-k\\,dT/dx = \\varepsilon\\sigma(T_s^4 - T_ç^4)$, sıcaklıklar kelvin"
+    },
+    {
+      "konu": "03-sinir-sartlari",
+      "on": "İki malzemenin ara yüzeyinde hangi büyüklükler süreklidir?",
+      "arka": "Sıcaklık ve ısı akısı"
+    },
+    {
+      "konu": "03-sinir-sartlari",
+      "on": "Dolu silindirin merkezinde sınır şartı",
+      "arka": "$dT/dr\\,|_{r=0} = 0$"
+    },
+    {
+      "konu": "04-isil-direnc-duzlem-duvar",
+      "on": "Düzlem duvarın ısıl direnci",
+      "arka": "$R = L/(kA)$"
+    },
+    {
+      "konu": "04-isil-direnc-duzlem-duvar",
+      "on": "Taşınım direnci",
+      "arka": "$R = 1/(hA)$"
+    },
+    {
+      "konu": "04-isil-direnc-duzlem-duvar",
+      "on": "Seri ve paralel dirençler nasıl birleştirilir?",
+      "arka": "Seri: $R = \\sum R_i$; paralel: $1/R = \\sum 1/R_i$"
+    },
+    {
+      "konu": "04-isil-direnc-duzlem-duvar",
+      "on": "İki tarafında akışkan olan duvardan geçen ısı",
+      "arka": "$\\dot Q = \\dfrac{T_{\\infty1} - T_{\\infty2}}{1/(h_1A) + L/(kA) + 1/(h_2A)}$"
+    },
+    {
+      "konu": "04-isil-direnc-duzlem-duvar",
+      "on": "Çift camlı pencerede en büyük direnç hangisidir?",
+      "arka": "Aradaki durgun hava tabakası"
+    },
+    {
+      "konu": "05-silindirlerde-iletim",
+      "on": "Silindirin ısıl direnci",
+      "arka": "$R = \\ln(r_2/r_1)/(2\\pi kL)$"
+    },
+    {
+      "konu": "05-silindirlerde-iletim",
+      "on": "Isı üretimi olmayan boş silindirde sıcaklık dağılımı",
+      "arka": "$\\dfrac{T - T_1}{T_2 - T_1} = \\dfrac{\\ln(r/a)}{\\ln(b/a)}$ (logaritmik)"
+    },
+    {
+      "konu": "05-silindirlerde-iletim",
+      "on": "Isı üretimli telin merkez sıcaklığı",
+      "arka": "$T_0 = \\dfrac{\\dot ga^2}{4k} + \\dfrac{\\dot ga}{2h} + T_\\infty$"
+    },
+    {
+      "konu": "05-silindirlerde-iletim",
+      "on": "Isı üretimi elektrik gücünden nasıl bulunur?",
+      "arka": "$\\dot g = P/V = P/(\\pi a^2L)$"
+    },
+    {
+      "konu": "06-kritik-yalitim-yaricapi",
+      "on": "Silindir için kritik yalıtım yarıçapı",
+      "arka": "$r_{kr} = k/h$ (k: yalıtım malzemesinin)"
+    },
+    {
+      "konu": "06-kritik-yalitim-yaricapi",
+      "on": "Küre için kritik yalıtım yarıçapı",
+      "arka": "$r_{kr} = 2k/h$"
+    },
+    {
+      "konu": "06-kritik-yalitim-yaricapi",
+      "on": "r < r_kr iken ince yalıtım eklenirse ne olur?",
+      "arka": "Toplam direnç azalır, ısı kaybı artar"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Kanatçık parametresi m",
+      "arka": "$m = \\sqrt{hP/(kA)}$"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Sonsuz uzun kanatta sıcaklık dağılımı ve ısı",
+      "arka": "$\\theta/\\theta_d = e^{-mx}$, $\\dot Q = \\theta_d\\sqrt{hPkA}$"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Ucu yalıtılmış kanattan aktarılan ısı",
+      "arka": "$\\dot Q = \\theta_d\\sqrt{hPkA}\\,\\tanh(mL)$"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Ucu yalıtılmış kanatta sıcaklık dağılımı",
+      "arka": "$\\theta/\\theta_d = \\cosh[m(L - x)]/\\cosh(mL)$"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Kanat verimi tanımı",
+      "arka": "$\\eta = \\dot Q_{kanat}/[hA_{kanat}(T_d - T_\\infty)]$, daima < 1"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Kanatçık etkinliği",
+      "arka": "$\\varepsilon = \\dot Q_{kanatlı}/\\dot Q_{kanatsız}$"
+    },
+    {
+      "konu": "07-kanatciklar",
+      "on": "Uçta taşınımı hesaba katmanın kısa yolu",
+      "arka": "Düzeltilmiş boy $L_c = L + A/P$ ile ucu yalıtılmış kabul et"
+    },
+    {
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "on": "Biot sayısı",
+      "arka": "$Bi = hL_c/k$ = iletim direnci / taşınım direnci"
+    },
+    {
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "on": "Toplu sistem analizi ne zaman geçerlidir?",
+      "arka": "$Bi < 0{,}1$ (cisim içinde sıcaklık düzgün)"
+    },
+    {
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "on": "Toplu sistem sıcaklık bağıntısı",
+      "arka": "$\\dfrac{T - T_\\infty}{T_i - T_\\infty} = e^{-Bi\\cdot Fo} = e^{-\\frac{hA_s}{\\rho Vc}t}$"
+    },
+    {
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "on": "Karakteristik uzunluk",
+      "arka": "$L_c = V/A_s$"
+    },
+    {
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "on": "Levha, uzun silindir ve kürede L_c",
+      "arka": "Levha L (yarı kalınlık), silindir r/2, küre r/3"
+    },
+    {
+      "konu": "08-zamana-bagli-toplu-sistem",
+      "on": "Fourier sayısı",
+      "arka": "$Fo = \\alpha t/L_c^2$"
+    },
+    {
+      "konu": "09-zamana-bagli-heisler",
+      "on": "Heisler diyagramlarında levha için Bi ve Fo hangi uzunlukla tanımlanır?",
+      "arka": "Yarı kalınlık L ile (silindirde r₀)"
+    },
+    {
+      "konu": "09-zamana-bagli-heisler",
+      "on": "Heisler diyagramlarını kullanma sırası",
+      "arka": "1) Merkez sıcaklığı (Fo, 1/Bi) 2) Konum (x/L, 1/Bi) 3) Isı (Bi²Fo, Bi)"
+    },
+    {
+      "konu": "09-zamana-bagli-heisler",
+      "on": "Tek terimli çözüm (merkez)",
+      "arka": "$\\theta_0 = A_1e^{-\\lambda_1^2Fo}$, $Fo > 0{,}2$ için"
+    },
+    {
+      "konu": "09-zamana-bagli-heisler",
+      "on": "Levhada özdeğer denklemi",
+      "arka": "$\\lambda L\\tan(\\lambda L) = Bi$"
+    },
+    {
+      "konu": "09-zamana-bagli-heisler",
+      "on": "Q₀ (maksimum ısı) nedir?",
+      "arka": "$Q_0 = \\rho cV(T_i - T_\\infty)$"
+    },
+    {
+      "konu": "10-cok-boyutlu-zamana-bagli",
+      "on": "Kısa silindirin çarpım çözümü",
+      "arka": "Sonsuz silindir × levha (sıcaklık oranları çarpılır)"
+    },
+    {
+      "konu": "10-cok-boyutlu-zamana-bagli",
+      "on": "Dikdörtgen çubuğun merkez sıcaklığı nasıl bulunur?",
+      "arka": "İki levha çözümünün çarpımıyla"
+    },
+    {
+      "konu": "10-cok-boyutlu-zamana-bagli",
+      "on": "İki boyutlu sistemde Q/Q_max nasıl birleştirilir?",
+      "arka": "$(Q/Q_m)_1 + (Q/Q_m)_2[1 - (Q/Q_m)_1]$ (çarpılmaz)"
+    }
+  ]
+}

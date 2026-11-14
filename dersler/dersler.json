@@ -73,6 +73,18 @@
       "slogan": "Malzemeyi tanımanın yolu onu test etmekten geçer."
     },
     {
+      "id": "isi-transferi",
+      "grup": "Mühendislik dersleri",
+      "ad": "Isı Transferi",
+      "kod": "Isı Transferi",
+      "donem": "Dicle Üniversitesi · haftalık el yazısı ders notları (2026–2027 güz)",
+      "aciklama": "Fourier kanunu, ısı iletim denklemi, sınır şartları, ısıl dirençler, silindirler, kritik yalıtım, kanatçıklar ve zamana bağlı iletim (toplu sistem, Heisler, çok boyutlu).",
+      "renk": "#ea580c",
+      "ikon": "isi",
+      "duzen": "defter",
+      "slogan": "Sıcaktan soğuğa, her hafta bir sayfa."
+    },
+    {
       "id": "isitma-havalandirma",
       "grup": "Mühendislik dersleri",
       "ad": "Isıtma Havalandırma",

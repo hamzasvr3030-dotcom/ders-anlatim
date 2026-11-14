@@ -26,6 +26,7 @@ const dersYolu = id => `dersler/${kod(id)}/`;
 const konuLink = (d, k) => `#/ders/${kod(d)}/${kod(k)}`;
 const karistir = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const ikiHane = n => String(n).padStart(2, '0');
+const tarihYaz = t => { const d = new Date(t + 'T12:00:00'); return isNaN(d) ? String(t) : d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }); };
 
 function depoOku(anahtar, varsayilan) {
   try { const v = localStorage.getItem(anahtar); return v ? JSON.parse(v) : varsayilan; } catch { return varsayilan; }
@@ -42,7 +43,11 @@ async function dersBilgi(id) {
   const ders = (await dersListesi()).find(d => d.id === id);
   if (!ders) throw new Error(`"${id}" adlı ders bulunamadı.`);
   const detay = await yukle(dersYolu(id) + 'ders.json');
-  return { ...ders, ...detay, konular: detay.konular || [], pdfler: detay.pdfler || [] };
+  let sorular = [];
+  if (detay.sorular) {
+    try { sorular = (await yukle(dersYolu(id) + detay.sorular)).sorular || []; } catch (e) { console.warn(e); }
+  }
+  return { ...ders, ...detay, konular: detay.konular || [], pdfler: detay.pdfler || [], sorular };
 }
 
 async function kartlariGetir(d) {
@@ -105,6 +110,8 @@ const IKON = {
   kart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/></svg>',
   test: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg>',
   kitap: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v16H5.5A1.5 1.5 0 0 0 4 20.5z"/><path d="M4 20.5A1.5 1.5 0 0 0 5.5 22H20"/></svg>',
+  soru: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H9l-5 4z"/><path d="M10 8.2a2 2 0 1 1 2.6 1.9c-.4.2-.6.5-.6.9v.5"/><path d="M12 13.4h.01"/></svg>',
+  isi: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="18" rx="1"/><path d="M2 8h5M2 12h5M2 16h5"/><path d="M5.5 6.5 7 8 5.5 9.5M5.5 10.5 7 12l-1.5 1.5M5.5 14.5 7 16l-1.5 1.5"/><path d="M17 8c1.2 1 1.2 2 0 3s-1.2 2 0 3 1.2 2 0 3M20 8c1.2 1 1.2 2 0 3s-1.2 2 0 3 1.2 2 0 3"/></svg>',
   ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6a8 8 0 0 1 0 12"/></svg>',
 };
 const ikon = (ad, sinif = 'ikon') => `<span class="${sinif}" aria-hidden="true">${IKON[ad] || IKON.kitap}</span>`;
@@ -183,6 +190,7 @@ function dersTemasi(d) {
 function dersBasligi(d, aktif) {
   const sekmeler = [
     ['konular', 'Konular', `#/ders/${kod(d.id)}`, 'kitap'],
+    ...(d.sorular.length ? [['sorular', `Çözümlü sorular (${d.sorular.length})`, `#/sorular/${kod(d.id)}`, 'soru']] : []),
     ['kartlar', 'Tekrar kartları', `#/kart/${kod(d.id)}`, 'kart'],
     ['test', 'Test', `#/test/${kod(d.id)}`, 'test'],
   ];
@@ -284,6 +292,7 @@ async function anaSayfa() {
   const vadeler = liste.map(d => ({ d, ist: kutuIstatistik(d.id) }));
   const tumVade = vadeler.reduce((a, x) => a + x.ist.vadesi, 0);
   const tumKelime = liste.reduce((a, d) => a + (d.kelimeSayisi || 0), 0);
+  const tumSoru = liste.reduce((a, d) => a + d.sorular.length, 0);
   const son = depoOku('sonKonu', null);
   const sonDers = son && liste.find(d => d.id === son.ders);
   const sonKonu = sonDers && sonDers.konular.find(k => k.id === son.konu);
@@ -302,7 +311,7 @@ async function anaSayfa() {
         <div><b>${tumOkunan}<small>/${tumKonu}</small></b><span>konu bitti</span></div>
         <div class="${tumVade ? 'uyari' : ''}"><b>${tumVade}</b><span>kart tekrar bekliyor</span></div>
         <div><b>${tumKelime.toLocaleString('tr-TR')}</b><span>kelime</span></div>
-        <div><b>${liste.length}</b><span>ders</span></div>
+        <div><b>${tumSoru}</b><span>çözümlü soru</span></div>
       </div>
     </section>
 
@@ -336,7 +345,7 @@ async function anaSayfa() {
           <div class="karo-ust">${ikon(d.ikon, 'karo-ikon')}${halka(yuzde, d.renk)}</div>
           <h3>${kacis(d.ad)}</h3>
           <p>${kacis(d.slogan || d.aciklama)}</p>
-          <div class="karo-alt"><span>${top} konu</span><span>${d.pdfler.length} PDF</span>${v ? `<span class="rozet-vade">${v} tekrar</span>` : ''}</div>
+          <div class="karo-alt"><span>${top} konu</span>${d.sorular.length ? `<span>${d.sorular.length} soru</span>` : ''}<span>${d.pdfler.length} PDF</span>${v ? `<span class="rozet-vade">${v} tekrar</span>` : ''}</div>
         </a>`;
       }).join('')}
     </div>
@@ -442,6 +451,26 @@ const DUZENLER = {
             <span class="foy-durum">${ok(k) ? 'Tamamlandı' : 'Bekliyor'}</span>
           </a>`; }).join('')}</div>
       </section>`).join('');
+  },
+  // Isı transferi: haftalık doldurulan not defteri
+  defter(d, ok) {
+    const g = (d.guncellemeler || []).slice().reverse();
+    let sira = 0;
+    return `<div class="defter">
+      ${g.length ? `<aside class="defter-gunluk"><h2>${ikon('kitap', 'mini-ikon')} Ekleme günlüğü</h2><ol>${g.map(x => `
+        <li><time>${kacis(tarihYaz(x.tarih))}</time><span>${kacis(x.not)}</span></li>`).join('')}</ol></aside>` : ''}
+      <div class="defter-icerik">${bolumle(d.konular).map(b => `
+        <section class="defter-bolum">
+          ${b.ad ? `<h2 class="defter-baslik">${kacis(b.ad)}</h2>` : ''}
+          <div class="defter-izgara">${b.konular.map(k => { sira++; const n = d.sorular.filter(s => s.konu === k.id).length; return `
+            <a class="defter-sayfa ${ok(k) ? 'okundu' : ''}" href="${konuLink(d.id, k.id)}">
+              <span class="defter-ust"><span>Konu ${ikiHane(sira)}</span><span>${k.sayfa ? 'Defter s. ' + kacis(k.sayfa) : ''}</span></span>
+              <strong>${kacis(k.baslik)}</strong>
+              <span>${kacis(k.ozet || '')}</span>
+              <span class="defter-alt">${n ? `<b>✎ ${n} çözümlü örnek</b>` : '<i></i>'}${k.eklenme ? `<time>${kacis(tarihYaz(k.eklenme))}</time>` : ''}</span>
+            </a>`; }).join('')}</div>
+        </section>`).join('')}</div>
+    </div>`;
   },
   // Isıtma: bina kesiti
   kat(d, ok) {
@@ -582,6 +611,113 @@ async function seviyeSayfasi(id, sevKod) {
     </nav>`;
 }
 
+/* ================= çözümlü sorular ================= */
+
+const soruDurumlari = id => depoOku(`sorular:${id}`, {});
+const ZORLUK = ['', 'Kolay', 'Orta', 'Zor'];
+
+function soruKarti(d, s, no, durum, konuGoster = true) {
+  const k = d.konular.find(x => x.id === s.konu);
+  const z = Number(s.zorluk) || 0;
+  return `
+    <article class="soru-kart" id="soru-${kacis(s.id)}" data-id="${kacis(s.id)}" data-durum="${kacis(durum || '')}">
+      <header class="soru-bas">
+        <span class="soru-no">${kacis(s.etiket || 'Soru ' + no)}</span>
+        <strong>${kacis(s.baslik)}</strong>
+        <span class="soru-durum-rozet"></span>
+      </header>
+      <div class="soru-etiketler">
+        ${konuGoster && k ? `<a class="rozet" href="${konuLink(d.id, k.id)}">${kacis(k.baslik)}</a>` : ''}
+        ${z ? `<span class="zorluk z${z}">${'●'.repeat(z)}${'○'.repeat(3 - z)} ${ZORLUK[z]}</span>` : ''}
+        ${s.kaynak ? `<span class="soluk">📄 ${kacis(s.kaynak)}</span>` : ''}
+      </div>
+      <div class="soru-metin">${mdCiz(s.soru)}</div>
+      <div class="soru-eylem">
+        ${s.cevap ? '<button type="button" class="dugme ikincil" data-ac="cevap">Sonucu göster</button>' : ''}
+        <button type="button" class="dugme" data-ac="cozum">Çözümü göster</button>
+        <span class="bosluk"></span>
+        <button type="button" class="durum-dugme" data-durum="cozdum" title="Kendim çözebildim">✓ Çözdüm</button>
+        <button type="button" class="durum-dugme" data-durum="tekrar" title="Sonra tekrar bakacağım">↻ Tekrar</button>
+      </div>
+      ${s.cevap ? `<div class="soru-cevap" hidden><b>Sonuç:</b> ${mdCiz(s.cevap)}</div>` : ''}
+      <div class="soru-cozum" hidden>
+        <h3>Çözüm</h3>
+        ${mdCiz(s.cozum)}
+        ${s.not ? `<div class="soru-not">${mdCiz(s.not)}</div>` : ''}
+      </div>
+    </article>`;
+}
+
+function sorulariBagla(kok, dersId, degisti) {
+  kok.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const kart = b.closest('.soru-kart'); if (!kart) return;
+    if (b.dataset.ac) {
+      const alan = kart.querySelector(b.dataset.ac === 'cevap' ? '.soru-cevap' : '.soru-cozum');
+      alan.hidden = !alan.hidden;
+      b.textContent = b.dataset.ac === 'cevap' ? (alan.hidden ? 'Sonucu göster' : 'Sonucu gizle') : (alan.hidden ? 'Çözümü göster' : 'Çözümü gizle');
+      if (!alan.hidden) formulleriCiz(alan);
+    } else if (b.dataset.durum) {
+      const d = soruDurumlari(dersId);
+      const yeni = d[kart.dataset.id] === b.dataset.durum ? '' : b.dataset.durum;
+      if (yeni) d[kart.dataset.id] = yeni; else delete d[kart.dataset.id];
+      depoYaz(`sorular:${dersId}`, d);
+      kart.dataset.durum = yeni;
+      degisti && degisti();
+    }
+  });
+}
+
+async function soruSayfasi(id, sorgu) {
+  const d = await dersBilgi(id);
+  dersTemasi(d);
+  document.title = `Çözümlü sorular · ${d.ad}`;
+  const konular = d.konular.filter(k => d.sorular.some(s => s.konu === k.id));
+  let secKonu = sorgu.konu || '', secFiltre = sorgu.filtre || 'hepsi';
+  const yuzde = (a, b) => b ? Math.round(a / b * 100) : 0;
+  const ciz = () => {
+    const dur = soruDurumlari(id);
+    const cozulen = d.sorular.filter(s => dur[s.id] === 'cozdum').length;
+    const tekrar = d.sorular.filter(s => dur[s.id] === 'tekrar').length;
+    const liste = d.sorular.filter(s => (!secKonu || s.konu === secKonu) &&
+      (secFiltre === 'hepsi' || (secFiltre === 'cozulmedi' ? dur[s.id] !== 'cozdum' : dur[s.id] === secFiltre)));
+    app.innerHTML = `
+      ${dersBasligi(d, 'sorular')}
+      <div class="ist-seridi">
+        <div class="ist"><b id="sf-cozulen">${cozulen}<small>/${d.sorular.length}</small></b><span>çözüldü</span></div>
+        <div class="ist ${tekrar ? 'uyari' : ''}"><b id="sf-tekrar">${tekrar}</b><span>tekrar bakılacak</span></div>
+        <div class="ist-cubuk"><i><em style="width:${yuzde(cozulen, d.sorular.length)}%"></em></i><span>%${yuzde(cozulen, d.sorular.length)}</span></div>
+      </div>
+      <p class="ders-aciklama soluk">Önce soruyu kâğıt üzerinde kendin çöz, sonra <b>Sonucu göster</b> ile kontrol et; takılırsan <b>Çözümü göster</b>. İşaretlerin bu tarayıcıda saklanır.</p>
+      <div class="soru-filtre">
+        <select id="sf-konu" aria-label="Konu seç">
+          <option value="">Bütün konular (${d.sorular.length})</option>
+          ${konular.map(k => `<option value="${kacis(k.id)}" ${k.id === secKonu ? 'selected' : ''}>${kacis(k.baslik)} (${d.sorular.filter(s => s.konu === k.id).length})</option>`).join('')}
+        </select>
+        <div class="filtre-dugmeleri">
+          ${[['hepsi', 'Hepsi'], ['cozulmedi', 'Çözülmeyenler'], ['tekrar', 'Tekrar bakılacak'], ['cozdum', 'Çözdüklerim']].map(([v, ad]) =>
+            `<button type="button" data-f="${v}" class="${v === secFiltre ? 'aktif' : ''}">${ad}</button>`).join('')}
+        </div>
+      </div>
+      <div id="soru-listesi">
+        ${liste.length ? liste.map(s => soruKarti(d, s, d.sorular.indexOf(s) + 1, dur[s.id])).join('') : '<p class="bos">Bu filtreye uyan soru yok.</p>'}
+      </div>`;
+    app.querySelector('#sf-konu').addEventListener('change', e => { secKonu = e.target.value; ciz(); });
+    app.querySelectorAll('[data-f]').forEach(b => b.addEventListener('click', () => { secFiltre = b.dataset.f; ciz(); }));
+    sorulariBagla(app.querySelector('#soru-listesi'), id, () => {
+      const d2 = soruDurumlari(id);
+      app.querySelector('#sf-cozulen').innerHTML = `${d.sorular.filter(s => d2[s.id] === 'cozdum').length}<small>/${d.sorular.length}</small>`;
+      app.querySelector('#sf-tekrar').textContent = d.sorular.filter(s => d2[s.id] === 'tekrar').length;
+    });
+    formulleriCiz(app.querySelector('#soru-listesi'));
+  };
+  ciz();
+  if (sorgu.soru) {
+    const el = document.getElementById('soru-' + sorgu.soru);
+    if (el) { el.scrollIntoView({ block: 'start' }); el.querySelector('[data-ac="cozum"]')?.click(); }
+  }
+}
+
 /* ================= PDF ================= */
 
 async function pdfListesi(id) {
@@ -632,6 +768,8 @@ async function konuSayfasi(id, konuId) {
   const ok = okunanlar();
   const onceki = d.konular[sira - 1], sonraki = d.konular[sira + 1];
   const kartN = (await kartlariGetir(d)).filter(c => c.grup === k.id).length;
+  const konuSorulari = d.sorular.filter(s => s.konu === k.id);
+  const soruDur = soruDurumlari(id);
   depoYaz('sonKonu', { ders: id, konu: k.id });
   document.title = `${k.baslik} · ${d.ad}`;
   const sev = d.seviyeler && d.seviyeler.find(s => k.id.startsWith(s.kod.toLowerCase() + '-'));
@@ -654,8 +792,14 @@ async function konuSayfasi(id, konuId) {
         <div class="konu-araclar">
           ${k.pdf ? `<a href="${dersYolu(id) + kacis(k.pdf)}" target="_blank" rel="noopener">📄 ${kacis(k.pdfBaslik || 'Kaynak PDF')}</a>` : ''}
           ${kartN ? `<a href="#/kart/${kod(id)}?konu=${kod(k.id)}">🗂️ Bu konunun ${kartN} kartı</a>` : ''}
+          ${konuSorulari.length ? `<button type="button" class="baglanti" id="sorulara-git">✎ ${konuSorulari.length} çözümlü soru</button>` : ''}
         </div>
         <div id="metin">${mdCiz(md, taban)}</div>
+        ${konuSorulari.length ? `
+        <section id="konu-sorular" class="konu-sorular">
+          <h2>✎ Bu konunun çözümlü soruları <small class="soluk">(${konuSorulari.length})</small></h2>
+          ${konuSorulari.map(s => soruKarti(d, s, d.sorular.indexOf(s) + 1, soruDur[s.id], false)).join('')}
+        </section>` : ''}
         <label class="okundu-kutu"><input type="checkbox" id="okundu" ${ok.has(anahtar) ? 'checked' : ''}> Bu konuyu bitirdim</label>
         <nav class="gezinti">
           ${onceki ? `<a href="${konuLink(id, onceki.id)}">← ${kacis(onceki.baslik)}</a>` : '<span></span>'}
@@ -668,6 +812,12 @@ async function konuSayfasi(id, konuId) {
     okunduAyarla(anahtar, e.target.checked);
     app.querySelector('.yan li.aktif').classList.toggle('okundu', e.target.checked);
   });
+  const soruBolumu = document.getElementById('konu-sorular');
+  if (soruBolumu) {
+    sorulariBagla(soruBolumu, id);
+    document.getElementById('sorulara-git').addEventListener('click', () => soruBolumu.scrollIntoView({ behavior: 'smooth' }));
+    formulleriCiz(soruBolumu);
+  }
   formulleriCiz(document.getElementById('metin'));
 }
 
@@ -1061,6 +1211,7 @@ async function yonlendir() {
     else if (p[0] === 'test' && p[1]) await testSayfasi(p[1], sorgu);
     else if (p[0] === 'kelime' && p[1]) await kelimeSayfasi(p[1], sorgu);
     else if (p[0] === 'pdfler' && p[1]) await pdfListesi(p[1]);
+    else if (p[0] === 'sorular' && p[1]) await soruSayfasi(p[1], sorgu);
     else if (p[0] === 'ara' && p[1]) await aramaSayfasi(p.slice(1).join('/'));
     else await anaSayfa();
   } catch (e) {
