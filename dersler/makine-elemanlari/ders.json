@@ -202,5 +202,6 @@
     }
   ],
   "sorular": "sorular.json",
-  "ozetPdf": "ozet/makine-elemanlari-ders-ozeti.pdf"
+  "ozetPdf": "ozet/makine-elemanlari-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }

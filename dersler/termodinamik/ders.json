@@ -81,5 +81,6 @@
     }
   ],
   "sorular": "sorular.json",
-  "ozetPdf": "ozet/termodinamik-ders-ozeti.pdf"
+  "ozetPdf": "ozet/termodinamik-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }

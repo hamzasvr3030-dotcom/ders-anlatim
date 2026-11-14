@@ -57,6 +57,14 @@ async function kartlariGetir(d) {
   } catch { return []; }
 }
 
+async function formulleriGetir(d) {
+  if (!d.formuller) return [];
+  try {
+    const j = await yukle(dersYolu(d.id) + d.formuller);
+    return (j.kartlar || []).map(k => ({ grup: 'formuller', on: k.on, arka: k.arka, tur: 'kart', formul: true }));
+  } catch { return []; }
+}
+
 /* TSV: kelime, Türkçe, tür, kategori, IPA, okunuş */
 async function kelimeleriGetir(d) {
   if (!d.kelimeler) return [];
@@ -112,6 +120,7 @@ const IKON = {
   kitap: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v16H5.5A1.5 1.5 0 0 0 4 20.5z"/><path d="M4 20.5A1.5 1.5 0 0 0 5.5 22H20"/></svg>',
   soru: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H9l-5 4z"/><path d="M10 8.2a2 2 0 1 1 2.6 1.9c-.4.2-.6.5-.6.9v.5"/><path d="M12 13.4h.01"/></svg>',
   isi: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="18" rx="1"/><path d="M2 8h5M2 12h5M2 16h5"/><path d="M5.5 6.5 7 8 5.5 9.5M5.5 10.5 7 12l-1.5 1.5M5.5 14.5 7 16l-1.5 1.5"/><path d="M17 8c1.2 1 1.2 2 0 3s-1.2 2 0 3 1.2 2 0 3M20 8c1.2 1 1.2 2 0 3s-1.2 2 0 3 1.2 2 0 3"/></svg>',
+  saat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2.5h5M12 2.5V5"/></svg>',
   ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6a8 8 0 0 1 0 12"/></svg>',
 };
 const ikon = (ad, sinif = 'ikon') => `<span class="${sinif}" aria-hidden="true">${IKON[ad] || IKON.kitap}</span>`;
@@ -191,6 +200,7 @@ function dersBasligi(d, aktif) {
   const sekmeler = [
     ['konular', 'Konular', `#/ders/${kod(d.id)}`, 'kitap'],
     ...(d.sorular.length ? [['sorular', `Çözümlü sorular (${d.sorular.length})`, `#/sorular/${kod(d.id)}`, 'soru']] : []),
+    ...(d.sorular.length >= 3 ? [['sinav', 'Sınav modu', `#/sinav/${kod(d.id)}`, 'saat']] : []),
     ['kartlar', 'Tekrar kartları', `#/kart/${kod(d.id)}`, 'kart'],
     ['test', 'Test', `#/test/${kod(d.id)}`, 'test'],
   ];
@@ -258,8 +268,9 @@ function seciciBagla(kok, anahtar, degisti) {
 }
 
 async function gruplarVeHavuz(d) {
-  const konuKartlari = await kartlariGetir(d);
+  const konuKartlari = (await kartlariGetir(d)).concat(await formulleriGetir(d));
   const konular = d.konular.filter(k => konuKartlari.some(c => c.grup === k.id)).map(k => ({ id: k.id, ad: k.baslik }));
+  if (konuKartlari.some(c => c.grup === 'formuller')) konular.push({ id: 'formuller', ad: '📐 Formül kartları' });
   if (d.kelimeler) {
     const kelimeler = await kelimeleriGetir(d);
     const gruplar = d.kelimeler.map(s => ({ id: s.seviye, ad: `${s.seviye} kelimeleri` }));
@@ -500,7 +511,12 @@ async function dersSayfasi(id) {
     ${dersBasligi(d, 'konular')}
     ${istatistikSeridi(d, kartlar.length)}
     <p class="ders-aciklama">${kacis(d.aciklama)} <span class="soluk">· ${kacis(d.donem || '')}</span></p>
-    ${d.ozetPdf ? `<p class="ozet-indir"><a class="dugme ikincil" href="${dersYolu(d.id) + kacis(d.ozetPdf)}" target="_blank" rel="noopener" download>📝 Ders özeti (PDF, ${d.konular.length} konu)</a> <span class="soluk">Her konunun ayrı özeti, konu sayfasının üstünde.</span></p>` : ''}
+    <div class="hizli-eylemler">
+      ${d.sorular.length >= 3 ? `<a class="eylem-karti" href="#/sinav/${kod(d.id)}"><span>⏱️</span><b>Sınav modu</b><small>Süreli deneme, zayıf konu raporu</small></a>` : ''}
+      ${d.formuller ? `<a class="eylem-karti" href="#/kart/${kod(d.id)}?grup=formuller"><span>📐</span><b>Formül kartları</b><small>Formülleri aralıklı tekrarla ezberle</small></a>` : ''}
+      ${d.sorular.length ? `<a class="eylem-karti" href="#/sorular/${kod(d.id)}"><span>✎</span><b>${d.sorular.length} çözümlü soru</b><small>Konuya göre süz, çözdüklerini işaretle</small></a>` : ''}
+      ${d.ozetPdf ? `<a class="eylem-karti" href="${dersYolu(d.id) + kacis(d.ozetPdf)}" target="_blank" rel="noopener" download><span>📝</span><b>Ders özeti (PDF)</b><small>${d.konular.length} konunun özeti tek dosyada</small></a>` : ''}
+    </div>
     ${d.konular.length ? ciz(d, okundu) : '<p class="bos">Bu derse henüz konu eklenmedi.</p>'}`;
 }
 
@@ -720,6 +736,156 @@ async function soruSayfasi(id, sorgu) {
   }
 }
 
+/* ================= sınav modu ================= */
+
+async function sinavSayfasi(id) {
+  const d = await dersBilgi(id);
+  dersTemasi(d);
+  document.title = `Sınav modu · ${d.ad}`;
+  const konular = d.konular.filter(k => d.sorular.some(s => s.konu === k.id)).map(k => ({ id: k.id, ad: k.baslik }));
+  const kavramaVar = d.sorular.some(s => s.tur === 'kavrama');
+  const gecmis = depoOku(`sinavlar:${id}`, []);
+  const seciciAnahtar = `sinav-secim:${id}`;
+  app.innerHTML = `
+    ${dersBasligi(d, 'sinav')}
+    <div class="calisma">
+      <div id="kurulum">
+        <div class="sinav-giris">
+          <div><h2>⏱️ Deneme sınavı</h2><p class="soluk">Soru bankasından rastgele bir sınav oluşturulur. Soruları kâğıtta çöz, süre bitince ya da hazır olunca sınavı bitir; çözümlere bakarak kendini puanla. Sonunda konu konu performans raporu çıkar.</p></div>
+        </div>
+        ${grupSecici('Sınav kapsamı', konular, g => `${d.sorular.filter(s => s.konu === g).length} soru`, seciciAnahtar)}
+        <div class="kurulum-alt">
+          <label class="secenek-satir">Soru sayısı:
+            <select id="adet"><option>5</option><option selected>8</option><option>10</option><option>15</option></select></label>
+          <label class="secenek-satir">Süre:
+            <select id="sure"><option value="0">Süresiz</option><option value="20">20 dk</option><option value="45" selected>45 dk</option><option value="60">60 dk</option><option value="90">90 dk</option></select></label>
+          ${kavramaVar ? '<label class="secenek-satir"><input type="checkbox" id="kavrama" checked> Sözel (kavrama) soruları dahil</label>' : ''}
+          <button id="basla" class="dugme">Sınavı başlat</button>
+        </div>
+        <p class="soluk kucuk-yazi">Daha önce çözemediğin ve "tekrar" işaretlediğin sorulara öncelik verilir.</p>
+        ${gecmis.length ? `<h3 class="grup-baslik">Önceki denemeler</h3><ul class="gecmis-listesi">${gecmis.slice(-6).reverse().map(g => `
+          <li><span>${kacis(new Date(g.t).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }))}</span>
+          <span class="mini-cubuk"><i style="width:${g.yuzde}%"></i></span><b>%${g.yuzde}</b><small class="soluk">${g.n} soru · ${Math.round(g.sure / 60)} dk</small></li>`).join('')}</ul>` : ''}
+      </div>
+      <div id="oturum" hidden></div>
+    </div>`;
+  const secim = seciciBagla(app.querySelector('.secici'), seciciAnahtar);
+  app.querySelector('#basla').addEventListener('click', () => {
+    const sec = new Set(secim());
+    const kav = app.querySelector('#kavrama');
+    let havuz = d.sorular.filter(s => sec.has(s.konu) && (!kav || kav.checked || s.tur !== 'kavrama'));
+    if (!havuz.length) { alert('Seçimde soru yok.'); return; }
+    const dur = soruDurumlari(id);
+    const oncelik = s => dur[s.id] === 'tekrar' ? 0 : !dur[s.id] ? 1 : 2;
+    havuz = karistir(havuz).sort((a, b) => oncelik(a) - oncelik(b));
+    const adet = Math.min(Number(app.querySelector('#adet').value), havuz.length);
+    const secilen = karistir(havuz.slice(0, adet));
+    sinavCoz(d, secilen, Number(app.querySelector('#sure').value));
+  });
+}
+
+function sinavCoz(d, sorular, sureDk) {
+  const kok = app.querySelector('#oturum');
+  app.querySelector('#kurulum').hidden = true; kok.hidden = false;
+  const baslangic = Date.now(), bitis = sureDk ? baslangic + sureDk * 60e3 : 0;
+  let i = 0, bitti = false; const isaret = new Set(), puan = {};
+  let zamanlayici = setInterval(sayacGuncelle, 1000);
+  function sayacGuncelle() {
+    const el = kok.querySelector('#sinav-sayac');
+    if (!document.body.contains(kok) || bitti) { clearInterval(zamanlayici); return; }
+    if (!el) return;
+    const gecen = Math.floor((Date.now() - baslangic) / 1000);
+    if (bitis) {
+      const kalan = Math.max(0, Math.ceil((bitis - Date.now()) / 1000));
+      el.textContent = `${Math.floor(kalan / 60)}:${ikiHane(kalan % 60)}`;
+      el.classList.toggle('az-kaldi', kalan < 300);
+      if (!kalan) { degerlendir(); }
+    } else el.textContent = `${Math.floor(gecen / 60)}:${ikiHane(gecen % 60)}`;
+  }
+  function ciz() {
+    const s = sorular[i], k = d.konular.find(x => x.id === s.konu);
+    kok.innerHTML = `
+      <div class="sinav-ust">
+        <span class="sinav-saat ${bitis ? '' : 'sure-yok'}">⏱️ <b id="sinav-sayac">—</b>${bitis ? '<small>kalan</small>' : '<small>geçen</small>'}</span>
+        <nav class="soru-noktalari">${sorular.map((_, j) => `<button class="${j === i ? 'aktif' : ''} ${isaret.has(j) ? 'isaretli' : ''}" data-git="${j}">${j + 1}</button>`).join('')}</nav>
+        <button class="dugme kirmizi" id="bitir">Sınavı bitir</button>
+      </div>
+      <article class="sinav-soru">
+        <div class="soru-etiketler"><span class="soru-no">Soru ${i + 1} / ${sorular.length}</span>${k ? `<span class="rozet">${kacis(k.baslik)}</span>` : ''}</div>
+        <h3>${kacis(s.baslik)}</h3>
+        <div class="soru-metin">${mdCiz(s.soru)}</div>
+      </article>
+      <div class="sinav-alt">
+        <button class="dugme ikincil" id="onceki" ${i ? '' : 'disabled'}>← Önceki</button>
+        <button class="baglanti" id="isaretle">${isaret.has(i) ? '★ İşareti kaldır' : '☆ Sonra bakmak için işaretle'}</button>
+        ${i < sorular.length - 1 ? '<button class="dugme" id="sonraki">Sonraki →</button>' : '<button class="dugme" id="son">Bitir ve değerlendir</button>'}
+      </div>`;
+    formulleriCiz(kok.querySelector('.sinav-soru'));
+    sayacGuncelle();
+    kok.querySelectorAll('[data-git]').forEach(b => b.onclick = () => { i = Number(b.dataset.git); ciz(); });
+    kok.querySelector('#bitir').onclick = () => { if (confirm('Sınavı bitirip değerlendirmeye geçilsin mi?')) degerlendir(); };
+    kok.querySelector('#onceki').onclick = () => { i--; ciz(); };
+    kok.querySelector('#isaretle').onclick = () => { isaret.has(i) ? isaret.delete(i) : isaret.add(i); ciz(); };
+    const sn = kok.querySelector('#sonraki'); if (sn) sn.onclick = () => { i++; ciz(); };
+    const so = kok.querySelector('#son'); if (so) so.onclick = degerlendir;
+  }
+  function degerlendir() {
+    if (bitti) return; bitti = true; clearInterval(zamanlayici);
+    const sure = Math.round((Date.now() - baslangic) / 1000);
+    kok.innerHTML = `
+      <div class="sinav-degerlendirme">
+        <h2>Değerlendirme</h2>
+        <p class="soluk">Her sorunun çözümüne bak ve kendi çözümünü dürüstçe puanla. Bütün sorular puanlanınca rapor açılır. Süre: ${Math.floor(sure / 60)} dk ${sure % 60} sn.</p>
+        ${sorular.map((s, j) => `
+          <article class="soru-kart" data-j="${j}">
+            <header class="soru-bas"><span class="soru-no">Soru ${j + 1}</span><strong>${kacis(s.baslik)}</strong></header>
+            <div class="soru-metin">${mdCiz(s.soru)}</div>
+            ${s.cevap ? `<div class="soru-cevap"><b>Sonuç:</b> ${mdCiz(s.cevap)}</div>` : ''}
+            <details class="cozum-ac"><summary>Çözümü göster</summary><div class="soru-cozum">${mdCiz(s.cozum)}${s.not ? `<div class="soru-not">${mdCiz(s.not)}</div>` : ''}</div></details>
+            <div class="puanla"><span>Kendi çözümün:</span>
+              <button data-p="1" class="p-dogru">✓ Doğru</button><button data-p="0.5" class="p-kismen">◐ Kısmen</button><button data-p="0" class="p-yanlis">✗ Yanlış</button></div>
+          </article>`).join('')}
+        <div class="sonuc-dugmeler"><button class="dugme" id="rapor" disabled>Raporu göster (0/${sorular.length})</button></div>
+      </div>`;
+    formulleriCiz(kok);
+    kok.querySelectorAll('.puanla button').forEach(b => b.onclick = () => {
+      const kart = b.closest('.soru-kart'); const j = Number(kart.dataset.j);
+      puan[j] = Number(b.dataset.p);
+      kart.querySelectorAll('.puanla button').forEach(x => x.classList.toggle('secili', x === b));
+      kart.dataset.puan = b.dataset.p;
+      const n = Object.keys(puan).length, r = kok.querySelector('#rapor');
+      r.textContent = `Raporu göster (${n}/${sorular.length})`; r.disabled = n < sorular.length;
+    });
+    kok.querySelector('#rapor').onclick = () => rapor(sure);
+    window.scrollTo(0, 0);
+  }
+  function rapor(sure) {
+    const top = sorular.reduce((a, _, j) => a + puan[j], 0), yuzde = Math.round(top / sorular.length * 100);
+    const dur = soruDurumlari(d.id);
+    sorular.forEach((s, j) => { if (puan[j] === 1) dur[s.id] = 'cozdum'; else dur[s.id] = 'tekrar'; });
+    depoYaz(`sorular:${d.id}`, dur);
+    const g = depoOku(`sinavlar:${d.id}`, []); g.push({ t: Date.now(), yuzde, n: sorular.length, sure }); depoYaz(`sinavlar:${d.id}`, g.slice(-30));
+    const konuPuan = {};
+    sorular.forEach((s, j) => { (konuPuan[s.konu] ||= { top: 0, n: 0 }); konuPuan[s.konu].top += puan[j]; konuPuan[s.konu].n++; });
+    const satirlar = Object.entries(konuPuan).map(([k, v]) => ({ k: d.konular.find(x => x.id === k), y: Math.round(v.top / v.n * 100), n: v.n })).sort((a, b) => a.y - b.y);
+    const zayif = satirlar.filter(x => x.y < 60);
+    kok.innerHTML = `
+      <div class="sonuc sinav-rapor">
+        <div class="rapor-halka">${halka(yuzde, yuzde >= 70 ? '#2f9e44' : yuzde >= 50 ? '#f08c00' : '#e03131')}</div>
+        <h2>${yuzde >= 85 ? 'Sınava hazırsın 🏆' : yuzde >= 60 ? 'İyi gidiyor 👍' : 'Biraz daha çalışmak lazım 💪'}</h2>
+        <p class="soluk">${top.toLocaleString('tr-TR')} / ${sorular.length} puan · ${Math.floor(sure / 60)} dk ${sure % 60} sn</p>
+        <h3>Konu konu performans</h3>
+        <ul class="konu-performans">${satirlar.map(x => `<li><a href="${x.k ? konuLink(d.id, x.k.id) : '#'}">${kacis(x.k ? x.k.baslik : '?')}</a>
+          <span class="perf-cubuk"><i style="width:${x.y}%;background:${x.y >= 70 ? 'var(--basari)' : x.y >= 50 ? '#f08c00' : 'var(--uyari)'}"></i></span><b>%${x.y}</b><small>${x.n} soru</small></li>`).join('')}</ul>
+        ${zayif.length ? `<div class="zayif-kutu"><b>Öncelikli tekrar et:</b> ${zayif.map(x => `<a href="#/sorular/${kod(d.id)}?konu=${kod(x.k.id)}">${kacis(x.k.baslik)}</a>`).join(' · ')}</div>` : ''}
+        <div class="sonuc-dugmeler"><button class="dugme" id="yeni">Yeni sınav</button><a class="dugme ikincil" href="#/sorular/${kod(d.id)}?filtre=tekrar">Yanlışlarımı çalış</a></div>
+      </div>`;
+    kok.querySelector('#yeni').onclick = () => sinavSayfasi(d.id);
+    window.scrollTo(0, 0);
+  }
+  ciz();
+}
+
 /* ================= PDF ================= */
 
 async function pdfListesi(id) {
@@ -815,6 +981,7 @@ async function konuSayfasi(id, konuId) {
     okunduAyarla(anahtar, e.target.checked);
     app.querySelector('.yan li.aktif').classList.toggle('okundu', e.target.checked);
   });
+  araclariKur(document.getElementById('metin'));
   const soruBolumu = document.getElementById('konu-sorular');
   if (soruBolumu) {
     sorulariBagla(soruBolumu, id);
@@ -1215,6 +1382,7 @@ async function yonlendir() {
     else if (p[0] === 'kelime' && p[1]) await kelimeSayfasi(p[1], sorgu);
     else if (p[0] === 'pdfler' && p[1]) await pdfListesi(p[1]);
     else if (p[0] === 'sorular' && p[1]) await soruSayfasi(p[1], sorgu);
+    else if (p[0] === 'sinav' && p[1]) await sinavSayfasi(p[1]);
     else if (p[0] === 'ara' && p[1]) await aramaSayfasi(p.slice(1).join('/'));
     else await anaSayfa();
   } catch (e) {
@@ -1243,3 +1411,7 @@ document.getElementById('tema').addEventListener('click', () => {
 
 window.addEventListener('hashchange', yonlendir);
 yonlendir();
+
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}

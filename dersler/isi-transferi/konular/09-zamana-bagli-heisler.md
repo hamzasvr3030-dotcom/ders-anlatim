@@ -79,6 +79,8 @@ $$
 | 5 | 1,3138 | 1,2402 | 1,9898 | 1,5029 | 2,5704 | 1,7870 |
 | 10 | 1,4289 | 1,2620 | 2,1795 | 1,5677 | 2,8363 | 1,9249 |
 
+<div data-arac="heisler"></div>
+
 > **Dikkat:** Heisler diyagramlarında $Bi$, **yarı kalınlık** $L$ (veya $r_0$) ile tanımlanır; toplu sistemdeki $L_c = V/A$ ile karıştırma.
 
 > **Kaynak:** El yazısı ders notları, [s. 31–38](../pdf/ders-notlari-1.pdf#page=31).

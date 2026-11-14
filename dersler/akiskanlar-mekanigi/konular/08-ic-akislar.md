@@ -56,6 +56,8 @@ $$
 
 **Moody diyagramı** bu ilişkinin grafiğidir. Çok yüksek Re'de $f$ yalnızca $\varepsilon/D$'ye bağlıdır (tam pürüzlü bölge).
 
+<div data-arac="moody"></div>
+
 ### Örnek – Türbülanslı akış
 
 20 °C su ($\nu = 1{,}004\times10^{-6}$), Ø5 cm düzgün (pürüzsüz) boru, $V = 2$ m/s, $L = 100$ m:

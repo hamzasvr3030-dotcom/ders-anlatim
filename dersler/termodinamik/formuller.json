@@ -1,0 +1,209 @@
+{
+  "kartlar": [
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Temel: Yoğunluk, özgül hacim",
+      "arka": "$\\rho = m/V$, $\\;v = 1/\\rho$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Temel: Sıcaklık",
+      "arka": "$T(\\text{K}) = T(°\\text{C}) + 273{,}15$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Temel: Basınç",
+      "arka": "$P_{etkin} = P_{mut} - P_{atm}$, $\\;P_{vak} = P_{atm} - P_{mut}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Temel: Hidrostatik",
+      "arka": "$\\Delta P = \\rho g\\Delta z$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Temel: Barometre",
+      "arka": "$P_{atm} = \\rho g h$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Toplam enerji",
+      "arka": "$E = U + \\tfrac12 mV^2 + mgz$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Mekanik enerji (akış)",
+      "arka": "$e_{mek} = P/\\rho + V^2/2 + gz$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Elektrik işi",
+      "arka": "$W_e = VI\\Delta t$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Mil işi / gücü",
+      "arka": "$W = 2\\pi nT$, $\\;\\dot W = 2\\pi\\dot nT$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Yay işi",
+      "arka": "$\\tfrac12k(x_2^2 - x_1^2)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Birinci yasa",
+      "arka": "$E_g - E_ç = \\Delta E$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Çevrim",
+      "arka": "$Q_{net} = W_{net}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Enerji ve iş: Verim",
+      "arka": "$\\eta = $ istenen çıktı / gerekli girdi"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Saf madde: Entalpi",
+      "arka": "$h = u + Pv$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Saf madde: Kuruluk",
+      "arka": "$x = m_g/m$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Saf madde: Karışım özelliği",
+      "arka": "$y = y_f + xy_{fg}$, $\\;x = (y - y_f)/y_{fg}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Saf madde: Sıkıştırılmış sıvı",
+      "arka": "$y \\approx y_{f@T}$, $\\;h \\approx h_{f@T} + v_{f@T}(P - P_{doy})$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gazlar: İdeal gaz",
+      "arka": "$Pv = RT$, $\\;PV = mRT$, $\\;R = R_u/M$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gazlar: İki hal",
+      "arka": "$P_1V_1/T_1 = P_2V_2/T_2$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gazlar: Sıkıştırılabilme",
+      "arka": "$Z = Pv/(RT)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gazlar: İndirgenmiş",
+      "arka": "$P_R = P/P_{kr}$, $\\;T_R = T/T_{kr}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sınır işi: $V$ sabit",
+      "arka": "0"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sınır işi: $P$ sabit",
+      "arka": "$P(V_2 - V_1)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sınır işi: İzotermal ideal gaz",
+      "arka": "$P_1V_1\\ln(V_2/V_1)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sınır işi: Politropik $n \\ne 1$",
+      "arka": "$\\dfrac{P_2V_2 - P_1V_1}{1-n} = \\dfrac{mR(T_2-T_1)}{1-n}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sınır işi: Doğrusal yay",
+      "arka": "$\\dfrac{P_1+P_2}{2}(V_2 - V_1)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kapalı sistem ve özgül ısılar: Enerji dengesi",
+      "arka": "$Q - W = \\Delta U + \\Delta KE + \\Delta PE$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kapalı sistem ve özgül ısılar: Sabit basınç",
+      "arka": "$Q - W_{diğer} = m(h_2 - h_1)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kapalı sistem ve özgül ısılar: İdeal gaz",
+      "arka": "$\\Delta u = c_v\\Delta T$, $\\;\\Delta h = c_p\\Delta T$, $\\;c_p = c_v + R$, $\\;k = c_p/c_v$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kapalı sistem ve özgül ısılar: Hava",
+      "arka": "$c_p = 1{,}005$, $\\;c_v = 0{,}718$, $\\;R = 0{,}287$ kJ/kg·K, $\\;k = 1{,}4$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kapalı sistem ve özgül ısılar: Katı / sıvı",
+      "arka": "$\\Delta u \\approx c\\Delta T$, $\\;\\Delta h = c\\Delta T + v\\Delta P$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Kütle debisi",
+      "arka": "$\\dot m = \\rho VA$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Sürekli akış kütle",
+      "arka": "$\\sum\\dot m_g = \\sum\\dot m_ç$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Akış işi",
+      "arka": "$Pv$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Akan akışkan enerjisi",
+      "arka": "$\\theta = h + V^2/2 + gz$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Sürekli akış enerji",
+      "arka": "$\\dot Q - \\dot W = \\dot m[\\Delta h + \\Delta V^2/2 + g\\Delta z]$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Lüle / difüzör",
+      "arka": "$h_1 + V_1^2/2 = h_2 + V_2^2/2$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Türbin / kompresör",
+      "arka": "$\\dot W = \\dot m\\lvert h_1 - h_2\\rvert$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Kısılma",
+      "arka": "$h_1 = h_2$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Karışma",
+      "arka": "$\\sum\\dot m_g h_g = \\sum\\dot m_ç h_ç$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kontrol hacmi: Zamana bağlı",
+      "arka": "$Q - W + \\sum m_gh_g - \\sum m_çh_ç = m_2u_2 - m_1u_1$"
+    }
+  ]
+}

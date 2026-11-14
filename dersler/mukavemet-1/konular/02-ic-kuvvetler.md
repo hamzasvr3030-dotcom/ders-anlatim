@@ -55,6 +55,8 @@ Bunların $z$'ye göre grafiklerine **N, T, M diyagramları** denir. Amaç, **en
 | $T = 0$ noktası | Sıfırdan geçer | **Ekstremum** |
 | Mafsal, kayıcı mesnet, serbest uç (tekil moment yoksa) | – | $M = 0$ |
 
+<div data-arac="kiris"></div>
+
 ## Çözümlü örnekler
 
 ### Örnek 1 – Ortasından tekil yüklü basit kiriş

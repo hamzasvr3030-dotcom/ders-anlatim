@@ -228,5 +228,6 @@
     }
   ],
   "sorular": "sorular.json",
-  "ozetPdf": "ozet/akiskanlar-mekanigi-ders-ozeti.pdf"
+  "ozetPdf": "ozet/akiskanlar-mekanigi-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }

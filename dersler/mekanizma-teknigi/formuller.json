@@ -1,0 +1,89 @@
+{
+  "kartlar": [
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Serbestlik derecesi: Grübler–Kutzbach",
+      "arka": "$F = \\lambda(l - j - 1) + \\sum f_i$ ($\\lambda = 3$ düzlem, $6$ uzay)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Serbestlik derecesi: Düzlemsel alternatif",
+      "arka": "$F = 3(l-1) - 2e_1 - e_2$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Serbestlik derecesi: Döner, kayar, vida çifti",
+      "arka": "$f = 1$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Serbestlik derecesi: Kam, dişli, çatal mafsal",
+      "arka": "$f = 2$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Serbestlik derecesi: Yorum",
+      "arka": "$F<0$ statik belirsiz · $F=0$ statik belirli · $F=1$ mecburi hareketli · $F>1$ çok s.d.li"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Hız ve ivme – temel: Dönme hızı",
+      "arka": "$V = r\\omega$, yarıçapa dik"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Hız ve ivme – temel: Teğetsel ivme",
+      "arka": "$a^t = r\\alpha$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Hız ve ivme – temel: Normal ivme",
+      "arka": "$a^n = r\\omega^2$, merkeze doğru"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Hız ve ivme – temel: Bağıl hız",
+      "arka": "$\\vec V_B = \\vec V_A + \\vec V_{B/A}$, $V_{B/A} = AB\\cdot\\omega$, $AB$'ye dik"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Hız ve ivme – temel: Bağıl ivme",
+      "arka": "$\\vec a_B = \\vec a_A + \\vec a^t_{B/A} + \\vec a^n_{B/A}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Hız ve ivme – temel: Coriolis",
+      "arka": "$a^c = 2\\omega V_{bağıl}$; bağıl hızı $\\omega$ yönünde 90° döndür"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Dişliler: Hız oranı",
+      "arka": "$\\dfrac{\\omega_3}{\\omega_2} = \\mp\\dfrac{r_2}{r_3} = \\mp\\dfrac{T_2}{T_3}$ (dış $-$, iç $+$)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Dişliler: Modül",
+      "arka": "$m = d/T$, taksimat $t = \\pi m$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Dişliler: Basit/birleşik zincir",
+      "arka": "$\\dfrac{\\omega_{giriş}}{\\omega_{çıkış}} = (-1)^n\\dfrac{\\prod T_{tahrik\\;edilen}}{\\prod T_{tahrik\\;eden}}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Dişliler: Planet (formül yöntemi)",
+      "arka": "$\\dfrac{\\omega_{son} - \\omega_K}{\\omega_{ilk} - \\omega_K} = \\pm\\dfrac{\\prod T_{tahrik\\;eden}}{\\prod T_{tahrik\\;edilen}}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Dişliler: Güneş sabit",
+      "arka": "$\\omega_P = (1 + T_G/T_P)\\,\\omega_K$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Dişliler: Eş eksenli vites kutusu",
+      "arka": "Her kademede $T_1 + T_2$ aynı"
+    }
+  ]
+}

@@ -88,5 +88,6 @@
     }
   ],
   "sorular": "sorular.json",
-  "ozetPdf": "ozet/isitma-havalandirma-ders-ozeti.pdf"
+  "ozetPdf": "ozet/isitma-havalandirma-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }

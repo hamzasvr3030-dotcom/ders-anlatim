@@ -101,5 +101,6 @@
     }
   ],
   "sorular": "sorular.json",
-  "ozetPdf": "ozet/mukavemet-1-ders-ozeti.pdf"
+  "ozetPdf": "ozet/mukavemet-1-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }

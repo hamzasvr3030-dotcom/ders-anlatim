@@ -90,6 +90,8 @@ Dönüşüm denklemleri bir dairenin parametrik denklemidir:
 
 > Bir eksenli halde ($\sigma_y = \tau_{xy} = 0$) daire orijinden geçer: merkez $\sigma_1/2$, yarıçap $\sigma_1/2$. Bu, $\tau_{max} = \sigma_1/2$ sonucunu görsel olarak verir.
 
+<div data-arac="mohr"></div>
+
 ### Sayısal örnek
 
 $\sigma_x = 80$ MPa, $\sigma_y = -40$ MPa, $\tau_{xy} = 25$ MPa:

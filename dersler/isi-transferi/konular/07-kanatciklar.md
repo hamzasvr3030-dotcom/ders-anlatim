@@ -54,6 +54,8 @@ $$
 
 Hatırlatma: $\cosh u = \dfrac{e^u + e^{-u}}{2}$, $\;\sinh u = \dfrac{e^u - e^{-u}}{2}$, $\;\tanh u = \dfrac{\sinh u}{\cosh u}$.
 
+<div data-arac="kanat"></div>
+
 ## Kanat verimi
 
 $$

@@ -1,0 +1,154 @@
+{
+  "kartlar": [
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Düzgün yayılı yük eşdeğeri",
+      "arka": "$Q = ql$, ortada"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Üçgen yayılı yük eşdeğeri",
+      "arka": "$Q = ql/2$, sıfır ucundan $2l/3$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Diferansiyel bağıntılar",
+      "arka": "$dT/dz = -q$, $\\;dM/dz = T$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Alan yöntemi",
+      "arka": "$M_2 - M_1 = \\int T\\,dz$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Ekstremum",
+      "arka": "$T = 0$ olan yerde $M$ maksimum/minimum"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Basit kiriş, ortada $P$",
+      "arka": "$M_{max} = PL/4$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "İç kuvvetler: Basit kiriş, düzgün $q$",
+      "arka": "$M_{max} = qL^2/8$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: Normal gerilme",
+      "arka": "$\\sigma = N/A$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: Birim uzama",
+      "arka": "$\\varepsilon = \\Delta L/L$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: Hooke",
+      "arka": "$\\sigma = E\\varepsilon$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: Uzama",
+      "arka": "$\\Delta L = \\dfrac{NL}{EA}$, kademeli: $\\sum \\dfrac{N_iL_i}{E_iA_i}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: Yay sabiti",
+      "arka": "$k = EA/L$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: Kendi ağırlığı",
+      "arka": "$\\Delta L = \\dfrac{\\gamma L^2}{2E}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Eksenel kuvvet: V sistemi",
+      "arka": "$N = \\dfrac{P}{2\\cos\\alpha}$, $\\;\\delta = \\dfrac{PL}{2AE\\cos^2\\alpha}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Malzeme ve emniyet: Poisson",
+      "arka": "$\\nu = -\\varepsilon_{enine}/\\varepsilon_{boyuna}$, $\\;0 < \\nu < 0{,}5$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Malzeme ve emniyet: Kayma modülü",
+      "arka": "$G = \\dfrac{E}{2(1+\\nu)}$, $\\;\\tau = G\\gamma$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Malzeme ve emniyet: Emniyet gerilmesi",
+      "arka": "$\\sigma_{em} = \\sigma_{ak}/S$ (gevrek: $\\sigma_{max}/n$)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Malzeme ve emniyet: Boyutlandırma",
+      "arka": "$A \\ge P/\\sigma_{em}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Malzeme ve emniyet: Tahkik",
+      "arka": "$P/A \\le \\sigma_{em}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Malzeme ve emniyet: Yük tayini",
+      "arka": "$P \\le \\sigma_{em}A$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sıcaklık ve hiperstatik: Isıl uzama",
+      "arka": "$\\Delta L_T = L\\alpha\\Delta T$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sıcaklık ve hiperstatik: Toplam",
+      "arka": "$\\Delta L = \\dfrac{NL}{EA} + L\\alpha\\Delta T$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sıcaklık ve hiperstatik: Tam engelli çubuk",
+      "arka": "$\\sigma = -E\\alpha\\Delta T$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Sıcaklık ve hiperstatik: İki ucu ankastre, ara yük $F$",
+      "arka": "$R_A = Fb/L$, $\\;R_B = Fa/L$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gerilme analizi: Bir eksenli",
+      "arka": "$\\sigma_n = \\sigma_1\\cos^2\\alpha$, $\\;\\tau = -\\dfrac{\\sigma_1}{2}\\sin2\\alpha$, $\\;\\tau_{max} = \\sigma_1/2$ (45°'de)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gerilme analizi: Düzlem dönüşümü",
+      "arka": "$\\sigma_\\theta = \\dfrac{\\sigma_x+\\sigma_y}{2} + \\dfrac{\\sigma_x-\\sigma_y}{2}\\cos2\\theta + \\tau_{xy}\\sin2\\theta$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gerilme analizi: Düzlem dönüşümü (devam)",
+      "arka": "$\\tau_\\theta = -\\dfrac{\\sigma_x-\\sigma_y}{2}\\sin2\\theta + \\tau_{xy}\\cos2\\theta$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gerilme analizi: Asal gerilmeler",
+      "arka": "$\\sigma_{1,2} = \\dfrac{\\sigma_x+\\sigma_y}{2} \\pm R$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gerilme analizi: Mohr yarıçapı",
+      "arka": "$R = \\tau_{max} = \\sqrt{\\left(\\dfrac{\\sigma_x-\\sigma_y}{2}\\right)^2 + \\tau_{xy}^2}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Gerilme analizi: Asal açı",
+      "arka": "$\\tan2\\theta_p = \\dfrac{2\\tau_{xy}}{\\sigma_x - \\sigma_y}$"
+    }
+  ]
+}

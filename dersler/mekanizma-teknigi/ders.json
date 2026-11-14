@@ -99,5 +99,6 @@
     }
   ],
   "sorular": "sorular.json",
-  "ozetPdf": "ozet/mekanizma-teknigi-ders-ozeti.pdf"
+  "ozetPdf": "ozet/mekanizma-teknigi-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }

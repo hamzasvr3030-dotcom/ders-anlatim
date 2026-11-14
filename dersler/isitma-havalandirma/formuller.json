@@ -1,0 +1,104 @@
+{
+  "kartlar": [
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: Isıl geçirgenlik",
+      "arka": "$\\dfrac{1}{U} = R_{si} + \\sum\\dfrac{d}{\\lambda} + R_{se}$ ($R_{si} = 0{,}13$, $R_{se} = 0{,}04$ duvar)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: Özgül ısı kaybı (TS 825)",
+      "arka": "$H = H_T + H_V$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: İletim",
+      "arka": "$H_T = U_DA_D + U_PA_P + U_KA_K + 0{,}8U_TA_T + 0{,}5U_tA_t + \\sum lU_l$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: Havalandırma",
+      "arka": "$H_V = 0{,}33\\,n_hV_h$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: İç kazanç (konut)",
+      "arka": "$\\Phi_i = 5\\,A_n$ W, $\\;A_n = 0{,}32\\,V_{brüt}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: Güneş kazancı",
+      "arka": "$\\Phi_s = \\sum r\\,g\\,I\\,A$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Yalıtım ve ısı kaybı: Aylık ısıtma ihtiyacı",
+      "arka": "$Q = [H(\\theta_i - \\theta_e) - \\eta(\\Phi_i + \\Phi_s)]\\,t$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isı kaybı cetveli (TS 2164): İletim kaybı",
+      "arka": "$Q_0 = \\sum AU\\Delta T$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isı kaybı cetveli (TS 2164): Artırımlı",
+      "arka": "$Q_T = Q_0(1 + Z_D + Z_W + Z_H)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isı kaybı cetveli (TS 2164): Sızıntı kaybı",
+      "arka": "$Q_s = \\dfrac{1}{3{,}6}\\sum(al)RH\\Delta TZ_e$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isı kaybı cetveli (TS 2164): Toplam",
+      "arka": "$Q = Q_T + Q_s$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kazan, yakıt, depo: Kazan kapasitesi",
+      "arka": "$Q_K = Q_h(1 + Z_R)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kazan, yakıt, depo: Kazan verimi",
+      "arka": "$\\eta = \\dot Q_K/(\\dot m_{yakıt}H_u)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kazan, yakıt, depo: Saatlik yakıt",
+      "arka": "$B = Q_K/(H_u\\eta)$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kazan, yakıt, depo: Genleşme hacmi",
+      "arka": "$V_g = V_{sistem}\\,n$ (90 °C için $n \\approx 0{,}035$)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kazan, yakıt, depo: Kapalı genleşme deposu",
+      "arka": "$V = V_g\\dfrac{P_{son} + 1}{P_{son} - P_{ön}}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Kazan, yakıt, depo: Baca çekişi",
+      "arka": "$\\Delta P = gH(\\rho_{dış} - \\rho_{gaz})$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isıtıcılar ve sıcak su: Radyatör gücü düzeltmesi",
+      "arka": "$Q = Q_n(\\Delta T/\\Delta T_n)^{1{,}3}$"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isıtıcılar ve sıcak su: Su debisi",
+      "arka": "$\\dot m = Q/(c\\,\\Delta T_{su})$ (90/70 sistemde $\\Delta T_{su} = 20$ K)"
+    },
+    {
+      "konu": "08-formul-ozeti",
+      "on": "Isıtıcılar ve sıcak su: Boyler gücü",
+      "arka": "$Q = \\dot mc(T_s - T_{soğuk})$"
+    }
+  ]
+}

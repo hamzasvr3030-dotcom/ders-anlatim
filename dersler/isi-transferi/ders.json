@@ -151,5 +151,6 @@
       "boyut": "19 MB"
     }
   ],
-  "ozetPdf": "ozet/isi-transferi-ders-ozeti.pdf"
+  "ozetPdf": "ozet/isi-transferi-ders-ozeti.pdf",
+  "formuller": "formuller.json"
 }
