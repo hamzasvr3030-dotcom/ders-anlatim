@@ -81,6 +81,16 @@
       "metinde": true
     },
     {
+      "id": "kol-kizak-odev",
+      "konu": "04-konum-analizi",
+      "baslik": "Kol-kızak mekanizması, θ₂ = 45°",
+      "kaynak": "Mekanizma 2 – Konum analizi s. 56 (Ödev 1)",
+      "zorluk": 2,
+      "soru": "Kol-kızak mekanizmasında $r_1 = 200$, $r_2 = 70$, $r_4 = 80$ mm. $\\theta_2 = 45°$ için $\\theta_4$ ve $s_{43}$'ü bulunuz.",
+      "cozum": "Yarım açı dönüşümü $t = \\tan(\\theta_4/2)$, $\\;At^2 + Bt + C = 0$:\n\n$$\nA = r_1 - r_4 - r_2\\cos\\theta_2 = 70{,}50, \\quad B = 2r_2\\sin\\theta_2 = 98{,}99, \\quad C = r_2\\cos\\theta_2 - r_1 - r_4 = -230{,}50\n$$\n\n$$\nt = \\frac{-B \\pm\\sqrt{B^2 - 4AC}}{2A} = \\frac{-98{,}99 \\pm 273{,}5}{141{,}0} \\;\\Rightarrow\\; t_1 = 1{,}2376,\\quad t_2 = -2{,}6417\n$$\n\n$$\n\\theta_4 = 2\\arctan t \\;\\Rightarrow\\; \\theta_4 = 102{,}12°\\ (\\text{açık montaj}), \\qquad \\theta_4 = -138{,}53°\\ (\\text{çapraz})\n$$\n\nKayma mesafesi:\n\n$$\ns_{43}^2 = r_1^2 + r_2^2 - r_4^2 - 2r_1r_2\\cos\\theta_2 = 40\\,000 + 4900 - 6400 - 19\\,799 \\;\\Rightarrow\\; s_{43} = 136{,}75\\ \\text{mm}\n$$\n\nKontrol: $s_{43} = r_2\\sin(\\theta_2 - \\theta_4) + r_1\\sin\\theta_4 = 136{,}75$ ✓",
+      "cevap": "$\\theta_4 \\approx 102{,}1°$; $s_{43} \\approx 136{,}75$ mm"
+    },
+    {
       "id": "06-hiz-ivme-analizi-1",
       "konu": "06-hiz-ivme-analizi",
       "baslik": "iletim mekanizması",
@@ -139,6 +149,26 @@
       "soru": "İki ardışık planet grubu, her birinde $\\dfrac{90\\cdot92}{91\\cdot91}$ oranı. Giriş kolu $n_2 = 2000$ dev/dak.",
       "cozum": "$$\nn_4 = n_2\\left(1 - \\frac{90\\cdot92}{91\\cdot91}\\right) = \\frac{n_2}{8281},\n\\qquad\nn_6 = \\frac{n_4}{8281} = \\frac{2000}{8281^2} = 2{,}92\\times10^{-5} \\text{ dev/dak}\n$$\n\nYani çıkış **günde 0,042 devir**, yaklaşık **23,8 günde bir tur** atar ve girişle aynı yönde döner.\n\n> **Sınav ipucu:** Planet sorularında önce (1) hangi uzvun kol olduğunu, (2) bir ilk ve bir son dişli seçmeyi, (3) kol sabitken ilk–son arasındaki her çiftin dış/iç olduğunu belirle. Sonra formülü yaz. Bilinmeyen sayısı denklem sayısından fazlaysa, sabit dişliyi içeren ikinci bir yol kullan (Örnek 4'teki gibi).",
       "metinde": true
+    },
+    {
+      "id": "planet-ornek2",
+      "konu": "07-disliler",
+      "baslik": "Planet dişlide çıkış dişlisinin hızı",
+      "kaynak": "Mekanizma 5 – Dişliler s. 31 (Örnek 2)",
+      "zorluk": 2,
+      "soru": "Planet dişli sisteminde 5 numaralı kol 75 rad/s ile **SİY**'de, 2 numaralı güneş dişli 50 rad/s ile **SİY**'de dönüyor. Diş sayıları: $T_2 = 18$, $T_3 = 22$, $T_{3'} = 25$, $T_4 = 15$ (3 ve 3' aynı planet milinde). 4 numaralı çıkış dişlisinin açısal hızı ve yönü?",
+      "cozum": "İşaret kuralı: SİTY $+$, SİY $-$ → $\\omega_5 = -75$, $\\omega_2 = -50$ rad/s.\n\nİlk dişli 2, son dişli 4. Kol sabitken 2→3 dış çift ($-$), 3'→4 dış çift ($-$) → işaret $+$:\n\n$$\n\\frac{\\omega_4 - \\omega_5}{\\omega_2 - \\omega_5} = \\left(-\\frac{T_2}{T_3}\\right)\\left(-\\frac{T_{3'}}{T_4}\\right) = \\frac{18\\cdot25}{22\\cdot15} = 1{,}364\n$$\n\n$$\n\\omega_4 = (-50 + 75)\\cdot1{,}364 - 75 = -40{,}9\\ \\text{rad/s}\n$$\n\nEksi işaret: **SİY** yönünde.",
+      "cevap": "$\\omega_4 \\approx 40{,}9$ rad/s, SİY"
+    },
+    {
+      "id": "planet-ornek6",
+      "konu": "07-disliler",
+      "baslik": "Basit zincir + planet grubu",
+      "kaynak": "Mekanizma 5 – Dişliler s. 37 (Örnek 6)",
+      "zorluk": 3,
+      "soru": "Giriş mili 2 (20T), 300 dev/dak ile SİTY dönüyor ve aynı zamanda planet grubunun **kolunu** taşıyor. Sabit eksenli kısım: 2 (20T) → 3 (40T), 3' (15T) → 4 (35T). 4 ile aynı mildeki 4' (60T) güneş dişlidir; planetler 5 (12T) ve 5' (12T), çıkış 6 iç dişli (84T). 6'nın hızı ve yönü?",
+      "cozum": "**1) Sabit eksenli kısım** (2, 3, 4 basit dişli zinciri, iki dış çift → aynı yön):\n\n$$\nn_4 = n_2\\frac{T_2}{T_3}\\cdot\\frac{T_{3'}}{T_4} = 300\\cdot\\frac{20}{40}\\cdot\\frac{15}{35} = 64{,}29\\ \\text{dev/dak (SİTY)}, \\qquad n_{4'} = n_4\n$$\n\n**2) Planet kısmı** (kol $n_k = n_2 = 300$; 4' → 5 dış çift $-$, 5' → 6 iç çift $+$):\n\n$$\n\\frac{n_{4'} - n_k}{n_6 - n_k} = -\\frac{T_5}{T_{4'}}\\cdot\\frac{T_6}{T_{5'}} = -\\frac{12}{60}\\cdot\\frac{84}{12} = -1{,}4\n$$\n\n$$\n64{,}29 - 300 = -1{,}4\\,(n_6 - 300) \\;\\Rightarrow\\; n_6 = 468{,}4\\ \\text{dev/dak (SİTY)}\n$$",
+      "cevap": "$n_6 \\approx 468$ dev/dak, SİTY"
     }
   ]
 }
