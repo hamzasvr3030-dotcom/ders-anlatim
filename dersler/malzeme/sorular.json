@@ -1,0 +1,44 @@
+{
+  "sorular": [
+    {
+      "id": "02-cekme-testi-1",
+      "konu": "02-cekme-testi",
+      "baslik": "Çekme testi – Örnek 1",
+      "kaynak": "2. hafta sunumu (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "1,25 cm çaplı çubuğa 2500 kg'lık yük asılıyor:",
+      "cozum": "$$\nF = 2500\\cdot9{,}81 = 24\\,525\\ \\text{N}, \\quad A_0 = \\frac{\\pi\\cdot0{,}0125^2}{4} = 1{,}227\\times10^{-4}\\ \\text{m}^2, \\quad \\sigma = 2{,}0\\times10^8\\ \\text{Pa} = 200\\ \\text{MPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "02-cekme-testi-2",
+      "konu": "02-cekme-testi",
+      "baslik": "Çekme testi – Örnek 2",
+      "kaynak": "2. hafta sunumu (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Alüminyum numunede ölçü işaretleri 50 mm aralıklı; çekmeden sonra 67 mm:",
+      "cozum": "$$\n\\varepsilon = \\frac{67 - 50}{50} = 0{,}34, \\qquad \\%\\text{uzama} = \\%34\n$$",
+      "metinde": true
+    },
+    {
+      "id": "brinell",
+      "konu": "03-basma-sertlik",
+      "baslik": "Brinell sertliğinin hesaplanması",
+      "kaynak": "Ek alıştırma (Hafta 3 slaytlarındaki formülle)",
+      "zorluk": 1,
+      "soru": "Brinell deneyinde 10 mm çaplı bilyeyle 3000 kgf yük uygulanmış, iz çapı 4,0 mm ölçülmüştür. Brinell sertliğini bulunuz.",
+      "cozum": "$$\nHB = \\frac{2F}{\\pi D\\left(D - \\sqrt{D^2 - d^2}\\right)} = \\frac{2\\cdot3000}{\\pi\\cdot10\\left(10 - \\sqrt{100 - 16}\\right)} = \\frac{6000}{31{,}416\\cdot0{,}8348} = 229\n$$\n\n$F$ kgf, çaplar mm ile yazılır; sonuç kgf/mm² (birimsiz yazılır: 229 HB).",
+      "cevap": "$\\approx 229$ HB"
+    },
+    {
+      "id": "charpy",
+      "konu": "06-centik-darbe",
+      "baslik": "Charpy deneyinde kırılma enerjisi",
+      "kaynak": "Ek alıştırma (Hafta 10 slaytlarındaki formülle)",
+      "zorluk": 1,
+      "soru": "Charpy cihazında 20 kg kütleli sarkaç 1,5 m yükseklikten bırakılıyor; numuneyi kırdıktan sonra 0,6 m yükseliyor. Numune kesiti (çentik altında) 8×10 mm. Kırılma enerjisini ve çentik darbe tokluğunu bulunuz.",
+      "cozum": "$$\nE = mg\\,(h_1 - h_2) = 20\\cdot9{,}81\\cdot(1{,}5 - 0{,}6) = 176{,}6\\ \\text{J}\n$$\n\n$$\n\\text{Tokluk} = \\frac{E}{A} = \\frac{176{,}6}{0{,}8\\cdot1{,}0\\ \\text{cm}^2} = 221\\ \\text{J/cm}^2\n$$",
+      "cevap": "$E \\approx 177$ J; ≈ 221 J/cm²"
+    }
+  ]
+}

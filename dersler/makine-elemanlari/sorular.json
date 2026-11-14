@@ -1,56 +1,105 @@
 {
   "sorular": [
     {
-      "id": "civata-ongerilme",
-      "konu": "09-civata-somun",
-      "baslik": "Ön gerilmeli cıvatada sıkma momenti ve kalite seçimi",
-      "kaynak": "Sorular ve çözümleri PDF s. 1",
-      "zorluk": 3,
-      "soru": "Bir cıvata bağlantısı $F_ö = 3000$ daN ön gerilme kuvvetiyle sıkılmıştır. İşletme kuvveti 0 ile 1000 daN arasında değişmektedir (titreşimli). M16 cıvata ($d_1 = 13{,}546$, $d_2 = 14{,}701$, $h = 2$ mm), delik çapı 18 mm, somun anahtar ağzı 24 mm, sıkılan parçalar 25 + 25 mm. Vida dişlerinde $\\mu = 0{,}15$, somun oturma yüzeyinde $\\mu_A = 0{,}1$.\n\n**a)** Sıkma momentini, **b)** cıvataya gelen en büyük kuvveti, **c)** uygun cıvata kalitesini ($S = 2$) bulunuz.",
-      "cozum": "**a)** $\\tan\\alpha = \\dfrac{h}{\\pi d_2} = \\dfrac{2}{\\pi\\cdot14{,}701} \\Rightarrow \\alpha = 2{,}48°$, $\\;\\rho = \\arctan0{,}15 = 8{,}53°$, $\\;r_A = 0{,}7d = 11{,}2$ mm\n\n$$\nM_s = F_ö\\left[\\frac{d_2}{2}\\tan(\\alpha + \\rho) + r_A\\mu_A\\right] = 30000\\left[7{,}35\\tan11{,}01° + 11{,}2\\cdot0{,}1\\right] = 76\\,500\\ \\text{N·mm}\n$$\n\n**b)** Cıvata kesiti $A_c = \\pi\\cdot13{,}54^2/4 = 144$ mm². Parçanın eşdeğer basınç alanı:\n\n$$\nA_p = \\frac{\\pi}{4}\\left[\\left(d_K + \\frac{l_p}{10}\\right)^2 - D_d^2\\right] = \\frac{\\pi}{4}\\left[(24 + 5)^2 - 18^2\\right] = 406\\ \\text{mm}^2\n$$\n\n$$\nC_p = \\frac{A_pE}{l_p} = \\frac{406\\cdot2{,}1\\times10^5}{50} = 1{,}705\\times10^6\\ \\text{N/mm}, \\qquad C_c = \\frac{144\\cdot2{,}1\\times10^5}{50} = 604\\,800\\ \\text{N/mm}\n$$\n\n$$\nF_z = F_i\\,\\frac{1}{1 + C_p/C_c} = \\frac{10\\,000}{1 + 2{,}82} = 2618\\ \\text{N}, \\qquad F_{maks} = 30\\,000 + 2618 = 32\\,618\\ \\text{N}\n$$\n\n**c)** 6.9 kalitesi: $\\sigma_{Ak} = 540$ N/mm², $\\sigma_{em} = 540/2 = 270$ N/mm²; $\\sigma_ç = 30\\,000/144 = 208{,}3 < 270$ ✓.\nDinamik: $\\sigma_g = \\dfrac{F_z/2}{A_c} = \\dfrac{1309}{144} = 9{,}1 < 50$ N/mm² → sürekli mukavim.",
-      "cevap": "$M_s \\approx 76{,}5$ N·m; $F_{maks} \\approx 32{,}6$ kN; 6.9 kalitesi yeterli"
-    },
-    {
-      "id": "kriko",
-      "konu": "09-civata-somun",
-      "baslik": "Mil düzeltme krikosu",
-      "kaynak": "Sorular ve çözümleri PDF s. 2 (Problem 14.2)",
-      "zorluk": 3,
-      "soru": "Bir mil düzeltme krikosunda $F = 3000$ daN uygulanmaktadır. Kare profilli vidanın hatvesi 6 mm, dış çapı 70 mm; vida dişlerinde ve tabla ile mil arasında $\\mu = \\mu_0 = 0{,}12$, tabla sürtünme yarıçapı 40 mm.\n\n**a)** Vida milindeki bası gerilmesini, **b)** 500 mm çaplı el volanına uygulanacak kuvveti, **c)** krikoyu döşemeye bağlayan iki 6.6 kalite cıvatanın büyüklüğünü ($S = 2{,}5$; cıvata eksenine uzaklık 20 mm, yük kolu 45 mm) bulunuz.",
-      "cozum": "**a)** $d_1 = d - h = 64$ mm: $\\;\\sigma_b = \\dfrac{F}{\\pi d_1^2/4} = \\dfrac{3000}{\\pi\\cdot6{,}4^2/4} = 93{,}2$ daN/cm²\n\n**b)** $d_2 = 67$ mm, $\\tan\\alpha = \\dfrac{6}{\\pi\\cdot67} = 0{,}0285$; $\\tan(\\alpha + \\rho) \\approx \\tan\\alpha + \\tan\\rho$:\n\n$$\nM_s = 3000\\left[\\frac{6{,}7}{2}(0{,}0285 + 0{,}12) + 4\\cdot0{,}12\\right] = 2932\\ \\text{daN·cm}, \\qquad K = \\frac{M_s}{D} = \\frac{2932}{50} = 58{,}7\\ \\text{daN}\n$$\n\n(İki elle kuvvet çifti: $M = D\\cdot K$.)\n\n**c)** A noktasına göre moment: $F_c\\cdot20 = F\\cdot45 \\Rightarrow F_c = 6750$ daN, bir cıvataya 3375 daN.\n$\\sigma_{em} = \\dfrac{6\\cdot6\\cdot100}{2{,}5} = 1440$ daN/cm²\n\n$$\nd_1 = \\sqrt{\\frac{4\\cdot3375}{\\pi\\cdot1440}} = 1{,}727\\ \\text{cm} \\;\\Rightarrow\\; \\text{M22 } (d_1 = 18{,}75 \\text{ mm})\n$$",
-      "cevap": "$\\sigma_b \\approx 93$ daN/cm²; $K \\approx 59$ daN; M22"
-    },
-    {
-      "id": "eksantrik-6-civata",
-      "konu": "09-civata-somun",
-      "baslik": "Daire üzerinde 6 cıvatalı eksantrik bağlantı",
-      "kaynak": "Sorular ve çözümleri PDF s. 4",
+      "id": "02-mukavemet-1",
+      "konu": "02-mukavemet",
+      "baslik": "Kritik noktadaki gerilmeler",
+      "kaynak": "MAKEL-I-2 Mukavemet (konu anlatımındaki örnek)",
       "zorluk": 2,
-      "soru": "Ø240 mm çember üzerine eşit aralıklarla yerleştirilmiş 6 cıvatalı bir bağlantıya, merkezden 360 mm uzakta düşey $F$ kuvveti etkiyor. Cıvata çapı $d = 25$ mm, $\\tau_{em} = 90$ N/mm². Taşınabilecek en büyük $F$?",
-      "cozum": "Doğrudan kesme: $F_K = F/6$. Moment payı ($r = 120$ mm, bütün cıvatalar eşit uzaklıkta):\n\n$$\nF_M = \\frac{Fe\\,r}{\\sum r^2} = \\frac{360F\\cdot120}{6\\cdot120^2} = \\frac{F}{2}\n$$\n\nEn kötü cıvatada (A) iki kuvvet aynı yönde: $F_{top} = F/6 + F/2 = 2F/3$\n\n$$\n\\frac{2F}{3} = \\frac{\\pi d^2}{4}\\tau_{em} = \\frac{\\pi\\cdot25^2}{4}\\cdot90 = 44\\,179\\ \\text{N} \\;\\Rightarrow\\; F = 66\\,268\\ \\text{N}\n$$",
-      "cevap": "$F_{max} \\approx 66{,}3$ kN"
+      "soru": "Ankastre dairesel çubuk; $\\sigma_{AK} = 600$ MPa, $F_v = 10$ kN (enine), $F_a = 20$ kN (eksenel çekme), $M_b = 450$ N·m. (Notta boyut verilmediği için $d = 30$ mm, kol $L = 30$ mm alındı.) Von Mises hipotezi.",
+      "cozum": "1. $A = \\pi\\cdot30^2/4 = 706{,}9$ mm² → $\\sigma_ç = 20\\,000/706{,}9 = 28{,}3$ MPa (her noktada)\n2. $M_e = 10\\,000\\cdot30 = 300\\,000$ N·mm → $\\sigma_e = \\dfrac{32M_e}{\\pi d^3} = 113{,}2$ MPa (üst lif A çekme, alt lif C basma)\n3. $\\tau_b = \\dfrac{16M_b}{\\pi d^3} = 84{,}9$ MPa (bütün çevrede)\n4. Enine kuvvetin kayma gerilmesi (yalnız tarafsız eksende, B): $\\tau_k = \\dfrac{4F_v}{3A} = 18{,}9$ MPa\n5. Eşdeğer gerilmeler:\n   - A: $\\sigma = 141{,}5$, $\\tau = 84{,}9$ → $\\sigma_B = \\sqrt{141{,}5^2 + 3\\cdot84{,}9^2} = 204{,}0$ MPa\n   - B: $\\sigma = 28{,}3$, $\\tau = 103{,}7$ → 181,9 MPa\n   - C: $\\sigma = -84{,}9$, $\\tau = 84{,}9$ → 169,8 MPa\n6. **Kritik nokta A**, emniyet katsayısı $S = 600/204 = 2{,}94$.\n\n> Aynı tip gerilmeler cebirsel olarak toplanır: $\\sigma = F/A \\pm M_e/W_e$. Farklı tip gerilmeler ($\\sigma$ ile $\\tau$) hipotezle birleştirilir.",
+      "metinde": true
     },
     {
-      "id": "eksantrik-4-civata",
-      "konu": "09-civata-somun",
-      "baslik": "4 cıvatalı eksantrik bağlantıda cıvata çapı",
-      "kaynak": "Sorular ve çözümleri PDF s. 5",
+      "id": "03-yorulma-1",
+      "konu": "03-yorulma",
+      "baslik": "Çentikli çubuk, dört yükleme",
+      "kaynak": "MAKEL-I-3 Yorulma (konu anlatımındaki örnek)",
       "zorluk": 2,
-      "soru": "Merkezden 50 mm uzakta artı biçiminde dizilmiş 4 cıvatalı bağlantıya, merkezden 300 mm uzakta $F = 10$ kN etkiyor. St34 için $\\tau_{em} = 110$ MPa. Kesmeye göre cıvata çapı?",
-      "cozum": "$$\nF_K = \\frac{F}{z} = \\frac{10\\,000}{4} = 2500\\ \\text{N}, \\qquad F_M = \\frac{Fe\\,r}{\\sum r^2} = \\frac{10\\,000\\cdot300\\cdot50}{4\\cdot50^2} = 15\\,000\\ \\text{N}\n$$\n\nSağdaki cıvatada (A) ikisi aynı yönde: $F_{top} = 17\\,500$ N\n\n$$\nd = \\sqrt{\\frac{4F_{top}}{\\pi\\tau_{em}}} = \\sqrt{\\frac{4\\cdot17\\,500}{110\\pi}} = 14{,}2\\ \\text{mm} \\;\\Rightarrow\\; d = 16\\ \\text{mm (M16)}\n$$",
-      "cevap": "$d \\approx 14{,}2$ mm → M16",
-      "not": "**PDF'te:** $F_K = 10\\,000/6$ yazılmış (6 cıvatalı sorudan kopyalanmış); cıvata sayısı 4 olduğundan $F_K = 2500$ N'dur. PDF'teki sonuç $d = 13{,}9 \\to 14$ mm, doğrusu 14,2 mm."
+      "soru": "$D = 40$, $d = 35$, $r = 7$ mm; C45, $\\sigma_K = 63$, $\\sigma_{AK} = 42$ daN/mm²; $q = 0{,}7$, $K_y = 0{,}85$, $K_b = 0{,}86$.",
+      "cozum": "1. $D/d = 1{,}14$, $r/d = 0{,}2$ → grafikten $K_t \\approx 1{,}6$ → $K_ç = 1 + 0{,}7\\cdot0{,}6 = 1{,}42$\n2. Numune: $\\sigma_{çD} = 0{,}4\\cdot63 = 25{,}2$; eleman: $\\sigma^*_{çD} = 0{,}85\\cdot0{,}86\\cdot25{,}2/1{,}42 = 12{,}97$ daN/mm²\n3. En dar kesit $A = 962{,}1$ mm². $S = 1/(\\sigma_g/12{,}97 + \\sigma_m/42)$:\n\n| Yükleme (daN) | $\\sigma_m$ | $\\sigma_g$ | $S$ |\n|---|---|---|---|\n| 10 500 (statik) | 10,91 | 0 | 3,85 ✓ |\n| 2500 … 7500 | 5,20 | 2,60 | 3,09 ✓ |\n| −1500 … +12 000 | 5,46 | 7,02 | **1,49** ✗ |\n| ±6500 | 0 | 6,76 | **1,92** (sınırda) |\n\n$S = 2$ istendiğine göre 3. yükleme emniyetsiz, 4. yükleme sınırın hemen altında.",
+      "metinde": true
     },
     {
-      "id": "eksantrik-dagınık",
-      "konu": "09-civata-somun",
-      "baslik": "Düzensiz dizilmiş 6 cıvatalı eksantrik bağlantı",
-      "kaynak": "Sorular ve çözümleri PDF s. 6",
+      "id": "03-yorulma-2",
+      "konu": "03-yorulma",
+      "baslik": "Halat çarkı mili",
+      "kaynak": "MAKEL-I-3 Yorulma (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Çark çevresinde $F = 50$ daN, $D = 250$ mm; mil $d = 25$ mm; konsol boyu 50 mm; St42 ($\\sigma_K \\approx 42$, $\\sigma_{AK} = 25$ daN/mm²); $S = 2$.",
+      "cozum": "1. $M_b = 50\\cdot125 = 6250$ daN·mm (sabit → **ortalama**)\n2. $M_e = 50\\cdot50 = 2500$ daN·mm (mil döndüğü için tam değişken → **genlik**)\n3. $\\sigma_g = M_e/(\\pi d^3/32) = 1{,}63$; $\\tau_m = M_b/(\\pi d^3/16) = 2{,}04$ daN/mm²\n4. $\\sigma^*_{eD} = 0{,}9\\cdot0{,}93\\cdot(0{,}5\\cdot42)/1{,}25 = 14{,}06$ daN/mm²\n5. $\\sigma'_m = \\sqrt3\\cdot2{,}04 = 3{,}53$; $\\sigma_{gd} = 3{,}53 + (25/14{,}06)\\cdot1{,}63 = 6{,}43$ daN/mm²\n6. $\\sigma_{em} = 25/2 = 12{,}5 > 6{,}43$ → **mil emniyetli**\n\n> Dönen bir milde **eğilme gerilmesi her turda yön değiştirir** (tam değişken, genlik). Sabit burulma ise ortalama gerilmedir.",
+      "metinde": true
+    },
+    {
+      "id": "05-standart-tolerans-1",
+      "konu": "05-standart-tolerans",
+      "baslik": "ISO tolerans tablosundan sınır ölçüler",
+      "kaynak": "MAKEL-I-5 Standart ve toleranslar (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "| Ölçü | Sapmalar (µm) | En küçük | En büyük | $T$ (µm) |\n|---|---|---|---|---|\n| Ø40 h6 (mil) | 0 / −16 | 39,984 | 40,000 | 16 |\n| Ø40 s6 (mil) | +59 / +43 | 40,043 | 40,059 | 16 |\n| Ø70 d8 (mil) | −100 / −146 | 69,854 | 69,900 | 46 |\n| Ø70 j7 (mil) | +18 / −12 | 69,988 | 70,018 | 30 |\n| Ø90 K8 (delik) | +16 / −38 | 89,962 | 90,016 | 54 |\n| Ø90 H6 (delik) | +22 / 0 | 90,000 | 90,022 | 22 |",
+      "cozum": "> h6 ve s6 aynı kalitede (6) olduğundan toleransları aynıdır (16 µm); yalnızca **konumları** farklıdır.",
+      "metinde": true
+    },
+    {
+      "id": "05-standart-tolerans-2",
+      "konu": "05-standart-tolerans",
+      "baslik": "Boşluk şartından geçme seçimi",
+      "kaynak": "MAKEL-I-5 Standart ve toleranslar (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Mil Ø20 −0,020/−0,055. En büyük boşluk 0,080 mm, en küçük boşluk 0,020 mm isteniyor.",
+      "cozum": "1. $d_{max} = 19{,}980$, $\\;d_{min} = 19{,}945$ mm\n2. $D_{max} = d_{min} + 0{,}080 = 20{,}025$ mm\n3. $D_{min} = d_{max} + 0{,}020 = 20{,}000$ mm\n4. Delik 0 / +25 µm aralığına sığmalı → **H7 (0 / +21 µm)** seçilir (H8 = 33 µm sığmaz).\n5. Kontrol: en büyük boşluk $20{,}021 - 19{,}945 = 0{,}076 \\le 0{,}080$ ✓; en küçük 0,020 ✓\n6. Milin sapmaları (−20 / −55 µm) yaklaşık **f8**'e karşılık gelir.\n\n**Sonuç:** Ø20 **H7/f8**, birim delik sisteminde boşluklu geçme.",
+      "metinde": true
+    },
+    {
+      "id": "vagon-aksi",
+      "konu": "06-akslar-miller",
+      "baslik": "Vagon aksı: dolu ve içi boş",
+      "kaynak": "Mil sorusu PDF s. 1 (Problem 5.4.3)",
+      "zorluk": 2,
+      "soru": "St42 yük vagonu aksı (sabit aks, eğilme) $F = 40\\,000$ N taşıyor; tekerlekler arası açıklık $L = 2300$ mm, yük ortada. $\\sigma_{AT} = 360$ N/mm², $S = 4$. **a)** Dolu aks çapı, **b)** $d_i/d_d = 0{,}8$ içi boş aks çapları, **c)** ağırlık kazancı?",
+      "cozum": "$$\nM_e = \\frac{FL}{4} = \\frac{40\\,000\\cdot2300}{4} = 23\\times10^6\\ \\text{N·mm}, \\qquad \\sigma_{em} = \\frac{360}{4} = 90\\ \\text{N/mm}^2\n$$\n\n**a)** $d = \\sqrt[3]{\\dfrac{32M_e}{\\pi\\sigma_{em}}} = 137{,}5 \\to 140$ mm\n\n**b)** $d_d = \\dfrac{d}{\\sqrt[3]{1 - 0{,}8^4}} = 1{,}19d = 166{,}6 \\to 170$ mm, $\\;d_i = 0{,}8\\cdot170 = 136 \\to 140$ mm\n\n**c)** $\\dfrac{A_b}{A} = \\dfrac{170^2 - 140^2}{140^2} = 0{,}474$ → içi boş aks yaklaşık **%53 daha hafif**.",
+      "cevap": "Dolu Ø140; içi boş Ø170/Ø140; ~%53 hafif"
+    },
+    {
+      "id": "mil-burulma",
+      "konu": "06-akslar-miller",
+      "baslik": "Kasnak milinin çapı (dolu / içi boş)",
+      "kaynak": "Mil sorusu PDF s. 2–3 (Problem 20.15)",
+      "zorluk": 1,
+      "soru": "$P = 150$ BG, $n = 450$ d/d ile döndürülen A kasnağı 150 mm boyundaki mil ile B kasnağını döndürüyor. $\\tau_{em} = 150$ daN/cm², içi boş milde $d/D = 2/3$. Dolu ve içi boş mil çapları ve hangisi daha hafif?",
+      "cozum": "$$\nM_b = 71\\,620\\frac{150}{450} = 23\\,873\\ \\text{daN·cm}\n$$\n\nDolu: $d = \\sqrt[3]{\\dfrac{16M_b}{\\pi\\tau_{em}}} = 9{,}32$ cm → 95 mm\n\nİçi boş: $D = \\dfrac{1}{\\sqrt[3]{1 - (2/3)^4}}\\sqrt[3]{\\dfrac{16M_b}{\\pi\\tau_{em}}} = 10{,}03$ cm → $D = 100$, $d = 65$ mm\n\nAğırlık oranı: $D^2 - d^2 = 100 - 42{,}25 = 57{,}75 < 9{,}5^2 = 90{,}25$ → içi boş mil yaklaşık %36 daha hafif.",
+      "cevap": "Dolu Ø95; içi boş Ø100/Ø65 (daha hafif)"
+    },
+    {
+      "id": "dondurme-mili",
+      "konu": "06-akslar-miller",
+      "baslik": "Döndürme mekanizması ana mili",
+      "kaynak": "Mil sorusu PDF s. 3–4 (Problem 20.20)",
+      "zorluk": 2,
+      "soru": "Ana milin ucunda Ø90 mm makara: üzerinde 300 daN ve 100 daN ip kuvvetleri ile 75 daN ağırlık. Yataklar arası 600 mm, makara B yatağından 250 mm dışarıda. Fe50, $\\sigma_{eş,em} = 630$ daN/cm². Mil çapı?",
+      "cozum": "Uçtaki toplam kuvvet $F = 300 + 100 + 75 = 475$ daN.\n\n$\\sum M_A = 0$: $F_B = 475\\cdot\\dfrac{850}{600} = 673$ daN, $\\;F_A = 673 - 475 = 198$ daN\n\nEn büyük eğilme B yatağında: $M_e = 475\\cdot25 = 11\\,875$ daN·cm; burulma $M_b = (300 - 100)\\cdot4{,}5 = 900$ daN·cm\n\n> PDF'te $M_b = (300 - 100)\\cdot90/2 = 9000$ yazılmış; çap cm cinsinden alınırsa $M_b = 200\\cdot4{,}5 = 900$ daN·cm olur.\n\n$$\nd = \\sqrt[3]{\\frac{32}{\\pi\\sigma_{em}}\\sqrt{M_e^2 + \\tfrac12M_b^2}}\n$$\n\nPDF'teki değerlerle ($M_b = 9000$): $d = 6{,}02$ cm → **65 mm**. $M_b = 900$ ile $d = 5{,}8$ cm; seçim yine 60–65 mm.",
+      "cevap": "$d \\approx 60$–$65$ mm (PDF: 65 mm)",
+      "not": "PDF'teki burulma momentinde birim karışıklığı var (90 mm çap cm ile yazılmamış). Eğilme baskın olduğundan seçilen çap pratikte değişmez."
+    },
+    {
+      "id": "pervane-mili",
+      "konu": "06-akslar-miller",
+      "baslik": "Gemi pervane mili",
+      "kaynak": "Mil sorusu PDF s. 4–5 (Soru 2)",
       "zorluk": 3,
-      "soru": "Koordinatları (mm) 1(100,150), 2(150,75), 3(200,0), 4(100,0), 5(0,0), 6(50,75) olan 6 cıvatalı gruba, grubun ağırlık merkezinden 600 mm uzakta 12 kN düşey kuvvet etkiyor. $\\tau_{em} = 70$ MPa. Cıvata çapı?",
-      "cozum": "Ağırlık merkezi: $\\bar x = 600/6 = 100$, $\\bar y = 300/6 = 50$ mm.\n\nUzaklıklar: $r_1 = 100$, $r_2 = r_6 = 25\\sqrt5 = 55{,}9$, $r_3 = r_5 = 50\\sqrt5 = 111{,}8$, $r_4 = 50$ mm; $\\sum r^2 = 43\\,750$ mm².\n\n$$\nF_K = \\frac{12\\,000}{6} = 2000\\ \\text{N}, \\qquad F_{M3} = \\frac{12\\,000\\cdot600\\cdot111{,}8}{43\\,750} = 18\\,400\\ \\text{N}\n$$\n\n3 numaralı cıvatada iki kuvvet arasındaki açı 26,57°:\n\n$$\nF_{top} = \\sqrt{F_K^2 + F_{M3}^2 + 2F_KF_{M3}\\cos26{,}57°} = 20\\,210\\ \\text{N}\n$$\n\n$$\nd = \\sqrt{\\frac{4\\cdot20\\,210}{70\\pi}} = 19{,}2\\ \\text{mm} \\;\\Rightarrow\\; d = 20\\ \\text{mm}\n$$",
-      "cevap": "$F_{top} \\approx 20{,}2$ kN; $d = 20$ mm",
-      "not": "**PDF'te:** $F_K = 10\\,000/6$ yazılmış; kuvvet 12 kN olduğundan $F_K = 2000$ N'dur. Seçilen çap (20 mm) değişmez."
+      "soru": "Gemi pervane mili 1000 kW gücü 200 d/d'da iletiyor; gemi hızı 7,5 deniz mili/saat (1 deniz mili = 1852 m). Fe50, $\\tau_{em} = 3$ daN/mm², $\\rho = 7{,}85$ kg/dm³, yataklar arası 5 m. **a)** Pervane verimi %80 iken eksenel kuvvet, **b)** yalnız burulmaya göre çap, **c)** bası + kayma kontrolü, **d)** ağırlık dahil kontrol.",
+      "cozum": "**a)** $F_eV = P\\eta$: $V = 7{,}5\\cdot1852/3600 = 3{,}86$ m/s\n\n$$\nF_e = \\frac{75N\\eta}{V} = \\frac{75\\cdot1360\\cdot0{,}8}{3{,}86} = 21\\,149\\ \\text{daN}\n$$\n\n**b)** $M_b = 71\\,620\\dfrac{1360}{200} = 487\\,016$ daN·cm, $\\;d = \\sqrt[3]{\\dfrac{16M_b}{\\pi\\cdot300}} = 20{,}2$ cm → **240 mm**\n\n**c)** $\\sigma_b = \\dfrac{21\\,149\\cdot4}{\\pi\\cdot240^2} = 0{,}46$, $\\;\\tau = \\dfrac{16M_b}{\\pi d^3} = 1{,}79$ daN/mm²\n\n$\\tau_{max} = \\tfrac12\\sqrt{0{,}46^2 + 4\\cdot1{,}79^2} = 1{,}8 < 3$ ✓\n\n**d)** Ağırlık $G = \\rho\\dfrac{\\pi d^2}{4}L = 1775$ daN (yayılı yük): $\\sigma_e = \\dfrac{GL/8}{\\pi d^3/32} = 0{,}82$ daN/mm²\n\n$\\tau_{max} = 0{,}5\\sqrt{(0{,}46 + 0{,}82)^2 + 4\\cdot1{,}79^2} = 1{,}9 < 3$ → Ø240 uygun.",
+      "cevap": "$F_e \\approx 21\\,150$ daN; $d = 240$ mm uygun"
+    },
+    {
+      "id": "06-akslar-miller-3",
+      "konu": "06-akslar-miller",
+      "baslik": "Kasnaklı mil (konsol yük)",
+      "kaynak": "MAKEL-I-6 Akslar-Miller (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Kasnak Ø90 cm, kayış kolları 300 ve 100 daN, kasnak ağırlığı 75 daN; kasnak B yatağından 250 mm dışarıda; $\\sigma_{eş,em} = 630$ daN/cm².",
+      "cozum": "1. Toplam aşağı kuvvet $F = 300 + 100 + 75 = 475$ daN\n2. B yatağındaki eğilme: $M_e = 475\\cdot25 = 11\\,875$ daN·cm\n3. Burulma: $M_b = (300 - 100)\\cdot45 = 9000$ daN·cm\n4. $\\sigma_{eş} = \\dfrac{32}{\\pi d^3}\\sqrt{M_e^2 + \\tfrac12M_b^2} \\le 630 \\Rightarrow d = 6{,}02$ cm → **65 mm**",
+      "metinde": true
     },
     {
       "id": "cakma-kamasi",
@@ -124,6 +173,79 @@
       "not": "PDF'te kesme gerilmesi $\\ell = 38{,}4$ ile hesaplanıp 27,6 N/mm² bulunmuş; seçilen 40 mm ile 26,5 N/mm²."
     },
     {
+      "id": "08-pim-perno-siki-ge-1",
+      "konu": "08-pim-perno-siki-gecme",
+      "baslik": "Pim, perno ve sıkı geçmeler",
+      "kaynak": "MAKEL-I-8 Sıkı geçmeler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$M_d = 300$ N·m, $S = 1{,}25$; $d = 45$, $D_g = 90$, $b = 75$ mm; dolu çelik mil ($E = 2{,}06\\times10^5$), dökme göbek ($E = 0{,}98\\times10^5$, $\\sigma_{AK} = 130$), $\\nu = 0{,}3$ (mil) / 0,25 (göbek), $\\mu = 0{,}12$, $R_{t,g} = 15$, $R_{t,m} = 5$ µm.",
+      "cozum": "1. $p_{min} = \\dfrac{2\\cdot300\\,000\\cdot1{,}25}{0{,}12\\,\\pi\\cdot45^2\\cdot75} = 13{,}1$ N/mm²\n2. $Q_g = 0{,}5$, $\\tau_{em} = 65$ → $p_{max} = 65(1 - 0{,}25) = 48{,}75$ N/mm²\n3. $K = \\dfrac{1 - 0{,}3}{2{,}06\\times10^5} + \\dfrac{1{,}667 + 0{,}25}{0{,}98\\times10^5} = 2{,}296\\times10^{-5}$ mm²/N\n4. $\\Delta d_{min} = p_{min}dK = 13{,}5$ µm, $\\;\\Delta d_{max} = p_{max}dK = 50{,}4$ µm\n5. $Z = 1{,}2(15 + 5) = 24$ µm → gerekli sıkılık **37,5 µm ≤ S ≤ 74,4 µm**\n6. Göbek Ø45 **H6** (0/+16) ile mil **t6** (+54/+70): $S_{min} = 54 - 16 = 38$ ✓, $S_{max} = 70$ ✓ → **Ø45 H6/t6**\n7. Montaj: $\\Delta t = \\dfrac{0{,}070 + 0{,}050}{10^{-5}\\cdot45} \\approx 267$ °C",
+      "metinde": true
+    },
+    {
+      "id": "civata-ongerilme",
+      "konu": "09-civata-somun",
+      "baslik": "Ön gerilmeli cıvatada sıkma momenti ve kalite seçimi",
+      "kaynak": "Sorular ve çözümleri PDF s. 1",
+      "zorluk": 3,
+      "soru": "Bir cıvata bağlantısı $F_ö = 3000$ daN ön gerilme kuvvetiyle sıkılmıştır. İşletme kuvveti 0 ile 1000 daN arasında değişmektedir (titreşimli). M16 cıvata ($d_1 = 13{,}546$, $d_2 = 14{,}701$, $h = 2$ mm), delik çapı 18 mm, somun anahtar ağzı 24 mm, sıkılan parçalar 25 + 25 mm. Vida dişlerinde $\\mu = 0{,}15$, somun oturma yüzeyinde $\\mu_A = 0{,}1$.\n\n**a)** Sıkma momentini, **b)** cıvataya gelen en büyük kuvveti, **c)** uygun cıvata kalitesini ($S = 2$) bulunuz.",
+      "cozum": "**a)** $\\tan\\alpha = \\dfrac{h}{\\pi d_2} = \\dfrac{2}{\\pi\\cdot14{,}701} \\Rightarrow \\alpha = 2{,}48°$, $\\;\\rho = \\arctan0{,}15 = 8{,}53°$, $\\;r_A = 0{,}7d = 11{,}2$ mm\n\n$$\nM_s = F_ö\\left[\\frac{d_2}{2}\\tan(\\alpha + \\rho) + r_A\\mu_A\\right] = 30000\\left[7{,}35\\tan11{,}01° + 11{,}2\\cdot0{,}1\\right] = 76\\,500\\ \\text{N·mm}\n$$\n\n**b)** Cıvata kesiti $A_c = \\pi\\cdot13{,}54^2/4 = 144$ mm². Parçanın eşdeğer basınç alanı:\n\n$$\nA_p = \\frac{\\pi}{4}\\left[\\left(d_K + \\frac{l_p}{10}\\right)^2 - D_d^2\\right] = \\frac{\\pi}{4}\\left[(24 + 5)^2 - 18^2\\right] = 406\\ \\text{mm}^2\n$$\n\n$$\nC_p = \\frac{A_pE}{l_p} = \\frac{406\\cdot2{,}1\\times10^5}{50} = 1{,}705\\times10^6\\ \\text{N/mm}, \\qquad C_c = \\frac{144\\cdot2{,}1\\times10^5}{50} = 604\\,800\\ \\text{N/mm}\n$$\n\n$$\nF_z = F_i\\,\\frac{1}{1 + C_p/C_c} = \\frac{10\\,000}{1 + 2{,}82} = 2618\\ \\text{N}, \\qquad F_{maks} = 30\\,000 + 2618 = 32\\,618\\ \\text{N}\n$$\n\n**c)** 6.9 kalitesi: $\\sigma_{Ak} = 540$ N/mm², $\\sigma_{em} = 540/2 = 270$ N/mm²; $\\sigma_ç = 30\\,000/144 = 208{,}3 < 270$ ✓.\nDinamik: $\\sigma_g = \\dfrac{F_z/2}{A_c} = \\dfrac{1309}{144} = 9{,}1 < 50$ N/mm² → sürekli mukavim.",
+      "cevap": "$M_s \\approx 76{,}5$ N·m; $F_{maks} \\approx 32{,}6$ kN; 6.9 kalitesi yeterli"
+    },
+    {
+      "id": "kriko",
+      "konu": "09-civata-somun",
+      "baslik": "Mil düzeltme krikosu",
+      "kaynak": "Sorular ve çözümleri PDF s. 2 (Problem 14.2)",
+      "zorluk": 3,
+      "soru": "Bir mil düzeltme krikosunda $F = 3000$ daN uygulanmaktadır. Kare profilli vidanın hatvesi 6 mm, dış çapı 70 mm; vida dişlerinde ve tabla ile mil arasında $\\mu = \\mu_0 = 0{,}12$, tabla sürtünme yarıçapı 40 mm.\n\n**a)** Vida milindeki bası gerilmesini, **b)** 500 mm çaplı el volanına uygulanacak kuvveti, **c)** krikoyu döşemeye bağlayan iki 6.6 kalite cıvatanın büyüklüğünü ($S = 2{,}5$; cıvata eksenine uzaklık 20 mm, yük kolu 45 mm) bulunuz.",
+      "cozum": "**a)** $d_1 = d - h = 64$ mm: $\\;\\sigma_b = \\dfrac{F}{\\pi d_1^2/4} = \\dfrac{3000}{\\pi\\cdot6{,}4^2/4} = 93{,}2$ daN/cm²\n\n**b)** $d_2 = 67$ mm, $\\tan\\alpha = \\dfrac{6}{\\pi\\cdot67} = 0{,}0285$; $\\tan(\\alpha + \\rho) \\approx \\tan\\alpha + \\tan\\rho$:\n\n$$\nM_s = 3000\\left[\\frac{6{,}7}{2}(0{,}0285 + 0{,}12) + 4\\cdot0{,}12\\right] = 2932\\ \\text{daN·cm}, \\qquad K = \\frac{M_s}{D} = \\frac{2932}{50} = 58{,}7\\ \\text{daN}\n$$\n\n(İki elle kuvvet çifti: $M = D\\cdot K$.)\n\n**c)** A noktasına göre moment: $F_c\\cdot20 = F\\cdot45 \\Rightarrow F_c = 6750$ daN, bir cıvataya 3375 daN.\n$\\sigma_{em} = \\dfrac{6\\cdot6\\cdot100}{2{,}5} = 1440$ daN/cm²\n\n$$\nd_1 = \\sqrt{\\frac{4\\cdot3375}{\\pi\\cdot1440}} = 1{,}727\\ \\text{cm} \\;\\Rightarrow\\; \\text{M22 } (d_1 = 18{,}75 \\text{ mm})\n$$",
+      "cevap": "$\\sigma_b \\approx 93$ daN/cm²; $K \\approx 59$ daN; M22"
+    },
+    {
+      "id": "eksantrik-6-civata",
+      "konu": "09-civata-somun",
+      "baslik": "Daire üzerinde 6 cıvatalı eksantrik bağlantı",
+      "kaynak": "Sorular ve çözümleri PDF s. 4",
+      "zorluk": 2,
+      "soru": "Ø240 mm çember üzerine eşit aralıklarla yerleştirilmiş 6 cıvatalı bir bağlantıya, merkezden 360 mm uzakta düşey $F$ kuvveti etkiyor. Cıvata çapı $d = 25$ mm, $\\tau_{em} = 90$ N/mm². Taşınabilecek en büyük $F$?",
+      "cozum": "Doğrudan kesme: $F_K = F/6$. Moment payı ($r = 120$ mm, bütün cıvatalar eşit uzaklıkta):\n\n$$\nF_M = \\frac{Fe\\,r}{\\sum r^2} = \\frac{360F\\cdot120}{6\\cdot120^2} = \\frac{F}{2}\n$$\n\nEn kötü cıvatada (A) iki kuvvet aynı yönde: $F_{top} = F/6 + F/2 = 2F/3$\n\n$$\n\\frac{2F}{3} = \\frac{\\pi d^2}{4}\\tau_{em} = \\frac{\\pi\\cdot25^2}{4}\\cdot90 = 44\\,179\\ \\text{N} \\;\\Rightarrow\\; F = 66\\,268\\ \\text{N}\n$$",
+      "cevap": "$F_{max} \\approx 66{,}3$ kN"
+    },
+    {
+      "id": "eksantrik-4-civata",
+      "konu": "09-civata-somun",
+      "baslik": "4 cıvatalı eksantrik bağlantıda cıvata çapı",
+      "kaynak": "Sorular ve çözümleri PDF s. 5",
+      "zorluk": 2,
+      "soru": "Merkezden 50 mm uzakta artı biçiminde dizilmiş 4 cıvatalı bağlantıya, merkezden 300 mm uzakta $F = 10$ kN etkiyor. St34 için $\\tau_{em} = 110$ MPa. Kesmeye göre cıvata çapı?",
+      "cozum": "$$\nF_K = \\frac{F}{z} = \\frac{10\\,000}{4} = 2500\\ \\text{N}, \\qquad F_M = \\frac{Fe\\,r}{\\sum r^2} = \\frac{10\\,000\\cdot300\\cdot50}{4\\cdot50^2} = 15\\,000\\ \\text{N}\n$$\n\nSağdaki cıvatada (A) ikisi aynı yönde: $F_{top} = 17\\,500$ N\n\n$$\nd = \\sqrt{\\frac{4F_{top}}{\\pi\\tau_{em}}} = \\sqrt{\\frac{4\\cdot17\\,500}{110\\pi}} = 14{,}2\\ \\text{mm} \\;\\Rightarrow\\; d = 16\\ \\text{mm (M16)}\n$$",
+      "cevap": "$d \\approx 14{,}2$ mm → M16",
+      "not": "**PDF'te:** $F_K = 10\\,000/6$ yazılmış (6 cıvatalı sorudan kopyalanmış); cıvata sayısı 4 olduğundan $F_K = 2500$ N'dur. PDF'teki sonuç $d = 13{,}9 \\to 14$ mm, doğrusu 14,2 mm."
+    },
+    {
+      "id": "eksantrik-dagınık",
+      "konu": "09-civata-somun",
+      "baslik": "Düzensiz dizilmiş 6 cıvatalı eksantrik bağlantı",
+      "kaynak": "Sorular ve çözümleri PDF s. 6",
+      "zorluk": 3,
+      "soru": "Koordinatları (mm) 1(100,150), 2(150,75), 3(200,0), 4(100,0), 5(0,0), 6(50,75) olan 6 cıvatalı gruba, grubun ağırlık merkezinden 600 mm uzakta 12 kN düşey kuvvet etkiyor. $\\tau_{em} = 70$ MPa. Cıvata çapı?",
+      "cozum": "Ağırlık merkezi: $\\bar x = 600/6 = 100$, $\\bar y = 300/6 = 50$ mm.\n\nUzaklıklar: $r_1 = 100$, $r_2 = r_6 = 25\\sqrt5 = 55{,}9$, $r_3 = r_5 = 50\\sqrt5 = 111{,}8$, $r_4 = 50$ mm; $\\sum r^2 = 43\\,750$ mm².\n\n$$\nF_K = \\frac{12\\,000}{6} = 2000\\ \\text{N}, \\qquad F_{M3} = \\frac{12\\,000\\cdot600\\cdot111{,}8}{43\\,750} = 18\\,400\\ \\text{N}\n$$\n\n3 numaralı cıvatada iki kuvvet arasındaki açı 26,57°:\n\n$$\nF_{top} = \\sqrt{F_K^2 + F_{M3}^2 + 2F_KF_{M3}\\cos26{,}57°} = 20\\,210\\ \\text{N}\n$$\n\n$$\nd = \\sqrt{\\frac{4\\cdot20\\,210}{70\\pi}} = 19{,}2\\ \\text{mm} \\;\\Rightarrow\\; d = 20\\ \\text{mm}\n$$",
+      "cevap": "$F_{top} \\approx 20{,}2$ kN; $d = 20$ mm",
+      "not": "**PDF'te:** $F_K = 10\\,000/6$ yazılmış; kuvvet 12 kN olduğundan $F_K = 2000$ N'dur. Seçilen çap (20 mm) değişmez."
+    },
+    {
+      "id": "percin-tekerlek",
+      "konu": "10-percin",
+      "baslik": "Kren tekerleğinin perçinli bağlantısı",
+      "kaynak": "Sorular ve çözümleri PDF s. 20–21",
+      "zorluk": 3,
+      "soru": "Kren tekerleği U160 duvar traversine her iki taraftan 4'er perçinle ($d = 16$ mm, delik 17 mm) bağlıdır; perçinler 80×80 mm kare köşelerinde, kuvvet perçin grubunun merkezinden yatayda 340 mm uzakta. $F_x = F_y = 22$ kN, St37 ($\\tau_{kem} = 112$, $\\sigma_{bem} = 280$ N/mm²), profil kalınlığı $s = 7{,}5$ mm. Perçinler yeterli mi?",
+      "cozum": "Her taraftaki 4 perçine $F_{x1} = F_{y1} = 11$ kN: $\\;F_{xy} = \\sqrt2\\cdot11\\,000 = 15\\,556$ N\n\nKuvvetin grup merkezine dik uzaklığı $l_1 = 340/\\sqrt2 = 240{,}4$ mm; perçinlerin merkeze uzaklığı $l_2 = 40\\sqrt2 = 56{,}6$ mm.\n\n$$\nF_1 = \\frac{F_{xy}l_1}{4l_2} = \\frac{15\\,556\\cdot240{,}4}{4\\cdot56{,}6} = 16\\,517\\ \\text{N}, \\qquad F_k = \\frac{15\\,556}{4} = 3889\\ \\text{N}\n$$\n\nEn kötü perçin (sağ üst): $F_t = 16\\,517 + 3889 = 20\\,406$ N\n\n$$\n\\tau = \\frac{20\\,406}{\\pi\\cdot17^2/4} = 89{,}9 < 112\\ \\text{N/mm}^2, \\qquad \\sigma_b = \\frac{20\\,406}{17\\cdot7{,}5} = 160 < 280\\ \\text{N/mm}^2\n$$\n\nPerçinler emniyetlidir.",
+      "cevap": "$\\tau \\approx 90$ N/mm², $\\sigma_b \\approx 160$ N/mm² → uygun",
+      "not": "PDF'te $F_k = 15\\,556/4 = 4139$ yazılmış; doğrusu 3889 N. Bu yüzden PDF'teki 20 656 N, 91 ve 162 N/mm² değerleri biraz yüksek; sonuç değişmiyor."
+    },
+    {
       "id": "muylu-kaynak",
       "konu": "11-kaynak-lehim",
       "baslik": "Mil muylusu kaynağının kontrolü",
@@ -183,58 +305,6 @@
       "cozum": "$D = 60 + 2\\cdot5 = 70$ mm.\n\n$$\nW_e = \\frac{\\pi(7^4 - 6^4)}{32\\cdot7} = 15{,}50\\ \\text{cm}^3 \\;\\Rightarrow\\; \\sigma_e = \\frac{10F}{15{,}50} = 0{,}645F, \\qquad \\tau = \\frac{4F}{\\pi(7^2 - 6^2)} = 0{,}098F\n$$\n\n$$\n\\sigma_{eş} = \\tfrac12\\left[\\sigma_e + \\sqrt{\\sigma_e^2 + 4\\tau^2}\\right] = 0{,}5\\,(0{,}645 + 0{,}674)F = 0{,}660F\n$$\n\n$$\n\\sigma_{kem} = 0{,}8\\cdot1\\cdot12\\,000 = 9600 \\;\\Rightarrow\\; F = \\frac{9600}{0{,}660} = 14\\,555\\ \\text{N}\n$$",
       "cevap": "$F \\approx 14{,}6$ kN",
       "not": "PDF'te sonuç 14 414 N yazılmış; denklem çözülünce 14 555 N çıkıyor (yaklaşık %1 fark)."
-    },
-    {
-      "id": "percin-tekerlek",
-      "konu": "10-percin",
-      "baslik": "Kren tekerleğinin perçinli bağlantısı",
-      "kaynak": "Sorular ve çözümleri PDF s. 20–21",
-      "zorluk": 3,
-      "soru": "Kren tekerleği U160 duvar traversine her iki taraftan 4'er perçinle ($d = 16$ mm, delik 17 mm) bağlıdır; perçinler 80×80 mm kare köşelerinde, kuvvet perçin grubunun merkezinden yatayda 340 mm uzakta. $F_x = F_y = 22$ kN, St37 ($\\tau_{kem} = 112$, $\\sigma_{bem} = 280$ N/mm²), profil kalınlığı $s = 7{,}5$ mm. Perçinler yeterli mi?",
-      "cozum": "Her taraftaki 4 perçine $F_{x1} = F_{y1} = 11$ kN: $\\;F_{xy} = \\sqrt2\\cdot11\\,000 = 15\\,556$ N\n\nKuvvetin grup merkezine dik uzaklığı $l_1 = 340/\\sqrt2 = 240{,}4$ mm; perçinlerin merkeze uzaklığı $l_2 = 40\\sqrt2 = 56{,}6$ mm.\n\n$$\nF_1 = \\frac{F_{xy}l_1}{4l_2} = \\frac{15\\,556\\cdot240{,}4}{4\\cdot56{,}6} = 16\\,517\\ \\text{N}, \\qquad F_k = \\frac{15\\,556}{4} = 3889\\ \\text{N}\n$$\n\nEn kötü perçin (sağ üst): $F_t = 16\\,517 + 3889 = 20\\,406$ N\n\n$$\n\\tau = \\frac{20\\,406}{\\pi\\cdot17^2/4} = 89{,}9 < 112\\ \\text{N/mm}^2, \\qquad \\sigma_b = \\frac{20\\,406}{17\\cdot7{,}5} = 160 < 280\\ \\text{N/mm}^2\n$$\n\nPerçinler emniyetlidir.",
-      "cevap": "$\\tau \\approx 90$ N/mm², $\\sigma_b \\approx 160$ N/mm² → uygun",
-      "not": "PDF'te $F_k = 15\\,556/4 = 4139$ yazılmış; doğrusu 3889 N. Bu yüzden PDF'teki 20 656 N, 91 ve 162 N/mm² değerleri biraz yüksek; sonuç değişmiyor."
-    },
-    {
-      "id": "vagon-aksi",
-      "konu": "06-akslar-miller",
-      "baslik": "Vagon aksı: dolu ve içi boş",
-      "kaynak": "Mil sorusu PDF s. 1 (Problem 5.4.3)",
-      "zorluk": 2,
-      "soru": "St42 yük vagonu aksı (sabit aks, eğilme) $F = 40\\,000$ N taşıyor; tekerlekler arası açıklık $L = 2300$ mm, yük ortada. $\\sigma_{AT} = 360$ N/mm², $S = 4$. **a)** Dolu aks çapı, **b)** $d_i/d_d = 0{,}8$ içi boş aks çapları, **c)** ağırlık kazancı?",
-      "cozum": "$$\nM_e = \\frac{FL}{4} = \\frac{40\\,000\\cdot2300}{4} = 23\\times10^6\\ \\text{N·mm}, \\qquad \\sigma_{em} = \\frac{360}{4} = 90\\ \\text{N/mm}^2\n$$\n\n**a)** $d = \\sqrt[3]{\\dfrac{32M_e}{\\pi\\sigma_{em}}} = 137{,}5 \\to 140$ mm\n\n**b)** $d_d = \\dfrac{d}{\\sqrt[3]{1 - 0{,}8^4}} = 1{,}19d = 166{,}6 \\to 170$ mm, $\\;d_i = 0{,}8\\cdot170 = 136 \\to 140$ mm\n\n**c)** $\\dfrac{A_b}{A} = \\dfrac{170^2 - 140^2}{140^2} = 0{,}474$ → içi boş aks yaklaşık **%53 daha hafif**.",
-      "cevap": "Dolu Ø140; içi boş Ø170/Ø140; ~%53 hafif"
-    },
-    {
-      "id": "mil-burulma",
-      "konu": "06-akslar-miller",
-      "baslik": "Kasnak milinin çapı (dolu / içi boş)",
-      "kaynak": "Mil sorusu PDF s. 2–3 (Problem 20.15)",
-      "zorluk": 1,
-      "soru": "$P = 150$ BG, $n = 450$ d/d ile döndürülen A kasnağı 150 mm boyundaki mil ile B kasnağını döndürüyor. $\\tau_{em} = 150$ daN/cm², içi boş milde $d/D = 2/3$. Dolu ve içi boş mil çapları ve hangisi daha hafif?",
-      "cozum": "$$\nM_b = 71\\,620\\frac{150}{450} = 23\\,873\\ \\text{daN·cm}\n$$\n\nDolu: $d = \\sqrt[3]{\\dfrac{16M_b}{\\pi\\tau_{em}}} = 9{,}32$ cm → 95 mm\n\nİçi boş: $D = \\dfrac{1}{\\sqrt[3]{1 - (2/3)^4}}\\sqrt[3]{\\dfrac{16M_b}{\\pi\\tau_{em}}} = 10{,}03$ cm → $D = 100$, $d = 65$ mm\n\nAğırlık oranı: $D^2 - d^2 = 100 - 42{,}25 = 57{,}75 < 9{,}5^2 = 90{,}25$ → içi boş mil yaklaşık %36 daha hafif.",
-      "cevap": "Dolu Ø95; içi boş Ø100/Ø65 (daha hafif)"
-    },
-    {
-      "id": "dondurme-mili",
-      "konu": "06-akslar-miller",
-      "baslik": "Döndürme mekanizması ana mili",
-      "kaynak": "Mil sorusu PDF s. 3–4 (Problem 20.20)",
-      "zorluk": 2,
-      "soru": "Ana milin ucunda Ø90 mm makara: üzerinde 300 daN ve 100 daN ip kuvvetleri ile 75 daN ağırlık. Yataklar arası 600 mm, makara B yatağından 250 mm dışarıda. Fe50, $\\sigma_{eş,em} = 630$ daN/cm². Mil çapı?",
-      "cozum": "Uçtaki toplam kuvvet $F = 300 + 100 + 75 = 475$ daN.\n\n$\\sum M_A = 0$: $F_B = 475\\cdot\\dfrac{850}{600} = 673$ daN, $\\;F_A = 673 - 475 = 198$ daN\n\nEn büyük eğilme B yatağında: $M_e = 475\\cdot25 = 11\\,875$ daN·cm; burulma $M_b = (300 - 100)\\cdot4{,}5 = 900$ daN·cm\n\n> PDF'te $M_b = (300 - 100)\\cdot90/2 = 9000$ yazılmış; çap cm cinsinden alınırsa $M_b = 200\\cdot4{,}5 = 900$ daN·cm olur.\n\n$$\nd = \\sqrt[3]{\\frac{32}{\\pi\\sigma_{em}}\\sqrt{M_e^2 + \\tfrac12M_b^2}}\n$$\n\nPDF'teki değerlerle ($M_b = 9000$): $d = 6{,}02$ cm → **65 mm**. $M_b = 900$ ile $d = 5{,}8$ cm; seçim yine 60–65 mm.",
-      "cevap": "$d \\approx 60$–$65$ mm (PDF: 65 mm)",
-      "not": "PDF'teki burulma momentinde birim karışıklığı var (90 mm çap cm ile yazılmamış). Eğilme baskın olduğundan seçilen çap pratikte değişmez."
-    },
-    {
-      "id": "pervane-mili",
-      "konu": "06-akslar-miller",
-      "baslik": "Gemi pervane mili",
-      "kaynak": "Mil sorusu PDF s. 4–5 (Soru 2)",
-      "zorluk": 3,
-      "soru": "Gemi pervane mili 1000 kW gücü 200 d/d'da iletiyor; gemi hızı 7,5 deniz mili/saat (1 deniz mili = 1852 m). Fe50, $\\tau_{em} = 3$ daN/mm², $\\rho = 7{,}85$ kg/dm³, yataklar arası 5 m. **a)** Pervane verimi %80 iken eksenel kuvvet, **b)** yalnız burulmaya göre çap, **c)** bası + kayma kontrolü, **d)** ağırlık dahil kontrol.",
-      "cozum": "**a)** $F_eV = P\\eta$: $V = 7{,}5\\cdot1852/3600 = 3{,}86$ m/s\n\n$$\nF_e = \\frac{75N\\eta}{V} = \\frac{75\\cdot1360\\cdot0{,}8}{3{,}86} = 21\\,149\\ \\text{daN}\n$$\n\n**b)** $M_b = 71\\,620\\dfrac{1360}{200} = 487\\,016$ daN·cm, $\\;d = \\sqrt[3]{\\dfrac{16M_b}{\\pi\\cdot300}} = 20{,}2$ cm → **240 mm**\n\n**c)** $\\sigma_b = \\dfrac{21\\,149\\cdot4}{\\pi\\cdot240^2} = 0{,}46$, $\\;\\tau = \\dfrac{16M_b}{\\pi d^3} = 1{,}79$ daN/mm²\n\n$\\tau_{max} = \\tfrac12\\sqrt{0{,}46^2 + 4\\cdot1{,}79^2} = 1{,}8 < 3$ ✓\n\n**d)** Ağırlık $G = \\rho\\dfrac{\\pi d^2}{4}L = 1775$ daN (yayılı yük): $\\sigma_e = \\dfrac{GL/8}{\\pi d^3/32} = 0{,}82$ daN/mm²\n\n$\\tau_{max} = 0{,}5\\sqrt{(0{,}46 + 0{,}82)^2 + 4\\cdot1{,}79^2} = 1{,}9 < 3$ → Ø240 uygun.",
-      "cevap": "$F_e \\approx 21\\,150$ daN; $d = 240$ mm uygun"
     }
   ]
 }

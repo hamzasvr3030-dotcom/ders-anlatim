@@ -64,10 +64,26 @@
     }
   ],
   "pdfler": [
-    { "baslik": "1 – Giriş, mekanizma sistematiği, serbestlik derecesi", "dosya": "pdf/01-giris-serbestlik-derecesi.pdf" },
-    { "baslik": "2 – Mekanizmaların kinematiği: konum analizi", "dosya": "pdf/02-konum-analizi.pdf" },
-    { "baslik": "3 – Hız ve ivme analizi: temel kavramlar", "dosya": "pdf/03-hiz-ivme-temelleri.pdf" },
-    { "baslik": "4 – Mekanizmalarda hız ve ivme analizi", "dosya": "pdf/04-hiz-ivme-analizi.pdf" },
-    { "baslik": "5 – Dişliler", "dosya": "pdf/05-disliler.pdf" }
-  ]
+    {
+      "baslik": "1 – Giriş, mekanizma sistematiği, serbestlik derecesi",
+      "dosya": "pdf/01-giris-serbestlik-derecesi.pdf"
+    },
+    {
+      "baslik": "2 – Mekanizmaların kinematiği: konum analizi",
+      "dosya": "pdf/02-konum-analizi.pdf"
+    },
+    {
+      "baslik": "3 – Hız ve ivme analizi: temel kavramlar",
+      "dosya": "pdf/03-hiz-ivme-temelleri.pdf"
+    },
+    {
+      "baslik": "4 – Mekanizmalarda hız ve ivme analizi",
+      "dosya": "pdf/04-hiz-ivme-analizi.pdf"
+    },
+    {
+      "baslik": "5 – Dişliler",
+      "dosya": "pdf/05-disliler.pdf"
+    }
+  ],
+  "sorular": "sorular.json"
 }

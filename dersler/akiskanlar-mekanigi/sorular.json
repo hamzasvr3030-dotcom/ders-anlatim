@@ -1,0 +1,146 @@
+{
+  "sorular": [
+    {
+      "id": "02-ozellikler-1",
+      "konu": "02-ozellikler",
+      "baslik": "İki levha arasındaki yağ",
+      "kaynak": "Bölüm 2 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$\\mu = 0{,}8$ Pa·s yağ, alt levha sabit, üst levha $V = 0{,}5$ m/s ile hareket ediyor; aralık $h = 2$ mm, levha alanı $A = 0{,}3$ m². Hız profili doğrusal ($du/dy = V/h$):",
+      "cozum": "$$\nF = \\tau A = \\mu\\frac{V}{h}A = 0{,}8\\cdot\\frac{0{,}5}{0{,}002}\\cdot0{,}3 = 60\\ \\text{N}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "03-akiskan-statigi-1",
+      "konu": "03-akiskan-statigi",
+      "baslik": "Düşey dikdörtgen kapak",
+      "kaynak": "Bölüm 3 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "2 m genişliğinde, 3 m yüksekliğinde kapak; üst kenarı su yüzeyinde.",
+      "cozum": "$$\nF_R = \\rho g h_C A = 1000\\cdot9{,}81\\cdot1{,}5\\cdot6 = 88{,}3\\ \\text{kN}\n$$\n\n$$\ny_P = 1{,}5 + \\frac{2\\cdot3^3/12}{1{,}5\\cdot6} = 2{,}0\\ \\text{m}\n$$\n\nÜçgen basınç dağılımında bileşke, derinliğin **2/3**'ünden geçer.",
+      "metinde": true
+    },
+    {
+      "id": "05-kutle-bernoulli-e-3",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Venturi metre",
+      "kaynak": "Bölüm 5 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Daralan kesitte hız artar, basınç düşer. Süreklilik ve Bernoulli birlikte:",
+      "cozum": "$$\n\\dot V = A_2\\sqrt{\\frac{2(P_1 - P_2)}{\\rho\\,(1 - (A_2/A_1)^2)}}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "05-kutle-bernoulli-e-5",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Pompa verimi",
+      "kaynak": "Bölüm 5 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Pompa 0,05 m³/s suyu 30 m yükseltiyor; mil gücü 18 kW:",
+      "cozum": "$$\n\\eta_{pompa} = \\frac{\\rho g\\dot V h}{\\dot W_{mil}} = \\frac{1000\\cdot9{,}81\\cdot0{,}05\\cdot30}{18\\,000} = 0{,}82\n$$",
+      "metinde": true
+    },
+    {
+      "id": "tank-bosalma",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Büyük bir tanktan suyun boşalması",
+      "kaynak": "Bölüm 5 slaytları s. 46",
+      "zorluk": 1,
+      "soru": "Atmosfere açık büyük bir tankta su seviyesi, tabandaki çıkış ağzının 5 m üzerindedir. Sürtünmeyi ihmal ederek çıkıştaki su hızını bulunuz.",
+      "cozum": "1 (serbest yüzey) ve 2 (çıkış) arasında Bernoulli. $P_1 = P_2 = P_{atm}$, büyük tankta $V_1 \\approx 0$, $z_2 = 0$:\n\n$$\nz_1 = \\frac{V_2^2}{2g} \\;\\Rightarrow\\; V_2 = \\sqrt{2gz_1} = \\sqrt{2\\cdot9{,}81\\cdot5} = 9{,}9\\ \\text{m/s}\n$$\n\nBu **Torricelli** bağıntısıdır: delikten çıkan akışkan, aynı yükseklikten serbest düşen bir cisim kadar hızlanır.",
+      "cevap": "$V_2 \\approx 9{,}9$ m/s"
+    },
+    {
+      "id": "su-jeti",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Hortumdan suyun havaya fışkırtılması",
+      "kaynak": "Bölüm 5 slaytları s. 46 (Çengel örneği)",
+      "zorluk": 1,
+      "soru": "Hortumdaki su basıncı 400 kPa (etkin) iken çocuk hortumun ucunu parmağıyla kapatıp suyu dikey olarak fışkırtıyor. Sürtünmesiz kabul ederek suyun çıkabileceği en büyük yüksekliği bulunuz.",
+      "cozum": "1 hortumun içinde (hız küçük, $V_1^2 \\ll V_j^2$), 2 jetin tepesi ($V_2 = 0$, $P_2 = P_{atm}$), $z_1 = 0$:\n\n$$\n\\frac{P_1}{\\rho g} = \\frac{P_{atm}}{\\rho g} + z_2 \\;\\Rightarrow\\; z_2 = \\frac{P_{1,etkin}}{\\rho g} = \\frac{400\\,000}{1000\\cdot9{,}81} = 40{,}8\\ \\text{m}\n$$\n\nGerçekte sürtünme ve hava direnci yüzünden jet daha az yükselir; bu değer üst sınırdır.",
+      "cevap": "$z_{max} \\approx 40{,}8$ m"
+    },
+    {
+      "id": "sifon-benzin",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Yakıt deposundan benzin çekme (sifon)",
+      "kaynak": "Bölüm 5 slaytları s. 47 (Çengel örneği)",
+      "zorluk": 2,
+      "soru": "Bir sifon hortumuyla (iç çapı 5 mm) depodan benzin ($\\rho = 750$ kg/m³) çekiliyor. Bidondaki çıkış ucu depo seviyesinin 0,75 m altında, hortumun en yüksek noktası (3) depo seviyesinin 2 m üstündedir. Sürtünmeyi ihmal ederek **a)** 4 L benzinin çekilme süresini, **b)** hortumun en yüksek noktasındaki basıncı bulunuz ($P_{atm} = 101{,}3$ kPa).",
+      "cozum": "**a)** 1 (depo yüzeyi) – 2 (çıkış): $P_1 = P_2 = P_{atm}$, $V_1 \\approx 0$, $z_2 = 0$, $z_1 = 0{,}75$ m:\n\n$$\nV_2 = \\sqrt{2gz_1} = \\sqrt{2\\cdot9{,}81\\cdot0{,}75} = 3{,}84\\ \\text{m/s}\n$$\n\n$$\n\\dot V = V_2\\frac{\\pi D^2}{4} = 3{,}84\\cdot\\frac{\\pi\\cdot0{,}005^2}{4} = 7{,}53\\times10^{-5}\\ \\text{m}^3/\\text{s}, \\qquad t = \\frac{0{,}004}{7{,}53\\times10^{-5}} = 53\\ \\text{s}\n$$\n\n**b)** 2 – 3 arası ($V_2 = V_3$, süreklilik), $z_3 = 0{,}75 + 2 = 2{,}75$ m:\n\n$$\nP_3 = P_{atm} - \\rho gz_3 = 101{,}3 - \\frac{750\\cdot9{,}81\\cdot2{,}75}{1000} = 81{,}0\\ \\text{kPa}\n$$",
+      "cevap": "$t \\approx 53$ s; $P_3 \\approx 81$ kPa (mutlak)",
+      "not": "Hortumun tepesindeki basınç atmosferin altına düşer; bu basınç benzinin buhar basıncına yaklaşırsa sifon kopar. Bu yüzden tepe noktası çok yüksek tutulamaz."
+    },
+    {
+      "id": "pitot",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Pitot tüpü ile hız ölçme",
+      "kaynak": "Bölüm 5 slaytları s. 48",
+      "zorluk": 1,
+      "soru": "Su akan bir boruya bir piyezometre (statik basınç) ve bir pitot tüpü bağlanmıştır. Boru eksenine göre su yükseklikleri: piyezometrede $h_1 + h_2 = 3 + 7 = 10$ cm, pitot tüpünde $h_1 + h_2 + h_3 = 3 + 7 + 12 = 22$ cm. Borudaki akış hızını bulunuz.",
+      "cozum": "$P_1 = \\rho g(h_1 + h_2)$, $P_2 = \\rho g(h_1 + h_2 + h_3)$ (2 durma noktası, $V_2 = 0$, aynı yükseklik):\n\n$$\n\\frac{V_1^2}{2g} = \\frac{P_2 - P_1}{\\rho g} = h_3 \\;\\Rightarrow\\; V_1 = \\sqrt{2gh_3} = \\sqrt{2\\cdot9{,}81\\cdot0{,}12} = 1{,}53\\ \\text{m/s}\n$$\n\nHızı yalnız iki tüpteki **seviye farkı** ($h_3$) belirler.",
+      "cevap": "$V_1 \\approx 1{,}53$ m/s"
+    },
+    {
+      "id": "baraj",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Barajdan hidrolik güç üretimi",
+      "kaynak": "Bölüm 5 slaytları s. 70",
+      "zorluk": 2,
+      "soru": "Bir barajda su yüzeyi, türbin çıkışındaki su seviyesinden 120 m yüksektir. Türbinden 100 m³/s su geçiyor; borulardaki toplam yük kaybı $h_L = 35$ m, türbin-jeneratör verimi %80'dir. Elektrik gücünü bulunuz.",
+      "cozum": "1 (baraj yüzeyi) – 2 (çıkış yüzeyi) enerji denklemi: $P_1 = P_2 = P_{atm}$, $V_1 \\approx V_2 \\approx 0$, $z_2 = 0$:\n\n$$\nh_{türbin} = z_1 - h_L = 120 - 35 = 85\\ \\text{m}\n$$\n\n$$\n\\dot W_{türbin} = \\dot m g h_{türbin} = 1000\\cdot100\\cdot9{,}81\\cdot85 = 83{,}4\\times10^6\\ \\text{W}\n$$\n\n$$\n\\dot W_{elektrik} = \\eta\\,\\dot W_{türbin} = 0{,}80\\cdot83{,}4 = 66{,}7\\ \\text{MW}\n$$",
+      "cevap": "$\\dot W_{elektrik} \\approx 66{,}7$ MW"
+    },
+    {
+      "id": "gol-havuz",
+      "konu": "05-kutle-bernoulli-enerji",
+      "baslik": "Gölden havuza su pompalanması",
+      "kaynak": "Bölüm 5 slaytları s. 72 (veriler örnek amaçlı)",
+      "zorluk": 2,
+      "soru": "Bir pompa, göl yüzeyinden 25 m yukarıdaki havuza 0,02 m³/s su basıyor. Borulardaki yük kaybı $h_L = 3$ m, pompa verimi %75'tir. **a)** Pompanın akışkana verdiği gücü, **b)** pompa mil gücünü, **c)** pompadaki basınç artışını bulunuz.",
+      "cozum": "**a)** 1 (göl) – 2 (havuz) yüzeyleri arasında enerji denklemi ($P_1 = P_2$, $V_1 \\approx V_2 \\approx 0$, $z_1 = 0$):\n\n$$\n\\dot W_{pompa,f} = \\dot mgz_2 + \\dot mgh_L = 1000\\cdot0{,}02\\cdot9{,}81\\,(25 + 3) = 5494\\ \\text{W}\n$$\n\n**b)** $\\dot W_{mil} = \\dfrac{\\dot W_{pompa,f}}{\\eta} = \\dfrac{5494}{0{,}75} = 7325$ W ≈ 7,3 kW\n\n**c)** Pompa giriş-çıkışı arasında (aynı kot, aynı hız): $\\Delta P = \\dfrac{\\dot W_{pompa,f}}{\\dot V} = \\dfrac{5494}{0{,}02} = 275$ kPa",
+      "cevap": "$\\dot W_f \\approx 5{,}5$ kW; $\\dot W_{mil} \\approx 7{,}3$ kW; $\\Delta P \\approx 275$ kPa",
+      "not": "Slaytta bu örneğin yalnız denklemleri var (25 m yükseklik dışında veri yok). Debi, kayıp ve verim, denklemleri uygulamak için seçilmiş örnek değerlerdir."
+    },
+    {
+      "id": "06-momentum-1",
+      "konu": "06-momentum",
+      "baslik": "Tipik problemler",
+      "kaynak": "Bölüm 6 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "**Sabit plakaya çarpan jet.** Yatay jet düşey plakaya çarpıp yanlara dağılıyor:",
+      "cozum": "$$\nF = \\dot m V = \\rho A V^2\n$$\n\nØ5 cm, 20 m/s su jeti: $\\dot m = 1000\\cdot(\\pi\\cdot0{,}05^2/4)\\cdot20 = 39{,}3$ kg/s, $F = 39{,}3\\cdot20 = 785$ N.\n\n**Hareketli plaka / kanat** ($u$ hızıyla jetten uzaklaşıyor): bağıl hız $V - u$ kullanılır. Tek kanatta $F = \\rho A(V - u)^2$.\n\n**Dirsek (redüksiyonlu dirsek).** Kontrol hacmi dirseği kapsar. $x$ ve $y$ yönlerinde ayrı yazılır:\n\n$$\nF_{Rx} + P_{1,etkin}A_1 - P_{2,etkin}A_2\\cos\\theta = \\beta\\dot m(V_2\\cos\\theta - V_1)\n$$\n\n$$\nF_{Rz} - P_{2,etkin}A_2\\sin\\theta - W = \\beta\\dot m V_2\\sin\\theta\n$$\n\n$F_R$: dirseği yerinde tutmak için cıvatalara etkiyen kuvvet.\n\n**İtki (jet motoru, roket).** Sabit uçak koordinatlarında: $F_{itki} = \\dot m(V_{çıkış} - V_{giriş})$.\n\n**Rüzgar türbini (Betz sınırı).** İdeal bir rüzgar türbininin rüzgârın kinetik enerjisinden alabileceği en yüksek oran:\n\n$$\n\\eta_{max} = \\frac{16}{27} \\approx 0{,}593\n$$",
+      "metinde": true
+    },
+    {
+      "id": "07-boyut-analizi-1",
+      "konu": "07-boyut-analizi",
+      "baslik": "Rüzgâr tünelinde araba modeli",
+      "kaynak": "Bölüm 7 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "1:10 ölçekli araba modeli aynı havada test ediliyor. Prototip 100 km/h ile gidiyor. Reynolds benzerliği için:",
+      "cozum": "$$\n\\frac{V_mL_m}{\\nu} = \\frac{V_pL_p}{\\nu} \\;\\Rightarrow\\; V_m = V_p\\frac{L_p}{L_m} = 1000\\ \\text{km/h}\n$$\n\nBu hız ses hızına yakın olduğundan sıkıştırılabilirlik etkileri ortaya çıkar. Pratik çözüm: daha büyük model, basınçlı tünel ya da yüksek Re'de $C_D$'nin Re'den bağımsızlaştığı (**Reynolds bağımsızlığı**) gerçeğinden yararlanmak.\n\n**Eksik benzerlik:** Gemi modellerinde Froude ve Reynolds benzerliğini aynı anda sağlamak pratikte imkânsızdır. Froude benzerliği sağlanır, viskoz etkiler ampirik düzeltmelerle eklenir.",
+      "metinde": true
+    },
+    {
+      "id": "08-ic-akislar-1",
+      "konu": "08-ic-akislar",
+      "baslik": "Türbülanslı akış",
+      "kaynak": "Bölüm 8 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "20 °C su ($\\nu = 1{,}004\\times10^{-6}$), Ø5 cm düzgün (pürüzsüz) boru, $V = 2$ m/s, $L = 100$ m:",
+      "cozum": "$$\nRe = \\frac{2\\cdot0{,}05}{1{,}004\\times10^{-6}} = 99\\,600\\ (\\text{türbülanslı}), \\qquad f \\approx 0{,}0180\\ (\\text{Colebrook})\n$$\n\n$$\nh_L = 0{,}018\\cdot\\frac{100}{0{,}05}\\cdot\\frac{2^2}{2\\cdot9{,}81} = 7{,}34\\ \\text{m}, \\qquad \\Delta P = \\rho g h_L \\approx 72\\ \\text{kPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "11-dis-akislar-1",
+      "konu": "11-dis-akislar",
+      "baslik": "Otomobil direnci",
+      "kaynak": "Bölüm 11 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$C_D = 0{,}3$, ön alan $A = 2{,}2$ m², hava $\\rho = 1{,}2$ kg/m³, $V = 100$ km/h $= 27{,}8$ m/s:",
+      "cozum": "$$\nF_D = 0{,}3\\cdot\\frac12\\cdot1{,}2\\cdot27{,}8^2\\cdot2{,}2 = 306\\ \\text{N}, \\qquad \\dot W = F_DV = 8{,}5\\ \\text{kW}\n$$\n\nDirenç hızın **karesiyle**, onu yenmek için gereken güç hızın **küpüyle** artar. Hız %10 artarsa güç ≈ %33 artar.",
+      "metinde": true
+    }
+  ]
+}

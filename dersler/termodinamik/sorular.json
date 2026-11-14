@@ -1,0 +1,274 @@
+{
+  "sorular": [
+    {
+      "id": "01-temel-kavramlar-2",
+      "konu": "01-temel-kavramlar",
+      "baslik": "Çok akışkanlı manometre",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$P_{atm} = 85{,}6$ kPa; su $h_1 = 0{,}1$ m, yağ $h_2 = 0{,}2$ m ($\\rho = 850$), cıva $h_3 = 0{,}35$ m ($\\rho = 13\\,600$).",
+      "cozum": "$$\nP_1 = P_{atm} + g(\\rho_{cıva}h_3 - \\rho_{su}h_1 - \\rho_{yağ}h_2) = 85{,}6 + 9{,}81\\,\\frac{4760 - 100 - 170}{1000} = 129{,}6\\ \\text{kPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "01-temel-kavramlar-3",
+      "konu": "01-temel-kavramlar",
+      "baslik": "Yaylı piston",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$m = 4$ kg, $A = 35$ cm², $F_{yay} = 60$ N, $P_{atm} = 95$ kPa. Pistonun düşey dengesi:",
+      "cozum": "$$\nP = P_{atm} + \\frac{mg + F_{yay}}{A} = 95 + \\frac{4\\cdot9{,}81 + 60}{35\\times10^{-4}}\\cdot10^{-3} = 123{,}4\\ \\text{kPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "01-temel-kavramlar-4",
+      "konu": "01-temel-kavramlar",
+      "baslik": "Diferansiyel cıva yüksekliği",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$P_{etkin} = 80$ kPa; $SG_{cıva} = 13{,}6$, $SG_{yağ} = 0{,}72$; $h_{yağ} = 0{,}75$ m, $h_{su} = 0{,}3$ m:",
+      "cozum": "$$\n\\frac{80\\,000}{1000\\cdot9{,}81} = 0{,}72\\cdot0{,}75 + 13{,}6\\,h_{cıva} - 0{,}3 \\;\\Rightarrow\\; h_{cıva} = 0{,}582\\ \\text{m}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "02-enerji-birinci-ya-1",
+      "konu": "02-enerji-birinci-yasa",
+      "baslik": "Krank mili gücü",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$T = 200$ N·m, $\\dot n = 4000$ dev/dak:",
+      "cozum": "$$\n\\dot W = 2\\pi\\cdot\\frac{4000}{60}\\cdot200 = 83\\,776\\ \\text{W} \\approx 83{,}8\\ \\text{kW}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "02-enerji-birinci-ya-2",
+      "konu": "02-enerji-birinci-yasa",
+      "baslik": "Rampada sabit hızla çıkış",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$m = 1200$ kg, $V = 90$ km/h, eğim 30°. Düşey hız $25\\sin30° = 12{,}5$ m/s:",
+      "cozum": "$$\n\\dot W_g = mg\\,V_{düşey} = 1200\\cdot9{,}81\\cdot12{,}5 = 147\\ \\text{kW}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "02-enerji-birinci-ya-3",
+      "konu": "02-enerji-birinci-yasa",
+      "baslik": "Hızlandırma",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "900 kg'lık araç 20 s'de 0 → 80 km/h:",
+      "cozum": "$$\nW_a = \\tfrac12\\cdot900\\cdot(22{,}22)^2 = 222\\ \\text{kJ}, \\qquad \\dot W = 222/20 = 11{,}1\\ \\text{kW}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "02-enerji-birinci-ya-4",
+      "konu": "02-enerji-birinci-yasa",
+      "baslik": "Soğutulan ve karıştırılan sıvı",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$U_1 = 800$ kJ, dışarı 500 kJ ısı, karıştırıcı 100 kJ iş veriyor:",
+      "cozum": "$$\nW_{mil,g} - Q_ç = U_2 - U_1 \\;\\Rightarrow\\; 100 - 500 = U_2 - 800 \\;\\Rightarrow\\; U_2 = 400\\ \\text{kJ}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "02-enerji-birinci-ya-5",
+      "konu": "02-enerji-birinci-yasa",
+      "baslik": "20 W'lık fan 8 m/s üfleyebilir mi?",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$\\dot m = 1$ kg/s, sürekli çalışma: $\\dot W = \\dot m V^2/2$",
+      "cozum": "$$\nV_{max} = \\sqrt{2\\cdot20/1} = 6{,}3\\ \\text{m/s} < 8\\ \\text{m/s}\n$$\n\nİstek fiziksel olarak gerçekleşemez.\n\n> **Isı mı, iş mi?** Elektrikli fırında direnç teli sistemin **içindeyse** sınırı elektronlar geçer: **iş**. Sistem yalnız fırın havasıysa enerji telden havaya sıcaklık farkıyla geçer: **ısı**. Cevap seçtiğin sınıra bağlıdır.",
+      "metinde": true
+    },
+    {
+      "id": "03-saf-madde-1",
+      "konu": "03-saf-madde",
+      "baslik": "Doymuş sıvının buharlaştırılması",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "100 kPa'da 0,2 kg doymuş sıvı su tamamen buharlaştırılıyor (A-5: $v_f = 0{,}001043$, $v_g = 1{,}6941$ m³/kg, $h_{fg} = 2257{,}5$ kJ/kg):",
+      "cozum": "$$\n\\Delta V = m\\,v_{fg} = 0{,}2\\cdot1{,}6931 = 0{,}3386\\ \\text{m}^3, \\qquad Q = m\\,h_{fg} = 0{,}2\\cdot2257{,}5 = 451{,}5\\ \\text{kJ}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "03-saf-madde-2",
+      "konu": "03-saf-madde",
+      "baslik": "Doymuş karışım",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "90 °C'de 10 kg su: 8 kg sıvı, 2 kg buhar (A-4: $v_f = 0{,}001036$, $v_g = 2{,}3593$):",
+      "cozum": "$$\nP = P_{doyma@90°C} = 70{,}18\\ \\text{kPa}, \\quad x = 0{,}2, \\quad v = 0{,}001036 + 0{,}2(2{,}3583) = 0{,}473, \\quad V = 4{,}73\\ \\text{m}^3\n$$",
+      "metinde": true
+    },
+    {
+      "id": "03-saf-madde-3",
+      "konu": "03-saf-madde",
+      "baslik": "R-134a karışımı",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "80 L kapta 4 kg R-134a, 160 kPa (A-12: $v_f = 0{,}0007437$, $v_g = 0{,}12348$, $h_f = 31{,}21$, $h_{fg} = 209{,}90$):",
+      "cozum": "$$\nv = 0{,}02\\ \\text{m}^3/\\text{kg}\\ (v_f < v < v_g \\Rightarrow \\text{karışım}), \\quad T = -15{,}6\\ °\\text{C}\n$$\n\n$$\nx = \\frac{0{,}02 - 0{,}0007437}{0{,}12274} = 0{,}157, \\qquad h = 31{,}21 + 0{,}157\\cdot209{,}90 = 64{,}2\\ \\text{kJ/kg}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "03-saf-madde-4",
+      "konu": "03-saf-madde",
+      "baslik": "İnterpolasyon",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "0,5 MPa'da $h = 2890$ kJ/kg ($h_g = 2748{,}1$ → kızgın). A-6'da 200 °C: 2855,8 · 250 °C: 2961,0:",
+      "cozum": "$$\nT = 200 + 50\\cdot\\frac{2890 - 2855{,}8}{2961{,}0 - 2855{,}8} = 216{,}3\\ °\\text{C}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "03-saf-madde-5",
+      "konu": "03-saf-madde",
+      "baslik": "Sıkıştırılmış sıvının entalpisi",
+      "kaynak": "Bölüm 1–5 formüller ve örnekler (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Su 100 °C, 15 MPa. Tablo (A-7): 430,39 kJ/kg. Doymuş sıvı yaklaşımı: 419,17 (%2,6 hata). Düzeltmeli: $419{,}17 + 0{,}001(15\\,000 - 101{,}4) = 434{,}07$ kJ/kg (%1 hata).",
+      "cozum": "> **Referans hali:** $u$, $h$, $s$ doğrudan ölçülemez; yalnızca değişimleri anlamlıdır. Su için referans 0,01 °C doymuş sıvı, R-134a için −40 °C doymuş sıvıdır. Tablolarda negatif değer görmek normaldir.",
+      "metinde": true
+    },
+    {
+      "id": "04-ideal-gaz-1",
+      "konu": "04-ideal-gaz",
+      "baslik": "İdeal gaz ve gerçek gaz davranışı",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "0,5 m³ kapta 400 kPa, 27 °C azot. Kütlesi?",
+      "cozum": "$$\nm = \\frac{PV}{RT} = \\frac{400\\cdot0{,}5}{0{,}297\\cdot300} = 2{,}245\\ \\text{kg}\n$$\n\nKap 77 °C'ye ısıtılırsa (sabit hacim):\n\n$$\nP_2 = P_1\\frac{T_2}{T_1} = 400\\cdot\\frac{350}{300} = 466{,}7\\ \\text{kPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "05-sinir-isi-2",
+      "konu": "05-sinir-isi",
+      "baslik": "Sabit basınçta su buharı ısıtılıyor",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "5 kg, 400 kPa, 200 → 250 °C (A-6: $v_1 = 0{,}53434$, $v_2 = 0{,}59520$ m³/kg):",
+      "cozum": "$$\nW_s = mP_0(v_2 - v_1) = 5\\cdot400\\cdot(0{,}59520 - 0{,}53434) = 121{,}7\\ \\text{kJ}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "05-sinir-isi-3",
+      "konu": "05-sinir-isi",
+      "baslik": "İzotermal sıkıştırma",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Hava 100 kPa, 80 °C sabit; $V_1 = 0{,}4 \\to V_2 = 0{,}1$ m³:",
+      "cozum": "$$\nW_s = P_1V_1\\ln\\frac{V_2}{V_1} = 100\\cdot0{,}4\\cdot\\ln\\frac{0{,}1}{0{,}4} = -55{,}5\\ \\text{kJ}\n$$\n\nEksi işaret: sisteme iş yapılıyor (sıkıştırmada her zaman negatif).",
+      "metinde": true
+    },
+    {
+      "id": "05-sinir-isi-4",
+      "konu": "05-sinir-isi",
+      "baslik": "Yaylı pistonda genişleme",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$P_1 = 200$ kPa, $V_1 = 0{,}05$ m³; yay $k = 150$ kN/m (başta kuvvetsiz); $A = 0{,}25$ m²; hacim iki katına çıkıyor.",
+      "cozum": "1. Piston yer değiştirmesi: $x = \\Delta V/A = 0{,}05/0{,}25 = 0{,}2$ m\n2. Yay kuvveti: $F = kx = 30$ kN → $\\Delta P = F/A = 120$ kPa → $P_2 = 320$ kPa\n3. Toplam iş (yamuk alanı): $W = \\dfrac{200 + 320}{2}\\cdot0{,}05 = 13$ kJ\n4. Yaya giden kısım: $W_{yay} = \\tfrac12 kx^2 = \\tfrac12\\cdot150\\cdot0{,}2^2 = 3$ kJ; kalan 10 kJ atmosfere ve piston ağırlığına karşı yapılır.",
+      "metinde": true
+    },
+    {
+      "id": "06-kapali-sistem-ene-1",
+      "konu": "06-kapali-sistem-enerji",
+      "baslik": "Sabit basınçta elektrikli ısıtma",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "300 kPa'da 25 g doymuş su buharı; 120 V, 0,2 A ile 5 dakika ısıtılıyor; 3,7 kJ ısı kaybı var.",
+      "cozum": "$$\nW_e = VI\\Delta t = 120\\cdot0{,}2\\cdot300 = 7{,}2\\ \\text{kJ}, \\qquad h_1 = h_{g@300\\,kPa} = 2724{,}9\\ \\text{kJ/kg}\n$$\n\n$$\n7{,}2 - 3{,}7 = 0{,}025\\,(h_2 - 2724{,}9) \\;\\Rightarrow\\; h_2 = 2864{,}9\\ \\text{kJ/kg} \\;\\Rightarrow\\; T_2 \\approx 200\\ °\\text{C}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "06-kapali-sistem-ene-2",
+      "konu": "06-kapali-sistem-enerji",
+      "baslik": "Helyumun karıştırılması",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Yalıtılmış rijit kapta 0,7 kg He, 27 °C, 350 kPa; 15 W'lık karıştırıcı 30 dakika çalışıyor ($c_v = 3{,}1156$):",
+      "cozum": "$$\nW = 0{,}015\\cdot1800 = 27\\ \\text{kJ} = m c_v (T_2 - T_1) \\;\\Rightarrow\\; T_2 = 39{,}4\\ °\\text{C}\n$$\n\n$$\nP_2 = P_1\\frac{T_2}{T_1} = 350\\cdot\\frac{312{,}4}{300} = 364{,}5\\ \\text{kPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "06-kapali-sistem-ene-3",
+      "konu": "06-kapali-sistem-enerji",
+      "baslik": "Sabit basınçta azotun ısıtılması",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "400 kPa, 27 °C, 0,5 m³ N₂; 120 V, 2 A, 5 dakika; 2,8 kJ ısı kaybı ($R = 0{,}297$, $c_p = 1{,}039$):",
+      "cozum": "$$\nm = \\frac{400\\cdot0{,}5}{0{,}297\\cdot300} = 2{,}245\\ \\text{kg}, \\qquad 72 - 2{,}8 = 2{,}245\\cdot1{,}039\\,(T_2 - 27) \\;\\Rightarrow\\; T_2 = 56{,}7\\ °\\text{C}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "06-kapali-sistem-ene-4",
+      "konu": "06-kapali-sistem-enerji",
+      "baslik": "Pabuçlu piston",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Hava 150 kPa, 27 °C, 400 L. Piston 350 kPa'da kalkıyor; hacim iki katına çıkana kadar ısıtılıyor.",
+      "cozum": "1. Süreç: önce sabit hacim (150 → 350 kPa), sonra sabit basınç (0,4 → 0,8 m³).\n2. $T_3 = T_1\\dfrac{P_3V_3}{P_1V_1} = 300\\cdot\\dfrac{350\\cdot2}{150} = 1400$ K\n3. $W = 350\\cdot(0{,}8 - 0{,}4) = 140$ kJ\n4. $m = \\dfrac{150\\cdot0{,}4}{0{,}287\\cdot300} = 0{,}697$ kg; tablodan $u_1 = 214{,}07$, $u_3 = 1113{,}52$ kJ/kg\n\n$$\nQ = m(u_3 - u_1) + W = 0{,}697\\,(899{,}45) + 140 = 767\\ \\text{kJ}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "06-kapali-sistem-ene-5",
+      "konu": "06-kapali-sistem-enerji",
+      "baslik": "Suyun vakumlu bölmeye genişlemesi",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "200 kPa, 25 °C'de 5 kg su; eşit hacimli diğer bölme vakum. Perde kalkıyor, son sıcaklık yine 25 °C.",
+      "cozum": "- $V_1 \\approx 5\\cdot0{,}001 = 0{,}005$ m³, kap $0{,}01$ m³ → $v_2 = 0{,}002$ m³/kg ($v_f < v_2 < v_g$): karışım, $P_2 = 3{,}17$ kPa.\n- Vakuma genişlemede sınır işi **sıfırdır** (karşı basınç yok). $Q = m(u_2 - u_1) = +0{,}25$ kJ.",
+      "metinde": true
+    },
+    {
+      "id": "07-kontrol-hacmi-1",
+      "konu": "07-kontrol-hacmi",
+      "baslik": "Bahçe hortumu",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "40 L'lik kova 50 s'de doluyor; fıskiye çıkışı Ø0,8 cm:",
+      "cozum": "$$\n\\dot V = 0{,}8\\ \\text{L/s}, \\quad \\dot m = 0{,}8\\ \\text{kg/s}, \\quad V_ç = \\frac{0{,}8\\times10^{-3}}{\\pi\\,(0{,}004)^2} = 15{,}9\\ \\text{m/s}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "07-kontrol-hacmi-2",
+      "konu": "07-kontrol-hacmi",
+      "baslik": "Düdüklü tencere",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "150 kPa, 40 dakikada 0,6 L su eksiliyor; çıkış alanı 8 mm² (150 kPa: $v_f = 0{,}001053$, $v_g = 1{,}1594$, $u_g = 2519{,}2$, $h_g = 2693{,}1$):",
+      "cozum": "$$\nm = \\frac{0{,}6\\times10^{-3}}{0{,}001053} = 0{,}570\\ \\text{kg}, \\quad \\dot m = 2{,}37\\times10^{-4}\\ \\text{kg/s}, \\quad V = \\frac{\\dot m\\,v_g}{A} = 34{,}3\\ \\text{m/s}\n$$\n\n$$\ne_{akış} = Pv = h_g - u_g = 173{,}9\\ \\text{kJ/kg}, \\qquad \\dot E_{kütle} = \\dot m\\,h_g = 0{,}638\\ \\text{kW}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "07-kontrol-hacmi-3",
+      "konu": "07-kontrol-hacmi",
+      "baslik": "Lülede hava",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Hava 500 K, 10 m/s ile adyabatik lüleye giriyor, 200 m/s ile çıkıyor ($c_p = 1{,}005$):",
+      "cozum": "$$\nT_2 = T_1 - \\frac{V_2^2 - V_1^2}{2c_p} = 500 - \\frac{40\\,000 - 100}{2\\cdot1005} = 480{,}1\\ \\text{K}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "07-kontrol-hacmi-4",
+      "konu": "07-kontrol-hacmi",
+      "baslik": "Kompresör",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "0,5 kg/s hava adyabatik olarak 300 K'den 450 K'e sıkıştırılıyor:",
+      "cozum": "$$\n\\dot W_g = \\dot m\\,c_p(T_2 - T_1) = 0{,}5\\cdot1{,}005\\cdot150 = 75{,}4\\ \\text{kW}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "07-kontrol-hacmi-5",
+      "konu": "07-kontrol-hacmi",
+      "baslik": "Karışma (duş T-bağlantısı)",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "80 °C sıcak su ile 20 °C soğuk su karışıp 40 °C oluyor. Sıvılar için $h \\approx cT$:",
+      "cozum": "$$\ny = \\frac{\\dot m_{sıcak}}{\\dot m_{soğuk}} = \\frac{h_3 - h_2}{h_1 - h_3} = \\frac{40 - 20}{80 - 40} = 0{,}5\n$$",
+      "metinde": true
+    }
+  ]
+}

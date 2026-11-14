@@ -205,5 +205,6 @@
       "baslik": "Bölüm 15 – HAD'a giriş",
       "dosya": "pdf/bolum-15.pdf"
     }
-  ]
+  ],
+  "sorular": "sorular.json"
 }

@@ -1,0 +1,244 @@
+{
+  "sorular": [
+    {
+      "id": "02-ic-kuvvetler-1",
+      "konu": "02-ic-kuvvetler",
+      "baslik": "Ortasından tekil yüklü basit kiriş",
+      "kaynak": "Bölüm 2.1 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$L = 4$ m, A sabit, C kayıcı mafsal, ortada ($z = 2$ m) $P = 10$ kN.",
+      "cozum": "- Tepkiler: $\\sum M_A$: $-10\\cdot2 + R_C\\cdot4 = 0 \\Rightarrow R_C = 5$ kN, $R_A = 5$ kN.\n- 1. kesim ($0 \\le z \\le 2$): $T_1 = 5$ kN, $M_1 = 5z$ → $0 \\dots 10$ kN·m.\n- 2. kesim: $T_2 = 5 - 10 = -5$ kN, $M_2 = 10 - 5z$ → $10 \\dots 0$.\n- $T$, B'de $+5$'ten $-5$'e atlar (sıçrama = $P$). $M_{max} = 10\\ \\text{kN·m} = PL/4$.",
+      "metinde": true
+    },
+    {
+      "id": "02-ic-kuvvetler-2",
+      "konu": "02-ic-kuvvetler",
+      "baslik": "Düzgün yayılı yüklü basit kiriş",
+      "kaynak": "Bölüm 2.1 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$L = 3$ m, $q = 1$ kN/m, iki ucu mafsallı.",
+      "cozum": "- $Q = 3$ kN (ortada) → $R_A = R_B = 1{,}5$ kN.\n- Tek kesim: $T = 1{,}5 - z$, $\\quad M = 1{,}5z - z^2/2$.\n- $T = 0 \\Rightarrow z = 1{,}5$ m: $M_{max} = 1{,}125\\ \\text{kN·m} = qL^2/8$.",
+      "metinde": true
+    },
+    {
+      "id": "02-ic-kuvvetler-3",
+      "konu": "02-ic-kuvvetler",
+      "baslik": "Eğik kuvvet ve normal kuvvet",
+      "kaynak": "Bölüm 2.1 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "A sabit ($z = 0$), D kayıcı ($z = 1{,}5$ m); B'de ($0{,}5$ m) 50 t düşey, C'de ($1{,}0$ m) 100 t eğik kuvvet (3-4-5 üçgeni).",
+      "cozum": "1. 100 t'yi ayır: yatay $100\\cdot3/5 = 60$ t (sola), düşey $100\\cdot4/5 = 80$ t (aşağı).\n2. Tepkiler: $R_{Az} = 60$ t; $\\sum M_A$: $-50\\cdot0{,}5 - 80\\cdot1 + 1{,}5R_D = 0 \\Rightarrow R_D = 70$ t, $R_{Ay} = 60$ t.\n3. A–C arası $N = -60$ t (**basma**: A mesnedi sağa, C'deki bileşen sola iter); C'den sonra $N = 0$.\n4. $T$: $60 \\to 10 \\to -70$ t. $M$: B'de 30, C'de **35 t·m (maksimum)**, D'de 0.\n\n> Kesme ve moment yalnızca **eksene dik** bileşenden, normal kuvvet yalnızca **eksen boyunca** bileşenden doğar.",
+      "metinde": true
+    },
+    {
+      "id": "02-ic-kuvvetler-4",
+      "konu": "02-ic-kuvvetler",
+      "baslik": "Yayılı yük + iki tekil yük",
+      "kaynak": "Bölüm 2.1 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$L = 8$ m, A sabit, D kayıcı; A–B (0–4 m) $q = 10$ kN/m; B'de 100 kN, C'de (6 m) 150 kN.",
+      "cozum": "- $Q = 40$ kN ($z = 2$). $\\sum M_A$: $-40\\cdot2 - 100\\cdot4 - 150\\cdot6 + 8R_D = 0 \\Rightarrow R_D = 172{,}5$ kN, $R_A = 117{,}5$ kN.\n- A–B: $T = 117{,}5 - 10z$ ($117{,}5 \\to 77{,}5$), $M = 117{,}5z - 5z^2$ ($0 \\to 390$).\n- B–C: $T = 117{,}5 - 40 - 100 = -22{,}5$ kN, $M = 390 - 22{,}5z$ → C'de 345.\n- Ters kesim (D'den): $T = -172{,}5$, $M = 172{,}5z$ → C'de 345 ✓ (iki yönden aynı değer = kontrol).\n- $M_{max} = 390$ kN·m (B'de, $T$'nin işaret değiştirdiği yer).",
+      "metinde": true
+    },
+    {
+      "id": "02-ic-kuvvetler-5",
+      "konu": "02-ic-kuvvetler",
+      "baslik": "Tekil moment içeren kiriş",
+      "kaynak": "Bölüm 2.1 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$L = 8$ m, A sabit, E kayıcı; B'de (1 m) 100 kN, C–D (2–6 m) $q = 5$ kN/m, D'de (6 m) saat tersi $C = 5$ kN·m.",
+      "cozum": "- $\\sum M_A$: $-100\\cdot1 - 20\\cdot4 + 5 + 8R_E = 0 \\Rightarrow R_E = 21{,}875$ kN, $R_A = 98{,}125$ kN.\n- $M$: B'de 98,125 (**maksimum**), C'de 96,25; D'nin solunda 48,75, sağında 43,75.\n- D'deki **5 kN·m'lik sıçrama** tam olarak uygulanan momente eşittir (kontrol).",
+      "metinde": true
+    },
+    {
+      "id": "03-yuk-kesme-moment-1",
+      "konu": "03-yuk-kesme-moment",
+      "baslik": "Yük–kesme–moment bağıntıları (integrasyon)",
+      "kaynak": "Ders PDF (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "**Kesim yöntemindeki Örnek 4:** A–B arasında $T = 117{,}5 - 10z$.",
+      "cozum": "$$\nM(4) = \\int_0^4 (117{,}5 - 10z)\\,dz = 470 - 80 = 390\\ \\text{kN·m} \\;✓\n$$\n\n**Örnek 2 (düzgün yayılı, $q = 1$):** $T(0) = 1{,}5$ ise\n\n$$\nT = 1{,}5 - z, \\qquad M = \\int_0^z (1{,}5 - z)\\,dz = 1{,}5z - \\frac{z^2}{2} \\;✓\n$$",
+      "metinde": true
+    },
+    {
+      "id": "04-eksenel-kuvvet-1",
+      "konu": "04-eksenel-kuvvet",
+      "baslik": "Ø10 çelik çubuk",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$N = 10$ kN çekme, $E = 210\\,000$ MPa, $L = 100$ mm.",
+      "cozum": "$$\nA = \\frac{\\pi\\cdot10^2}{4} = 78{,}54\\ \\text{mm}^2, \\quad \\sigma = \\frac{10\\,000}{78{,}54} = 127{,}3\\ \\text{MPa}, \\quad \\Delta L = \\frac{10\\,000\\cdot100}{210\\,000\\cdot78{,}54} = 0{,}0606\\ \\text{mm}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "04-eksenel-kuvvet-2",
+      "konu": "04-eksenel-kuvvet",
+      "baslik": "Kademeli çubukta N diyagramı",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "A'da ankastre; AB = 100 mm Ø10, BC = 200 mm Ø10, CD = 200 mm Ø5. B'de 750 N (+z), C'de 450 N (−z), D'de 300 N (+z).",
+      "cozum": "1. Tepki: $R_A + 750 - 450 + 300 = 0 \\Rightarrow R_A = -600$ N (sola).\n2. İç kuvvetler: $N_1 = 600$ N, $N_2 = 600 - 750 = -150$ N, $N_3 = 300$ N (sağdan).\n3. Uzamalar ($A_{10} = 78{,}54$, $A_5 = 19{,}63$ mm²):\n\n$$\n\\Delta L = \\frac{600\\cdot100}{210\\,000\\cdot78{,}54} - \\frac{150\\cdot200}{210\\,000\\cdot78{,}54} + \\frac{300\\cdot200}{210\\,000\\cdot19{,}63} = 16{,}37\\times10^{-3}\\ \\text{mm}\n$$\n\n4. Gerilmeler: $7{,}64$; $-1{,}91$; **15,28 MPa** (en büyük gerilme en ince kısımda).",
+      "metinde": true
+    },
+    {
+      "id": "04-eksenel-kuvvet-3",
+      "konu": "04-eksenel-kuvvet",
+      "baslik": "Toplam boy değişimini sıfır yapan yük",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Alüminyum ($E = 70$ GPa) düşey çubuk: alt kısım Ø12, 400 mm; üst kısım Ø8, 600 mm. Üst uçta $P = 4$ kN yukarı, birleşimde $Q$ aşağı. $\\Sigma\\Delta L = 0$ için $Q$?",
+      "cozum": "$$\n\\frac{4000\\cdot600}{70\\,000\\cdot50{,}27} + \\frac{(4000 - Q)\\cdot400}{70\\,000\\cdot113{,}1} = 0\n\\;\\Rightarrow\\; Q = 17{,}5\\ \\text{kN}\n$$\n\nAlt kısım basmada kalmalı ($N_2 = -13{,}5$ kN) ki üst kısmın uzamasını dengelesin.",
+      "metinde": true
+    },
+    {
+      "id": "04-eksenel-kuvvet-4",
+      "konu": "04-eksenel-kuvvet",
+      "baslik": "Rijit bloğun yatay kalması",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "2 m'lik AC bloğu A'dan çelik AB ($L = 1$ m, $E = 210$ GPa), C'den alüminyum DC ($L = 0{,}5$ m, Ø10, $E = 70$ GPa) çubuklarıyla asılı. 10 kN yük A'dan 0,75 m'de. Çelik çubuğun çapı?",
+      "cozum": "1. Statik: $\\sum M_A$: $N_{al}\\cdot2 = 10\\,000\\cdot0{,}75 \\Rightarrow N_{al} = 3750$ N, $N_ç = 6250$ N.\n2. Yatay kalma şartı: $\\Delta L_ç = \\Delta L_{al}$\n\n$$\n\\frac{6250\\cdot1000}{210\\,000\\,A_ç} = \\frac{3750\\cdot500}{70\\,000\\cdot78{,}54} = 0{,}341\\ \\text{mm}\n\\;\\Rightarrow\\; A_ç = 87{,}3\\ \\text{mm}^2,\\; d = 10{,}54 \\to 11\\ \\text{mm}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "04-eksenel-kuvvet-5",
+      "konu": "04-eksenel-kuvvet",
+      "baslik": "Rijit kolda yer değiştirmeler",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "BDE rijit çubuğu: AB alüminyum ($E = 70$ GPa, $A = 500$ mm², $L = 0{,}3$ m), CD çelik ($E = 200$ GPa, $A = 600$ mm², $L = 0{,}4$ m). BD = 0,2 m, DE = 0,4 m, E ucunda 30 kN aşağı.",
+      "cozum": "1. Kuvvetler: $\\sum M_B$: $F_{CD} = 90$ kN (çekme); $\\sum M_D$: $F_{AB} = -60$ kN (basma).\n2. $\\delta_D = \\dfrac{90\\,000\\cdot400}{600\\cdot200\\,000} = 0{,}300$ mm ↓, $\\quad \\delta_B = \\dfrac{60\\,000\\cdot300}{500\\cdot70\\,000} = 0{,}514$ mm ↑.\n3. Benzer üçgenler: dönme noktası D'den $x = 73{,}7$ mm, $\\delta_E = 0{,}3\\cdot\\dfrac{400 + 73{,}7}{73{,}7} = 1{,}93$ mm ↓.\n\n> Rijit bir kolda yer değiştirmeler, kolun döndüğü noktaya olan **uzaklıkla orantılıdır.**",
+      "metinde": true
+    },
+    {
+      "id": "04-eksenel-kuvvet-6",
+      "konu": "04-eksenel-kuvvet",
+      "baslik": "Somun sıkma ile oluşan gerilme",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "İki Ø18 çelik cıvata ($L = 450$ mm, $E = 200$ GPa) arasında Ø38 alüminyum çubuk ($L = 300$ mm, $E = 70$ GPa). Diş adımı 2,5 mm, somunlar ¼ tur sıkılıyor.",
+      "cozum": "1. Somunun ilerlemesi $2{,}5/4 = 0{,}625$ mm; bu, **cıvatanın uzaması + çubuğun kısalması** ile karşılanır.\n2. Denge: $P_r = 2P_b$.\n\n$$\n0{,}625 = \\underbrace{8{,}842\\times10^{-6}P_b}_{\\text{cıvata}} + \\underbrace{3{,}779\\times10^{-6}\\cdot 2P_b}_{\\text{çubuk}}\n\\;\\Rightarrow\\; P_b = 38{,}1\\ \\text{kN},\\; P_r = 76{,}2\\ \\text{kN}\n$$\n\n3. $\\sigma_{çubuk} = 76\\,200/1134{,}1 = 67{,}2$ MPa (basma).",
+      "metinde": true
+    },
+    {
+      "id": "05-cekme-deneyi-emni-1",
+      "konu": "05-cekme-deneyi-emniyet",
+      "baslik": "Deney verisinden E ve ν",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$d = 16$ mm, $L = 500$ mm, $P = 12$ kN; boy uzaması 300 μm, çap değişimi −2,4 μm.",
+      "cozum": "$$\n\\sigma = \\frac{12\\,000}{201{,}06} = 59{,}7\\ \\text{MPa}, \\quad \\varepsilon_x = \\frac{0{,}300}{500} = 6\\times10^{-4}, \\quad \\varepsilon_y = \\frac{-0{,}0024}{16} = -1{,}5\\times10^{-4}\n$$\n\n$$\nE = \\frac{\\sigma}{\\varepsilon_x} = 99{,}5\\ \\text{GPa}, \\qquad \\nu = \\frac{1{,}5}{6} = 0{,}25, \\qquad G = \\frac{99{,}5}{2\\cdot1{,}25} = 39{,}8\\ \\text{GPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "05-cekme-deneyi-emni-3",
+      "konu": "05-cekme-deneyi-emniyet",
+      "baslik": "Kafes sistemde tahkik ve yeni çap",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "AB (yatay, 0,8 m, Ø50) ve BC (1,0 m, Ø20) alüminyum çubuklar; C, A'nın 0,6 m üstünde; B'de 30 kN; $\\sigma_{em} = 100$ MPa.",
+      "cozum": "1. B düğümü ($\\cos\\theta = 0{,}8$, $\\sin\\theta = 0{,}6$): $F_{BC} = 30/0{,}6 = 50$ kN (çekme), $F_{AB} = -40$ kN (basma).\n2. Tahkik: $\\sigma_{AB} = 40\\,000/1963{,}5 = 20{,}4$ MPa ✓; $\\quad \\sigma_{BC} = 50\\,000/314{,}16 = 159{,}2$ MPa ✗ (> 100).\n3. Yeni çap: $A_{BC} \\ge 500$ mm² → $d \\ge 25{,}23$ mm → **26 mm**.",
+      "metinde": true
+    },
+    {
+      "id": "05-cekme-deneyi-emni-4",
+      "konu": "05-cekme-deneyi-emniyet",
+      "baslik": "Uç uca iki çubuğun taşıyabileceği yük",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Tavana asılı $A_1 = 144$ mm² ve $A_2 = 72$ mm² çubuklar; birleşimde ve alt uçta birer $P$; $\\sigma_{em} = 10$ MPa.",
+      "cozum": "- Üst çubuk $N_1 = 2P$: $2P/144 \\le 10 \\Rightarrow P \\le 720$ N\n- Alt çubuk $N_2 = P$: $P/72 \\le 10 \\Rightarrow P \\le 720$ N\n\n$P_{em} = 720$ N. Bir yük tayininde **bütün** çubuklar kontrol edilir ve **en küçük** değer seçilir.",
+      "metinde": true
+    },
+    {
+      "id": "05-cekme-deneyi-emni-5",
+      "konu": "05-cekme-deneyi-emniyet",
+      "baslik": "Çekme ve basmada farklı emniyet gerilmesi",
+      "kaynak": "Eksenel normal kuvvet – 1 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Kafeste $\\sigma_{em,çekme} = 140$ MPa, $\\sigma_{em,basma} = 100$ MPa. Düğüm yönteminden $AC = +20$ kN, $AD = +99$ kN, $CD = -50$ kN bulunursa:",
+      "cozum": "$$\nA_{AC} = \\frac{20\\,000}{140} = 142{,}9\\ \\text{mm}^2, \\quad A_{AD} = \\frac{99\\,000}{140} = 707{,}1\\ \\text{mm}^2, \\quad A_{CD} = \\frac{50\\,000}{100} = 500\\ \\text{mm}^2\n$$\n\n> Düğüm yönteminde **iki bilinmeyenli düğümden** başla; düzlemde bir düğüm için yalnızca iki denge denklemi vardır.",
+      "metinde": true
+    },
+    {
+      "id": "06-termal-hiperstati-1",
+      "konu": "06-termal-hiperstatik",
+      "baslik": "Serbest uçlu milde sıcaklık + yük",
+      "kaynak": "Eksenel normal kuvvet – 2 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "A'da ankastre, C ucu serbest çelik mil: AB ($A = 400$ mm², $L = 200$ mm), BC ($A = 300$ mm², $L = 150$ mm). B'de 12 kN; sıcaklık 25 → 125 °C; $E = 200$ GPa, $\\alpha = 11{,}7\\times10^{-6}$.",
+      "cozum": "- İç kuvvetler: $N_{AB} = 12$ kN, $N_{BC} = 0$.\n- C serbest olduğundan ısıl uzama engellenmez, **termal gerilme yoktur**: $\\sigma_{AB} = 30$ MPa, $\\sigma_{BC} = 0$.\n- Boy değişimi: $0{,}03 + 0{,}234 + 0{,}1755 = 0{,}44$ mm.\n\n> Ders notunda burada $\\sigma_{AB} = 30 + E\\alpha\\Delta T = 264$ MPa bulunmuş. Bu kavramsal bir hatadır: $E\\alpha\\Delta T$ yalnızca uzama engellendiğinde gerilme oluşturur. Boy değişimi sonucu (0,44 mm) ise doğrudur.",
+      "metinde": true
+    },
+    {
+      "id": "06-termal-hiperstati-2",
+      "konu": "06-termal-hiperstatik",
+      "baslik": "İki duvar arasında soğuyan çubuk",
+      "kaynak": "Eksenel normal kuvvet – 2 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "+24 °C'de iki rijit duvar arasına tam oturuyor; AC: $A = 380$ mm², CB: $A = 750$ mm², her biri 300 mm. Sıcaklık −45 °C'ye düşüyor; $E = 200$ GPa, $\\alpha = 11{,}7\\times10^{-6}$.",
+      "cozum": "1. B'yi kaldır, serbest kısalma: $\\delta_T = 11{,}7\\times10^{-6}\\cdot(-69)\\cdot600 = -0{,}484$ mm\n2. $R_B$'yi uygula: $\\delta_R = \\dfrac{R_B}{200\\,000}\\left(\\dfrac{300}{380} + \\dfrac{300}{750}\\right) = 5{,}947\\times10^{-6}R_B$\n3. Uygunluk: $\\delta_T + \\delta_R = 0 \\Rightarrow R_B = 81{,}4$ kN\n4. Gerilmeler (çekme): $\\sigma_{AC} = 214{,}3$ MPa, $\\sigma_{CB} = 108{,}6$ MPa",
+      "metinde": true
+    },
+    {
+      "id": "06-termal-hiperstati-3",
+      "konu": "06-termal-hiperstatik",
+      "baslik": "İki ucu ankastre çubuğa ara yük",
+      "kaynak": "Eksenel normal kuvvet – 2 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Boy $L$; ara kesitte $F$; üst parça $a$, alt parça $b$. Alt mesnedi kaldırıp $R_B$ ile geri iterek $\\Delta L = 0$ yazılırsa:",
+      "cozum": "$$\nR_A = \\frac{F\\,b}{L}\\ (\\text{üst, çekme}), \\qquad R_B = \\frac{F\\,a}{L}\\ (\\text{alt, basma})\n$$\n\nYük hangi mesnede **yakınsa** o mesnet daha fazla yük alır.",
+      "metinde": true
+    },
+    {
+      "id": "06-termal-hiperstati-4",
+      "konu": "06-termal-hiperstatik",
+      "baslik": "İki halatla asılı rijit çubuk",
+      "kaynak": "Eksenel normal kuvvet – 2 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "ABC rijit çubuğu A'da mafsallı; B (1 m) ve C (2 m) noktalarından özdeş çelik halatlar; C'de 20 kN.",
+      "cozum": "1. Statik: $F_B\\cdot1 + F_C\\cdot2 = 40$ → tek denklem, iki bilinmeyen.\n2. Uygunluk: çubuk A etrafında döner, $\\delta_C = 2\\delta_B$. Halatlar özdeş olduğundan $F_C = 2F_B$.\n3. $5F_B = 40 \\Rightarrow F_B = 8$ kN, $F_C = 16$ kN.",
+      "metinde": true
+    },
+    {
+      "id": "06-termal-hiperstati-5",
+      "konu": "06-termal-hiperstatik",
+      "baslik": "Üç çubuklu simetrik sistem",
+      "kaynak": "Eksenel normal kuvvet – 2 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Orta çubuk düşey (boy $OB$), yan çubuklar düşeyle $\\alpha$ açısı yapıyor, hepsi aynı $EA$; B'de $P$ aşağı.",
+      "cozum": "- Uygunluk: yan çubuğun uzaması $= \\delta\\cos\\alpha$, boyu $OB/\\cos\\alpha$ → $S_1 = S_2\\cos^2\\alpha$\n\n$$\nS_2 = \\frac{P}{1 + 2\\cos^3\\alpha}, \\qquad S_1 = S_3 = \\frac{P\\cos^2\\alpha}{1 + 2\\cos^3\\alpha}\n$$\n\n$\\alpha = 30°$, $P = 10$ kN için $S_2 = 4{,}35$ kN, $S_1 = 3{,}26$ kN. **Rijit olan (kısa) orta çubuk daha fazla yük alır.**",
+      "metinde": true
+    },
+    {
+      "id": "06-termal-hiperstati-6",
+      "konu": "06-termal-hiperstatik",
+      "baslik": "Isınan pirinç silindir ve çelik çubuk",
+      "kaynak": "Eksenel normal kuvvet – 2 (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "CDE rijit kolu E'de mafsallı; D'de (E'den 0,3 m) Ø30 pirinç silindir ($L = 0{,}3$ m, $E = 105$ GPa, $\\alpha = 20{,}9\\times10^{-6}$, $\\Delta T = 30$ °C); C'de (E'den 0,75 m) Ø22 çelik çubuk ($L = 0{,}9$ m, $E = 200$ GPa).",
+      "cozum": "1. Statik: $F_ç = 0{,}4F_p$. Geometri: $\\delta_C = 2{,}5\\,\\delta_D$.\n2. $\\delta_C = 4{,}735\\times10^{-6}F_p$; $\\quad \\delta_D = 0{,}1881 - 4{,}042\\times10^{-6}F_p$ (ısıl uzama − bastırma)\n3. $F_p = 31{,}7$ kN, $\\sigma_{pirinç} = 44{,}8$ MPa (basma).",
+      "metinde": true
+    },
+    {
+      "id": "07-gerilme-analizi-1",
+      "konu": "07-gerilme-analizi",
+      "baslik": "Gerilme analizi ve Mohr dairesi",
+      "kaynak": "Bölüm 4 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "20×10 mm kesitli çubuk, $N = 10$ kN, $\\alpha = 30°$:",
+      "cozum": "$$\n\\sigma_1 = \\frac{10\\,000}{200} = 50\\ \\text{MPa}, \\quad \\sigma_n = 50\\cos^2 30° = 37{,}5\\ \\text{MPa}, \\quad \\tau = -25\\sin60° = -21{,}65\\ \\text{MPa}\n$$",
+      "metinde": true
+    },
+    {
+      "id": "07-gerilme-analizi-2",
+      "konu": "07-gerilme-analizi",
+      "baslik": "Gerilme analizi ve Mohr dairesi",
+      "kaynak": "Bölüm 4 slaytları (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "$\\sigma_x = 80$ MPa, $\\sigma_y = -40$ MPa, $\\tau_{xy} = 25$ MPa:",
+      "cozum": "$$\nC = 20, \\qquad R = \\sqrt{60^2 + 25^2} = 65\\ \\text{MPa}\n$$\n\n$$\n\\sigma_1 = 85\\ \\text{MPa}, \\quad \\sigma_2 = -45\\ \\text{MPa}, \\quad \\tau_{max} = 65\\ \\text{MPa}, \\quad 2\\theta_p = \\tan^{-1}\\frac{50}{120} = 22{,}6° \\Rightarrow \\theta_p = 11{,}3°\n$$",
+      "metinde": true
+    }
+  ]
+}

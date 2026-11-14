@@ -1,20 +1,91 @@
 {
   "konular": [
-    { "id": "01-giris", "baslik": "Giriş ve temel kavramlar", "ozet": "Cisim türleri, temel ilkeler, birimler", "dosya": "konular/01-giris.md", "pdf": "pdf/01-giris.pdf", "pdfBaslik": "Bölüm 1 slaytları" },
-    { "id": "02-ic-kuvvetler", "baslik": "İç kuvvetler: kesim yöntemi ve N-T-M diyagramları", "ozet": "Mesnetler, işaret kuralı, çözümlü kiriş örnekleri", "dosya": "konular/02-ic-kuvvetler.md", "pdf": "pdf/02-ic-kuvvetler-kesim-yontemi.pdf", "pdfBaslik": "Bölüm 2.1 slaytları" },
-    { "id": "03-yuk-kesme-moment", "baslik": "Yük–kesme–moment bağıntıları (integrasyon)", "ozet": "dT/dz = −q, dM/dz = T, alan yöntemi", "dosya": "konular/03-yuk-kesme-moment.md" },
-    { "id": "04-eksenel-kuvvet", "baslik": "Eksenel normal kuvvet: gerilme ve uzama", "ozet": "σ = N/A, Hooke kanunu, kademeli çubuklar, rijit kollar", "dosya": "konular/04-eksenel-kuvvet.md", "pdf": "pdf/03-eksenel-normal-kuvvet-1.pdf", "pdfBaslik": "Eksenel normal kuvvet – 1" },
-    { "id": "05-cekme-deneyi-emniyet", "baslik": "Çekme deneyi, Poisson oranı ve emniyet", "ozet": "σ–ε diyagramı, E, ν, G, emniyet gerilmesi, boyutlandırma", "dosya": "konular/05-cekme-deneyi-emniyet.md", "pdf": "pdf/03-eksenel-normal-kuvvet-1.pdf", "pdfBaslik": "Eksenel normal kuvvet – 1" },
-    { "id": "06-termal-hiperstatik", "baslik": "Termal gerilmeler ve hiperstatik problemler", "ozet": "Isıl uzama, uygunluk şartı, süperpozisyon yolu", "dosya": "konular/06-termal-hiperstatik.md", "pdf": "pdf/04-eksenel-normal-kuvvet-2.pdf", "pdfBaslik": "Eksenel normal kuvvet – 2" },
-    { "id": "07-gerilme-analizi", "baslik": "Gerilme analizi ve Mohr dairesi", "ozet": "Eğik düzlemde gerilme, asal gerilmeler, iki eksenli hal", "dosya": "konular/07-gerilme-analizi.md", "pdf": "pdf/05-gerilme-analizi.pdf", "pdfBaslik": "Bölüm 4 slaytları" },
-    { "id": "08-formul-ozeti", "baslik": "Formül özeti (sınav kâğıdı)", "ozet": "Bütün formüller tek sayfada", "dosya": "konular/08-formul-ozeti.md" }
+    {
+      "id": "01-giris",
+      "baslik": "Giriş ve temel kavramlar",
+      "ozet": "Cisim türleri, temel ilkeler, birimler",
+      "dosya": "konular/01-giris.md",
+      "pdf": "pdf/01-giris.pdf",
+      "pdfBaslik": "Bölüm 1 slaytları"
+    },
+    {
+      "id": "02-ic-kuvvetler",
+      "baslik": "İç kuvvetler: kesim yöntemi ve N-T-M diyagramları",
+      "ozet": "Mesnetler, işaret kuralı, çözümlü kiriş örnekleri",
+      "dosya": "konular/02-ic-kuvvetler.md",
+      "pdf": "pdf/02-ic-kuvvetler-kesim-yontemi.pdf",
+      "pdfBaslik": "Bölüm 2.1 slaytları"
+    },
+    {
+      "id": "03-yuk-kesme-moment",
+      "baslik": "Yük–kesme–moment bağıntıları (integrasyon)",
+      "ozet": "dT/dz = −q, dM/dz = T, alan yöntemi",
+      "dosya": "konular/03-yuk-kesme-moment.md"
+    },
+    {
+      "id": "04-eksenel-kuvvet",
+      "baslik": "Eksenel normal kuvvet: gerilme ve uzama",
+      "ozet": "σ = N/A, Hooke kanunu, kademeli çubuklar, rijit kollar",
+      "dosya": "konular/04-eksenel-kuvvet.md",
+      "pdf": "pdf/03-eksenel-normal-kuvvet-1.pdf",
+      "pdfBaslik": "Eksenel normal kuvvet – 1"
+    },
+    {
+      "id": "05-cekme-deneyi-emniyet",
+      "baslik": "Çekme deneyi, Poisson oranı ve emniyet",
+      "ozet": "σ–ε diyagramı, E, ν, G, emniyet gerilmesi, boyutlandırma",
+      "dosya": "konular/05-cekme-deneyi-emniyet.md",
+      "pdf": "pdf/03-eksenel-normal-kuvvet-1.pdf",
+      "pdfBaslik": "Eksenel normal kuvvet – 1"
+    },
+    {
+      "id": "06-termal-hiperstatik",
+      "baslik": "Termal gerilmeler ve hiperstatik problemler",
+      "ozet": "Isıl uzama, uygunluk şartı, süperpozisyon yolu",
+      "dosya": "konular/06-termal-hiperstatik.md",
+      "pdf": "pdf/04-eksenel-normal-kuvvet-2.pdf",
+      "pdfBaslik": "Eksenel normal kuvvet – 2"
+    },
+    {
+      "id": "07-gerilme-analizi",
+      "baslik": "Gerilme analizi ve Mohr dairesi",
+      "ozet": "Eğik düzlemde gerilme, asal gerilmeler, iki eksenli hal",
+      "dosya": "konular/07-gerilme-analizi.md",
+      "pdf": "pdf/05-gerilme-analizi.pdf",
+      "pdfBaslik": "Bölüm 4 slaytları"
+    },
+    {
+      "id": "08-formul-ozeti",
+      "baslik": "Formül özeti (sınav kâğıdı)",
+      "ozet": "Bütün formüller tek sayfada",
+      "dosya": "konular/08-formul-ozeti.md"
+    }
   ],
   "pdfler": [
-    { "baslik": "Ders anlatımı ve çözümlü örnekler (özet kitapçık)", "dosya": "pdf/00-ders-anlatimi-ozet.pdf" },
-    { "baslik": "Bölüm 1 – Giriş ve temel kavramlar", "dosya": "pdf/01-giris.pdf" },
-    { "baslik": "Bölüm 2.1 – İç kuvvetlerin kesim yöntemi ile hesabı", "dosya": "pdf/02-ic-kuvvetler-kesim-yontemi.pdf" },
-    { "baslik": "Bölüm 3 – Eksenel normal kuvvet hali (1)", "dosya": "pdf/03-eksenel-normal-kuvvet-1.pdf" },
-    { "baslik": "Bölüm 3 – Eksenel normal kuvvet hali (2)", "dosya": "pdf/04-eksenel-normal-kuvvet-2.pdf" },
-    { "baslik": "Bölüm 4 – Gerilme analizi", "dosya": "pdf/05-gerilme-analizi.pdf" }
-  ]
+    {
+      "baslik": "Ders anlatımı ve çözümlü örnekler (özet kitapçık)",
+      "dosya": "pdf/00-ders-anlatimi-ozet.pdf"
+    },
+    {
+      "baslik": "Bölüm 1 – Giriş ve temel kavramlar",
+      "dosya": "pdf/01-giris.pdf"
+    },
+    {
+      "baslik": "Bölüm 2.1 – İç kuvvetlerin kesim yöntemi ile hesabı",
+      "dosya": "pdf/02-ic-kuvvetler-kesim-yontemi.pdf"
+    },
+    {
+      "baslik": "Bölüm 3 – Eksenel normal kuvvet hali (1)",
+      "dosya": "pdf/03-eksenel-normal-kuvvet-1.pdf"
+    },
+    {
+      "baslik": "Bölüm 3 – Eksenel normal kuvvet hali (2)",
+      "dosya": "pdf/04-eksenel-normal-kuvvet-2.pdf"
+    },
+    {
+      "baslik": "Bölüm 4 – Gerilme analizi",
+      "dosya": "pdf/05-gerilme-analizi.pdf"
+    }
+  ],
+  "sorular": "sorular.json"
 }

@@ -768,7 +768,7 @@ async function konuSayfasi(id, konuId) {
   const ok = okunanlar();
   const onceki = d.konular[sira - 1], sonraki = d.konular[sira + 1];
   const kartN = (await kartlariGetir(d)).filter(c => c.grup === k.id).length;
-  const konuSorulari = d.sorular.filter(s => s.konu === k.id);
+  const konuSorulari = d.sorular.filter(s => s.konu === k.id && !s.metinde);
   const soruDur = soruDurumlari(id);
   depoYaz('sonKonu', { ders: id, konu: k.id });
   document.title = `${k.baslik} · ${d.ad}`;

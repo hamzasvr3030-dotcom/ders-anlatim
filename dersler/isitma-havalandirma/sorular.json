@@ -1,0 +1,56 @@
+{
+  "sorular": [
+    {
+      "id": "acik-imbisat",
+      "konu": "04-genlesme-yakit-baca",
+      "baslik": "Açık genleşme (imbisat) deposu",
+      "kaynak": "Ders notu s. 70–71",
+      "zorluk": 1,
+      "soru": "Bir kalorifer tesisatında 185 m² (900 mm) döküm radyatör (3,5 L/m²), 10 m² ısıtma yüzeyli döküm kazan (10 L/m²) ve şu borular var: ½\" 100 m (0,201 L/m), ¾\" 80 m (0,366 L/m), 1\" 45 m (0,581 L/m), 1¼\" 25 m (1,01 L/m), 1½\" 10 m (1,23 L/m). Genleşme oranı 0,08 alınarak açık genleşme deposunu seçiniz.",
+      "cozum": "**Sistem su hacmi:**\n\n| Eleman | Hesap | Hacim (L) |\n|---|---|---|\n| Radyatör | 3,5 × 185 | 650 |\n| Kazan | 10 × 10 | 100 |\n| Borular | 20,1 + 29,3 + 26,1 + 25,3 + 12,3 | 113 |\n| **Toplam** | | **863** |\n\n**Genleşme hacmi:** $V_g = 0{,}08\\cdot863 = 69$ L\n\nAçık depo, genleşme hacminin yaklaşık iki katı seçilir: $2\\cdot69 \\approx 140$ L → standart **150 L** depo.",
+      "cevap": "$V_g \\approx 69$ L → 150 L'lik depo"
+    },
+    {
+      "id": "kapali-imbisat",
+      "konu": "04-genlesme-yakit-baca",
+      "baslik": "Kapalı (membranlı) genleşme deposu",
+      "kaynak": "Ders notu s. 74–76",
+      "zorluk": 2,
+      "soru": "90 000 kcal/h kazan kullanılan sistemde su çıkış sıcaklığı 90 °C'dir. Sistemde 1000 L su vardır. Bina bodrum + 4 kattan oluşur (her kat 3 m). Üst çalışma basıncı 4 bar ise kapalı genleşme deposunu boyutlandırınız. (90 °C'de genleşme oranı %3,5)",
+      "cozum": "**Genleşme hacmi:** $V_g = 0{,}035\\cdot1000 = 35$ L\n\n**Statik basınç:** Kazan bodrumda, üstte 4 kat + bodrum: yükseklik ≈ 5 × 3 = 15 m → $15/10 = 1{,}5$ bar\n\n**Ön gaz basıncı:** statik basınç + 0,2…0,5 bar → $P_{ön} \\approx 1{,}8$ bar\n\n**Depo hacmi** (etkin basınçlar):\n\n$$\nV_{depo} = V_g\\,\\frac{P_{son} + 1}{P_{son} - P_{ön}} = 35\\cdot\\frac{4 + 1}{4 - 1{,}8} = 79{,}5\\ \\text{L} \\;\\Rightarrow\\; 80\\ \\text{L}\n$$\n\nEmniyet ventili: $P_{em} \\le 5$ bar olduğundan tolerans 0,5 bar → ventil yaklaşık 3,5–4 bar'a ayarlanır.",
+      "cevap": "$V_g = 35$ L; depo ≈ 80 L",
+      "not": "Ders notunda bu örneğin çözümü şekil olarak verilmiş (metin yok). Buradaki çözüm konu anlatımındaki formülle yapıldı; ön gaz basıncına eklenen 0,2–0,5 bar seçimine göre sonuç 75–90 L arasında değişir."
+    },
+    {
+      "id": "boyler",
+      "konu": "05-isiticilar-boyler",
+      "baslik": "Otel boyleri ve yakıt tüketimi",
+      "kaynak": "Ders notu s. 124–125",
+      "zorluk": 2,
+      "soru": "Saatte 300 L sıcak su ihtiyacı olan bir otelde şebeke suyu 10 °C, istenen sıcak su 55 °C'dir. Kazan ve boyler verimi %85, kazan 80/60 °C rejiminde çalışıyor. **a)** Boyler pompasının debisini, **b)** doğal gaz ($H = 8750$ kcal/m³) ve fuel-oil ($H = 10\\,500$ kcal/kg) için saatlik yakıt tüketimini bulunuz.",
+      "cozum": "**a)** Suya verilmesi gereken ısı:\n\n$$\nQ_{su} = mc\\,(T_B - T_{ss}) = 300\\cdot1\\cdot(55 - 10) = 13\\,500\\ \\text{kcal/h}\n$$\n\nBoyler verimiyle kazandan çekilmesi gereken ısı: $Q_B = \\dfrac{13\\,500}{0{,}85} = 15\\,880$ kcal/h\n\nKazan suyu 80 → 60 °C soğuyarak bu ısıyı verir:\n\n$$\n\\dot m_k = \\frac{Q_B}{c\\,(80 - 60)} = \\frac{15\\,880}{20} = 794\\ \\text{kg/h} \\approx 0{,}8\\ \\text{m}^3/\\text{h}\n$$\n\n**b)** Kazan verimi de %85: yakıttan gereken ısı $15\\,880/0{,}85 = 18\\,690$ kcal/h\n\n$$\n\\text{Doğal gaz: } \\frac{18\\,690}{8750} = 2{,}1\\ \\text{m}^3/\\text{h}, \\qquad \\text{Fuel-oil: } \\frac{18\\,690}{10\\,500} = 1{,}8\\ \\text{kg/h}\n$$",
+      "cevap": "Pompa ≈ 0,8 m³/h; doğal gaz ≈ 2,1 m³/h; fuel-oil ≈ 1,8 kg/h",
+      "not": "**Ders notunda** verim çarpılmış: $Q_B = 300\\cdot45\\cdot0{,}85 = 11\\,500$ kcal/h, pompa 575 kg/h, fuel-oil 1,1 kg/h. Verim kaybı ısı ihtiyacını **artırır**; bu yüzden verime bölmek gerekir. Notun yaklaşımıyla sınavda farklı bir cevap beklenebilir; hocanın kabulünü kontrol et."
+    },
+    {
+      "id": "06-ts825-isi-yalitim-1",
+      "konu": "06-ts825-isi-yalitimi",
+      "baslik": "TS 825 ısı yalıtımı ve enerji performansı",
+      "kaynak": "Isıtma Havalandırma ders notu (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "Duvar: 2 cm iç sıva ($\\lambda = 0{,}87$) + 19 cm tuğla ($\\lambda = 0{,}45$) + 5 cm EPS yalıtım ($\\lambda = 0{,}035$) + 3 cm dış sıva ($\\lambda = 0{,}87$):",
+      "cozum": "$$\n\\frac{1}{U} = 0{,}13 + \\frac{0{,}02}{0{,}87} + \\frac{0{,}19}{0{,}45} + \\frac{0{,}05}{0{,}035} + \\frac{0{,}03}{0{,}87} + 0{,}04 = 2{,}078 \\;\\Rightarrow\\; U = 0{,}48\\ \\text{W/m}^2\\text{K}\n$$\n\nYalıtım katmanı tek başına direncin **yaklaşık %70'ini** sağlar.",
+      "metinde": true
+    },
+    {
+      "id": "06-ts825-isi-yalitim-2",
+      "konu": "06-ts825-isi-yalitimi",
+      "baslik": "Ders notundaki örnek",
+      "kaynak": "Isıtma Havalandırma ders notu (konu anlatımındaki örnek)",
+      "zorluk": 2,
+      "soru": "20 m × 8 m tabanlı, 4 katlı (her kat 3 m, toplam 12 m) bina. $U_D = 0{,}561$, $U_P = 1{,}8$ (çift camlı), $U_T = 0{,}375$, $U_t = 0{,}581$ W/m²K.",
+      "cozum": "1. Pencere alanı: kat başına 11,56 m² → $A_P = 46{,}24$ m²\n2. Dış duvar: $A_D = (20\\cdot12\\cdot2) + (8\\cdot12\\cdot2) - 46{,}24 = 625{,}76$ m²\n3. Tavan ve taban: $A_T = A_t = 160$ m²\n4. $H_T = 0{,}561\\cdot625{,}76 + 1{,}8\\cdot46{,}24 + 0{,}8\\cdot0{,}375\\cdot160 + 0{,}5\\cdot0{,}581\\cdot160 = 528{,}76$ W/K\n5. $V_h = 0{,}8\\cdot1920 = 1536$ m³, $n_h = 0{,}8$ → $H_V = 0{,}33\\cdot0{,}8\\cdot1536 = 405{,}5$ W/K\n6. $H = 934{,}3$ W/K\n7. İç kazanç: $A_n = 0{,}32\\cdot1920 = 614{,}4$ m² → $\\Phi_i = 5\\cdot614{,}4 = 3072$ W",
+      "metinde": true
+    }
+  ]
+}
