@@ -1,0 +1,254 @@
+{
+  "kartlar": [
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Basit faiz",
+      "arka": "$F = P(1 + in)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Kırık faiz (gün)",
+      "arka": "$F = P(1 + i\\,g/360)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Bileşik faiz",
+      "arka": "$F = P(1 + i)^n$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Bileşik faizde oran",
+      "arka": "$i = (F/P)^{1/n} - 1$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Bileşik faizde süre",
+      "arka": "$n = \\ln(F/P)/\\ln(1 + i)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Efektif faiz",
+      "arka": "$i_e = (1 + r/m)^m - 1$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Sürekli bileşik faiz",
+      "arka": "$F = Pe^{rn}$, $\\;i_e = e^r - 1$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Reel faiz",
+      "arka": "$1 + i_n = (1 + i_r)(1 + f)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Depolu faiz",
+      "arka": "$i_g = i/(1 - d)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz: Peşin faiz",
+      "arka": "$i_g = i/(1 - i)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: $(F/P,i,n)$",
+      "arka": "$(1 + i)^n$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: $(P/F,i,n)$",
+      "arka": "$1/(1 + i)^n$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: $(A/P,i,n)$",
+      "arka": "$\\dfrac{i(1 + i)^n}{(1 + i)^n - 1}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: $(P/A,i,n)$",
+      "arka": "$\\dfrac{(1 + i)^n - 1}{i(1 + i)^n}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: $(A/F,i,n)$",
+      "arka": "$\\dfrac{i}{(1 + i)^n - 1}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: $(F/A,i,n)$",
+      "arka": "$\\dfrac{(1 + i)^n - 1}{i}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: Faktör ilişkisi",
+      "arka": "$(A/P) = (A/F) + i$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: Gradyan $(P/G,i,n)$",
+      "arka": "$\\dfrac{(1 + i)^n - in - 1}{i^2(1 + i)^n}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Faiz faktörleri: Kapitalize maliyet",
+      "arka": "$P = A/i$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Kredi: Eşit taksit",
+      "arka": "$A = P(A/P,i,n)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Kredi: Ertelemeli kredi ($k$ dönem ödemesiz)",
+      "arka": "$A = P(1 + i)^k(A/P,i,n)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Kredi: Kalan borç ($t$ taksitten sonra)",
+      "arka": "$B_t = A(P/A,i,n - t)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: Geri ödeme süresi (sabit gelir)",
+      "arka": "$n = I/K$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: NBD",
+      "arka": "$NBD = -I + A(P/A,i,n) + H(P/F,i,n)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: Maliyetlerin bugünkü değeri",
+      "arka": "$BD = I + C(P/A,i,n) - H(P/F,i,n)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: EDYM",
+      "arka": "$EDYM = I(A/P,i,n) + C - H(A/F,i,n)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: NGD ve YENH",
+      "arka": "$NGD = NBD(F/P)$, $\\;YENH = NBD(A/P)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: İKO enterpolasyonu",
+      "arka": "$r = r_1 + (r_2 - r_1)\\dfrac{NBD_1}{NBD_1 - NBD_2}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Proje değerleme: Fayda/maliyet",
+      "arka": "$F/M = BD_{gelir}/BD_{maliyet}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Amortisman: Normal (doğrusal)",
+      "arka": "$D = (I - H)/n$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Amortisman: Azalan bakiyeler",
+      "arka": "$D_t = (2/n)\\,DD_{t-1}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Amortisman: Vergi sonrası nakit akımı",
+      "arka": "$NA = (G - C)(1 - T) + T\\cdot D$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Başabaş ve alternatif seçimi: Toplam maliyet",
+      "arka": "$TM = F + vQ$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Başabaş ve alternatif seçimi: Başabaş noktası",
+      "arka": "$x_0 = f/(p - v)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Başabaş ve alternatif seçimi: İstenen kâr için miktar",
+      "arka": "$x_K = (f + K)/(p - v)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Başabaş ve alternatif seçimi: Kapasite kullanım oranı",
+      "arka": "$KKO_0 = x_0/X = f/(R - V)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Başabaş ve alternatif seçimi: İki alternatifin kesişimi",
+      "arka": "$Q^* = (F_2 - F_1)/(v_1 - v_2)$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Başabaş ve alternatif seçimi: Beklenen değer",
+      "arka": "$E = \\sum p_kX_k$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Yer seçimi: Ağırlıklı puan",
+      "arka": "$S_j = \\sum_k w_kp_{jk}$, $\\;\\sum w_k = 1$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "Yer seçimi: Ağırlık merkezi",
+      "arka": "$\\bar x = \\sum x_kQ_k/\\sum Q_k$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "İş ölçümü: Ortalama süre (anormal değer atılır)",
+      "arka": "$\\bar t = \\sum t/n$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "İş ölçümü: Normal süre",
+      "arka": "$NS = \\bar t\\times\\text{tempo}$ (%10 hızlı → 1,10; %15 yavaş → 0,85)"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "İş ölçümü: Standart süre",
+      "arka": "$SS = NS/(1 - \\text{tolerans})$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "En küçük kareler: Eğim",
+      "arka": "$b = \\dfrac{n\\sum XY - \\sum X\\sum Y}{n\\sum X^2 - (\\sum X)^2}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "En küçük kareler: Kesim noktası",
+      "arka": "$a = \\bar Y - b\\bar X$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "En küçük kareler: Korelasyon",
+      "arka": "$r = \\dfrac{n\\sum XY - \\sum X\\sum Y}{\\sqrt{[n\\sum X^2 - (\\sum X)^2][n\\sum Y^2 - (\\sum Y)^2]}}$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "CPM / PERT: Bolluk",
+      "arka": "$TB = GB - EB = GS - ES$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "CPM / PERT: PERT süresi",
+      "arka": "$t_e = (a + 4m + b)/6$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "CPM / PERT: PERT varyansı",
+      "arka": "$\\sigma^2 = ((b - a)/6)^2$"
+    },
+    {
+      "konu": "16-formul-ozeti",
+      "on": "CPM / PERT: Sıkıştırma maliyeti",
+      "arka": "$(M_h - M_n)/(t_n - t_h)$"
+    }
+  ]
+}

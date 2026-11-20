@@ -1,0 +1,184 @@
+{
+  "konular": [
+    {
+      "id": "00-sinav-rehberi",
+      "baslik": "Sınav rehberi: MAK341'de neler çıkıyor?",
+      "ozet": "Üç sınavın analizi, beş soru kalıbı, çalışma planı",
+      "dosya": "konular/00-sinav-rehberi.md",
+      "bolum": "Başlarken",
+      "ozetPdf": "ozet/00-sinav-rehberi.pdf"
+    },
+    {
+      "id": "01-temel-kavramlar",
+      "baslik": "Mühendislik ekonomisi ve temel kavramlar",
+      "ozet": "Karar süreci, maliyet türleri, statik ve dinamik yöntemler",
+      "dosya": "konular/01-temel-kavramlar.md",
+      "bolum": "Başlarken",
+      "pdf": "pdf/osman-okka-muhendislik-ekonomisi.pdf",
+      "pdfBaslik": "Ders kitabı (O. Okka)",
+      "ozetPdf": "ozet/01-temel-kavramlar.pdf"
+    },
+    {
+      "id": "02-faiz",
+      "baslik": "Faiz ve paranın zaman değeri",
+      "ozet": "Basit ve bileşik faiz, nominal/efektif, reel faiz, depolu ve peşin faiz",
+      "dosya": "konular/02-faiz.md",
+      "bolum": "Paranın zaman değeri",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/02-faiz.pdf"
+    },
+    {
+      "id": "03-faktorler",
+      "baslik": "Nakit akımları ve faiz faktörleri",
+      "ozet": "Nakit akım şeması, altı faktör, gradyan, ertelenmiş seri, kapitalize maliyet",
+      "dosya": "konular/03-faktorler.md",
+      "bolum": "Paranın zaman değeri",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/03-faktorler.pdf"
+    },
+    {
+      "id": "04-kredi",
+      "baslik": "Kredi, taksit ve ertelemeli ödeme",
+      "ozet": "Ödeme planları, anüite, ödemesiz dönemli kredi, kalan borç",
+      "dosya": "konular/04-kredi.md",
+      "bolum": "Paranın zaman değeri",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/04-kredi.pdf"
+    },
+    {
+      "id": "05-statik",
+      "baslik": "Statik yöntemler: geri ödeme süresi ve kârlılık",
+      "ozet": "Geri ödeme süresi, indirgenmiş GÖS, YKYTO, ortalama kârlılık",
+      "dosya": "konular/05-statik.md",
+      "bolum": "Proje değerleme",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/05-statik.pdf"
+    },
+    {
+      "id": "06-nbd",
+      "baslik": "Bugünkü değer ve net bugünkü değer (NBD)",
+      "ozet": "NBD, maliyetlerin bugünkü değeri, farklı ömürler, kapitalize maliyet",
+      "dosya": "konular/06-nbd.md",
+      "bolum": "Proje değerleme",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/06-nbd.pdf"
+    },
+    {
+      "id": "07-edym",
+      "baslik": "Yıllık eşdeğer maliyet (EDYM / YEM)",
+      "ozet": "Sermaye geri kazanımı, hurda değeri, farklı ömürlü alternatifler",
+      "dosya": "konular/07-edym.md",
+      "bolum": "Proje değerleme",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/07-edym.pdf"
+    },
+    {
+      "id": "08-iko",
+      "baslik": "İç kârlılık oranı ve fayda/maliyet oranı",
+      "ozet": "İKO, enterpolasyon, artımsal analiz, F/M oranı, yöntem karşılaştırması",
+      "dosya": "konular/08-iko.md",
+      "bolum": "Proje değerleme",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/08-iko.pdf"
+    },
+    {
+      "id": "09-amortisman",
+      "baslik": "Amortisman ve yenileme yatırımları",
+      "ozet": "Normal ve azalan bakiyeler, vergi kalkanı, savunan–meydan okuyan",
+      "dosya": "konular/09-amortisman.md",
+      "bolum": "Proje değerleme",
+      "pdf": "pdf/osman-okka-muhendislik-ekonomisi.pdf",
+      "pdfBaslik": "Ders kitabı (O. Okka)",
+      "ozetPdf": "ozet/09-amortisman.pdf"
+    },
+    {
+      "id": "10-basabas",
+      "baslik": "Başabaş analizi ve duyarlılık",
+      "ozet": "Maliyet–hacim–kâr, kapasite kullanım oranı, duyarlılık, beklenen değer",
+      "dosya": "konular/10-basabas.md",
+      "bolum": "Maliyet ve karar analizi",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/10-basabas.pdf"
+    },
+    {
+      "id": "11-alternatif-grafik",
+      "baslik": "Grafikle alternatif seçimi",
+      "ozet": "Sabit + değişken maliyet doğruları, kesişimler, avantaj aralıkları",
+      "dosya": "konular/11-alternatif-grafik.md",
+      "bolum": "Maliyet ve karar analizi",
+      "ozetPdf": "ozet/11-alternatif-grafik.pdf"
+    },
+    {
+      "id": "12-yer-secimi",
+      "baslik": "Yer seçimi ve faktör puanlama",
+      "ozet": "Yer seçiminin önemi, faktörler, ağırlıklı puan tablosu",
+      "dosya": "konular/12-yer-secimi.md",
+      "bolum": "Maliyet ve karar analizi",
+      "ozetPdf": "ozet/12-yer-secimi.pdf"
+    },
+    {
+      "id": "13-is-olcumu",
+      "baslik": "İş ölçümü: normal ve standart süre",
+      "ozet": "Neden iş ölçümü, tempo, tolerans, anormal ölçüm",
+      "dosya": "konular/13-is-olcumu.md",
+      "bolum": "Üretim ve planlama",
+      "ozetPdf": "ozet/13-is-olcumu.pdf"
+    },
+    {
+      "id": "14-en-kucuk-kareler",
+      "baslik": "Talep tahmini: en küçük kareler yöntemi",
+      "ozet": "Y = a + bX, korelasyon, belirleme katsayısı, trend",
+      "dosya": "konular/14-en-kucuk-kareler.md",
+      "bolum": "Üretim ve planlama",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/14-en-kucuk-kareler.pdf"
+    },
+    {
+      "id": "15-cpm",
+      "baslik": "Proje programlama: CPM ve PERT",
+      "ozet": "Ağ diyagramı, ileri-geri geçiş, bolluk, kritik yol, PERT",
+      "dosya": "konular/15-cpm.md",
+      "bolum": "Üretim ve planlama",
+      "pdf": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "pdfBaslik": "Örnek Problemler (K. Üçüncü)",
+      "ozetPdf": "ozet/15-cpm.pdf"
+    },
+    {
+      "id": "16-formul-ozeti",
+      "baslik": "Formül özeti (sınav kâğıdı)",
+      "ozet": "Bütün formüller tek sayfada",
+      "dosya": "konular/16-formul-ozeti.md",
+      "bolum": "Sınav öncesi",
+      "ozetPdf": "ozet/16-formul-ozeti.pdf"
+    }
+  ],
+  "pdfler": [
+    {
+      "baslik": "Mühendislik Ekonomisi – Ders özeti (bütün konular)",
+      "dosya": "ozet/muhendislik-ekonomisi-ders-ozeti.pdf",
+      "boyut": "815 KB"
+    },
+    {
+      "baslik": "Örnek Problemler – Kemal Üçüncü (KTÜ, 2016)",
+      "dosya": "pdf/ornek-problemler-kemal-ucuncu.pdf",
+      "boyut": "1438 KB"
+    },
+    {
+      "baslik": "Mühendislik Ekonomisi – Prensipler ve Uygulamalar (Osman Okka)",
+      "dosya": "pdf/osman-okka-muhendislik-ekonomisi.pdf",
+      "boyut": "10980 KB"
+    }
+  ],
+  "sorular": "sorular.json",
+  "formuller": "formuller.json",
+  "ozetPdf": "ozet/muhendislik-ekonomisi-ders-ozeti.pdf"
+}

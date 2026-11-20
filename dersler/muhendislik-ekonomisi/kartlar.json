@@ -1,0 +1,489 @@
+{
+  "kartlar": [
+    {
+      "konu": "00-sinav-rehberi",
+      "on": "Sınavlarda her seferinde çıkan iki soru kalıbı",
+      "arka": "İş ölçümü (standart süre) ve sabit + değişken maliyetle grafikli alternatif seçimi"
+    },
+    {
+      "konu": "00-sinav-rehberi",
+      "on": "İş ölçümü sorusunda ölçümlerdeki tuzak",
+      "arka": "Bir değer bariz hatalı (ör. 60 yerine 600); ortalamaya katılmaz"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Mühendislik ekonomisinin amacı",
+      "arka": "Teknik olarak mümkün alternatifler arasından ekonomik olarak en uygununu seçmek"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Sabit maliyet",
+      "arka": "Üretim miktarından bağımsız gider: kira, amortisman, sigorta, yönetici maaşı"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Değişken maliyet",
+      "arka": "Üretimle orantılı artan gider: hammadde, direkt işçilik, enerji"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Batık maliyet",
+      "arka": "Geçmişte yapılmış, geri alınamayan harcama; karara katılmaz"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Fırsat maliyeti",
+      "arka": "Bir kaynağı kullanınca vazgeçilen en iyi alternatifin getirisi"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Marjinal maliyet",
+      "arka": "Bir birim daha üretmenin ek maliyeti"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Statik ve dinamik yöntem farkı",
+      "arka": "Statik yöntemler paranın zaman değerini dikkate almaz, dinamikler alır"
+    },
+    {
+      "konu": "01-temel-kavramlar",
+      "on": "Maliyet–kapasite (0,6) kuralı",
+      "arka": "$C_2 = C_1(K_2/K_1)^{0{,}6}$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Paranın zaman değeri neden var?",
+      "arka": "Bugünkü para yatırılıp faiz kazanabilir, enflasyonla erimez, risk taşımaz"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Basit faiz formülü",
+      "arka": "$F = P(1 + in)$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Bileşik faiz formülü",
+      "arka": "$F = P(1 + i)^n$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Efektif faiz (yılda m dönem)",
+      "arka": "$i_e = (1 + r/m)^m - 1$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Aylık %2,52 faizin yıllık nominal ve efektif karşılığı",
+      "arka": "Nominal %30,24, efektif %34,80"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Sürekli bileşik faiz",
+      "arka": "$F = Pe^{rn}$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Nominal faiz, reel faiz ve enflasyon ilişkisi",
+      "arka": "$1 + i_n = (1 + i_r)(1 + f)$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Depolu faizin gerçek oranı",
+      "arka": "$i/(1 - d)$; d: hesapta tutulan oran"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Peşin kesilen faizin gerçek oranı",
+      "arka": "$i/(1 - i)$"
+    },
+    {
+      "konu": "02-faiz",
+      "on": "Kırık faiz (gün)",
+      "arka": "$F = P(1 + i\\,g/360)$"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "Nakit akım şemasında yukarı ve aşağı oklar",
+      "arka": "Yukarı ok nakit girişi (gelir), aşağı ok nakit çıkışı (gider)"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "P, ilk A'ya göre nerede bulunur?",
+      "arka": "İlk A'dan bir dönem önce"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "F, son A'ya göre nerede bulunur?",
+      "arka": "Son A ile aynı anda"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "(A/P) ile (A/F) arasındaki ilişki",
+      "arka": "$(A/P) = (A/F) + i$"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "Ertelenmiş seri (k+1. dönemde başlıyor) bugünkü değeri",
+      "arka": "$P_0 = A(P/A,i,n)(P/F,i,k)$"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "Kapitalize maliyet (sonsuz seri)",
+      "arka": "$P = A/i$"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "Gradyan serisinin bugünkü değeri",
+      "arka": "$P = A_1(P/A) + G(P/G)$; gradyan 2. yılda G ile başlar"
+    },
+    {
+      "konu": "03-faktorler",
+      "on": "Dönem başı (peşin) serinin bugünkü değeri",
+      "arka": "$A(P/A,i,n)(1 + i)$"
+    },
+    {
+      "konu": "04-kredi",
+      "on": "Eşit taksit (anüite) formülü",
+      "arka": "$A = P(A/P,i,n)$"
+    },
+    {
+      "konu": "04-kredi",
+      "on": "k dönem ödemesiz kredide taksit",
+      "arka": "$A = P(1 + i)^k(A/P,i,n)$"
+    },
+    {
+      "konu": "04-kredi",
+      "on": "t taksitten sonra kalan borç",
+      "arka": "$B_t = A(P/A,i,n - t)$"
+    },
+    {
+      "konu": "04-kredi",
+      "on": "Eşit taksitte ilk yıllarda taksitin büyük kısmı nereye gider?",
+      "arka": "Faize; zamanla anapara payı artar"
+    },
+    {
+      "konu": "04-kredi",
+      "on": "Final 2026 kredi sorusunun cevabı (1,5 M TL, %2/ay, 12 ay ödemesiz, 60 taksit)",
+      "arka": "Yaklaşık 54.727 TL/ay"
+    },
+    {
+      "konu": "05-statik",
+      "on": "Geri ödeme süresi (sabit gelir)",
+      "arka": "$n = I/K$"
+    },
+    {
+      "konu": "05-statik",
+      "on": "Geri ödeme süresinin üç sakıncası",
+      "arka": "Zaman değerini görmez, GÖS sonrası gelirleri görmez, kısa ömürlü projeleri kayırır"
+    },
+    {
+      "konu": "05-statik",
+      "on": "İndirgenmiş geri ödeme süresi",
+      "arka": "Nakit girişleri önce bugüne indirgenip sonra birikimli toplanır; GÖS-1'den uzundur"
+    },
+    {
+      "konu": "05-statik",
+      "on": "YKYTO",
+      "arka": "Yıllık kâr / yatırım tutarı"
+    },
+    {
+      "konu": "06-nbd",
+      "on": "NBD formülü (sabit yıllık net giriş)",
+      "arka": "$NBD = -I + A(P/A,i,n) + H(P/F,i,n)$"
+    },
+    {
+      "konu": "06-nbd",
+      "on": "Tek projede NBD karar kuralı",
+      "arka": "NBD > 0 ise kabul"
+    },
+    {
+      "konu": "06-nbd",
+      "on": "Yalnız maliyetleri verilen alternatiflerde seçim",
+      "arka": "Maliyetlerin bugünkü değeri en küçük olan seçilir; hurda değeri düşülür"
+    },
+    {
+      "konu": "06-nbd",
+      "on": "Ömürleri farklı alternatiflerde NBD nasıl kullanılır?",
+      "arka": "Ortak kat (EKOK) süresi alınır ya da EDYM kullanılır"
+    },
+    {
+      "konu": "06-nbd",
+      "on": "NGD ile NBD ilişkisi",
+      "arka": "$NGD = NBD(1 + i)^n$; aynı kararı verir"
+    },
+    {
+      "konu": "06-nbd",
+      "on": "Büt 2025 enerji hattı sorusunun sonucu",
+      "arka": "Göl altı (2110 < 2405 milyon TL)"
+    },
+    {
+      "konu": "07-edym",
+      "on": "EDYM formülü",
+      "arka": "$EDYM = I(A/P,i,n) + C - H(A/F,i,n)$"
+    },
+    {
+      "konu": "07-edym",
+      "on": "EDYM'nin en büyük üstünlüğü",
+      "arka": "Ömürleri farklı alternatifleri ortak kat almadan karşılaştırır"
+    },
+    {
+      "konu": "07-edym",
+      "on": "Sermaye geri kazanım maliyeti (kısa formül)",
+      "arka": "$(I - H)(A/P,i,n) + Hi$"
+    },
+    {
+      "konu": "07-edym",
+      "on": "Ekonomik ömür",
+      "arka": "Yıllık eşdeğer maliyeti en küçük yapan kullanım süresi"
+    },
+    {
+      "konu": "07-edym",
+      "on": "Benzinli–dizel EDYM sorusunun sonucu",
+      "arka": "Benzinli ≈ 908 bin, dizel ≈ 998 bin TL/yıl → benzinli"
+    },
+    {
+      "konu": "08-iko",
+      "on": "İç kârlılık oranı (İKO)",
+      "arka": "NBD'yi sıfır yapan faiz oranı"
+    },
+    {
+      "konu": "08-iko",
+      "on": "İKO karar kuralı",
+      "arka": "İKO ≥ minimum çekici getiri oranı ise kabul"
+    },
+    {
+      "konu": "08-iko",
+      "on": "İKO enterpolasyonu",
+      "arka": "$r = r_1 + (r_2 - r_1)\\dfrac{NBD_1}{NBD_1 - NBD_2}$"
+    },
+    {
+      "konu": "08-iko",
+      "on": "Birbirini dışlayan alternatiflerde İKO ile doğru seçim",
+      "arka": "Artımsal (ek yatırım) İKO analizi"
+    },
+    {
+      "konu": "08-iko",
+      "on": "Fayda/maliyet oranı karar kuralı",
+      "arka": "F/M > 1 ise kabul; projeler F/M'ye göre sıralanabilir"
+    },
+    {
+      "konu": "08-iko",
+      "on": "Çoklu İKO ne zaman ortaya çıkar?",
+      "arka": "Nakit akımlarının işareti birden çok kez değişirse"
+    },
+    {
+      "konu": "09-amortisman",
+      "on": "Amortisman nakit çıkışı mıdır?",
+      "arka": "Hayır; ama vergiden düşüldüğü için vergi kalkanı sağlar"
+    },
+    {
+      "konu": "09-amortisman",
+      "on": "Normal (doğrusal) amortisman",
+      "arka": "$D = (I - H)/n$"
+    },
+    {
+      "konu": "09-amortisman",
+      "on": "Azalan bakiyeler oranı (Türk vergi uygulaması)",
+      "arka": "Normal oranın 2 katı (en çok %50), kalan defter değerine uygulanır"
+    },
+    {
+      "konu": "09-amortisman",
+      "on": "Amortismanın vergi kalkanı",
+      "arka": "$T\\cdot D$"
+    },
+    {
+      "konu": "09-amortisman",
+      "on": "Yenileme analizinde eski makinenin yatırımı",
+      "arka": "Bugünkü piyasa (satış) değeri; alış fiyatı batık maliyettir"
+    },
+    {
+      "konu": "09-amortisman",
+      "on": "Savunan ve meydan okuyan",
+      "arka": "Savunan: mevcut varlık; meydan okuyan: yerine alınması düşünülen yeni varlık"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "Başabaş noktası",
+      "arka": "$x_0 = f/(p - v)$"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "Birim katkı payı",
+      "arka": "$p - v$"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "Kapasite kullanım oranı (BBN)",
+      "arka": "$KKO_0 = x_0/X = f/(R - V)$"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "İstenen kâr K için üretim",
+      "arka": "$x_K = (f + K)/(p - v)$"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "Nakit başabaş noktası",
+      "arka": "Amortisman düşülerek: $(f - D)/(p - v)$"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "Duyarlılık analizi",
+      "arka": "Girdileri iyimser–kötümser sınırlarda değiştirip sonucun ne kadar etkilendiğini incelemek"
+    },
+    {
+      "konu": "10-basabas",
+      "on": "Risk ve belirsizlik farkı",
+      "arka": "Riskte olasılıklar bilinir, belirsizlikte bilinmez"
+    },
+    {
+      "konu": "11-alternatif-grafik",
+      "on": "İki maliyet doğrusunun kesişimi",
+      "arka": "$Q^* = (F_2 - F_1)/(v_1 - v_2)$"
+    },
+    {
+      "konu": "11-alternatif-grafik",
+      "on": "Küçük üretim miktarlarında hangi alternatif kazanır?",
+      "arka": "Sabit maliyeti en küçük olan"
+    },
+    {
+      "konu": "11-alternatif-grafik",
+      "on": "Büyük üretim miktarlarında hangi alternatif kazanır?",
+      "arka": "Değişken maliyeti en küçük olan"
+    },
+    {
+      "konu": "11-alternatif-grafik",
+      "on": "Satın alma alternatifinin doğrusu",
+      "arka": "Orijinden çıkar (sabit maliyet 0), eğimi en diktir"
+    },
+    {
+      "konu": "11-alternatif-grafik",
+      "on": "Hangi kesişimler geçiş noktasıdır?",
+      "arka": "Yalnızca en alttaki maliyet zarfı üzerinde olanlar"
+    },
+    {
+      "konu": "11-alternatif-grafik",
+      "on": "Final 2026 yer seçimi aralıkları",
+      "arka": "Z: 0–5000, X: 5000–13.333, Y: > 13.333 adet"
+    },
+    {
+      "konu": "12-yer-secimi",
+      "on": "Yer seçimi neden önemlidir? (3 madde)",
+      "arka": "Uzun vadeli ve geri dönüşü zor; maliyetleri doğrudan belirler; pazara erişimi ve rekabet gücünü etkiler"
+    },
+    {
+      "konu": "12-yer-secimi",
+      "on": "Faktör puanlama formülü",
+      "arka": "$S_j = \\sum w_k p_{jk}$, ağırlıklar toplamı 1"
+    },
+    {
+      "konu": "12-yer-secimi",
+      "on": "Lastik fabrikası için en önemli faktörler",
+      "arka": "Otomotiv pazarına yakınlık, limana ve hammaddeye erişim, taşıma maliyeti"
+    },
+    {
+      "konu": "12-yer-secimi",
+      "on": "Fotovoltaik panel fabrikası için öne çıkan şehir (örnek çözüm)",
+      "arka": "Konya: GES pazarı, güneşlenme, altyapı ve teşvik"
+    },
+    {
+      "konu": "12-yer-secimi",
+      "on": "Ağırlık merkezi yöntemi",
+      "arka": "$\\bar x = \\sum x_kQ_k/\\sum Q_k$"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "Normal süre",
+      "arka": "$NS = \\bar t\\times\\text{tempo}$"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "Standart süre (derste verilen formül)",
+      "arka": "$SS = NS/(1 - \\text{tolerans})$"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "%10 hızlı tempo çarpanı",
+      "arka": "1,10 (hızlı işçinin süresi uzatılır)"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "%15 yavaş tempo çarpanı",
+      "arka": "0,85 (yavaş işçinin süresi kısaltılır)"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "İş ölçümünün 4 amacı",
+      "arka": "Maliyet/fiyat, üretim planlama ve kapasite, performans ve ücretlendirme, yöntem karşılaştırma"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "Ölçümü neden uzman yapmalı?",
+      "arka": "Tempo değerlendirmesi öznel; anormal ölçüm ayıklama, eleman ayırma, tolerans belirleme deneyim ister"
+    },
+    {
+      "konu": "13-is-olcumu",
+      "on": "Tolerans neleri karşılar?",
+      "arka": "Kişisel ihtiyaçlar, yorgunluk ve kaçınılmaz beklemeler"
+    },
+    {
+      "konu": "14-en-kucuk-kareler",
+      "on": "En küçük kareler: eğim b",
+      "arka": "$b = \\dfrac{n\\sum XY - \\sum X\\sum Y}{n\\sum X^2 - (\\sum X)^2}$"
+    },
+    {
+      "konu": "14-en-kucuk-kareler",
+      "on": "En küçük kareler: kesim noktası a",
+      "arka": "$a = \\bar Y - b\\bar X$"
+    },
+    {
+      "konu": "14-en-kucuk-kareler",
+      "on": "Belirleme katsayısı r² neyi gösterir?",
+      "arka": "Y'deki değişimin X ile açıklanan oranını"
+    },
+    {
+      "konu": "14-en-kucuk-kareler",
+      "on": "Kaynağa göre başarılı model ölçütü",
+      "arka": "$r^2 > 0{,}75$"
+    },
+    {
+      "konu": "14-en-kucuk-kareler",
+      "on": "Zaman serisinde X kodlama kısa yolu",
+      "arka": "X ortası sıfır olacak şekilde kodlanırsa b = ΣXY/ΣX², a = Ȳ"
+    },
+    {
+      "konu": "14-en-kucuk-kareler",
+      "on": "Final 2026 reklam–satış doğrusu",
+      "arka": "Y = −5,90 + 19,76X; Temmuz ≈ 122,5"
+    },
+    {
+      "konu": "15-cpm",
+      "on": "Kritik yol",
+      "arka": "Bolluğu sıfır olan faaliyetlerin oluşturduğu en uzun yol"
+    },
+    {
+      "konu": "15-cpm",
+      "on": "Bolluk (toplam serbest zaman)",
+      "arka": "$TB = GB - EB = GS - ES$"
+    },
+    {
+      "konu": "15-cpm",
+      "on": "PERT beklenen süre",
+      "arka": "$t_e = (a + 4m + b)/6$"
+    },
+    {
+      "konu": "15-cpm",
+      "on": "PERT varyansı",
+      "arka": "$\\sigma^2 = ((b - a)/6)^2$"
+    },
+    {
+      "konu": "15-cpm",
+      "on": "CPM ile PERT farkı",
+      "arka": "CPM'de süreler kesin ve maliyet–süre ilişkisi var; PERT'te üç süre tahmini (belirsizlik) var"
+    },
+    {
+      "konu": "15-cpm",
+      "on": "Proje sıkıştırmada hangi faaliyet kısaltılır?",
+      "arka": "Kritik yoldaki, günlük sıkıştırma maliyeti en düşük faaliyet"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 /* Çevrimdışı çalışma: uygulama kabuğu önbellekte, ders içerikleri ilk açılışta saklanır. */
-const SURUM = 'dersler-v1';
+const SURUM = 'dersler-v2';
 const KABUK = ['./', 'index.html', 'assets/style.css', 'assets/app.js', 'assets/araclar.js', 'manifest.webmanifest',
   'assets/simge/simge-192.png', 'dersler/dersler.json',
   'https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js',

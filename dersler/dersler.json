@@ -97,6 +97,18 @@
       "slogan": "Konforlu bina, doğru hesapla başlar."
     },
     {
+      "id": "muhendislik-ekonomisi",
+      "grup": "Mühendislik dersleri",
+      "ad": "Mühendislik Ekonomisi",
+      "kod": "MAK341",
+      "donem": "Dicle Üniversitesi · Makine Mühendisliği",
+      "aciklama": "Paranın zaman değeri, faiz faktörleri, kredi, NBD, EDYM, İKO, başabaş ve grafikle alternatif seçimi, yer seçimi, iş ölçümü, en küçük kareler ve CPM/PERT.",
+      "renk": "#047857",
+      "ikon": "para",
+      "duzen": "nakit",
+      "slogan": "Bugünkü lira, yarınkinden değerlidir."
+    },
+    {
       "id": "ingilizce",
       "grup": "Dil dersleri",
       "ad": "İngilizce",

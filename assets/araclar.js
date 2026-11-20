@@ -37,9 +37,11 @@ function aracKabuk(el, baslik, alanlar, ciz) {
   el.innerHTML = `<div class="arac-bas"><span class="arac-rozet">Etkileşimli şekil</span><strong>${baslik}</strong></div>
     <div class="arac-girdiler">${alanlar.map(a => a.secenek
       ? `<label>${a.ad}<select data-k="${a.k}">${a.secenek.map(([v, t]) => `<option value="${v}" ${v === a.v ? 'selected' : ''}>${t}</option>`).join('')}</select></label>`
+      : a.metin
+      ? `<label class="genis-alan">${a.ad}<input type="text" data-k="${a.k}" data-metin="1" value="${a.v}" inputmode="decimal" autocomplete="off"></label>`
       : `<label>${a.ad}<input type="number" data-k="${a.k}" value="${a.v}" step="${a.adim || 'any'}" ${a.min !== undefined ? `min="${a.min}"` : ''}></label>`).join('')}</div>
     <div class="arac-cikti"></div>`;
-  const oku = () => Object.fromEntries([...el.querySelectorAll('[data-k]')].map(x => [x.dataset.k, x.tagName === 'SELECT' ? x.value : parseFloat(String(x.value).replace(',', '.'))]));
+  const oku = () => Object.fromEntries([...el.querySelectorAll('[data-k]')].map(x => [x.dataset.k, x.tagName === 'SELECT' || x.dataset.metin ? x.value : parseFloat(String(x.value).replace(',', '.'))]));
   const yenile = () => { try { el.querySelector('.arac-cikti').innerHTML = ciz(oku()); } catch (e) { el.querySelector('.arac-cikti').innerHTML = `<p class="soluk">Geçersiz değer: ${e.message}</p>`; } };
   el.addEventListener('input', yenile);
   yenile();
@@ -58,6 +60,20 @@ function colebrook(Re, eD) {
   if (Re < 2300) return 64 / Re;
   let f = 0.02; for (let i = 0; i < 60; i++) f = Math.pow(-2 * Math.log10(eD / 3.7 + 2.51 / (Re * Math.sqrt(f))), -2); return f;
 }
+/* mühendislik ekonomisi yardımcıları */
+const faktor = {
+  FP: (i, n) => (1 + i) ** n,
+  PF: (i, n) => (1 + i) ** -n,
+  AP: (i, n) => i === 0 ? 1 / n : i * (1 + i) ** n / ((1 + i) ** n - 1),
+  PA: (i, n) => i === 0 ? n : ((1 + i) ** n - 1) / (i * (1 + i) ** n),
+  AF: (i, n) => i === 0 ? 1 / n : i / ((1 + i) ** n - 1),
+  FA: (i, n) => i === 0 ? n : ((1 + i) ** n - 1) / i,
+  PG: (i, n) => ((1 + i) ** n - i * n - 1) / (i * i * (1 + i) ** n),
+};
+const tl = (x, d = 0) => Number.isFinite(x) ? x.toLocaleString('tr-TR', { minimumFractionDigits: d, maximumFractionDigits: d }) : '—';
+const sayiListesi = t => String(t).trim().split(/[\s;]+/).filter(Boolean).map(v => parseFloat(v.replace(',', '.')));
+function olcekle(maks) { return maks >= 1e6 ? [1e6, ' (milyon)'] : maks >= 1e4 ? [1e3, ' (bin)'] : [1, '']; }
+
 const aralik = (a, b, n, log = false) => Array.from({ length: n + 1 }, (_, i) => log ? 10 ** (Math.log10(a) + (Math.log10(b) - Math.log10(a)) * i / n) : a + (b - a) * i / n);
 
 const ARACLAR = {
@@ -125,6 +141,92 @@ const ARACLAR = {
         noktalar: p.Fo >= 0.2 ? [{ x: p.Fo, y: t0(p.Fo), ad: 'θ₀' }] : [] })
         + sonucSatiri([['λ₁', yuvarla(l, 4)], ['A₁', yuvarla(A, 4)], ['Merkez θ₀', yuvarla(t0(p.Fo))], ['Konumda θ', yuvarla(t0(p.Fo) * konum)], ['Q/Q_max', yuvarla(Qq)]])
         + (p.Fo < 0.2 ? '<p class="soluk">Fo &lt; 0,2: tek terim yeterince hassas değil; diyagram kullan.</p>' : '');
+    });
+  },
+  faiz(el) {
+    aracKabuk(el, 'Faiz faktörleri hesaplayıcı', [
+      { ad: 'Faiz oranı i (%)', k: 'i', v: 10, min: 0 }, { ad: 'Dönem sayısı n', k: 'n', v: 5, min: 1, adim: 1 }, { ad: 'Tutar (P, F, A veya G)', k: 't', v: 1000 }], p => {
+      const i = p.i / 100, n = Math.round(p.n);
+      if (!(n >= 1) || !(i >= 0)) throw new Error('i ≥ 0 ve n ≥ 1 olmalı');
+      const satir = [
+        ['F/P', 'P verildi, F bulunacak', faktor.FP(i, n)], ['P/F', 'F verildi, P bulunacak', faktor.PF(i, n)],
+        ['A/P', 'P verildi, A bulunacak', faktor.AP(i, n)], ['P/A', 'A verildi, P bulunacak', faktor.PA(i, n)],
+        ['A/F', 'F verildi, A bulunacak', faktor.AF(i, n)], ['F/A', 'A verildi, F bulunacak', faktor.FA(i, n)],
+        ...(i > 0 ? [['P/G', 'G verildi, P bulunacak', faktor.PG(i, n)]] : []),
+      ];
+      const tablo = `<div class="tablo-kap"><table class="arac-tablo"><thead><tr><th>Faktör</th><th>Anlamı</th><th>Değer</th><th>Tutar × faktör</th></tr></thead><tbody>${satir.map(([ad, an, v]) =>
+        `<tr><td><b>(${ad}, %${tl(p.i, 2).replace(/,00$/, '')}, ${n})</b></td><td>${an}</td><td>${tl(v, 5)}</td><td>${tl(p.t * v, 2)}</td></tr>`).join('')}</tbody></table></div>`;
+      const yil = Array.from({ length: n + 1 }, (_, t) => t);
+      const bil = yil.map(t => [t, p.t * faktor.FP(i, t)]), bas = yil.map(t => [t, p.t * (1 + i * t)]);
+      const ymax = Math.max(...bil.map(x => x[1])) * 1.08;
+      return tablo + grafikSVG({ g: 560, y: 240, xmin: 0, xmax: n, ymin: 0, ymax: ymax || 1, xEt: 'Dönem', yEt: 'Değer', seriler: [{ noktalar: bil, ad: 'Bileşik faiz' }, { noktalar: bas, ad: 'Basit faiz', renk: '#868e96', kesik: true }] });
+    });
+  },
+  kredi(el) {
+    aracKabuk(el, 'Ertelemeli (ödemesiz dönemli) kredi', [
+      { ad: 'Kredi tutarı P (TL)', k: 'P', v: 1500000, min: 0 }, { ad: 'Dönem faizi i (%)', k: 'i', v: 2, min: 0 },
+      { ad: 'Ödemesiz dönem k', k: 'k', v: 12, min: 0, adim: 1 }, { ad: 'Taksit sayısı n', k: 'n', v: 60, min: 1, adim: 1 }], p => {
+      const i = p.i / 100, k = Math.max(0, Math.round(p.k)), n = Math.round(p.n);
+      if (!(n >= 1)) throw new Error('n ≥ 1 olmalı');
+      const Pk = p.P * faktor.FP(i, k), A = Pk * faktor.AP(i, n);
+      const borc = [[0, p.P]]; let B = p.P;
+      for (let t = 1; t <= k + n; t++) { B = B * (1 + i) - (t > k ? A : 0); borc.push([t, Math.max(0, B)]); }
+      const [o, e] = olcekle(Math.max(...borc.map(x => x[1])));
+      return grafikSVG({ g: 560, y: 240, xmin: 0, xmax: k + n, ymin: 0, ymax: Math.max(...borc.map(x => x[1])) / o * 1.08, xEt: 'Dönem', yEt: 'Kalan borç' + e,
+        seriler: [{ noktalar: borc.map(([t, b]) => [t, b / o]), ad: 'Kalan borç' }], noktalar: k ? [{ x: k, y: Pk / o, ad: 'Pₖ' }] : [] })
+        + sonucSatiri([['Ödemesiz dönem sonu borç Pₖ', tl(Pk) + ' TL'], ['Taksit A', tl(A, 2) + ' TL'], ['İlk / son taksit', `${k + 1}. / ${k + n}. dönem`], ['Toplam ödeme', tl(A * n) + ' TL'], ['Toplam faiz', tl(A * n - p.P) + ' TL']]);
+    });
+  },
+  basabas(el) {
+    aracKabuk(el, 'Alternatif seçimi ve başabaş grafiği', [
+      { ad: 'X sabit maliyet', k: 'F1', v: 120000000, min: 0 }, { ad: 'X değişken (birim)', k: 'v1', v: 10000, min: 0 },
+      { ad: 'Y sabit maliyet', k: 'F2', v: 160000000, min: 0 }, { ad: 'Y değişken (birim)', k: 'v2', v: 7000, min: 0 },
+      { ad: 'Z sabit maliyet', k: 'F3', v: 80000000, min: 0 }, { ad: 'Z değişken (birim)', k: 'v3', v: 18000, min: 0 },
+      { ad: 'Alternatif sayısı', k: 'adet', v: '3', secenek: [['2', '2 (X, Y)'], ['3', '3 (X, Y, Z)']] },
+      { ad: 'En büyük miktar Q', k: 'Q', v: 20000, min: 1 }, { ad: 'Satış fiyatı p (0 = yok)', k: 'p', v: 0, min: 0 }], p => {
+      const alt = [['X', p.F1, p.v1], ['Y', p.F2, p.v2], ['Z', p.F3, p.v3]].slice(0, Number(p.adet));
+      if (!(p.Q > 0)) throw new Error('Q > 0 olmalı');
+      const TM = (a, q) => a[1] + a[2] * q, enUcuz = q => alt.reduce((m, a) => TM(a, q) < TM(m, q) ? a : m);
+      const kes = [];
+      for (let a = 0; a < alt.length; a++) for (let b = a + 1; b < alt.length; b++) {
+        const dv = alt[a][2] - alt[b][2]; if (!dv) continue;
+        const q = (alt[b][1] - alt[a][1]) / dv; if (!(q > 0 && q < p.Q)) continue;
+        const c = TM(alt[a], q), zarf = alt.every(x => c <= TM(x, q) + 1e-6 * Math.max(1, c));
+        kes.push({ q, c, ad: `${alt[a][0]}=${alt[b][0]}`, zarf });
+      }
+      const ymaks = Math.max(...alt.map(a => TM(a, p.Q)), p.p ? p.p * p.Q : 0);
+      const [oy, ey] = olcekle(ymaks), [ox, ex] = olcekle(p.Q);
+      const seri = alt.map((a, j) => ({ ad: `${a[0]}: ${tl(a[1])} + ${tl(a[2])}Q`, noktalar: [[0, a[1] / oy], [p.Q / ox, TM(a, p.Q) / oy]], renk: ['#1c7ed6', '#e8590c', '#7048e8'][j], kalin: 2 }));
+      const xs = aralik(0, p.Q, 300);
+      seri.push({ ad: 'En düşük maliyet (alt zarf)', noktalar: xs.map(q => [q / ox, TM(enUcuz(q), q) / oy]), renk: 'var(--yazi)', kalin: 4, kesik: true });
+      if (p.p > 0) seri.push({ ad: `Satış geliri ${tl(p.p)}Q`, noktalar: [[0, 0], [p.Q / ox, p.p * p.Q / oy]], renk: '#1c7ed6', kalin: 1.6, kesik: true });
+      const sinir = [0, ...kes.filter(x => x.zarf).map(x => x.q).sort((a, b) => a - b), p.Q];
+      const araliklar = sinir.slice(0, -1).map((a, j) => `${tl(a)} – ${j === sinir.length - 2 ? tl(p.Q) + '+' : tl(sinir[j + 1])}: <b>${enUcuz((a + sinir[j + 1]) / 2)[0]}</b>`);
+      const bbn = p.p > 0 ? alt.filter(a => p.p > a[2]).map(a => [`${a[0]} başabaş Q₀`, tl(a[1] / (p.p - a[2])) ]) : [];
+      return grafikSVG({ g: 600, y: 320, xmin: 0, xmax: p.Q / ox, ymin: 0, ymax: ymaks / oy * 1.05, xEt: 'Miktar Q' + ex, yEt: 'Toplam maliyet' + ey, seriler: seri,
+        noktalar: kes.filter(x => x.zarf).map(x => ({ x: x.q / ox, y: x.c / oy, ad: `${x.ad}: ${tl(x.q)}`, renk: 'var(--yazi)' })) })
+        + sonucSatiri([...kes.map(x => [`${x.ad} kesişimi${x.zarf ? '' : ' (zarfta değil)'}`, tl(x.q, 0)]), ...bbn])
+        + `<p class="arac-not"><b>Avantaj aralıkları:</b> ${araliklar.join(' · ')}</p>`;
+    });
+  },
+  regresyon(el) {
+    aracKabuk(el, 'En küçük kareler doğrusu', [
+      { ad: 'X değerleri (boşlukla ayır)', k: 'x', v: '5,5 5,8 6,0 5,9 6,2 6,3', metin: true },
+      { ad: 'Y değerleri (boşlukla ayır)', k: 'y', v: '100 110 112 115 117 116', metin: true },
+      { ad: 'Tahmin için X₀', k: 'x0', v: 6.5 }], p => {
+      const X = sayiListesi(p.x), Y = sayiListesi(p.y);
+      if (X.length !== Y.length) throw new Error(`X (${X.length}) ve Y (${Y.length}) sayıları eşit olmalı`);
+      if (X.length < 2 || X.some(v => !Number.isFinite(v)) || Y.some(v => !Number.isFinite(v))) throw new Error('en az iki geçerli nokta gir');
+      const n = X.length, top = a => a.reduce((s, v) => s + v, 0);
+      const Sx = top(X), Sy = top(Y), Sxy = top(X.map((x, j) => x * Y[j])), Sxx = top(X.map(x => x * x)), Syy = top(Y.map(y => y * y));
+      const payda = n * Sxx - Sx * Sx; if (!payda) throw new Error('X değerleri birbirinden farklı olmalı');
+      const b = (n * Sxy - Sx * Sy) / payda, a = (Sy - b * Sx) / n, r = (n * Sxy - Sx * Sy) / Math.sqrt(payda * (n * Syy - Sy * Sy));
+      const y0 = a + b * p.x0, xa = Math.min(...X, p.x0), xb = Math.max(...X, p.x0), pay = (xb - xa) * 0.08 || 1;
+      const ys = [...Y, y0], ya = Math.min(...ys), yb = Math.max(...ys), payY = (yb - ya) * 0.15 || 1;
+      return grafikSVG({ g: 560, y: 260, xmin: xa - pay, xmax: xb + pay, ymin: ya - payY, ymax: yb + payY, xEt: 'X', yEt: 'Y',
+        seriler: [{ noktalar: [[xa - pay, a + b * (xa - pay)], [xb + pay, a + b * (xb + pay)]], ad: `Y = ${tl(a, 3)} + ${tl(b, 3)}X` }],
+        noktalar: [...X.map((x, j) => ({ x, y: Y[j], renk: '#e8590c' })), { x: p.x0, y: y0, ad: 'Tahmin', renk: 'var(--yazi)' }] })
+        + sonucSatiri([['n', n], ['ΣX', tl(Sx, 3)], ['ΣY', tl(Sy, 3)], ['ΣXY', tl(Sxy, 3)], ['ΣX²', tl(Sxx, 3)], ['b (eğim)', tl(b, 4)], ['a', tl(a, 4)], ['r', tl(r, 4)], ['r²', tl(r * r, 4)], [`Y(${tl(p.x0, 2)})`, tl(y0, 3)]]);
     });
   },
   moody(el) {

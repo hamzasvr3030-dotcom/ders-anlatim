@@ -1,0 +1,337 @@
+{
+  "sorular": [
+    {
+      "id": "f26-s1",
+      "konu": "13-is-olcumu",
+      "etiket": "Final 2026 · S.1",
+      "baslik": "İş ölçümü: neden gerekli, standart süre hesabı",
+      "kaynak": "MAK341 Final, 06.01.2026 (20 p)",
+      "zorluk": 1,
+      "soru": "Bir işletme neden iş ölçümüne ihtiyaç duyar? İş ölçümünü yapacak personelin neden tecrübeli bir uzman olması gerektiğini açıklayınız. Aşağıda verilen işlemlerin standart sürelerini hesaplayınız. (20 P)\n\n| İşlem | Ölçülen süreler | Tempo | Tolerans |\n|---|---|---|---|\n| İşlem 1 | 28, 32, 34, 30, 135, 35 | %10 hızlı | %15 |\n| İşlem 2 | 128, 142, 5, 134, 136 | %15 yavaş | %20 |\n| İşlem 3 | 58, 63, 54, 60, 59, 600 | normal | %18 |",
+      "cozum": "**Sözel kısım**\n\n*Neden iş ölçümü?* Ürün maliyeti ve fiyatlandırma, üretim planlama ve kapasite hesabı, iş gücü ihtiyacının belirlenmesi, performansa dayalı (teşvikli) ücretlendirme, yöntemlerin karşılaştırılması ve verimlilik artışı, montaj hattı dengeleme, maliyet ve bütçe kontrolü.\n\n*Neden uzman?* Tempo değerlendirmesi öznel bir yargıdır ve deneyim ister; işin doğru elemanlara ayrılması, anormal ölçümlerin ayıklanması, yeterli gözlem sayısının belirlenmesi ve tolerans paylarının doğru seçilmesi uzmanlık gerektirir. Hatalı standart süre ya işçiyi mağdur eder ya da maliyetleri yanlış gösterir; uzman ayrıca işçilerin güvenini kazanarak doğal çalışmalarını sağlar.\n\n**Hesap** (NS = ortalama × tempo; hızlı → süre uzatılır, yavaş → kısaltılır)\n\n- **İşlem 1:** 135 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 159/5 = 31{,}80$, $NS = 31{,}80\\times1{,}10 = 34{,}98$, $SS = 34{,}98/0{,}85 = 41{,}15$\n- **İşlem 2:** 5 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 540/4 = 135{,}00$, $NS = 135{,}00\\times0{,}85 = 114{,}75$, $SS = 114{,}75/0{,}80 = 143{,}44$\n- **İşlem 3:** 600 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 294/5 = 58{,}80$, $NS = 58{,}80\\times1{,}00 = 58{,}80$, $SS = 58{,}80/0{,}82 = 71{,}71$\n\n| İşlem | Kullanılan ölçümler | $\\bar t$ | Tempo | NS | Tolerans | SS = NS/(1 − t) |\n|---|---|---|---|---|---|---|\n| İşlem 1 | 28, 32, 34, 30, 35 | 31,80 | %10 hızlı (1,10) | 34,98 | %15 | **41,15** |\n| İşlem 2 | 128, 142, 134, 136 | 135,00 | %15 yavaş (0,85) | 114,75 | %20 | **143,44** |\n| İşlem 3 | 58, 63, 54, 60, 59 | 58,80 | normal (1,00) | 58,80 | %18 | **71,71** |",
+      "cevap": "Standart süreler — İşlem 1: 41,15; İşlem 2: 143,44; İşlem 3: 71,71",
+      "not": "Bazı kaynaklar $SS = NS(1 + t)$ kullanır; sınav kâğıdındaki el yazısı nota uygun olarak $NS/(1 - t)$ kullanıldı. Hangi formülü kullandığını çözümde belirt."
+    },
+    {
+      "id": "f26-s2",
+      "konu": "11-alternatif-grafik",
+      "etiket": "Final 2026 · S.2",
+      "baslik": "Fabrika yeri seçimi (grafikle)",
+      "kaynak": "MAK341 Final, 06.01.2026 (20 p)",
+      "zorluk": 2,
+      "soru": "ABC işletmesinin kuracağı fabrika için alternatif yerlerle ilgili bilgiler aşağıdadır. Üretim politikaları 4800, 16.000 ve 8000 adet olsun; her politika için uygun yeri seçiniz ve sonucu yorumlayınız. Problemi grafik çizerek çözünüz.\n\n| | X yeri | Y yeri | Z yeri |\n|---|---|---|---|\n| Sabit maliyet (TL) | 120.000.000 | 160.000.000 | 80.000.000 |\n| Değişken maliyet (TL/adet) | 10.000 | 7000 | 18.000 |",
+      "cozum": "**1. Maliyet denklemleri:** $TM_X = 120\\,000\\,000 + 10\\,000Q$, $TM_Y = 160\\,000\\,000 + 7\\,000Q$, $TM_Z = 80\\,000\\,000 + 18\\,000Q$\n\n**2. Senaryolar** (milyon TL):\n\n| Q (adet) | X | Y | Z | Seçim |\n|---|---|---|---|---|\n| 4.800 | 168,00 | 193,60 | **166,40** | **Z** |\n| 8.000 | **200,00** | 216,00 | 224,00 | **X** |\n| 16.000 | 280,00 | **272,00** | 368,00 | **Y** |\n\n**3. Kesişim noktaları** ($Q^* = (F_2 - F_1)/(v_1 - v_2)$):\n\n- $X = Y$: $Q = \\dfrac{40\\,000\\,000}{3\\,000} = 13\\,333$ adet\n- $X = Z$: $Q = \\dfrac{40\\,000\\,000}{8\\,000} = 5\\,000$ adet\n- $Y = Z$: $Q = \\dfrac{80\\,000\\,000}{11\\,000} = 7\\,273$ adet — bu noktada üçüncü alternatif daha ucuz olduğundan **alt zarfta değil**, geçiş noktası sayılmaz\n\n**4. Avantaj aralıkları:**\n\n- 0 < Q < 5.000 adet: **Z**\n- 5.000 < Q < 13.333 adet: **X**\n- Q > 13.333 adet: **Y**\n\n**5. Grafik:** Yatay eksen Q, dikey eksen toplam maliyet. Her doğru $Q = 0$'daki sabit maliyetten başlar; kesişimler işaretlenir, aralıklar eksenin altında gösterilir. (Konu sayfasındaki etkileşimli araca aynı değerleri girerek grafiği görebilirsin.)\n\n**Yorum:** Düşük üretimde sabit maliyeti en küçük Z, orta üretimde X, yüksek üretimde değişken maliyeti en küçük Y avantajlıdır. 4800 adetlik politika Z–X sınırına (5000) çok yakındır; talep artışı bekleniyorsa X daha esnek bir seçimdir.",
+      "cevap": "Q = 4.800 → Z, Q = 8.000 → X, Q = 16.000 → Y"
+    },
+    {
+      "id": "f26-s3",
+      "konu": "12-yer-secimi",
+      "etiket": "Final 2026 · S.3",
+      "baslik": "Lastik fabrikası için yer seçimi",
+      "kaynak": "MAK341 Final, 06.01.2026 (15 p)",
+      "zorluk": 2,
+      "soru": "Kurulması planlanan motorlu araçlar **lastik fabrikası** için yer seçimi faktörlerini ve **önem derecelerini** yazarak aday şehirleri puanlayınız ve uygun aday yeri seçiniz. Bir işletme için yer seçimi neden önemlidir, açıklayınız. (Aday şehirler: Sakarya, Eskişehir, Diyarbakır, İzmir)",
+      "cozum": "**Yer seçimi neden önemli?** Uzun vadeli ve geri dönüşü çok pahalı bir karardır; taşıma, işçilik, enerji ve arsa maliyetlerini doğrudan belirler; pazara erişimi, teslim süresini ve rekabet gücünü etkiler; nitelikli iş gücü bulmayı, teşviklerden yararlanmayı ve çevresel/sosyal kabulü belirler.\n\n**Tesisin özellikleri:** Ana müşteri otomotiv sanayisidir (Marmara–Bursa). Kauçuk, karbon siyahı ve çelik kord büyük ölçüde ithal edildiği için limana yakınlık önemlidir. Ürün hacimli ve ağırdır, taşıma maliyeti yüksektir.\n\n| Faktör | Ağırlık | Sakarya | Eskişehir | Diyarbakır | İzmir |\n|---|---|---|---|---|---|\n| Pazara (otomotiv) yakınlık | 0,25 | 9 | 7 | 3 | 7 |\n| Hammadde / liman | 0,15 | 8 | 5 | 3 | 9 |\n| Ulaşım ve taşıma | 0,15 | 9 | 8 | 4 | 8 |\n| Nitelikli iş gücü | 0,15 | 8 | 7 | 5 | 8 |\n| Altyapı (OSB, enerji, su) | 0,10 | 8 | 8 | 6 | 8 |\n| Teşvikler | 0,10 | 5 | 6 | 10 | 5 |\n| Arsa ve işçilik maliyeti | 0,05 | 6 | 7 | 9 | 5 |\n| Çevre ve sosyal | 0,05 | 7 | 8 | 6 | 7 |\n| **Ağırlıklı puan** | **1,00** | **7,95** | **6,90** | **4,90** | **7,40** |\n\nSakarya: $0{,}25(9) + 0{,}15(8) + 0{,}15(9) + 0{,}15(8) + 0{,}10(8) + 0{,}10(5) + 0{,}05(6) + 0{,}05(7) = 7{,}95$\n\n**Karar: Sakarya.** Otomotiv ana sanayisine ve Marmara limanlarına yakınlık belirleyicidir. Diyarbakır teşvikte öndedir ama pazara ve tedarik zincirine uzaklığı bu avantajı karşılamıyor.",
+      "cevap": "Ağırlıklı puanlara göre Sakarya (7,95) > İzmir (7,40) > Eskişehir (6,90) > Diyarbakır (4,90)",
+      "not": "Ağırlıklar ve puanlar öznel değerlendirmedir; önemli olan gerekçeli, ağırlık toplamı 1 olan tutarlı bir tablo kurmaktır."
+    },
+    {
+      "id": "f26-s4",
+      "konu": "04-kredi",
+      "etiket": "Final 2026 · S.4",
+      "baslik": "Ertelemeli konut kredisi",
+      "kaynak": "MAK341 Final, 06.01.2026 (25 p)",
+      "zorluk": 3,
+      "soru": "Bir aile konut alımı için aylık %2 faizle 1.500.000 TL kredi kullanmıştır. Geri ödemeyi 12 ay sonra başlatacak olan aile, bu tarihten itibaren 60 eşit ödeme şeklinde geri ödeme yapacaktır.\n\n**a)** Bu aile aylık ne kadar taksit ödeyecek? (15 p)\n\n**b)** Aile ilgili evi 1.500.000 TL'si kredi, 2.500.000 TL'si öz kaynakla aldığı evi 72 ayın sonunda kaç TL'ye satarsa zarar etmemiş olur? (7 p)\n\n**c)** Alış fiyatı üzerinden %20 kâr etmesi için 72. ayın sonunda kaç TL'ye satabilmeli? (3 p)",
+      "cozum": "**a)** Ödemesiz 12 ayda faiz işler; borç 12. ayın sonuna taşınır, sonra 60 eşit taksite bölünür (ilk taksit 13. ay, son taksit 72. ay):\n\n$$P_{12} = 1\\,500\\,000(1{,}02)^{12} = 1\\,500\\,000(1{,}268242) = 1\\,902\\,363 \\text{ TL}$$\n\n$$(A/P,2,60) = \\frac{0{,}02(1{,}02)^{60}}{(1{,}02)^{60} - 1} = 0{,}028768$$\n\n$$A = 1\\,902\\,363\\times0{,}028768 = \\mathbf{54\\,727} \\text{ TL/ay}$$\n\n**b)** Satış fiyatı, eve yapılan bütün harcamaların 72. aydaki değerine eşit olmalıdır (öz kaynağın fırsat maliyeti de %2/ay):\n\n- Öz kaynak: $2\\,500\\,000(F/P,2,72) = 2\\,500\\,000(4{,}161140) = 10\\,402\\,851$ TL\n- Taksitler: $A(F/A,2,60) = 54\\,727(114{,}0515) = 6\\,241\\,711$ TL\n\n$$F_{72} = \\mathbf{16\\,644\\,562} \\text{ TL}$$\n\nKısa yol: Taksitler bugünkü 1.500.000 TL'ye eşdeğer olduğundan $F_{72} = 4\\,000\\,000(1{,}02)^{72}$.\n\n**c)** $1{,}20\\times16\\,644\\,562 = \\mathbf{19\\,973\\,474}$ TL",
+      "cevap": "a) 54.727 TL/ay · b) 16.644.562 TL · c) 19.973.474 TL",
+      "not": "\"12 ay sonra başlatacak\" ifadesi ilk ödemenin 13. ayda yapılması olarak yorumlandı; böylece son ödeme tam 72. aya denk gelir. İlk ödeme 12. ayda yapılsaydı $A = 53\\,654$ TL olurdu."
+    },
+    {
+      "id": "f26-s5",
+      "konu": "14-en-kucuk-kareler",
+      "etiket": "Final 2026 · S.5",
+      "baslik": "Reklam gideri ile satış tahmini (en küçük kareler)",
+      "kaynak": "MAK341 Final, 06.01.2026 (20 p)",
+      "zorluk": 2,
+      "soru": "Bir firmanın aylık reklam gideri ve satış tutarları verilmiştir (bin TL). Buna göre **doğru denklemini** kurunuz ve Temmuz ayı için düşünülen reklam harcaması 6,5 olduğuna göre **tahmini satış değerini** bulunuz. (20 p)\n\n| Ay | Oca | Şub | Mar | Nis | May | Haz |\n|---|---|---|---|---|---|---|\n| Reklam X | 5,5 | 5,8 | 6,0 | 5,9 | 6,2 | 6,3 |\n| Satış Y | 100 | 110 | 112 | 115 | 117 | 116 |",
+      "cozum": "$Y = a + bX$ doğrusu için tablo ($n = 6$):\n\n| X | Y | XY | X² |\n|---|---|---|---|\n| 5,5 | 100 | 550,0 | 30,25 |\n| 5,8 | 110 | 638,0 | 33,64 |\n| 6,0 | 112 | 672,0 | 36,00 |\n| 5,9 | 115 | 678,5 | 34,81 |\n| 6,2 | 117 | 725,4 | 38,44 |\n| 6,3 | 116 | 730,8 | 39,69 |\n| **35,7** | **670** | **3.994,7** | **212,83** |\n\n$$b = \\frac{n\\sum XY - \\sum X\\sum Y}{n\\sum X^2 - (\\sum X)^2} = \\frac{6(3\\,994{,}7) - 35{,}7(670)}{6(212{,}83) - 35{,}7^2} = \\frac{49{,}20}{2{,}49} = 19{,}759$$\n\n$$a = \\frac{\\sum Y - b\\sum X}{n} = \\frac{670 - 19{,}759(35{,}7)}{6} = -5{,}900$$\n\n$$\\boxed{Y = -5{,}90 + 19{,}76X}$$\n\n**Temmuz tahmini:** $Y = -5{,}900 + 19{,}759(6{,}5) = \\mathbf{122{,}5}$\n\nKorelasyon $r = 0{,}906$, belirleme katsayısı $r^2 = 0{,}82$ (> 0,75, model başarılı).",
+      "cevap": "Y = -5,90 + 19,76X; Temmuz tahmini ≈ 122,5",
+      "not": "Paydadaki fark küçük olduğu için ara değerleri yuvarlamadan kullan; erken yuvarlama $b$'yi belirgin şekilde değiştirir."
+    },
+    {
+      "id": "b25-s1",
+      "konu": "12-yer-secimi",
+      "etiket": "Büt 2025 · S.1",
+      "baslik": "Fotovoltaik panel fabrikası için yer seçimi",
+      "kaynak": "MAK341 Bütünleme, 27.01.2025",
+      "zorluk": 2,
+      "soru": "Kurulması planlanan **fotovoltaik panel fabrikası** için yer seçimi faktörlerini ve önem derecelerini yazarak aday şehirleri puanlayınız ve uygun aday yeri seçiniz. Bir işletme için yer seçimi neden önemlidir, açıklayınız. (Aday şehirler: Diyarbakır, Sakarya, Konya, İzmir)",
+      "cozum": "**Neden önemli?** Uzun vadeli, geri dönüşü zor ve yüksek yatırımlı bir karardır; taşıma, enerji, işçilik ve arsa maliyetlerini, pazara erişimi, iş gücü bulmayı ve teşviklerden yararlanmayı belirler.\n\n**Tesisin özellikleri:** Temiz oda, kesintisiz enerji ve nitelikli teknik personel gerekir. Pazar, yüksek güneşlenmeli bölgelerdeki GES projeleridir (Konya–Karapınar). Hücre ve cam gibi girdiler ithal edildiği için limana erişim önemlidir.\n\n| Faktör | Ağırlık | Diyarbakır | Sakarya | Konya | İzmir |\n|---|---|---|---|---|---|\n| Pazara (GES sahaları) yakınlık | 0,20 | 7 | 5 | 9 | 7 |\n| Hammadde / liman | 0,15 | 3 | 8 | 6 | 9 |\n| Nitelikli iş gücü | 0,15 | 5 | 8 | 7 | 9 |\n| Altyapı ve enerji | 0,15 | 6 | 8 | 8 | 8 |\n| Teşvikler | 0,15 | 10 | 5 | 7 | 5 |\n| Ulaşım | 0,10 | 4 | 9 | 7 | 8 |\n| Arsa maliyeti | 0,05 | 8 | 5 | 8 | 4 |\n| Çevre ve sosyal | 0,05 | 6 | 7 | 8 | 7 |\n| **Ağırlıklı puan** | **1,00** | **6,10** | **6,85** | **7,50** | **7,40** |\n\n**Karar: Konya.** GES pazarına yakınlık, sanayi altyapısı, teşvik ve arsa maliyeti birlikte değerlendirildiğinde öne çıkıyor. İzmir çok yakın ikinci; bu kadar yakın sonuçlarda maliyet analiziyle kesin karar verilmelidir.",
+      "cevap": "Konya (7,50) > İzmir (7,40) > Sakarya (6,85) > Diyarbakır (6,10)",
+      "not": "Ağırlıklar ve puanlar öznel değerlendirmedir; gerekçesini yazman puanın büyük kısmını getirir."
+    },
+    {
+      "id": "b25-s2",
+      "konu": "11-alternatif-grafik",
+      "etiket": "Büt 2025 · S.2",
+      "baslik": "Beton: satın al ya da tesis kur",
+      "kaynak": "MAK341 Bütünleme, 27.01.2025",
+      "zorluk": 2,
+      "soru": "ABC işletmesi ihtiyaç duyduğu betonu başka bir şirketten satın alacak veya sabit yatırıma katlanarak beton tesisini kurup kendisi üretecektir. Tesis için iki farklı yer alternatifi vardır (Y ve Z). İhtiyaç senaryoları $Q_1 = 21\\,000$ m³, $Q_2 = 35\\,000$ m³, $Q_3 = 62\\,000$ m³. Her senaryo için seçim yaparak **her alternatifin avantajlı olduğu üretim miktarı aralığını** belirleyiniz ve tek grafikte gösteriniz.\n\n| | 1 – X (satın alma) | 2 – Y yeri | 3 – Z yeri |\n|---|---|---|---|\n| Sabit maliyet | — | 42.000.000 TL | 26.000.000 TL |\n| Değişken maliyet | 3000 TL/m³ | 1400 TL/m³ | 1800 TL/m³ |",
+      "cozum": "**1. Maliyet denklemleri:** $TM_X = 0 + 3\\,000Q$, $TM_Y = 42\\,000\\,000 + 1\\,400Q$, $TM_Z = 26\\,000\\,000 + 1\\,800Q$\n\n**2. Senaryolar** (milyon TL):\n\n| Q (m³) | X | Y | Z | Seçim |\n|---|---|---|---|---|\n| 21.000 | **63,00** | 71,40 | 63,80 | **X** |\n| 35.000 | 105,00 | 91,00 | **89,00** | **Z** |\n| 62.000 | 186,00 | **128,80** | 137,60 | **Y** |\n\n**3. Kesişim noktaları** ($Q^* = (F_2 - F_1)/(v_1 - v_2)$):\n\n- $X = Y$: $Q = \\dfrac{42\\,000\\,000}{1\\,600} = 26\\,250$ m³ — bu noktada üçüncü alternatif daha ucuz olduğundan **alt zarfta değil**, geçiş noktası sayılmaz\n- $X = Z$: $Q = \\dfrac{26\\,000\\,000}{1\\,200} = 21\\,667$ m³\n- $Y = Z$: $Q = \\dfrac{16\\,000\\,000}{400} = 40\\,000$ m³\n\n**4. Avantaj aralıkları:**\n\n- 0 < Q < 21.667 m³: **X**\n- 21.667 < Q < 40.000 m³: **Z**\n- Q > 40.000 m³: **Y**\n\n**5. Grafik:** Yatay eksen Q, dikey eksen toplam maliyet. Her doğru $Q = 0$'daki sabit maliyetten başlar; kesişimler işaretlenir, aralıklar eksenin altında gösterilir. (Konu sayfasındaki etkileşimli araca aynı değerleri girerek grafiği görebilirsin.)\n\n**Yorum:** 21.000 m³'te satın alma ile Z arasındaki fark yalnızca 0,8 milyon TL'dir (%1,3). Talep biraz artarsa Z öne geçer; bu kadar yakın değerlerde tedarik güvencesi ve kalite kontrolü gibi hesaba girmeyen faktörler kararı belirleyebilir.",
+      "cevap": "Q = 21.000 → X, Q = 35.000 → Z, Q = 62.000 → Y"
+    },
+    {
+      "id": "b25-s3",
+      "konu": "06-nbd",
+      "etiket": "Büt 2025 · S.3",
+      "baslik": "Enerji nakil hattı: göl etrafı mı göl altı mı?",
+      "kaynak": "MAK341 Bütünleme, 27.01.2025",
+      "zorluk": 2,
+      "soru": "Bir enerji nakil hattı için iki alternatif mevcuttur: **göl etrafından** ve **göl altından**. Maliyetler aşağıdaki tabloda verilmiştir. Her alternatif için **net bugünkü değeri (NBD)** bularak hangi alternatifin seçileceğine karar veriniz ($i = \\%15$).\n\n| | Göl etrafından | Göl altından |\n|---|---|---|\n| Uzunluk | 15 km | 5 km |\n| İlk maliyet | 50 milyon TL/km | 350 milyon TL/km |\n| Bakım maliyeti | 4,5 milyon TL/km/yıl | 9 milyon TL/km/yıl |\n| Ekonomik ömür | 15 yıl | 15 yıl |\n| Hurda değeri | 30 milyon TL/km | 80 milyon TL/km |\n| Yıllık enerji kaybı | 15 milyon TL/km/yıl | 5 milyon TL/km/yıl |",
+      "cozum": "**1. Toplam değerler** (milyon TL):\n\n| | Göl etrafından | Göl altından |\n|---|---|---|\n| İlk yatırım | $50\\cdot15 = 750$ | $350\\cdot5 = 1\\,750$ |\n| Yıllık gider (bakım + kayıp) | $(4{,}5 + 15)\\cdot15 = 292{,}5$ | $(9 + 5)\\cdot5 = 70$ |\n| Hurda değeri | $30\\cdot15 = 450$ | $80\\cdot5 = 400$ |\n\n**2. Faktörler:** $(P/A,15,15) = 5{,}8474$, $(P/F,15,15) = 0{,}12289$\n\n**3. Maliyetlerin bugünkü değeri** $= I + C(P/A) - H(P/F)$:\n\n$$BD_{etraf} = 750 + 292{,}5(5{,}8474) - 450(0{,}12289) = \\mathbf{2\\,405{,}1} \\text{ milyon TL}$$\n\n$$BD_{alt} = 1\\,750 + 70(5{,}8474) - 400(0{,}12289) = \\mathbf{2\\,110{,}2} \\text{ milyon TL}$$\n\n**Karar: Göl altından.** Maliyetin bugünkü değeri yaklaşık 295 milyon TL daha düşüktür. İlk yatırımı 2,3 kat fazla olmasına rağmen yıllık bakım ve enerji kaybı giderleri çok küçük olduğu için 15 yılda daha ekonomiktir.",
+      "cevap": "Göl etrafı 2.405,1 milyon TL, göl altı 2.110,2 milyon TL (maliyetlerin bugünkü değeri) → göl altı seçilir",
+      "not": "NBD işaretli yazılırsa ($-2405{,}1$ ve $-2110{,}2$) büyük olan, yani göl altı seçilir; sonuç aynıdır. Aynı soru EDYM ile de çözülebilir: göl etrafı 411,3, göl altı 360,9 milyon TL/yıl."
+    },
+    {
+      "id": "b25-s4",
+      "konu": "14-en-kucuk-kareler",
+      "etiket": "Büt 2025 · S.4",
+      "baslik": "Reklam gideri ile satış tahmini (en küçük kareler)",
+      "kaynak": "MAK341 Bütünleme, 27.01.2025",
+      "zorluk": 2,
+      "soru": "Bir firmanın aylık reklam gideri ve satış tutarları verilmiştir (milyon TL). Buna göre **doğru denklemini** kurunuz ve Ağustos ayı için düşünülen reklam harcaması 1,7 olduğuna göre **tahmini satış değerini** bulunuz.\n\n| Ay | Oca | Şub | Mar | Nis | May | Haz | Tem |\n|---|---|---|---|---|---|---|---|\n| Reklam X | 1,2 | 1,3 | 1,6 | 1,8 | 1,8 | 1,9 | 1,8 |\n| Satış Y | 105 | 108 | 112 | 116 | 117 | 124 | 120 |",
+      "cozum": "$Y = a + bX$ doğrusu için tablo ($n = 7$):\n\n| X | Y | XY | X² |\n|---|---|---|---|\n| 1,2 | 105 | 126,0 | 1,44 |\n| 1,3 | 108 | 140,4 | 1,69 |\n| 1,6 | 112 | 179,2 | 2,56 |\n| 1,8 | 116 | 208,8 | 3,24 |\n| 1,8 | 117 | 210,6 | 3,24 |\n| 1,9 | 124 | 235,6 | 3,61 |\n| 1,8 | 120 | 216,0 | 3,24 |\n| **11,4** | **802** | **1.316,6** | **19,02** |\n\n$$b = \\frac{n\\sum XY - \\sum X\\sum Y}{n\\sum X^2 - (\\sum X)^2} = \\frac{7(1\\,316{,}6) - 11{,}4(802)}{7(19{,}02) - 11{,}4^2} = \\frac{73{,}40}{3{,}18} = 23{,}082$$\n\n$$a = \\frac{\\sum Y - b\\sum X}{n} = \\frac{802 - 23{,}082(11{,}4)}{7} = 76{,}981$$\n\n$$\\boxed{Y = 76{,}98 + 23{,}08X}$$\n\n**Ağustos tahmini:** $Y = 76{,}981 + 23{,}082(1{,}7) = \\mathbf{116{,}2}$\n\nKorelasyon $r = 0{,}951$, belirleme katsayısı $r^2 = 0{,}90$ (> 0,75, model başarılı).",
+      "cevap": "Y = 76,98 + 23,08X; Ağustos tahmini ≈ 116,2",
+      "not": "Paydadaki fark küçük olduğu için ara değerleri yuvarlamadan kullan; erken yuvarlama $b$'yi belirgin şekilde değiştirir."
+    },
+    {
+      "id": "b25-s5",
+      "konu": "13-is-olcumu",
+      "etiket": "Büt 2025 · S.5",
+      "baslik": "İş ölçümü: neden gerekli, standart süre hesabı",
+      "kaynak": "MAK341 Bütünleme, 27.01.2025",
+      "zorluk": 1,
+      "soru": "Bir işletme neden iş ölçümüne ihtiyaç duyar? İş ölçümünü yapacak personelin neden tecrübeli bir uzman olması gerektiğini açıklayınız. Aşağıda verilen işlemlerin standart sürelerini hesaplayınız.\n\n| İşlem | Ölçülen süreler | Tempo | Tolerans |\n|---|---|---|---|\n| İşlem 1 | 278, 272, 275, 280, 2.755 | %15 yavaş | %22 |\n| İşlem 2 | 122, 119, 1.938, 105, 115 | normal | %25 |\n| İşlem 3 | 70, 82, 58, 580, 50 | %25 hızlı | %18 |",
+      "cozum": "**Sözel kısım**\n\n*Neden iş ölçümü?* Ürün maliyeti ve fiyatlandırma, üretim planlama ve kapasite hesabı, iş gücü ihtiyacının belirlenmesi, performansa dayalı (teşvikli) ücretlendirme, yöntemlerin karşılaştırılması ve verimlilik artışı, montaj hattı dengeleme, maliyet ve bütçe kontrolü.\n\n*Neden uzman?* Tempo değerlendirmesi öznel bir yargıdır ve deneyim ister; işin doğru elemanlara ayrılması, anormal ölçümlerin ayıklanması, yeterli gözlem sayısının belirlenmesi ve tolerans paylarının doğru seçilmesi uzmanlık gerektirir. Hatalı standart süre ya işçiyi mağdur eder ya da maliyetleri yanlış gösterir; uzman ayrıca işçilerin güvenini kazanarak doğal çalışmalarını sağlar.\n\n**Hesap** (NS = ortalama × tempo; hızlı → süre uzatılır, yavaş → kısaltılır)\n\n- **İşlem 1:** 2.755 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 1\\,105/4 = 276{,}25$, $NS = 276{,}25\\times0{,}85 = 234{,}81$, $SS = 234{,}81/0{,}78 = 301{,}04$\n- **İşlem 2:** 1.938 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 461/4 = 115{,}25$, $NS = 115{,}25\\times1{,}00 = 115{,}25$, $SS = 115{,}25/0{,}75 = 153{,}67$\n- **İşlem 3:** 580 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 260/4 = 65{,}00$, $NS = 65{,}00\\times1{,}25 = 81{,}25$, $SS = 81{,}25/0{,}82 = 99{,}09$\n\n| İşlem | Kullanılan ölçümler | $\\bar t$ | Tempo | NS | Tolerans | SS = NS/(1 − t) |\n|---|---|---|---|---|---|---|\n| İşlem 1 | 278, 272, 275, 280 | 276,25 | %15 yavaş (0,85) | 234,81 | %22 | **301,04** |\n| İşlem 2 | 122, 119, 105, 115 | 115,25 | normal (1,00) | 115,25 | %25 | **153,67** |\n| İşlem 3 | 70, 82, 58, 50 | 65,00 | %25 hızlı (1,25) | 81,25 | %18 | **99,09** |",
+      "cevap": "Standart süreler — İşlem 1: 301,04; İşlem 2: 153,67; İşlem 3: 99,09",
+      "not": "Bazı kaynaklar $SS = NS(1 + t)$ kullanır; sınav kâğıdındaki el yazısı nota uygun olarak $NS/(1 - t)$ kullanıldı. Hangi formülü kullandığını çözümde belirt."
+    },
+    {
+      "id": "x-s1",
+      "konu": "07-edym",
+      "etiket": "Sınav · S.1",
+      "baslik": "Araç filosu: benzinli mi dizel mi? (EDYM)",
+      "kaynak": "MAK341 sınavı (tarihi belirtilmemiş)",
+      "zorluk": 2,
+      "soru": "Bir firma yılda ortalama 44.000 km yol yapan çalışanları için araç filosunu benzinli veya dizel araçlardan oluşturacaktır. Firma işletme politikası olarak dizel araçları 4. yılın sonunda, benzinli araçları 6. yılın sonunda elden çıkarmaktadır. Her araç türü için **eşdeğer yıllık maliyeti (EDYM)** hesaplayarak firmanın hangi araç türünü seçmesi gerektiğini belirleyiniz ($i = \\%30$).\n\n| | Benzinli araç | Dizel araç |\n|---|---|---|\n| Satın alma maliyeti | 2.100.000 TL | 2.250.000 TL |\n| Yıllık tamir-bakım | 40.000 TL/yıl | 58.000 TL/yıl |\n| Yıllık kasko-sigorta-vergi | 58.000 TL/yıl | 64.000 TL/yıl |\n| Yakıt maliyeti | 5,25 TL/km | 4,2 TL/km |\n| Tahmini sürüş mesafesi | 44.000 km/yıl | 44.000 km/yıl |\n| Elden çıkarma dönemindeki değeri | 2.750.000 TL | 2.150.000 TL |\n| Elden çıkarma süresi | 6. yılın sonu | 4. yılın sonu |",
+      "cozum": "$EDYM = P(A/P,i,n) + C - S(A/F,i,n)$; ömürler farklı olduğu için EDYM doğrudan karşılaştırılabilir.\n\n**1. Yıllık işletme giderleri:**\n\n- Benzinli: $40\\,000 + 58\\,000 + 5{,}25\\cdot44\\,000 = 329\\,000$ TL/yıl\n- Dizel: $58\\,000 + 64\\,000 + 4{,}20\\cdot44\\,000 = 306\\,800$ TL/yıl\n\n**2. Faktörler (%30):** $(A/P,30,6) = 0{,}37839$, $(A/F,30,6) = 0{,}07839$, $(A/P,30,4) = 0{,}46163$, $(A/F,30,4) = 0{,}16163$\n\n**3. EDYM:**\n\n$$EDYM_{B} = 2\\,100\\,000(0{,}37839) + 329\\,000 - 2\\,750\\,000(0{,}07839) = 794\\,628 + 329\\,000 - 215\\,584 = \\mathbf{908\\,044}$$\n\n$$EDYM_{D} = 2\\,250\\,000(0{,}46163) + 306\\,800 - 2\\,150\\,000(0{,}16163) = 1\\,038\\,666 + 306\\,800 - 347\\,503 = \\mathbf{997\\,963}$$\n\n**Karar: Benzinli araç.** Yıllık maliyeti yaklaşık 89.919 TL daha düşüktür. Dizelin yakıt tasarrufu (yılda 22.200 TL), daha kısa sürede elden çıkarılmasının getirdiği yüksek sermaye maliyetini karşılamıyor.",
+      "cevap": "EDYM benzinli ≈ 908.044 TL/yıl, dizel ≈ 997.963 TL/yıl → benzinli",
+      "not": "Benzinli aracın satış değeri alış fiyatından yüksek (enflasyon etkisi); formül değişmez, hurda değeri her zaman $(A/F)$ ile düşülür."
+    },
+    {
+      "id": "x-s2",
+      "konu": "13-is-olcumu",
+      "etiket": "Sınav · S.2",
+      "baslik": "İş ölçümü: neden gerekli, standart süre hesabı",
+      "kaynak": "MAK341 sınavı (tarihi belirtilmemiş)",
+      "zorluk": 1,
+      "soru": "Bir işletme neden iş ölçümüne ihtiyaç duyar? İş ölçümünü yapacak personelin neden tecrübeli bir uzman olması gerektiğini açıklayınız. Aşağıda verilen işlemlerin standart sürelerini hesaplayınız.\n\n| İşlem | Ölçülen süreler | Tempo | Tolerans |\n|---|---|---|---|\n| İşlem 1 | 58, 62, 60, 602, 64, 56 | %10 yavaş | %15 |\n| İşlem 2 | 102, 98, 92, 108, 980 | normal | %22 |\n| İşlem 3 | 150, 172, 138, 1.480, 140 | %25 hızlı | %18 |",
+      "cozum": "**Sözel kısım**\n\n*Neden iş ölçümü?* Ürün maliyeti ve fiyatlandırma, üretim planlama ve kapasite hesabı, iş gücü ihtiyacının belirlenmesi, performansa dayalı (teşvikli) ücretlendirme, yöntemlerin karşılaştırılması ve verimlilik artışı, montaj hattı dengeleme, maliyet ve bütçe kontrolü.\n\n*Neden uzman?* Tempo değerlendirmesi öznel bir yargıdır ve deneyim ister; işin doğru elemanlara ayrılması, anormal ölçümlerin ayıklanması, yeterli gözlem sayısının belirlenmesi ve tolerans paylarının doğru seçilmesi uzmanlık gerektirir. Hatalı standart süre ya işçiyi mağdur eder ya da maliyetleri yanlış gösterir; uzman ayrıca işçilerin güvenini kazanarak doğal çalışmalarını sağlar.\n\n**Hesap** (NS = ortalama × tempo; hızlı → süre uzatılır, yavaş → kısaltılır)\n\n- **İşlem 1:** 602 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 300/5 = 60{,}00$, $NS = 60{,}00\\times0{,}90 = 54{,}00$, $SS = 54{,}00/0{,}85 = 63{,}53$\n- **İşlem 2:** 980 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 400/4 = 100{,}00$, $NS = 100{,}00\\times1{,}00 = 100{,}00$, $SS = 100{,}00/0{,}78 = 128{,}21$\n- **İşlem 3:** 1.480 diğer ölçümlerden çok farklı (kayıt hatası) → anormal değer olarak atıldı. $\\bar t = 600/4 = 150{,}00$, $NS = 150{,}00\\times1{,}25 = 187{,}50$, $SS = 187{,}50/0{,}82 = 228{,}66$\n\n| İşlem | Kullanılan ölçümler | $\\bar t$ | Tempo | NS | Tolerans | SS = NS/(1 − t) |\n|---|---|---|---|---|---|---|\n| İşlem 1 | 58, 62, 60, 64, 56 | 60,00 | %10 yavaş (0,90) | 54,00 | %15 | **63,53** |\n| İşlem 2 | 102, 98, 92, 108 | 100,00 | normal (1,00) | 100,00 | %22 | **128,21** |\n| İşlem 3 | 150, 172, 138, 140 | 150,00 | %25 hızlı (1,25) | 187,50 | %18 | **228,66** |",
+      "cevap": "Standart süreler — İşlem 1: 63,53; İşlem 2: 128,21; İşlem 3: 228,66",
+      "not": "Bazı kaynaklar $SS = NS(1 + t)$ kullanır; sınav kâğıdındaki el yazısı nota uygun olarak $NS/(1 - t)$ kullanıldı. Hangi formülü kullandığını çözümde belirt."
+    },
+    {
+      "id": "x-s3",
+      "konu": "11-alternatif-grafik",
+      "etiket": "Sınav · S.3",
+      "baslik": "Test laboratuvarı: hizmet alımı mı otomasyon mu?",
+      "kaynak": "MAK341 sınavı (tarihi belirtilmemiş)",
+      "zorluk": 2,
+      "soru": "Motor parçaları imal eden Platin Motor firması, ürettiği parçaları test etmek için başka firmadan hizmet alımı yapmak veya bünyesinde bir laboratuvar kurmak durumundadır. Laboratuvar için tam otomasyon ve kısmi otomasyon olmak üzere iki alternatif vardır. Üretilecek parça adetleri $Q_1 = 45\\,000$, $Q_2 = 75\\,000$, $Q_3 = 95\\,000$. Her senaryo için seçim yaparak **alternatiflerin avantajlı olduğu aralığı** tek grafikte gösteriniz.\n\n| | X – Hizmet alımı | Y – Tam otomasyon | Z – Kısmi otomasyon |\n|---|---|---|---|\n| Sabit maliyet | — | 3.200.000 USD | 2.400.000 USD |\n| Değişken maliyet | 60 USD/adet | 8 USD/adet | 18 USD/adet |",
+      "cozum": "**1. Maliyet denklemleri:** $TM_X = 0 + 60Q$, $TM_Y = 3\\,200\\,000 + 8Q$, $TM_Z = 2\\,400\\,000 + 18Q$\n\n**2. Senaryolar** (milyon USD):\n\n| Q (adet) | X | Y | Z | Seçim |\n|---|---|---|---|---|\n| 45.000 | **2,70** | 3,56 | 3,21 | **X** |\n| 75.000 | 4,50 | 3,80 | **3,75** | **Z** |\n| 95.000 | 5,70 | **3,96** | 4,11 | **Y** |\n\n**3. Kesişim noktaları** ($Q^* = (F_2 - F_1)/(v_1 - v_2)$):\n\n- $X = Y$: $Q = \\dfrac{3\\,200\\,000}{52} = 61\\,538$ adet — bu noktada üçüncü alternatif daha ucuz olduğundan **alt zarfta değil**, geçiş noktası sayılmaz\n- $X = Z$: $Q = \\dfrac{2\\,400\\,000}{42} = 57\\,143$ adet\n- $Y = Z$: $Q = \\dfrac{800\\,000}{10} = 80\\,000$ adet\n\n**4. Avantaj aralıkları:**\n\n- 0 < Q < 57.143 adet: **X**\n- 57.143 < Q < 80.000 adet: **Z**\n- Q > 80.000 adet: **Y**\n\n**5. Grafik:** Yatay eksen Q, dikey eksen toplam maliyet. Her doğru $Q = 0$'daki sabit maliyetten başlar; kesişimler işaretlenir, aralıklar eksenin altında gösterilir. (Konu sayfasındaki etkileşimli araca aynı değerleri girerek grafiği görebilirsin.)\n\n**Yorum:** Az sayıda parçada yatırımsız hizmet alımı, orta hacimde kısmi otomasyon, yüksek hacimde birim maliyeti en düşük tam otomasyon avantajlıdır. Firma büyüme bekliyorsa 80.000 adet sınırını dikkate almalıdır.",
+      "cevap": "Q = 45.000 → X, Q = 75.000 → Z, Q = 95.000 → Y"
+    },
+    {
+      "id": "u-1-1",
+      "konu": "14-en-kucuk-kareler",
+      "baslik": "Doğru denklemi, korelasyon ve belirleme katsayısı",
+      "kaynak": "K. Üçüncü, Örnek Problemler 1.1",
+      "zorluk": 1,
+      "soru": "(0, 4), (1, 8), (2, 10), (3, 13), (4, 15) veri noktaları için uygun doğru denklemini belirleyiniz. Korelasyon ve belirleme katsayılarını bulunuz, sonucu yorumlayınız.",
+      "cozum": "$n = 5$, $\\sum X = 10$, $\\sum Y = 50$, $\\sum XY = 127$, $\\sum X^2 = 30$, $\\sum Y^2 = 574$\n\n$$b = \\frac{5(127) - 10(50)}{5(30) - 10^2} = \\frac{135}{50} = 2{,}7, \\qquad a = \\frac{50 - 2{,}7(10)}{5} = 4{,}6$$\n\n$$Y = 4{,}6 + 2{,}7X$$\n\n$$r = \\frac{135}{\\sqrt{(50)(370)}} = 0{,}9925, \\qquad r^2 = 0{,}9851$$\n\nÇok güçlü pozitif doğrusal ilişki var; doğru denklemi veriyi başarıyla temsil eder.",
+      "cevap": "Y = 4,6 + 2,7X; r = 0,993, r² = 0,985"
+    },
+    {
+      "id": "u-1-3",
+      "konu": "14-en-kucuk-kareler",
+      "baslik": "Su sayacı talebinin 2020 tahmini (trend)",
+      "kaynak": "K. Üçüncü, Örnek Problemler 1.3",
+      "zorluk": 2,
+      "soru": "MET döküm işletmesi su sayacı üretmeyi planlıyor. 2005–2014 yıllarına ait talepler sırasıyla 6500, 7500, 6800, 8000, 9000, 8500, 10.000, 10.500, 12.000 ve 14.000 adettir. İşletme 2020 yılı için 18.000 su sayacı üretmeyi hedefliyor. Verilerin işletme hedefiyle uyumunu değerlendiriniz.",
+      "cozum": "Yıllar $X = 1 \\dots 10$ olarak kodlanır. $n = 10$, $\\sum X = 55$, $\\sum Y = 92\\,800$, $\\sum XY = 571\\,900$, $\\sum X^2 = 385$\n\n$$b = \\frac{10(571\\,900) - 55(92\\,800)}{10(385) - 55^2} = \\frac{615\\,000}{825} = 745{,}45$$\n\n$$a = \\frac{92\\,800 - 745{,}45(55)}{10} = 5180$$\n\n$Y = 5180 + 745{,}45X$, $r = 0{,}948$, $r^2 = 0{,}90$ (yüksek dereceli ilişki).\n\n2020 yılı $X = 16$: $Y = 5180 + 745{,}45(16) = 17\\,107$ adet.\n\nTahmin edilen talep, hedeflenen 18.000 adetin altındadır; mevcut eğilim hedefi desteklemiyor. Pazar payı artışı veya ihracat gibi başka faktörler yoksa üretim hedefi düşürülmelidir.",
+      "cevap": "Y = 5180 + 745,45X; 2020 tahmini ≈ 17.107 adet < 18.000"
+    },
+    {
+      "id": "u-2-1",
+      "konu": "03-faktorler",
+      "baslik": "Kredinin vade sonundaki değeri ve bugün ayrılacak para",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.1–2.2",
+      "zorluk": 1,
+      "soru": "**a)** METMAL işletmesi %12 faizli, 5 yıl vadeli 300.000 TL makine kredisi kullanmıştır. Vade sonunda ödeyeceği borç ne kadardır?\n\n**b)** İşletme 4 yıl sonra 400.000 TL'lik bir genişleme yatırımı yapacaktır. Getiri oranı %15 ise bugünden ne kadar para ayırmalıdır?",
+      "cozum": "**a)** $F = P(F/P,12,5) = 300\\,000(1{,}12)^5 = 300\\,000(1{,}76234) = 528\\,702{,}5$ TL\n\n**b)** $P = F(P/F,15,4) = \\dfrac{400\\,000}{(1{,}15)^4} = \\dfrac{400\\,000}{1{,}74901} = 228\\,701$ TL",
+      "cevap": "a) 528.702,5 TL · b) 228.701 TL"
+    },
+    {
+      "id": "u-2-3",
+      "konu": "03-faktorler",
+      "baslik": "Düzensiz yatırım harcamalarının bugünkü ve gelecek değeri",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.3",
+      "zorluk": 2,
+      "soru": "METMAL şirketi takı üretim tesisi için 1. yıl 100.000, 2. yıl 300.000, 3. yıl 200.000, 4. yıl 400.000 ve 5. yıl 500.000 TL harcayacaktır. Sermaye maliyeti %14'tür. Nakit akım şemasını çiziniz; harcamaların 5. yıl sonundaki ve bugünkü değerini bulunuz.",
+      "cozum": "Her harcama 5. yıla taşınır (1. yıldaki harcama 4 yıl faiz kazanır):\n\n$$F_5 = 100\\,000(1{,}14)^4 + 300\\,000(1{,}14)^3 + 200\\,000(1{,}14)^2 + 400\\,000(1{,}14) + 500\\,000 = 1\\,829\\,279 \\text{ TL}$$\n\n$$P = \\frac{F_5}{(1{,}14)^5} = \\frac{1\\,829\\,279}{1{,}92541} = 950\\,070 \\text{ TL}$$\n\nHarcamaların düz toplamı 1.500.000 TL'dir; bugünkü değer bundan, gelecek değer ise bundan büyüktür.",
+      "cevap": "F₅ ≈ 1.829.279 TL, P ≈ 950.070 TL"
+    },
+    {
+      "id": "u-2-7",
+      "konu": "02-faiz",
+      "baslik": "Basit faiz: tutar, süre, oran ve anapara",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.7–2.10",
+      "zorluk": 1,
+      "soru": "**a)** 500 TL emlak vergisi 3 yıl gecikmeyle %23 basit faizle ödeniyor. Toplam ödeme ve faiz ne kadardır?\n\n**b)** 100.000 TL borç, %20 basit faizle 250.000 TL ödenerek kapatıldı. Borç ne kadar geciktirildi?\n\n**c)** 200.000 TL kredi için 5 yıl sonunda 400.000 TL ödendi. Basit faiz oranı nedir?\n\n**d)** 4 yıl sonra %25 basit faizle 12.000 TL ödenen bir ceza zamanında ödenseydi ne kadar olurdu?",
+      "cozum": "$F = P(1 + in)$\n\n**a)** $F = 500(1 + 0{,}23\\cdot3) = 845$ TL; faiz $845 - 500 = 345$ TL\n\n**b)** $n = \\dfrac{F/P - 1}{i} = \\dfrac{2{,}5 - 1}{0{,}20} = 7{,}5$ yıl\n\n**c)** $i = \\dfrac{F/P - 1}{n} = \\dfrac{2 - 1}{5} = 0{,}20$ → %20\n\n**d)** $P = \\dfrac{12\\,000}{1 + 0{,}25\\cdot4} = 6000$ TL; ödenen faiz 6000 TL",
+      "cevap": "a) 845 TL (faiz 345) · b) 7,5 yıl · c) %20 · d) 6000 TL"
+    },
+    {
+      "id": "u-2-13",
+      "konu": "02-faiz",
+      "baslik": "Bileşik faizde oran ve vade",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.11–2.14",
+      "zorluk": 1,
+      "soru": "**a)** %10 bileşik faizli, 5 yıl vadeli 400.000 TL kredinin vade sonu borcu nedir?\n\n**b)** 4 yıl gecikmeyle %25 bileşik faizle 500.000 TL ödenen borcun aslı ne kadardı?\n\n**c)** 10 yıl vadeli 200.000 TL konut kredisi için vade sonunda 420.000 TL ödendi. Bileşik faiz oranı nedir?\n\n**d)** %12 bileşik faizle kullanılan 405.500 TL kredi 800.000 TL ödenerek kapatıldı. Vade kaç yıldır?",
+      "cozum": "**a)** $F = 400\\,000(1{,}1)^5 = 644\\,204$ TL\n\n**b)** $P = 500\\,000/(1{,}25)^4 = 204\\,800$ TL\n\n**c)** $i = (420\\,000/200\\,000)^{1/10} - 1 = 2{,}1^{0{,}1} - 1 = 7{,}70$ %\n\n**d)** $n = \\dfrac{\\ln(800\\,000/405\\,500)}{\\ln 1{,}12} = \\dfrac{0{,}6795}{0{,}1133} = 6{,}00$ yıl ≈ 6 yıl",
+      "cevap": "a) 644.204 TL · b) 204.800 TL · c) %7,70 · d) ≈ 6 yıl"
+    },
+    {
+      "id": "u-2-15",
+      "konu": "02-faiz",
+      "baslik": "Nominal, efektif ve dönemsel faiz",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.15–2.16",
+      "zorluk": 2,
+      "soru": "**a)** Kredi kartlarına aylık %2,52 faiz uygulanıyor. Yıllık nominal ve efektif (reel) faiz nedir?\n\n**b)** 500.000 TL, %15 nominal faiz ve 10 yıl vadeyle kullanılıyor. Faiz yıllık, 6 aylık, 3 aylık, aylık, günlük ve sürekli işletilirse vade sonu borcu ne olur?",
+      "cozum": "**a)** Nominal: $12\\times2{,}52 = \\%30{,}24$. Efektif: $(1{,}0252)^{12} - 1 = 34{,}80$ %\n\n**b)** $F = P(1 + r/m)^{mn}$:\n\n| Dönem | m | F (TL) |\n|---|---|---|\n| Yıllık | 1 | 2.022.779 |\n| 6 aylık | 2 | 2.123.926 |\n| 3 aylık | 4 | 2.180.189 |\n| Aylık | 12 | 2.220.107 |\n| Günlük | 360 | 2.240.145 |\n| Sürekli | ∞ | 2.240.845 |\n\nSürekli: $F = Pe^{rn} = 500\\,000e^{1{,}5}$. Dönem kısaldıkça F artar, ama artış giderek azalır.",
+      "cevap": "a) %30,24 nominal, %34,80 efektif · b) yıllıkta 2.022.779 TL, süreklide 2.240.845 TL"
+    },
+    {
+      "id": "u-2-18",
+      "konu": "02-faiz",
+      "baslik": "Reel faiz, depolu faiz ve peşin faiz",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.18–2.21",
+      "zorluk": 2,
+      "soru": "**a)** Enflasyon %10 iken %12 reel kazanmak isteyen bir girişimcinin yatırımı hangi nominal oranda kazandırmalıdır?\n\n**b)** %24 getiri elde eden yatırımcının, enflasyon %10 iken reel getirisi nedir?\n\n**c)** Banka kredinin %12'sini hesapta tutma koşuluyla %16 faizli kredi veriyor. Gerçek faiz nedir?\n\n**d)** 1 yıl vadeli, %20 faizli 200.000 TL kredinin faizi peşin kesiliyor. Gerçek faiz nedir?",
+      "cozum": "**a)** $1 + i_n = (1{,}12)(1{,}10) = 1{,}232$ → **%23,2**\n\n**b)** $i_r = 1{,}24/1{,}10 - 1 = 0{,}127$ → **%12,7** (yaklaşık formül $24 - 10 = 14$ fazla tahmin eder)\n\n**c)** Kullanılabilen para $0{,}88P$, faiz $0{,}16P$: $i = 0{,}16/0{,}88 = $ **%18,2**\n\n**d)** Eline geçen $200\\,000 - 40\\,000 = 160\\,000$ TL, faiz 40.000 TL: $i = 40\\,000/160\\,000 = $ **%25**",
+      "cevap": "a) %23,2 · b) %12,7 · c) %18,2 · d) %25"
+    },
+    {
+      "id": "u-faktor",
+      "konu": "03-faktorler",
+      "baslik": "Eşit seri faktörleri: F/A, A/F, P/A, A/P",
+      "kaynak": "K. Üçüncü, Örnek Problemler 2.5 bölümü örnekleri",
+      "zorluk": 1,
+      "soru": "**a)** Her yıl 100.000 TL ödenen 10 yıllık bir borç (%10) 10. yılın sonunda tek seferde ödenseydi ne kadar olurdu?\n\n**b)** %15 faizli kredi için 10. yıl sonunda 500.000 TL ödendi. Eşit yıllık taksitle ödenseydi taksit ne olurdu?\n\n**c)** 10 yıl boyunca her yıl 125.000 TL ödenecek borcun (%15) peşin değeri nedir?\n\n**d)** %15 faizli 1.000.000 TL kredi 5 eşit yıllık taksitle ödenecek. Taksit ne kadardır?",
+      "cozum": "**a)** $F = 100\\,000(F/A,10,10) = 100\\,000(15{,}9374) = 1\\,593\\,742$ TL\n\n**b)** $A = 500\\,000(A/F,15,10) = 500\\,000(0{,}04925) = 24\\,626$ TL\n\n**c)** $P = 125\\,000(P/A,15,10) = 125\\,000(5{,}0188) = 627\\,346$ TL\n\n**d)** $A = 1\\,000\\,000(A/P,15,5) = 1\\,000\\,000(0{,}29832) = 298\\,316$ TL",
+      "cevap": "a) 1.593.742 · b) 24.626 · c) 627.346 · d) 298.316 TL"
+    },
+    {
+      "id": "u-3-12",
+      "konu": "07-edym",
+      "baslik": "Ömürleri farklı iki projenin yıllık eşdeğer gideri",
+      "kaynak": "K. Üçüncü, Örnek Problemler 3.12",
+      "zorluk": 2,
+      "soru": "Aşağıdaki verilere göre yıllık eşdeğer gider yöntemiyle hangi proje tercih edilmelidir? ($i = \\%15$)\n\n| | Proje A | Proje B |\n|---|---|---|\n| Yatırım tutarı | 4.000.000 TL | 3.500.000 TL |\n| İşletme gideri | 100.000 TL/yıl | 200.000 TL/yıl |\n| Hurda değeri | 500.000 TL | 300.000 TL |\n| Ekonomik ömür | 15 yıl | 20 yıl |",
+      "cozum": "$$EDYM_A = 4\\,000\\,000(0{,}17102) + 100\\,000 - 500\\,000(0{,}02102) = 773\\,560 \\text{ TL}$$\n\n$$EDYM_B = 3\\,500\\,000(0{,}15976) + 200\\,000 - 300\\,000(0{,}00976) = 756\\,237 \\text{ TL}$$\n\n**B** daha düşük yıllık maliyetlidir. Ömürler farklı olduğu hâlde EDYM ortak kat almadan karşılaştırma yapmayı sağladı.",
+      "cevap": "EDYM_A ≈ 773.560, EDYM_B ≈ 756.237 TL → B"
+    },
+    {
+      "id": "u-3-13",
+      "konu": "08-iko",
+      "baslik": "Döküm atölyesi: NBD ve İKO ile karar",
+      "kaynak": "K. Üçüncü, Örnek Problemler 3.13",
+      "zorluk": 2,
+      "soru": "METMAL şirketi maliyeti 175.000 USD olan bir döküm atölyesi kuracak ve her yıl 37.000 USD getiri bekliyor. Ekonomik ömür 10 yıl, hurda değeri yok. Beklenen kârlılık %20 ise şirket projeyi NBD ve İKO yöntemlerine göre uygulamalı mı?",
+      "cozum": "**NBD (%20):** $NBD = -175\\,000 + 37\\,000(P/A,20,10) = -175\\,000 + 37\\,000(4{,}1925) = -19\\,879$ USD $< 0$ → uygulanmamalı.\n\n**İKO** (deneme-yanılma):\n- %16: $37\\,000(4{,}8332) - 175\\,000 = +3\\,829$\n- %18: $37\\,000(4{,}4941) - 175\\,000 = -8\\,719$\n\n$$r \\approx 16 + 2\\cdot\\frac{3\\,829}{3\\,829 + 8\\,719} = \\%16{,}6$$\n\nİKO, istenen %20'den küçük → proje **uygulanmamalı**. İki yöntem aynı kararı verir.",
+      "cevap": "NBD ≈ -19.879 USD; İKO ≈ %16,6 < %20 → reddedilir"
+    },
+    {
+      "id": "u-3-15",
+      "konu": "10-basabas",
+      "baslik": "Başabaş noktası, kapasite kullanım oranı ve fiyat duyarlılığı",
+      "kaynak": "K. Üçüncü, Örnek Problemler 3.15 ve duyarlılık analizi",
+      "zorluk": 2,
+      "soru": "Sabit üretim giderleri 3.280.000 birim, birim satış fiyatı 6,25 birim/adet, birim değişken maliyet 3,25 birim/adet ve tam kapasite 2.000.000 adettir.\n\n**a)** Başabaş noktasındaki üretim miktarını, satış gelirini ve kapasite kullanım oranını bulunuz.\n\n**b)** Satış fiyatı 5,75 ve 5,50'ye düşerse başabaş kapasitesi nasıl değişir?",
+      "cozum": "**a)** $$x_0 = \\frac{f}{p - v} = \\frac{3\\,280\\,000}{6{,}25 - 3{,}25} = 1\\,093\\,333 \\text{ adet}$$\n\nBBN satış geliri $6{,}25\\times1\\,093\\,333 = 6\\,833\\,333$; $KKO_0 = 1\\,093\\,333/2\\,000\\,000 = \\%54{,}7$\n\n**b)**\n- $p = 5{,}75$: $x_0 = 3\\,280\\,000/2{,}50 = 1\\,312\\,000$ adet, KKO = %65{,}6\n- $p = 5{,}50$: $x_0 = 3\\,280\\,000/2{,}25 = 1\\,457\\,778$ adet, KKO = %72{,}9\n\nFiyattaki %12'lik düşüş başabaş kapasitesini yaklaşık 18 puan artırıyor; proje satış fiyatına çok duyarlıdır.",
+      "cevap": "x₀ ≈ 1.093.333 adet, KKO ≈ %54,7; p = 5,75 → %65,6, p = 5,50 → %72,9"
+    },
+    {
+      "id": "a-gos",
+      "konu": "05-statik",
+      "baslik": "Değişken gelirde geri ödeme süresi",
+      "kaynak": "Alıştırma",
+      "zorluk": 1,
+      "soru": "Yatırım tutarı 1.600.000 TL olan bir projenin yıllık net nakit girişleri sırasıyla 200, 300, 400, 400, 500 ve 600 bin TL'dir. Geri ödeme süresini bulunuz. Yatırımcı en çok 5 yıl kabul ediyorsa proje kabul edilir mi?",
+      "cozum": "Birikimli toplam: 200, 500, 900, 1300, **1800** bin TL. Yatırım 5. yılda geri dönüyor.\n\n$$n = 4 + \\frac{1\\,600\\,000 - 1\\,300\\,000}{500\\,000} = 4{,}6 \\text{ yıl}$$\n\n4,6 < 5 olduğundan **kabul edilir**. Ancak bu yöntem paranın zaman değerini ve 5. yıldan sonraki gelirleri dikkate almaz.",
+      "cevap": "4,6 yıl → kabul"
+    },
+    {
+      "id": "a-amortisman",
+      "konu": "09-amortisman",
+      "baslik": "Normal ve azalan bakiyeler amortismanı",
+      "kaynak": "Alıştırma",
+      "zorluk": 1,
+      "soru": "120.000 TL'ye alınan bir makinenin ömrü 5 yıldır (hurda değeri sıfır). Normal (doğrusal) ve azalan bakiyeler yöntemlerine göre amortisman tablolarını hazırlayınız. Vergi oranı %20 ise 1. yıldaki vergi kalkanları ne kadardır?",
+      "cozum": "Normal oran $1/5 = \\%20$ → yıllık 24.000 TL. Azalan bakiyelerde oran $2\\times20 = \\%40$; son yılda kalan değerin tamamı ayrılır.\n\n| Yıl | Normal | Azalan bakiyeler | Kalan defter değeri (AB) |\n|---|---|---|---|\n| 1 | 24.000 | 48.000 | 72.000 |\n| 2 | 24.000 | 28.800 | 43.200 |\n| 3 | 24.000 | 17.280 | 25.920 |\n| 4 | 24.000 | 10.368 | 15.552 |\n| 5 | 24.000 | 15.552 | 0 |\n\n1. yıl vergi kalkanı: normalde $0{,}20\\times24\\,000 = 4800$ TL, azalan bakiyelerde $0{,}20\\times48\\,000 = 9600$ TL. Toplam amortisman iki yöntemde de 120.000 TL'dir; ancak azalan bakiyeler vergi tasarrufunu öne çeker ve paranın zaman değeri açısından avantaj sağlar.",
+      "cevap": "Normal: 24.000 TL/yıl; AB: 48.000, 28.800, 17.280, 10.368, 15.552 TL"
+    },
+    {
+      "id": "a-yenileme",
+      "konu": "09-amortisman",
+      "baslik": "Eski makine yenilensin mi?",
+      "kaynak": "Alıştırma",
+      "zorluk": 3,
+      "soru": "Bir işletmenin 6 yıl önce 180.000 TL'ye aldığı makinenin bugünkü piyasa değeri 40.000 TL'dir. 4 yıl daha kullanılabilir; yıllık işletme gideri 90.000 TL, 4 yıl sonraki hurda değeri 5000 TL olacaktır. Yerine alınabilecek yeni makine 250.000 TL, ömrü 8 yıl, yıllık işletme gideri 35.000 TL, hurda değeri 30.000 TL'dir. $i = \\%20$ ile yenileme kararı veriniz.",
+      "cozum": "Eski makinenin 180.000 TL alış fiyatı **batık maliyettir**, karara katılmaz. Eski makinenin yatırımı, vazgeçilen bugünkü satış değeri olan 40.000 TL'dir.\n\n$$EDYM_{eski} = 40\\,000(A/P,20,4) + 90\\,000 - 5000(A/F,20,4) = 40\\,000(0{,}38629) + 90\\,000 - 5000(0{,}18629) = 104\\,520 \\text{ TL}$$\n\n$$EDYM_{yeni} = 250\\,000(0{,}26061) + 35\\,000 - 30\\,000(0{,}06061) = 98\\,334 \\text{ TL}$$\n\nYeni makinenin yıllık maliyeti daha düşük → **yenilenmeli**.",
+      "cevap": "EDYM eski ≈ 104.520 TL, yeni ≈ 98.334 TL → yenile"
+    },
+    {
+      "id": "a-kapitalize",
+      "konu": "06-nbd",
+      "baslik": "Köprünün kapitalize maliyeti",
+      "kaynak": "Alıştırma",
+      "zorluk": 2,
+      "soru": "Bir köprünün yapım maliyeti 20 milyon TL, yıllık bakımı 500.000 TL'dir; ayrıca her 10 yılda bir 3 milyon TL'lik büyük onarım gerekir. Köprü sonsuz ömürlü kabul edilirse kapitalize maliyeti nedir? ($i = \\%10$)",
+      "cozum": "Periyodik onarım önce yıllık eşdeğere çevrilir: $A_o = 3\\,000\\,000(A/F,10,10) = 3\\,000\\,000(0{,}06275) = 188\\,236$ TL/yıl\n\n$$KM = I + \\frac{A}{i} = 20\\,000\\,000 + \\frac{500\\,000 + 188\\,236}{0{,}10} = 26\\,882\\,362 \\text{ TL}$$",
+      "cevap": "KM ≈ 26.882.362 TL"
+    },
+    {
+      "id": "a-kalan-borc",
+      "konu": "04-kredi",
+      "baslik": "İki taksitten sonra kalan borç",
+      "kaynak": "Alıştırma",
+      "zorluk": 2,
+      "soru": "1.000.000 TL kredi %15 yıllık faizle 5 eşit yıllık taksitle ödenecektir. 2. taksit ödendikten hemen sonra kredi kapatılmak istenirse ne kadar ödenmelidir?",
+      "cozum": "Taksit: $A = 1\\,000\\,000(A/P,15,5) = 298\\,316$ TL\n\nKalan borç, kalan 3 taksitin bugünkü değeridir:\n\n$$B_2 = A(P/A,15,3) = 298\\,316(2{,}2832) = 681\\,122 \\text{ TL}$$\n\nKontrol: Ödeme tablosunda 3. yılın başındaki borç da 681.122 TL'dir.",
+      "cevap": "≈ 681.122 TL"
+    },
+    {
+      "id": "a-pert",
+      "konu": "15-cpm",
+      "baslik": "Kritik yol ve PERT süresi",
+      "kaynak": "Alıştırma",
+      "zorluk": 2,
+      "soru": "Bir projenin faaliyetleri ve süre tahminleri (gün) aşağıdadır. Beklenen süreleri bulunuz, kritik yolu ve projenin beklenen süresini belirleyiniz; 21 günde bitme olasılığını hesaplayınız.\n\n| Faaliyet | Öncül | a | m | b |\n|---|---|---|---|---|\n| A | — | 2 | 4 | 6 |\n| B | — | 3 | 5 | 13 |\n| C | A | 4 | 6 | 8 |\n| D | A | 1 | 3 | 5 |\n| E | B, C | 5 | 7 | 15 |\n| F | D | 2 | 4 | 6 |",
+      "cozum": "$t_e = (a + 4m + b)/6$, $\\sigma^2 = ((b - a)/6)^2$:\n\n| Faaliyet | $t_e$ | $\\sigma^2$ |\n|---|---|---|\n| A | 4 | 0,444 |\n| B | 6 | 2,778 |\n| C | 6 | 0,444 |\n| D | 3 | 0,444 |\n| E | 8 | 2,778 |\n| F | 4 | 0,444 |\n\nYollar: A–C–E = 4 + 6 + 8 = **18**; B–E = 6 + 8 = 14; A–D–F = 4 + 3 + 4 = 11.\n\n**Kritik yol A–C–E**, beklenen süre 18 gün. Varyans $0{,}444 + 0{,}444 + 2{,}778 = 3{,}667$, $\\sigma = 1{,}915$ gün.\n\n$$z = \\frac{21 - 18}{1{,}915} = 1{,}57 \\;\\Rightarrow\\; P(T \\le 21) \\approx \\%94$$",
+      "cevap": "Kritik yol A–C–E, 18 gün; 21 günde bitme olasılığı ≈ %94"
+    }
+  ]
+}
